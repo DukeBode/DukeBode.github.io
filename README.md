@@ -19,3 +19,7 @@ npm install
 # 更新部署
 hexo deploy
 ```
+## 复制主题配置
+```
+cp node_modules/hexo-theme-landscape/_config.yml _config.landscape.yml
+```

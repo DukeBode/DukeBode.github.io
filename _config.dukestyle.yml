@@ -1,3 +1,4 @@
+# 打赏
 reward:
   qrcode:
     支付宝:
@@ -5,3 +6,4 @@ reward:
     微信支付:
     云闪付:
   url:
+  img:
