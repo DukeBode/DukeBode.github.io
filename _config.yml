@@ -30,9 +30,16 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
+  # About READMEs
+  # https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes
   - README.md
-  - 404.md
+  # custom 404 error page, In the file name field, type 404.html or 404.md.
+  # https://docs.github.com/en/github/working-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site
   - 404.html
+  - 404.md
+  # Configuring a custom domain
+  # https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#about-custom-domain-configuration
+  - CNAME 
 
 # Writing
 new_post_name: :title.md # File name of new posts

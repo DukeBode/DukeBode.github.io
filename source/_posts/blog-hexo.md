@@ -41,6 +41,7 @@ theme: duke
 
 ```diff
 _config.yml
+
 - type
 + - type: git
 +   repo: git@github.com:DukeBode/DukeBode.github.io.git
