@@ -10,10 +10,11 @@
 ```sh
 # 安装 hexo-cli
 npm install hexo-cli -g
+npm install -g yarn
 # 拉取远程仓库
 git clone -b hexo git@github.com:DukeBode/DukeBode.github.io.git
 # 安装依赖
-npm install
+yarn install
 # 更新依赖
 
 # 更新部署

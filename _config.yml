@@ -39,8 +39,6 @@ skip_render:
   # Configuring a custom domain
   # https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#about-custom-domain-configuration
   - CNAME 
-  # Displaying a sponsor button
-  # https://docs.github.com/en/github/administering-a-repository/displaying-a-sponsor-button-in-your-repository
   - .github/**/*
 
 # Writing
