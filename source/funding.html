@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            display: -webkit-flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <script src="https://cdn.bootcdn.net/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    1
+    <div id="qrcode"></div>
+    <script>
+        let ua = navigator.userAgent;
+        let content="";
+        if(/MicroMessenger\/\d*/.test(ua)){
+            content="wxp://f2f0ZKf_OymB3rdYLhRf1K_m8f8UJaopZkAT"
+        }else if(/AlipayClient\/d*/.test(ua)){
+            content="https://qr.alipay.com/tsx18992matishw5cqkoh16"
+        }
+        new QRCode(document.getElementById("qrcode"), content);  // 设置要生成二维码的链接
+    </script>
+    <script>
+        
+        // navigator.userAgent
+        // location.hash.substr(1);
+    </script>
+</body>
+</html>
