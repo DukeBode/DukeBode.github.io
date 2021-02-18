@@ -35,7 +35,7 @@ skip_render:
   - README.md
   # custom 404 error page, In the file name field, type 404.html or 404.md.
   # https://docs.github.com/en/github/working-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site
-  - 404.(html|md)
+  - (404|funding).(html|md)
   # Configuring a custom domain
   # https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#about-custom-domain-configuration
   - CNAME 
