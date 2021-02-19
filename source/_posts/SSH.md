@@ -28,11 +28,13 @@ ssh-keygen
 
 说明：
 - 私钥口令 passphrase，若担心私钥的安全，设置一个
-- 公钥 id_rsa.pub，私约 id_rsa
+- 公钥 id_rsa.pub，私钥 id_rsa
     2. 复制公钥至主机
     
 ```sh
-ssh-copy-id user@host
+cat pub_file_path | ssh  root@host 'cat >> .ssh/authorized_keys'
+# 首次登录使用，覆盖已有的 id_rsa 之后即可无密码登录，如果设置了 passphrase 登录时需要输入 passphrase
+ssh-keygen; cat ~/.ssh/id_*.pub | ssh  root@host 'cat >> .ssh/authorized_keys'; ssh user@host
 ```
 
 ```config
