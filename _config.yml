@@ -35,11 +35,7 @@ skip_render:
   - README.md
   # custom 404 error page, In the file name field, type 404.html or 404.md.
   # https://docs.github.com/en/github/working-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site
-  - (404|funding).(html|md)
-  # Configuring a custom domain
-  # https://docs.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site#about-custom-domain-configuration
-  - CNAME 
-  - .github/**/*
+  - (404|funding).(html|md) 
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -102,8 +98,6 @@ pagination_dir: page
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
 include:
-  # https://hexo.io/docs/configuration.html#Include-Exclude-Files-or-Folders
-  - .github/**/*
 exclude:
 ignore:
 
@@ -116,7 +110,6 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: git@github.com:DukeBode/DukeBode.github.io.git
-  branch: main
+  repo: 
+    github: git@github.com:DukeBode/DukeBode.github.io.git,main
   
