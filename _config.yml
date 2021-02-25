@@ -110,6 +110,7 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  repo: 
-    github: git@github.com:DukeBode/DukeBode.github.io.git,main
+  type: git
+  repo: git@github.com:DukeBode/DukeBode.github.io.git
+  branch: main
   
