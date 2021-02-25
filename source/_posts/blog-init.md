@@ -35,6 +35,8 @@ mkdir .github;cd .github;"custom: ['https://DukeBode.github.io/sponsor']" > FUND
 npm install hexo-theme-next; cp node_modules/hexo-theme-next/_config.yml _config.next.yml
 npm uninstall hexo-theme-landscape
 # 别名 hexo
+# 安装 npm scripts 依赖
+npm install hexo-cli
 ```
 
 ## FAQ 
