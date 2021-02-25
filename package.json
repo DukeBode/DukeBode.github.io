@@ -12,11 +12,7 @@
     "version": "5.4.0"
   },
   "dependencies": {
-<<<<<<< HEAD
     "hexo": "^5.4.0",
-=======
-    "hexo": "^5.0.0",
->>>>>>> a97f7025b4fb176da697b38e2f78e7c7f3717a6e
     "hexo-deployer-git": "^3.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
