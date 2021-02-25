@@ -640,7 +640,11 @@ hexo-util@^2.0.0, hexo-util@^2.1.0, hexo-util@^2.4.0:
     strip-indent "^3.0.0"
     striptags "^3.1.1"
 
+<<<<<<< HEAD
 hexo@^5.4.0:
+=======
+hexo@^5.0.0:
+>>>>>>> a97f7025b4fb176da697b38e2f78e7c7f3717a6e
   version "5.4.0"
   resolved "https://mirrors.huaweicloud.com/repository/npm/hexo/-/hexo-5.4.0.tgz#77d57fa1c29f3ab05964fe4ebd9c44e23df51b37"
   integrity sha512-4vMDle5GjpMeOVrx0NKoTZCqrmpJVg3wNiNNUVjcoFfcpYcMzQUCZHBtQqLl7BzjJ8x2gs002VQ5yv0ZKtj8Jg==
