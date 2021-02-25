@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta name="google-site-verification" content="2hXKxigOPaMOnUb0RaDecub4lR-EUVwTcIyvEigcc-E">
+  <meta name="msvalidate.01" content="EECB419B3BD7309C048E8C9E4A512F4C">
+  <meta name="baidu-site-verification" content="qDoVswL6yu">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
+
+<script class="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"dukebode.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}};
+  </script>
+<meta name="description" content="官网  expires  Nginx设置expires设定页面缓存时间 不缓存或一直使用缓存 版本简介 Mainline 主线开发版本，版本号为奇数 Stable   当前稳定版本，版本号为偶数 Legacy   历年稳定版本  源码安装123456# wget http:&#x2F;&#x2F;nginx.org&#x2F;download&#x2F;nginx-1.14.0.tar.gz# tar -zxvf nginx-1.1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nginx">
+<meta property="og:url" content="https://dukebode.github.io/2018/11/08/nginx/">
+<meta property="og:site_name" content="Duke Blog">
+<meta property="og:description" content="官网  expires  Nginx设置expires设定页面缓存时间 不缓存或一直使用缓存 版本简介 Mainline 主线开发版本，版本号为奇数 Stable   当前稳定版本，版本号为偶数 Legacy   历年稳定版本  源码安装123456# wget http:&#x2F;&#x2F;nginx.org&#x2F;download&#x2F;nginx-1.14.0.tar.gz# tar -zxvf nginx-1.1">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2018-11-08T08:48:45.000Z">
+<meta property="article:modified_time" content="2021-02-18T10:56:30.728Z">
+<meta property="article:author" content="Duke Bode">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="nginx">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://dukebode.github.io/2018/11/08/nginx/">
+
+
+<script class="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+<title>nginx | Duke Blog</title>
+  
+
+
+
+
+  <noscript>
+  <style>
+  body { margin-top: 2rem; }
+
+  .use-motion .menu-item,
+  .use-motion .sidebar,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="Duke Blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Duke Blog</h1>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a></li>
+        <li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%89%88%E6%9C%AC%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">版本简介</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85"><span class="nav-number">1.1.</span> <span class="nav-text">源码安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Nginx-%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="nav-number">1.2.</span> <span class="nav-text">Nginx 操作命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%99%84%EF%BC%9A"><span class="nav-number">1.3.</span> <span class="nav-text">附：</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Duke Bode</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">64</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/DukeBode" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;DukeBode" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2018/11/08/nginx/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Duke Bode">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Duke Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          nginx<a href="https://github.com/DukeBode/DukeBode.github.io/edit/hexo/source/_posts/nginx.md" class="post-edit-link" title="Edit this post" rel="noopener" target="_blank"><i class="fa fa-pen-nib"></i></a>
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2018-11-08 16:48:45" itemprop="dateCreated datePublished" datetime="2018-11-08T16:48:45+08:00">2018-11-08</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-02-18 18:56:30" itemprop="dateModified" datetime="2021-02-18T18:56:30+08:00">2021-02-18</time>
+      </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <span id="more"></span>
+
+<p><a target="_blank" rel="noopener" href="https://www.nginx.com/">官网</a></p>
+<ul>
+<li>expires</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/yuanzai12345/p/5946743.html">Nginx设置expires设定页面缓存时间 不缓存或一直使用缓存</a></p>
+<h1 id="版本简介"><a href="#版本简介" class="headerlink" title="版本简介"></a>版本简介</h1><ul>
+<li>Mainline 主线开发版本，版本号为奇数</li>
+<li>Stable   当前稳定版本，版本号为偶数</li>
+<li>Legacy   历年稳定版本</li>
+</ul>
+<h2 id="源码安装"><a href="#源码安装" class="headerlink" title="源码安装"></a>源码安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> wget http://nginx.org/download/nginx-1.14.0.tar.gz</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> tar -zxvf nginx-1.14.0.tar.gz</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> <span class="built_in">cd</span> nginx-1.14.0</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> ./configure --with-http_ssl_module --with-http_v2_module</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> make</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">Configuration summary</span><br><span class="line">  + using system PCRE library</span><br><span class="line">  + OpenSSL library is not used</span><br><span class="line">  + using system zlib library</span><br><span class="line"></span><br><span class="line">  nginx path prefix:          &quot;&#x2F;usr&#x2F;local&#x2F;nginx&quot;</span><br><span class="line">  nginx binary file:          &quot;&#x2F;usr&#x2F;local&#x2F;nginx&#x2F;sbin&#x2F;nginx&quot;</span><br><span class="line">  nginx modules path:         &quot;&#x2F;usr&#x2F;local&#x2F;nginx&#x2F;modules&quot;</span><br><span class="line">  nginx configuration prefix: &quot;&#x2F;usr&#x2F;local&#x2F;nginx&#x2F;conf&quot;</span><br><span class="line">  nginx configuration file:   &quot;&#x2F;usr&#x2F;local&#x2F;nginx&#x2F;conf&#x2F;nginx.conf&quot;</span><br><span class="line">  nginx pid file:             &quot;&#x2F;usr&#x2F;local&#x2F;nginx&#x2F;logs&#x2F;nginx.pid&quot;</span><br><span class="line">  nginx error log file:       &quot;&#x2F;usr&#x2F;local&#x2F;nginx&#x2F;logs&#x2F;error.log&quot;</span><br><span class="line">  nginx http access log file: &quot;&#x2F;usr&#x2F;local&#x2F;nginx&#x2F;logs&#x2F;access.log&quot;</span><br><span class="line">  nginx http client request body temporary files: &quot;client_body_temp&quot;</span><br><span class="line">  nginx http proxy temporary files:   &quot;proxy_temp&quot;</span><br><span class="line">  nginx http fastcgi temporary files: &quot;fastcgi_temp&quot;</span><br><span class="line">  nginx http uwsgi temporary files:   &quot;uwsgi_temp&quot;</span><br><span class="line">  nginx http scgi temporary files:    &quot;scgi_temp&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="Nginx-操作命令"><a href="#Nginx-操作命令" class="headerlink" title="Nginx 操作命令"></a>Nginx 操作命令</h2><ul>
+<li>nginx -s reload 重新加载配置文件</li>
+<li>nginx -s reopen 重新打开日志文件</li>
+<li>nginx -t        测试 nginx 配置文件是否正确</li>
+<li>nginx -t -c /path/to/nginx.conf 测试 nginx 配置文件是否正确</li>
+<li>nginx -s stop 快速停止 nginx</li>
+</ul>
+<h2 id="附："><a href="#附：" class="headerlink" title="附："></a>附：</h2><blockquote>
+<ul>
+<li>NGINX 官网      <a target="_blank" rel="noopener" href="http://www.nginx.org/">www.nginx.org</a></li>
+<li>NGINX docs      nginx.org/en/docs</li>
+<li>NGINX configure nginx.org/en/docs/configure.html</li>
+<li>tar 命令 man.linuxde.net/tartar</li>
+</ul>
+</blockquote>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div></div>
+  <button onclick="document.querySelector('.post-reward').classList.toggle('active');">
+    Donate
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/img/open/alipay.png" alt="Duke Bode Alipay">
+        <span>Alipay</span>
+      </div>
+
+  </div>
+</div>
+
+          <div class="followme">
+  <span>Welcome to my other publishing channels</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+
+          <span class="label">RSS</span>
+        </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/linux/" rel="tag"># linux</a>
+              <a href="/tags/nginx/" rel="tag"># nginx</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2018/11/08/json/" rel="prev" title="json">
+                  <i class="fa fa-chevron-left"></i> json
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2018/11/08/os-tool-eclipse/" rel="next" title="Eclipse">
+                  Eclipse <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      const commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Duke Bode</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
