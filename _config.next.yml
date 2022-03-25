@@ -194,11 +194,11 @@ chat:
 # ---------------------------------------------------------------
 
 # Show multilingual switcher in footer.
-language_switcher: false
+language_switcher: true
 
 footer:
   # Specify the year when the site was setup. If not defined, current year will be used.
-  #since: 2020
+  since: 2020
 
   # Icon between year and copyright info.
   icon:
@@ -217,8 +217,8 @@ footer:
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
-    enable: false
-    icp:
+    enable: true
+    icp: 晋ICP备18006078号-2
     # The digit in the num of gongan beian.
     gongan_id:
     # The full num of gongan beian.
@@ -266,8 +266,9 @@ reward_settings:
   #comment: Buy me a coffee
 
 reward:
-  # wechatpay: /img/open/wepay.png
+  wechatpay: /img/open/wepay.png
   alipay: /img/open/alipay.png
+  qq: /img/open/qqpay.png
   #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
 
@@ -376,7 +377,7 @@ back2top:
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true
   # Available values: top | bottom
   position: top
   color: "#37c6c0"
@@ -384,7 +385,7 @@ reading_progress:
 
 # Bookmark Support
 bookmark:
-  enable: false
+  enable: true
   # Customize the color of the bookmark.
   color: "#222"
   # If auto, save the reading progress when closing the page or clicking the bookmark-icon.
@@ -393,8 +394,8 @@ bookmark:
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
-  enable: false
-  permalink: https://github.com/yourname
+  enable: true
+  permalink: https://github.com/DukeBode
   title: Follow me on GitHub
 
 
@@ -726,7 +727,7 @@ algolia_search:
 # Local Search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # If auto, trigger search by changing input.
   # If manual, trigger search by pressing enter key or search button.
   trigger: auto

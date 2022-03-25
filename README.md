@@ -3,14 +3,14 @@
 
 ## 安装前提
 
-- [官方文档](https://hexo.io/zh-cn/docs/)
-- nodejs&npm(yarn)
+- [HEXO官方文档](https://hexo.io/zh-cn/docs/)
+- [nodejs](https://nodejs.org/zh-cn/)
+- &npm(yarn)
 - git
 
 ```sh
 # 安装 hexo-cli
-npm install hexo-cli -g
-npm install -g yarn
+npx hexo init blogName
 # 拉取远程仓库
 git clone -b hexo git@github.com:DukeBode/DukeBode.github.io.git
 # 安装依赖
