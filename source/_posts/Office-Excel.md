@@ -8,8 +8,9 @@ tags:
 ### EXCEL 批量添加图片
 
 ```html
-<table><img src="图片链接"/>
+<table><img src="图片链接" height="42" width="42"/>
 ```
+宽高可提前修改为对应值
 复制html文本，选择性粘贴”，选择Unicode文本。
 
 可用于条码的批量生成，早期有规律的网络图片爬虫。
