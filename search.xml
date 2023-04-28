@@ -1127,7 +1127,7 @@
 </li>
 <li><p>配置 github 用户 ssh</p>
 </li>
-<li><p>ssh -T <a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#105;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#111;&#109;">&#103;&#x69;&#116;&#x40;&#103;&#105;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#111;&#109;</a></p>
+<li><p>ssh -T <a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#105;&#116;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#116;&#x40;&#103;&#105;&#116;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a></p>
 </li>
 <li><p>创建<code>用户名.github.io</code>仓库</p>
 </li>
@@ -1297,7 +1297,7 @@
 <p>举个例子，我的为：</p>
 <ul>
 <li>① DukeBode</li>
-<li>② <a href="mailto:&#x44;&#x75;&#x6b;&#101;&#x31;&#50;&#51;&#64;&#97;&#108;&#105;&#x79;&#117;&#110;&#x2e;&#x63;&#111;&#109;">&#x44;&#x75;&#x6b;&#101;&#x31;&#50;&#51;&#64;&#97;&#108;&#105;&#x79;&#117;&#110;&#x2e;&#x63;&#111;&#109;</a></li>
+<li>② <a href="mailto:&#x44;&#x75;&#x6b;&#101;&#x31;&#50;&#51;&#64;&#97;&#108;&#x69;&#121;&#x75;&#110;&#46;&#x63;&#x6f;&#109;">&#x44;&#x75;&#x6b;&#101;&#x31;&#50;&#51;&#64;&#97;&#108;&#x69;&#121;&#x75;&#110;&#46;&#x63;&#x6f;&#109;</a></li>
 </ul>
 <p>剩余的<code>红色标记</code>请自行记录，此处仅记录重要信息</p>
 <h3 id="创建-GitPage-仓库"><a href="#创建-GitPage-仓库" class="headerlink" title="创建 GitPage 仓库"></a>创建 GitPage 仓库</h3><p>登录 GitHub,在相关位置输入上文记录的内容。<a href="https://github.com/login">登录地址</a></p>
@@ -1597,24 +1597,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/04/28/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>html</title>
     <url>/2017/09/07/html/</url>
     <content><![CDATA[<p>HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content.</p>
@@ -1629,6 +1611,31 @@
       <tags>
         <tag>前端</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>ipad</title>
+    <url>/2023/04/28/ipad/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h2 id="Apple-pencil"><a href="#Apple-pencil" class="headerlink" title="Apple pencil"></a>Apple pencil</h2><ul>
+<li>不支持选区模式，截图很麻烦</li>
+</ul>
+<h2 id="外接显示器"><a href="#外接显示器" class="headerlink" title="外接显示器"></a>外接显示器</h2><ul>
+<li>不能选择由ipad的发声</li>
+<li>蓝牙耳机连接时需要选择发声设备，默认外接显示器发声</li>
+<li>外接显示器的触摸功能与键鼠操作存在冲突，触摸后键鼠失灵</li>
+<li>不支持仅外显使用</li>
+<li>ipad必须常亮</li>
+<li>播放视频时暂停不方便，平板上也无遥控器功能</li>
+<li>不支持主副屏切换</li>
+<li>硬件声音在软件上不可调整</li>
+<li>默认镜像显示</li>
+<li>移除外接显示器后软件需重新打开</li>
+<li>视频软件兼容性差，部分全屏难</li>
+<li>截图很不方便</li>
+<li>发热挺严重</li>
+</ul>
+]]></content>
   </entry>
   <entry>
     <title>json</title>
@@ -1897,25 +1904,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Chrome的使用</title>
-    <url>/2019/06/11/os-software-chrome/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<ol>
-<li>设置搜索引擎</li>
-</ol>
-<h3 id="vimium"><a href="#vimium" class="headerlink" title="vimium"></a>vimium</h3><p><a href="https://github.com/philc/vimium">官网</a></p>
-<h3 id="油猴（Tampermonkey）"><a href="#油猴（Tampermonkey）" class="headerlink" title="油猴（Tampermonkey）"></a>油猴（Tampermonkey）</h3><p><a href="http://www.tampermonkey.net/">官网</a></p>
-<ul>
-<li><p><a href="https://greasyfork.org/">https://greasyfork.org/</a></p>
-</li>
-<li><p><a href="https://greasyfork.org/zh-CN">Greasy Fork</a></p>
-</li>
-</ul>
-<h3 id="图片助手（ImageAssistant）"><a href="#图片助手（ImageAssistant）" class="headerlink" title="图片助手（ImageAssistant）"></a>图片助手（ImageAssistant）</h3><p><a href="https://www.pullywood.com/ImageAssistant/">官网</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>Most Used Software</title>
     <url>/2019/12/16/os-software/</url>
     <content><![CDATA[<p>常用的软件官网</p>
@@ -2020,6 +2008,25 @@
 <td><a href="http://www.wepe.com.cn/">http://www.wepe.com.cn/</a></td>
 </tr>
 </tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>Chrome的使用</title>
+    <url>/2019/06/11/os-software-chrome/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<ol>
+<li>设置搜索引擎</li>
+</ol>
+<h3 id="vimium"><a href="#vimium" class="headerlink" title="vimium"></a>vimium</h3><p><a href="https://github.com/philc/vimium">官网</a></p>
+<h3 id="油猴（Tampermonkey）"><a href="#油猴（Tampermonkey）" class="headerlink" title="油猴（Tampermonkey）"></a>油猴（Tampermonkey）</h3><p><a href="http://www.tampermonkey.net/">官网</a></p>
+<ul>
+<li><p><a href="https://greasyfork.org/">https://greasyfork.org/</a></p>
+</li>
+<li><p><a href="https://greasyfork.org/zh-CN">Greasy Fork</a></p>
+</li>
+</ul>
+<h3 id="图片助手（ImageAssistant）"><a href="#图片助手（ImageAssistant）" class="headerlink" title="图片助手（ImageAssistant）"></a>图片助手（ImageAssistant）</h3><p><a href="https://www.pullywood.com/ImageAssistant/">官网</a></p>
 ]]></content>
   </entry>
   <entry>
