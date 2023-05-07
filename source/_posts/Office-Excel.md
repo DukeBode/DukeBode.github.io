@@ -15,6 +15,8 @@ tags:
 
 可用于条码的批量生成，早期有规律的网络图片爬虫。
 
+实例网址 https://image-charts.com/chart?chs=150x150&cht=qr&chl=Hello%20world&choe=UTF-8
+
 ### EXCEL 图片居中
 
 ```vb
@@ -26,3 +28,4 @@ shp.Top = (shp.TopLeftCell.Height - shp.Height) / 2 + shp.TopLeftCell.Top
 Next
 End Sub
 ```
+

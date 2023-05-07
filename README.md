@@ -12,13 +12,14 @@
 # 安装 hexo-cli
 npx hexo init blogName
 # 拉取远程仓库
-git clone -b hexo git@github.com:DukeBode/DukeBode.github.io.git
+git clone -b hexo git@github.com:DukeBode/DukeBode.github.io.git --depth 1
 # 安装依赖
-yarn install
+yarn 
 # 更新依赖
-
+yarn plugin import interactive-tools
+yarn upgrade-interactive
 # 更新部署
-hexo deploy
+yarn run deploy
 ```
 ## 复制主题配置
 ```
