@@ -108,6 +108,17 @@ Host github.com
 git -T git@github.com
 ```
 
+## git 撤销已经push的提交
+- [git branch](https://git-scm.com/docs/git-branch) 查看分支
+- [git log](https://git-scm.com/docs/git-log/) 查看提交日志
+- [git reset](https://git-scm.com/docs/git-reset) 重置当前HEAD到指定的状态
+- [git push](https://git-scm.com/docs/git-push)
+1. git log
+
+2. git reset --soft 
+
+3. git push origin master --force
+
 ## 参考文章
 
 1. [Git命令备份](https://www.jianshu.com/p/dbb352ea14cf)
