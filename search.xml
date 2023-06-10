@@ -424,7 +424,9 @@
 <h3 id="EXCEL-批量添加图片"><a href="#EXCEL-批量添加图片" class="headerlink" title="EXCEL 批量添加图片"></a>EXCEL 批量添加图片</h3><figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;图片链接&quot;</span> <span class="attr">height</span>=<span class="string">&quot;42&quot;</span> <span class="attr">width</span>=<span class="string">&quot;42&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 <p>宽高可提前修改为对应值<br>复制html文本，选择性粘贴”，选择Unicode文本。</p>
 <p>可用于条码的批量生成，早期有规律的网络图片爬虫。</p>
+<p>实例网址 <a href="https://image-charts.com/chart?chs=150x150&cht=qr&chl=Hello%20world&choe=UTF-8">https://image-charts.com/chart?chs=150x150&amp;cht=qr&amp;chl=Hello%20world&amp;choe=UTF-8</a></p>
 <h3 id="EXCEL-图片居中"><a href="#EXCEL-图片居中" class="headerlink" title="EXCEL 图片居中"></a>EXCEL 图片居中</h3><figure class="highlight vb"><table><tr><td class="code"><pre><span class="line"><span class="keyword">Sub</span> dq()</span><br><span class="line"><span class="keyword">Dim</span> shp <span class="keyword">As</span> Shape</span><br><span class="line"><span class="keyword">For</span> <span class="keyword">Each</span> shp <span class="keyword">In</span> ActiveSheet.Shapes</span><br><span class="line">shp.Left = (shp.TopLeftCell.Width - shp.Width) / <span class="number">2</span> + shp.TopLeftCell.Left</span><br><span class="line">shp.Top = (shp.TopLeftCell.Height - shp.Height) / <span class="number">2</span> + shp.TopLeftCell.Top</span><br><span class="line"><span class="keyword">Next</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br></pre></td></tr></table></figure>
+
 ]]></content>
   </entry>
   <entry>
@@ -508,6 +510,17 @@
 
 <p>C#</p>
 <figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> 为指定程序注册URL Protocol,方便浏览器调用</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;ProtocolName&quot;&gt;</span>协议名称<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;path&quot;&gt;</span>程序的完整路径<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;Exists&quot;&gt;</span>写入前存在状态<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;Override&quot;&gt;</span>如果存在是否重写数据，默认 false 不重写<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;exception cref=&quot;ArgumentException&quot;&gt;</span>参数异常<span class="doctag">&lt;/exception&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">RegisterUrlProtocol</span>(<span class="params"><span class="built_in">string</span> ProtocolName, <span class="built_in">string</span> path, <span class="keyword">out</span> <span class="built_in">bool</span> Exists, <span class="built_in">bool</span> Override = <span class="literal">false</span></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">string</span>.IsNullOrWhiteSpace(ProtocolName))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> ArgumentException(<span class="string">&quot;协议名称为空！！！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.ClassesRoot.OpenSubKey(ProtocolName, <span class="literal">true</span>);</span><br><span class="line">    Exists = key != <span class="literal">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (Exists &amp;&amp; !Override)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">string</span>.IsNullOrWhiteSpace(path))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> ArgumentException(<span class="string">&quot;关联程序路径为空！！！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!File.Exists(path))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> ArgumentException(<span class="string">&quot;关联程序不存在！！！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    key = key ?? Microsoft.Win32.Registry.ClassesRoot.CreateSubKey(ProtocolName);</span><br><span class="line">    key.SetValue(<span class="string">&quot;&quot;</span>, <span class="string">$&quot;<span class="subst">&#123;ProtocolName&#125;</span> Protocol&quot;</span>, Microsoft.Win32.RegistryValueKind.String);</span><br><span class="line">    key.SetValue(<span class="string">&quot;URL Protocol&quot;</span>, path, Microsoft.Win32.RegistryValueKind.String);</span><br><span class="line">    key.CreateSubKey(<span class="string">&quot;DefaultIcon&quot;</span>).SetValue(<span class="string">&quot;&quot;</span>, <span class="string">$&quot;<span class="subst">&#123;path&#125;</span>,1&quot;</span>, Microsoft.Win32.RegistryValueKind.String);</span><br><span class="line">    key.CreateSubKey(<span class="string">&quot;shell&quot;</span>).CreateSubKey(<span class="string">&quot;open&quot;</span>).CreateSubKey(<span class="string">&quot;command&quot;</span>)</span><br><span class="line">        .SetValue(<span class="string">&quot;&quot;</span>, <span class="string">$&quot;\&quot;<span class="subst">&#123;path&#125;</span>\&quot; \&quot;%1\&quot;&quot;</span>, Microsoft.Win32.RegistryValueKind.String);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>alpine</title>
+    <url>/2023/05/18/alpine/</url>
+    <content><![CDATA[<span id="more"></span>
+
+
+]]></content>
+      <tags>
+        <tag>无纸化</tag>
+      </tags>
   </entry>
   <entry>
     <title>汇编语言基础</title>
@@ -1127,7 +1140,7 @@
 </li>
 <li><p>配置 github 用户 ssh</p>
 </li>
-<li><p>ssh -T <a href="mailto:&#103;&#x69;&#116;&#x40;&#103;&#105;&#116;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#116;&#x40;&#103;&#105;&#116;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a></p>
+<li><p>ssh -T <a href="mailto:&#x67;&#105;&#116;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#98;&#x2e;&#x63;&#x6f;&#x6d;">&#x67;&#105;&#116;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#98;&#x2e;&#x63;&#x6f;&#x6d;</a></p>
 </li>
 <li><p>创建<code>用户名.github.io</code>仓库</p>
 </li>
@@ -1297,7 +1310,7 @@
 <p>举个例子，我的为：</p>
 <ul>
 <li>① DukeBode</li>
-<li>② <a href="mailto:&#x44;&#x75;&#x6b;&#101;&#x31;&#50;&#51;&#64;&#97;&#108;&#x69;&#121;&#x75;&#110;&#46;&#x63;&#x6f;&#109;">&#x44;&#x75;&#x6b;&#101;&#x31;&#50;&#51;&#64;&#97;&#108;&#x69;&#121;&#x75;&#110;&#46;&#x63;&#x6f;&#109;</a></li>
+<li>② <a href="mailto:&#x44;&#117;&#x6b;&#101;&#49;&#50;&#x33;&#x40;&#97;&#108;&#105;&#x79;&#x75;&#110;&#x2e;&#99;&#111;&#x6d;">&#x44;&#117;&#x6b;&#101;&#49;&#50;&#x33;&#x40;&#97;&#108;&#105;&#x79;&#x75;&#110;&#x2e;&#99;&#111;&#x6d;</a></li>
 </ul>
 <p>剩余的<code>红色标记</code>请自行记录，此处仅记录重要信息</p>
 <h3 id="创建-GitPage-仓库"><a href="#创建-GitPage-仓库" class="headerlink" title="创建 GitPage 仓库"></a>创建 GitPage 仓库</h3><p>登录 GitHub,在相关位置输入上文记录的内容。<a href="https://github.com/login">登录地址</a></p>
@@ -1497,6 +1510,12 @@
 ]]></content>
   </entry>
   <entry>
+    <title>产品追溯</title>
+    <url>/2023/04/28/box/</url>
+    <content><![CDATA[<p>厂商编号 产品编号 生产日期 流水号</p>
+]]></content>
+  </entry>
+  <entry>
     <title>vimium</title>
     <url>/2020/01/08/chrome-vimium/</url>
     <content><![CDATA[<p>Vimium is a Chrome extension that provides keyboard-based navigation and control of the web in the spirit of the Vim editor.</p>
@@ -1571,6 +1590,20 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># github</span><br><span class="line"># https://github.com/</span><br><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    IdentityFile C:\Users\Duke1\.ssh\github</span><br></pre></td></tr></table></figure>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git -T git@github.com</span><br></pre></td></tr></table></figure>
 
+<h2 id="git-撤销已经push的提交"><a href="#git-撤销已经push的提交" class="headerlink" title="git 撤销已经push的提交"></a>git 撤销已经push的提交</h2><ul>
+<li><a href="https://git-scm.com/docs/git-branch">git branch</a> 查看分支</li>
+<li><a href="https://git-scm.com/docs/git-log/">git log</a> 查看提交日志</li>
+<li><a href="https://git-scm.com/docs/git-reset">git reset</a> 重置当前HEAD到指定的状态</li>
+<li><a href="https://git-scm.com/docs/git-push">git push</a></li>
+</ul>
+<ol>
+<li><p>git log</p>
+</li>
+<li><p>git reset –soft </p>
+</li>
+<li><p>git push origin master –force</p>
+</li>
+</ol>
 <h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ol>
 <li><a href="https://www.jianshu.com/p/dbb352ea14cf">Git命令备份</a></li>
 <li><a href="https://gitee.com/help/articles/4229">Git配置多个SSH-Key</a></li>
@@ -1904,6 +1937,25 @@
 ]]></content>
   </entry>
   <entry>
+    <title>Chrome的使用</title>
+    <url>/2019/06/11/os-software-chrome/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<ol>
+<li>设置搜索引擎</li>
+</ol>
+<h3 id="vimium"><a href="#vimium" class="headerlink" title="vimium"></a>vimium</h3><p><a href="https://github.com/philc/vimium">官网</a></p>
+<h3 id="油猴（Tampermonkey）"><a href="#油猴（Tampermonkey）" class="headerlink" title="油猴（Tampermonkey）"></a>油猴（Tampermonkey）</h3><p><a href="http://www.tampermonkey.net/">官网</a></p>
+<ul>
+<li><p><a href="https://greasyfork.org/">https://greasyfork.org/</a></p>
+</li>
+<li><p><a href="https://greasyfork.org/zh-CN">Greasy Fork</a></p>
+</li>
+</ul>
+<h3 id="图片助手（ImageAssistant）"><a href="#图片助手（ImageAssistant）" class="headerlink" title="图片助手（ImageAssistant）"></a>图片助手（ImageAssistant）</h3><p><a href="https://www.pullywood.com/ImageAssistant/">官网</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Most Used Software</title>
     <url>/2019/12/16/os-software/</url>
     <content><![CDATA[<p>常用的软件官网</p>
@@ -2008,25 +2060,6 @@
 <td><a href="http://www.wepe.com.cn/">http://www.wepe.com.cn/</a></td>
 </tr>
 </tbody></table>
-]]></content>
-  </entry>
-  <entry>
-    <title>Chrome的使用</title>
-    <url>/2019/06/11/os-software-chrome/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<ol>
-<li>设置搜索引擎</li>
-</ol>
-<h3 id="vimium"><a href="#vimium" class="headerlink" title="vimium"></a>vimium</h3><p><a href="https://github.com/philc/vimium">官网</a></p>
-<h3 id="油猴（Tampermonkey）"><a href="#油猴（Tampermonkey）" class="headerlink" title="油猴（Tampermonkey）"></a>油猴（Tampermonkey）</h3><p><a href="http://www.tampermonkey.net/">官网</a></p>
-<ul>
-<li><p><a href="https://greasyfork.org/">https://greasyfork.org/</a></p>
-</li>
-<li><p><a href="https://greasyfork.org/zh-CN">Greasy Fork</a></p>
-</li>
-</ul>
-<h3 id="图片助手（ImageAssistant）"><a href="#图片助手（ImageAssistant）" class="headerlink" title="图片助手（ImageAssistant）"></a>图片助手（ImageAssistant）</h3><p><a href="https://www.pullywood.com/ImageAssistant/">官网</a></p>
 ]]></content>
   </entry>
   <entry>

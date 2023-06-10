@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"dukebode.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.15.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dukebode.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.16.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="Duke Blog">
@@ -151,12 +151,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">69</span>
+          <span class="site-state-item-count">71</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">27</span>
+        <span class="site-state-item-count">28</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -178,6 +178,397 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2018/08/22/shell/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Duke Bode">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2018/08/22/shell/" class="post-title-link" itemprop="url">shell</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2018-08-22 11:58:48" itemprop="dateCreated datePublished" datetime="2018-08-22T11:58:48+00:00">2018-08-22</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-06-10 02:11:18" itemprop="dateModified" datetime="2023-06-10T02:11:18+00:00">2023-06-10</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <span id="more"></span>
+
+<h2 id="重定向"><a href="#重定向" class="headerlink" title="重定向"></a>重定向</h2><p>在 shell 中输入命令运行程序，程序的正常输出信息（标准输出）和一些出错信息（标准错误）会通过 shell 显示在屏幕上。</p>
+<p>有时候我们并不需要把这些输出信息（包括标准输出和标准错误）显示在屏幕上，或需要把这些输出信息保存在一个文件中，这时就需要进行输出重定向。输入重定向也是如此。</p>
+<p>执行重定向操作的是 shell ，而不是程序。 shell 把重定向符号解释成指令，将标准输出（或标准错误）指向文件，而不是当前显示设备。输入重定向也是如此。</p>
+<p>shell将&lt;、&gt;、&gt;&gt;解释成指令，用来把一条命令的输入或输出重定向到一个文件。</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>操作符</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>重定向标准输入</td>
+<td>&lt;</td>
+<td>将命令中接收输入的途径由默认的键盘更改为指定的文件</td>
+</tr>
+<tr>
+<td>重定向标准输出</td>
+<td>&gt;</td>
+<td>以替换的方式将命令的执行结果输出到指定的文件，而不是直接显示在屏幕上</td>
+</tr>
+</tbody></table>
+<ul>
+<li>| &gt;&gt; | 将命令执行的结果追加输出到指定文件<br>重定向标准错误 | 2&gt; | 清空指定文件的内容，并将标准错误信息保存到该文件中</li>
+<li>| 2&gt;&gt; | 将标准错误信息追加输出到指定的文件中<br>重定向标准输出和标准错误 | &amp;&gt;或&gt;&amp; | 将标准输出、标准错误的内容全部保存到指定的文件中，而不是直接显示在屏幕上</li>
+</ul>
+<h2 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h2><p>shell在解释命令遇到 | 时会创建管道，并创建两个进程，把标准输入输出重<br>定向到管道，前一个进程向管道写数据，后一个进程从管道读数据。</p>
+<p>查找名称含有gcc的文件并使用wc计数<br>sudo find &#x2F; -name gcc | wc –l</p>
+<p>查找名称含有ssh的进程<br>ps -ef | grep ssh</p>
+<p>分页查看内容<br>ls –l –R &#x2F;usr&#x2F;share | less</p>
+<p>排序文件<br>ls | sort –r</p>
+<h2 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h2><h2 id="bash快捷键"><a href="#bash快捷键" class="headerlink" title="bash快捷键"></a>bash快捷键</h2><table>
+<thead>
+<tr>
+<th align="right">按键</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">^A</td>
+<td align="left">光标移到行首</td>
+</tr>
+<tr>
+<td align="right">^B</td>
+<td align="left">光标非破坏退格</td>
+</tr>
+<tr>
+<td align="right">^C</td>
+<td align="left">中断前台程序</td>
+</tr>
+<tr>
+<td align="right">^D</td>
+<td align="left">退出shell</td>
+</tr>
+<tr>
+<td align="right">^E</td>
+<td align="left">光标移到行尾</td>
+</tr>
+<tr>
+<td align="right">^F</td>
+<td align="left">光标右移</td>
+</tr>
+<tr>
+<td align="right">^G</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="right">^H</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="right">^I</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="right">^J</td>
+<td align="left">新行</td>
+</tr>
+<tr>
+<td align="right">^K</td>
+<td align="left">删除光标后所有字符</td>
+</tr>
+<tr>
+<td align="right">^L</td>
+<td align="left">清屏</td>
+</tr>
+<tr>
+<td align="right">^U</td>
+<td align="left">删除光标前所有字符</td>
+</tr>
+<tr>
+<td align="right">^R</td>
+<td align="left">搜索历史命令，利用关键字</td>
+</tr>
+<tr>
+<td align="right">ALT+.</td>
+<td align="left">引用上一个命令的最后一个参数</td>
+</tr>
+<tr>
+<td align="right">ESC+.</td>
+<td align="left">引用上一个命令的最后一个参数</td>
+</tr>
+<tr>
+<td align="right">!$</td>
+<td align="left">引用上一个命令的最后一个参数</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2018/07/18/python-Django/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Duke Bode">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2018/07/18/python-Django/" class="post-title-link" itemprop="url">Django 部署</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2018-07-18 16:34:30" itemprop="dateCreated datePublished" datetime="2018-07-18T16:34:30+00:00">2018-07-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-06-10 02:11:18" itemprop="dateModified" datetime="2023-06-10T02:11:18+00:00">2023-06-10</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <span id="more"></span>
+
+<h2 id="阅读基础"><a href="#阅读基础" class="headerlink" title="阅读基础"></a>阅读基础</h2><ul>
+<li><a href="Python3.md">Python3 安装</a></li>
+</ul>
+<h2 id="配置虚拟环境"><a href="#配置虚拟环境" class="headerlink" title="配置虚拟环境"></a>配置虚拟环境</h2><blockquote>
+<p>表中命令从上往下执行即可，部分需要先切换目录，下同。本文为学习笔记，仅供参照，详细流程请阅读参考文章和官方文档。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>操作</th>
+<th>命令</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-</td>
+<td>创建虚拟环境</td>
+<td><code>python3 -m venv /www/venv</code></td>
+</tr>
+<tr>
+<td>-</td>
+<td>激活虚拟环境</td>
+<td><code>source /www/venv/bin/activate</code></td>
+</tr>
+<tr>
+<td>-</td>
+<td>Windows下激活</td>
+<td><code>.\venv\Scripts\activate</code></td>
+</tr>
+<tr>
+<td>-</td>
+<td>使用 uwsgi 部署</td>
+<td><code>pip install uwsgi</code></td>
+</tr>
+<tr>
+<td>-</td>
+<td>使用 Gunicorn 部署</td>
+<td><code>pip install gunicorn</code></td>
+</tr>
+<tr>
+<td>-</td>
+<td>安装环境包</td>
+<td><code>pip install -r requirements</code></td>
+</tr>
+<tr>
+<td>-</td>
+<td>生成环境包</td>
+<td><code>pip freeze &gt; requirements.txt</code></td>
+</tr>
+<tr>
+<td>-</td>
+<td>退出环境</td>
+<td><code>deactivate</code></td>
+</tr>
+</tbody></table>
+<h2 id="Django-项目开发"><a href="#Django-项目开发" class="headerlink" title="Django 项目开发"></a>Django 项目开发</h2><table>
+<thead>
+<tr>
+<th></th>
+<th>操作</th>
+<th>命令</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-</td>
+<td>创建 django 项目 web</td>
+<td><code>django-admin startproject web</code></td>
+<td>生成项目目录</td>
+</tr>
+<tr>
+<td>-</td>
+<td>创建应用 count</td>
+<td><code>python manage.py startapp count</code></td>
+<td>开发使用</td>
+</tr>
+<tr>
+<td>-</td>
+<td>创建超级账户</td>
+<td><code>python manage.py createsuperuser</code></td>
+<td>开发、部署使用</td>
+</tr>
+<tr>
+<td>-</td>
+<td>生成迁移文件</td>
+<td><code>python manage.py makemigrations</code></td>
+<td>在 migrations 生成文件</td>
+</tr>
+<tr>
+<td>-</td>
+<td>执行迁移</td>
+<td><code>python manage.py migrate</code></td>
+<td></td>
+</tr>
+<tr>
+<td>-</td>
+<td>同步静态文件</td>
+<td><code>python manage.py collectstatic</code></td>
+<td>部署使用</td>
+</tr>
+<tr>
+<td>-</td>
+<td>启动开发服务器</td>
+<td><code>python manage.py runserver</code></td>
+<td>开发、测试使用</td>
+</tr>
+</tbody></table>
+<h2 id="配置-setting-py"><a href="#配置-setting-py" class="headerlink" title="配置 setting.py"></a>配置 setting<code>.</code>py</h2><pre><code>- LANGUAGE_CODE = &#39;zh-Hans&#39;
+- TIME_ZONE = &#39;Asia/Shanghai&#39;（视情况配置）
+- ALLOWED_HOSTS = [&#39;公网ip&#39;,域名&#39;]（部署前配置）
+- DEBUG = False（NGINX 后配置）
+</code></pre>
+<h2 id="部署准备"><a href="#部署准备" class="headerlink" title="部署准备"></a>部署准备</h2><pre><code>- 删除 migrations 下数字开头的所有 python 文件
+- uwsgi.ini
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[uwsgi]</span></span><br><span class="line"><span class="attr">chdir</span> = /www/web</span><br><span class="line"><span class="attr">module</span> = web.wsgi:applocation</span><br><span class="line"><span class="attr">home</span> = /www/venv</span><br><span class="line"><span class="attr">socket</span> = <span class="number">172.18</span>.<span class="number">173.33</span>:<span class="number">8099</span></span><br><span class="line"><span class="attr">stats</span> = <span class="number">172.18</span>.<span class="number">173.33</span>:<span class="number">9191</span></span><br><span class="line"><span class="attr">master</span> = <span class="literal">true</span></span><br><span class="line"><span class="attr">processes</span> = <span class="number">5</span></span><br><span class="line"><span class="attr">vacuum</span> = <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+</code></pre>
+<h2 id="部署测试"><a href="#部署测试" class="headerlink" title="部署测试"></a>部署测试</h2><pre><code>- 开发服务器测试 `python36 manage.py runserver 172.18.173.33:80`
+- uwsgi 部署测试 `uwsgi uwsgi.ini`
+- Gunicorn 部署测试 `gunicorn -b 172.18.173.33:80 web.wsgi`
+</code></pre>
+<h2 id="配置-nginx"><a href="#配置-nginx" class="headerlink" title="配置 nginx"></a>配置 nginx</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 安装 uwsgi</span><br><span class="line">pip3 install uwsgi</span><br><span class="line"># 安装 nginx</span><br><span class="line">yum install nginx</span><br></pre></td></tr></table></figure>
+
+<p>测试</p>
+<p>nginx -t</p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e13417a8bb7f">Django+Ubuntu WEB部署（超详细版）</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/qingspace/p/6838747.html">跨过Nginx上基于uWSGI部署Django项目的坑</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/d6f9138fab7b">Django快速部署简约版 v3.0</a></li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -216,14 +607,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2018-06-11 16:34:30" itemprop="dateCreated datePublished" datetime="2018-06-11T16:34:30+08:00">2018-06-11</time>
+      <time title="Created: 2018-06-11 16:34:30" itemprop="dateCreated datePublished" datetime="2018-06-11T16:34:30+00:00">2018-06-11</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-04-28 13:08:20" itemprop="dateModified" datetime="2023-04-28T13:08:20+08:00">2023-04-28</time>
+      <time title="Modified: 2023-06-10 02:11:18" itemprop="dateModified" datetime="2023-06-10T02:11:18+00:00">2023-06-10</time>
     </span>
 
   
@@ -317,14 +708,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2018-06-07 14:04:29" itemprop="dateCreated datePublished" datetime="2018-06-07T14:04:29+08:00">2018-06-07</time>
+      <time title="Created: 2018-06-07 14:04:29" itemprop="dateCreated datePublished" datetime="2018-06-07T14:04:29+00:00">2018-06-07</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-04-28 13:08:20" itemprop="dateModified" datetime="2023-04-28T13:08:20+08:00">2023-04-28</time>
+      <time title="Modified: 2023-06-10 02:11:18" itemprop="dateModified" datetime="2023-06-10T02:11:18+00:00">2023-06-10</time>
     </span>
 
   
@@ -396,14 +787,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2018-06-03 16:34:30" itemprop="dateCreated datePublished" datetime="2018-06-03T16:34:30+08:00">2018-06-03</time>
+      <time title="Created: 2018-06-03 16:34:30" itemprop="dateCreated datePublished" datetime="2018-06-03T16:34:30+00:00">2018-06-03</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-04-28 13:08:20" itemprop="dateModified" datetime="2023-04-28T13:08:20+08:00">2023-04-28</time>
+      <time title="Modified: 2023-06-10 02:11:18" itemprop="dateModified" datetime="2023-06-10T02:11:18+00:00">2023-06-10</time>
     </span>
 
   
@@ -500,14 +891,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2018-05-26 13:58:04" itemprop="dateCreated datePublished" datetime="2018-05-26T13:58:04+08:00">2018-05-26</time>
+      <time title="Created: 2018-05-26 13:58:04" itemprop="dateCreated datePublished" datetime="2018-05-26T13:58:04+00:00">2018-05-26</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-04-28 13:08:20" itemprop="dateModified" datetime="2023-04-28T13:08:20+08:00">2023-04-28</time>
+      <time title="Modified: 2023-06-10 02:11:18" itemprop="dateModified" datetime="2023-06-10T02:11:18+00:00">2023-06-10</time>
     </span>
 
   
@@ -583,14 +974,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2018-01-23 16:26:48" itemprop="dateCreated datePublished" datetime="2018-01-23T16:26:48+08:00">2018-01-23</time>
+      <time title="Created: 2018-01-23 16:26:48" itemprop="dateCreated datePublished" datetime="2018-01-23T16:26:48+00:00">2018-01-23</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-04-28 13:08:20" itemprop="dateModified" datetime="2023-04-28T13:08:20+08:00">2023-04-28</time>
+      <time title="Modified: 2023-06-10 02:11:18" itemprop="dateModified" datetime="2023-06-10T02:11:18+00:00">2023-06-10</time>
     </span>
 
   
@@ -666,14 +1057,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2018-01-14 16:34:30" itemprop="dateCreated datePublished" datetime="2018-01-14T16:34:30+08:00">2018-01-14</time>
+      <time title="Created: 2018-01-14 16:34:30" itemprop="dateCreated datePublished" datetime="2018-01-14T16:34:30+00:00">2018-01-14</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-04-28 13:08:20" itemprop="dateModified" datetime="2023-04-28T13:08:20+08:00">2023-04-28</time>
+      <time title="Modified: 2023-06-10 02:11:18" itemprop="dateModified" datetime="2023-06-10T02:11:18+00:00">2023-06-10</time>
     </span>
 
   
@@ -778,14 +1169,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2018-01-14 16:34:30" itemprop="dateCreated datePublished" datetime="2018-01-14T16:34:30+08:00">2018-01-14</time>
+      <time title="Created: 2018-01-14 16:34:30" itemprop="dateCreated datePublished" datetime="2018-01-14T16:34:30+00:00">2018-01-14</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-04-28 13:08:20" itemprop="dateModified" datetime="2023-04-28T13:08:20+08:00">2023-04-28</time>
+      <time title="Modified: 2023-06-10 02:11:18" itemprop="dateModified" datetime="2023-06-10T02:11:18+00:00">2023-06-10</time>
     </span>
 
   
@@ -862,14 +1253,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2017-09-07 13:01:35" itemprop="dateCreated datePublished" datetime="2017-09-07T13:01:35+08:00">2017-09-07</time>
+      <time title="Created: 2017-09-07 13:01:35" itemprop="dateCreated datePublished" datetime="2017-09-07T13:01:35+00:00">2017-09-07</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-04-28 13:08:20" itemprop="dateModified" datetime="2023-04-28T13:08:20+08:00">2023-04-28</time>
+      <time title="Modified: 2023-06-10 02:11:18" itemprop="dateModified" datetime="2023-06-10T02:11:18+00:00">2023-06-10</time>
     </span>
 
   
@@ -908,106 +1299,8 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2017/06/11/college-app/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Duke Bode">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Duke Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Duke Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2017/06/11/college-app/" class="post-title-link" itemprop="url">易班动态</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2017-06-11 11:17:59" itemprop="dateCreated datePublished" datetime="2017-06-11T11:17:59+08:00">2017-06-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-04-28 13:08:20" itemprop="dateModified" datetime="2023-04-28T13:08:20+08:00">2023-04-28</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="易月动态"><a href="#易月动态" class="headerlink" title="易月动态"></a>易月动态</h1><h2 id="特色学院轻应用"><a href="#特色学院轻应用" class="headerlink" title="特色学院轻应用"></a>特色学院轻应用</h2><ol>
-<li><p>导出上月1日至本月1日的轻应用数据</p>
-</li>
-<li><p>pv改为浏览量，删除创建者ID、应用状态、发布时间等列</p>
-</li>
-<li><p>筛选数据，浏览量排名</p>
-</li>
-<li><p>删掉工作站的</p>
-</li>
-<li><p>将用户姓名改为学院（根据用户姓名及应用名称填写）</p>
-</li>
-<li><p>整理内容，以序号、学院、轻应用名称、添加人数、浏览量的顺序整理内容</p>
-</li>
-<li><p>选取前七，一般最终为前五</p>
-</li>
-</ol>
-<h2 id="易班头条"><a href="#易班头条" class="headerlink" title="易班头条"></a>易班头条</h2><ol>
-<li>导出数据，确认是从1号开始的</li>
-<li>复制至excel，筛选排序</li>
-<li>删除红柳快（易）讯、校医等通知</li>
-<li>易周说、文青·漫画、游学日记</li>
-<li>按照浏览量校级不超过两条</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/page/6/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span>
+    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/page/6/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/8/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>
@@ -1060,6 +1353,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.1/dist/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
 <script src="/js/third-party/search/local-search.js"></script>
+
 
 
 
