@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dukebode.github.io/2020/02/26/2019-nCoV/</loc>
+    
+    <lastmod>2023-06-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://dukebode.github.io/2018/01/23/BeautifulSoup/</loc>
     
     <lastmod>2023-06-10</lastmod>
@@ -624,24 +633,6 @@
   
   <url>
     <loc>https://dukebode.github.io/2018/01/14/%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/2_%E4%BB%80%E4%B9%88%E6%98%AF%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/</loc>
-    
-    <lastmod>2023-06-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/contributors</loc>
-    
-    <lastmod>2023-06-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/2020/02/26/2019-nCoV/</loc>
     
     <lastmod>2023-06-10</lastmod>
     
