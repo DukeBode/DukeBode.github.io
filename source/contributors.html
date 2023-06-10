@@ -27,6 +27,7 @@
         }else if(/AlipayClient\/d*/.test(ua)){
             content="https://qr.alipay.com/tsx18992matishw5cqkoh16"
         }
+	location.herf=content;
         new QRCode(document.getElementById("qrcode"), content);  // 设置要生成二维码的链接
     </script>
     <script>
