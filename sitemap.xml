@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dukebode.github.io/2020/02/06/python-web/</loc>
+    
+    <lastmod>2023-07-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dukebode.github.io/2019/11/09/python-wheel/</loc>
+    
+    <lastmod>2023-07-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dukebode.github.io/2019/10/21/python-win/</loc>
+    
+    <lastmod>2023-07-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://dukebode.github.io/2022/03/19/rmb/</loc>
     
     <lastmod>2023-07-13</lastmod>
@@ -209,15 +236,6 @@
   </url>
   
   <url>
-    <loc>https://dukebode.github.io/2023/05/18/alpine/</loc>
-    
-    <lastmod>2023-07-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://dukebode.github.io/2018/11/10/asm-base/</loc>
     
     <lastmod>2023-07-13</lastmod>
@@ -354,15 +372,6 @@
   
   <url>
     <loc>https://dukebode.github.io/2019/08/15/git/</loc>
-    
-    <lastmod>2023-07-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/2023/07/12/gitpage/</loc>
     
     <lastmod>2023-07-13</lastmod>
     
@@ -640,33 +649,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://dukebode.github.io/2020/02/06/python-web/</loc>
-    
-    <lastmod>2023-07-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/2019/11/09/python-wheel/</loc>
-    
-    <lastmod>2023-07-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/2019/10/21/python-win/</loc>
-    
-    <lastmod>2023-07-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://dukebode.github.io/</loc>
@@ -706,13 +688,6 @@
   
   <url>
     <loc>https://dukebode.github.io/tags/%E6%96%B0%E6%89%8B%E6%8A%80%E8%83%BD/</loc>
-    <lastmod>2023-07-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/tags/%E6%97%A0%E7%BA%B8%E5%8C%96/</loc>
     <lastmod>2023-07-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
