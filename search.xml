@@ -1140,7 +1140,7 @@
 </li>
 <li><p>配置 github 用户 ssh</p>
 </li>
-<li><p>ssh -T <a href="mailto:&#103;&#105;&#116;&#64;&#x67;&#x69;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;">&#103;&#105;&#116;&#64;&#x67;&#x69;&#116;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;</a></p>
+<li><p>ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#98;&#46;&#x63;&#111;&#109;">&#103;&#x69;&#x74;&#x40;&#x67;&#x69;&#116;&#x68;&#117;&#98;&#46;&#x63;&#111;&#109;</a></p>
 </li>
 <li><p>创建<code>用户名.github.io</code>仓库</p>
 </li>
@@ -1296,6 +1296,7 @@
     <content><![CDATA[<h3 id="Hexo-博客"><a href="#Hexo-博客" class="headerlink" title="Hexo 博客"></a>Hexo 博客</h3><p>Hexo 不是博客而是快速、简洁且高效的博客框架，适合任何有打字基础的人建立属于自己、完全定制的个人博客，可用于个人生活记录、学习笔记整理、连载个人小说等。</p>
 <span id="more"></span>
 
+<p><a href="hexo">hexo</a> </p>
 <hr>
 <h3 id="流程简介"><a href="#流程简介" class="headerlink" title="流程简介"></a>流程简介</h3><ul>
 <li>前期准备：申请 GitHub 账户、创建 GitPage 仓库、配置 Git 环境、配置 Nodejs 环境</li>
@@ -1310,7 +1311,7 @@
 <p>举个例子，我的为：</p>
 <ul>
 <li>① DukeBode</li>
-<li>② <a href="mailto:&#68;&#117;&#x6b;&#101;&#x31;&#50;&#51;&#x40;&#97;&#x6c;&#x69;&#x79;&#117;&#110;&#46;&#x63;&#x6f;&#109;">&#68;&#117;&#x6b;&#101;&#x31;&#50;&#51;&#x40;&#97;&#x6c;&#x69;&#x79;&#117;&#110;&#46;&#x63;&#x6f;&#109;</a></li>
+<li>② <a href="mailto:&#68;&#x75;&#x6b;&#101;&#x31;&#50;&#x33;&#x40;&#97;&#108;&#105;&#121;&#117;&#110;&#x2e;&#x63;&#111;&#x6d;">&#68;&#x75;&#x6b;&#101;&#x31;&#50;&#x33;&#x40;&#97;&#108;&#105;&#121;&#117;&#110;&#x2e;&#x63;&#111;&#x6d;</a></li>
 </ul>
 <p>剩余的<code>红色标记</code>请自行记录，此处仅记录重要信息</p>
 <h3 id="创建-GitPage-仓库"><a href="#创建-GitPage-仓库" class="headerlink" title="创建 GitPage 仓库"></a>创建 GitPage 仓库</h3><p>登录 GitHub,在相关位置输入上文记录的内容。<a href="https://github.com/login">登录地址</a></p>
@@ -1624,6 +1625,11 @@
       </tags>
   </entry>
   <entry>
+    <title>未命名 1</title>
+    <url>/2023/07/12/gitpage/</url>
+    <content><![CDATA[<span id="more"></span>]]></content>
+  </entry>
+  <entry>
     <title>gVim</title>
     <url>/2019/07/08/gvim/</url>
     <content><![CDATA[<p>Vim是从vi发展出来的一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。和Emacs并列成为类Unix系统用户最喜欢的编辑器。</p>
@@ -1653,10 +1659,10 @@
   </entry>
   <entry>
     <title>ipad</title>
-    <url>/2023/04/28/ipad/</url>
+    <url>/2023/04/28/iPadOS/</url>
     <content><![CDATA[<span id="more"></span>
 
-<h2 id="Apple-pencil"><a href="#Apple-pencil" class="headerlink" title="Apple pencil"></a>Apple pencil</h2><ul>
+<h2 id="iSH"><a href="#iSH" class="headerlink" title="iSH"></a>iSH</h2><h2 id="Apple-pencil"><a href="#Apple-pencil" class="headerlink" title="Apple pencil"></a>Apple pencil</h2><ul>
 <li>不支持选区模式，截图很麻烦</li>
 </ul>
 <h2 id="外接显示器"><a href="#外接显示器" class="headerlink" title="外接显示器"></a>外接显示器</h2><ul>
@@ -1674,6 +1680,14 @@
 <li>截图很不方便</li>
 <li>发热挺严重</li>
 </ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>ish</title>
+    <url>/2023/07/12/ish/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h2 id="挂载"><a href="#挂载" class="headerlink" title="挂载"></a>挂载</h2><p>midair -p ~&#x2F;obsidian<br>mount -t ios . obsidian</p>
 ]]></content>
   </entry>
   <entry>
