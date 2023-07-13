@@ -4,5 +4,6 @@ db.json
 *.log
 node_modules/
 public/
+.obsidian/
 .deploy*/
 _multiconfig.yml

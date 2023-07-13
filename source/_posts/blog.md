@@ -18,6 +18,8 @@ Hexo 不是博客而是快速、简洁且高效的博客框架，适合任何有
 
 <!-- more -->
 
+[hexo](hexo) 
+
 ---
 ### 流程简介
 - 前期准备：申请 GitHub 账户、创建 GitPage 仓库、配置 Git 环境、配置 Nodejs 环境
