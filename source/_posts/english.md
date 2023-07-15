@@ -40,7 +40,7 @@ tags: english
 - myself、yourself、himself、herself、itself、ourselves、yourselves、themselves
 
 | 分类       | 主格   | 宾格     | 形容词性  | 名词性     | 反身代词     |
-| :-------:  | :----: | : ---- : | : ----- : | :--------: | :--------:   |
+|:-------:|:----:|:----:|:-----:|:--------:|:--------:|
 | 我         | I      | me       | my        | mine       | myself       |
 | 我们       | we     | us       | our       | ours       | ourselves    |
 | 你         | you    | you      | your      | yours      | yourself     |
@@ -49,6 +49,7 @@ tags: english
 | 她         | she    | her      | her       | hers       | herself      |
 | 它         | it     | it       | its       | its        | itself       |
 | 他/她/它们 | they   | them     | their     | theirs     | themselves   |
+
 
 ### 指示代词
 
