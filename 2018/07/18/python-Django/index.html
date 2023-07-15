@@ -23,15 +23,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"dukebode.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="阅读基础 Python3 安装  配置虚拟环境 表中命令从上往下执行即可，部分需要先切换目录，下同。本文为学习笔记，仅供参照，详细流程请阅读参考文章和官方文档。      操作 命令    - 创建虚拟环境 python3 -m venv &#x2F;www&#x2F;venv   - 激活虚拟环境 source &#x2F;www&#x2F;venv&#x2F;bin&#x2F;activate   - Windows下激活 .\venv\Scrip">
+    <meta name="description" content="阅读基础  Python3 安装  配置虚拟环境  表中命令从上往下执行即可，部分需要先切换目录，下同。本文为学习笔记，仅供参照，详细流程请阅读参考文章和官方文档。      操作 命令     - 创建虚拟环境 python3 -m venv &#x2F;www&#x2F;venv   - 激活虚拟环境 source &#x2F;www&#x2F;venv&#x2F;bin&#x2F;activate   - Windows下激活 .\venv\Scr">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Django 部署">
 <meta property="og:url" content="https://dukebode.github.io/2018/07/18/python-Django/">
 <meta property="og:site_name" content="Duke Blog">
-<meta property="og:description" content="阅读基础 Python3 安装  配置虚拟环境 表中命令从上往下执行即可，部分需要先切换目录，下同。本文为学习笔记，仅供参照，详细流程请阅读参考文章和官方文档。      操作 命令    - 创建虚拟环境 python3 -m venv &#x2F;www&#x2F;venv   - 激活虚拟环境 source &#x2F;www&#x2F;venv&#x2F;bin&#x2F;activate   - Windows下激活 .\venv\Scrip">
+<meta property="og:description" content="阅读基础  Python3 安装  配置虚拟环境  表中命令从上往下执行即可，部分需要先切换目录，下同。本文为学习笔记，仅供参照，详细流程请阅读参考文章和官方文档。      操作 命令     - 创建虚拟环境 python3 -m venv &#x2F;www&#x2F;venv   - 激活虚拟环境 source &#x2F;www&#x2F;venv&#x2F;bin&#x2F;activate   - Windows下激活 .\venv\Scr">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2018-07-18T16:34:30.000Z">
-<meta property="article:modified_time" content="2023-07-15T10:25:32.653Z">
+<meta property="article:modified_time" content="2023-07-15T13:47:02.089Z">
 <meta property="article:author" content="Duke Bode">
 <meta property="article:tag" content="python">
 <meta property="article:tag" content="Django">
@@ -146,7 +146,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%98%85%E8%AF%BB%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">阅读基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83"><span class="nav-number">2.</span> <span class="nav-text">配置虚拟环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Django-%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91"><span class="nav-number">3.</span> <span class="nav-text">Django 项目开发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-setting-py"><span class="nav-number">4.</span> <span class="nav-text">配置 setting.py</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%87%86%E5%A4%87"><span class="nav-number">5.</span> <span class="nav-text">部署准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E6%B5%8B%E8%AF%95"><span class="nav-number">6.</span> <span class="nav-text">部署测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-nginx"><span class="nav-number">7.</span> <span class="nav-text">配置 nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-number">8.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%98%85%E8%AF%BB%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">阅读基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83"><span class="nav-number">2.</span> <span class="nav-text">配置虚拟环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#django-%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91"><span class="nav-number">3.</span> <span class="nav-text">Django 项目开发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-setting.py"><span class="nav-number">4.</span> <span class="nav-text">配置 setting.py</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%87%86%E5%A4%87"><span class="nav-number">5.</span> <span class="nav-text">部署准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E6%B5%8B%E8%AF%95"><span class="nav-number">6.</span> <span class="nav-text">部署测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-nginx"><span class="nav-number">7.</span> <span class="nav-text">配置 nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-number">8.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -232,7 +232,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-15 10:25:32" itemprop="dateModified" datetime="2023-07-15T10:25:32+00:00">2023-07-15</time>
+      <time title="Modified: 2023-07-15 13:47:02" itemprop="dateModified" datetime="2023-07-15T13:47:02+00:00">2023-07-15</time>
     </span>
 
   
@@ -245,135 +245,152 @@
     
     
     <div class="post-body" itemprop="articleBody"><span id="more"></span>
-
-<h2 id="阅读基础"><a href="#阅读基础" class="headerlink" title="阅读基础"></a>阅读基础</h2><ul>
+<h2 id="阅读基础">阅读基础</h2>
+<ul>
 <li><a href="Python3.md">Python3 安装</a></li>
 </ul>
-<h2 id="配置虚拟环境"><a href="#配置虚拟环境" class="headerlink" title="配置虚拟环境"></a>配置虚拟环境</h2><blockquote>
+<h2 id="配置虚拟环境">配置虚拟环境</h2>
+<blockquote>
 <p>表中命令从上往下执行即可，部分需要先切换目录，下同。本文为学习笔记，仅供参照，详细流程请阅读参考文章和官方文档。</p>
 </blockquote>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th></th>
 <th>操作</th>
 <th>命令</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>-</td>
 <td>创建虚拟环境</td>
 <td><code>python3 -m venv /www/venv</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td>-</td>
 <td>激活虚拟环境</td>
 <td><code>source /www/venv/bin/activate</code></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>-</td>
 <td>Windows下激活</td>
 <td><code>.\venv\Scripts\activate</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td>-</td>
 <td>使用 uwsgi 部署</td>
 <td><code>pip install uwsgi</code></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>-</td>
 <td>使用 Gunicorn 部署</td>
 <td><code>pip install gunicorn</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td>-</td>
 <td>安装环境包</td>
 <td><code>pip install -r requirements</code></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>-</td>
 <td>生成环境包</td>
 <td><code>pip freeze &gt; requirements.txt</code></td>
 </tr>
-<tr>
+<tr class="even">
 <td>-</td>
 <td>退出环境</td>
 <td><code>deactivate</code></td>
 </tr>
-</tbody></table>
-<h2 id="Django-项目开发"><a href="#Django-项目开发" class="headerlink" title="Django 项目开发"></a>Django 项目开发</h2><table>
+</tbody>
+</table>
+<h2 id="django-项目开发">Django 项目开发</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 28%" />
+<col style="width: 28%" />
+<col style="width: 28%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th></th>
 <th>操作</th>
 <th>命令</th>
 <th>备注</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>-</td>
 <td>创建 django 项目 web</td>
 <td><code>django-admin startproject web</code></td>
 <td>生成项目目录</td>
 </tr>
-<tr>
+<tr class="even">
 <td>-</td>
 <td>创建应用 count</td>
 <td><code>python manage.py startapp count</code></td>
 <td>开发使用</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>-</td>
 <td>创建超级账户</td>
 <td><code>python manage.py createsuperuser</code></td>
 <td>开发、部署使用</td>
 </tr>
-<tr>
+<tr class="even">
 <td>-</td>
 <td>生成迁移文件</td>
 <td><code>python manage.py makemigrations</code></td>
 <td>在 migrations 生成文件</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>-</td>
 <td>执行迁移</td>
 <td><code>python manage.py migrate</code></td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>-</td>
 <td>同步静态文件</td>
 <td><code>python manage.py collectstatic</code></td>
 <td>部署使用</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>-</td>
 <td>启动开发服务器</td>
 <td><code>python manage.py runserver</code></td>
 <td>开发、测试使用</td>
 </tr>
-</tbody></table>
-<h2 id="配置-setting-py"><a href="#配置-setting-py" class="headerlink" title="配置 setting.py"></a>配置 setting<code>.</code>py</h2><pre><code>- LANGUAGE_CODE = &#39;zh-Hans&#39;
+</tbody>
+</table>
+<h2 id="配置-setting.py">配置 setting<code>.</code>py</h2>
+<pre><code>- LANGUAGE_CODE = &#39;zh-Hans&#39;
 - TIME_ZONE = &#39;Asia/Shanghai&#39;（视情况配置）
 - ALLOWED_HOSTS = [&#39;公网ip&#39;,域名&#39;]（部署前配置）
-- DEBUG = False（NGINX 后配置）
-</code></pre>
-<h2 id="部署准备"><a href="#部署准备" class="headerlink" title="部署准备"></a>部署准备</h2><pre><code>- 删除 migrations 下数字开头的所有 python 文件
+- DEBUG = False（NGINX 后配置）</code></pre>
+<h2 id="部署准备">部署准备</h2>
+<pre><code>- 删除 migrations 下数字开头的所有 python 文件
 - uwsgi.ini
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[uwsgi]</span></span><br><span class="line"><span class="attr">chdir</span> = /www/web</span><br><span class="line"><span class="attr">module</span> = web.wsgi:applocation</span><br><span class="line"><span class="attr">home</span> = /www/venv</span><br><span class="line"><span class="attr">socket</span> = <span class="number">172.18</span>.<span class="number">173.33</span>:<span class="number">8099</span></span><br><span class="line"><span class="attr">stats</span> = <span class="number">172.18</span>.<span class="number">173.33</span>:<span class="number">9191</span></span><br><span class="line"><span class="attr">master</span> = <span class="literal">true</span></span><br><span class="line"><span class="attr">processes</span> = <span class="number">5</span></span><br><span class="line"><span class="attr">vacuum</span> = <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-</code></pre>
-<h2 id="部署测试"><a href="#部署测试" class="headerlink" title="部署测试"></a>部署测试</h2><pre><code>- 开发服务器测试 `python36 manage.py runserver 172.18.173.33:80`
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[uwsgi]</span></span><br><span class="line"><span class="attr">chdir</span> = /www/web</span><br><span class="line"><span class="attr">module</span> = web.wsgi:applocation</span><br><span class="line"><span class="attr">home</span> = /www/venv</span><br><span class="line"><span class="attr">socket</span> = <span class="number">172.18</span>.<span class="number">173.33</span>:<span class="number">8099</span></span><br><span class="line"><span class="attr">stats</span> = <span class="number">172.18</span>.<span class="number">173.33</span>:<span class="number">9191</span></span><br><span class="line"><span class="attr">master</span> = <span class="literal">true</span></span><br><span class="line"><span class="attr">processes</span> = <span class="number">5</span></span><br><span class="line"><span class="attr">vacuum</span> = <span class="literal">true</span></span><br></pre></td></tr></table></figure></code></pre>
+<h2 id="部署测试">部署测试</h2>
+<pre><code>- 开发服务器测试 `python36 manage.py runserver 172.18.173.33:80`
 - uwsgi 部署测试 `uwsgi uwsgi.ini`
-- Gunicorn 部署测试 `gunicorn -b 172.18.173.33:80 web.wsgi`
-</code></pre>
-<h2 id="配置-nginx"><a href="#配置-nginx" class="headerlink" title="配置 nginx"></a>配置 nginx</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 安装 uwsgi</span><br><span class="line">pip3 install uwsgi</span><br><span class="line"># 安装 nginx</span><br><span class="line">yum install nginx</span><br></pre></td></tr></table></figure>
-
+- Gunicorn 部署测试 `gunicorn -b 172.18.173.33:80 web.wsgi`</code></pre>
+<h2 id="配置-nginx">配置 nginx</h2>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 安装 uwsgi</span><br><span class="line">pip3 install uwsgi</span><br><span class="line"># 安装 nginx</span><br><span class="line">yum install nginx</span><br></pre></td></tr></table></figure>
 <p>测试</p>
 <p>nginx -t</p>
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e13417a8bb7f">Django+Ubuntu WEB部署（超详细版）</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/qingspace/p/6838747.html">跨过Nginx上基于uWSGI部署Django项目的坑</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/d6f9138fab7b">Django快速部署简约版 v3.0</a></li>
+<h2 id="参考文章">参考文章</h2>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e13417a8bb7f">Django+Ubuntu
+WEB部署（超详细版）</a></li>
+<li><a
+target="_blank" rel="noopener" href="https://www.cnblogs.com/qingspace/p/6838747.html">跨过Nginx上基于uWSGI部署Django项目的坑</a></li>
+<li><a
+target="_blank" rel="noopener" href="https://www.jianshu.com/p/d6f9138fab7b">Django快速部署简约版
+v3.0</a></li>
 </ul>
 
     </div>
@@ -510,6 +527,12 @@
   
 
 
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 

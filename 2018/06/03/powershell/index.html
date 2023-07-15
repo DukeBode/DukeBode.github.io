@@ -23,15 +23,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"dukebode.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="shell 语法 变量声明以“$”开头后跟变量名 变量名不区分大小写，可包含数字、字母和下划线 预定义变量 $null（空值）$true（真值为真）$false（真值为假）$_（当前处理的元素）     命令 含义    net share 查看共享文件   脚本运行运行权限Windows 默认不允许任何脚本运行，可以使用”Set-ExecutionPolicy” cmdlet 来改变的你Powe">
+    <meta name="description" content="shell 语法  变量声明以“$”开头后跟变量名 变量名不区分大小写，可包含数字、字母和下划线 预定义变量 \(null（空值）\)true（真值为真）\(false（真值为假）\)_（当前处理的元素）     命令 含义     net share 查看共享文件    脚本运行 运行权限 Windows 默认不允许任何脚本运行，可以使用&quot;Set-ExecutionPolicy&quot; cmdlet">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PowerShell笔记">
 <meta property="og:url" content="https://dukebode.github.io/2018/06/03/powershell/">
 <meta property="og:site_name" content="Duke Blog">
-<meta property="og:description" content="shell 语法 变量声明以“$”开头后跟变量名 变量名不区分大小写，可包含数字、字母和下划线 预定义变量 $null（空值）$true（真值为真）$false（真值为假）$_（当前处理的元素）     命令 含义    net share 查看共享文件   脚本运行运行权限Windows 默认不允许任何脚本运行，可以使用”Set-ExecutionPolicy” cmdlet 来改变的你Powe">
+<meta property="og:description" content="shell 语法  变量声明以“$”开头后跟变量名 变量名不区分大小写，可包含数字、字母和下划线 预定义变量 \(null（空值）\)true（真值为真）\(false（真值为假）\)_（当前处理的元素）     命令 含义     net share 查看共享文件    脚本运行 运行权限 Windows 默认不允许任何脚本运行，可以使用&quot;Set-ExecutionPolicy&quot; cmdlet">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2018-06-03T16:34:30.000Z">
-<meta property="article:modified_time" content="2023-07-15T10:25:32.653Z">
+<meta property="article:modified_time" content="2023-07-15T13:47:02.089Z">
 <meta property="article:author" content="Duke Bode">
 <meta property="article:tag" content="shell">
 <meta name="twitter:card" content="summary">
@@ -230,7 +230,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-15 10:25:32" itemprop="dateModified" datetime="2023-07-15T10:25:32+00:00">2023-07-15</time>
+      <time title="Modified: 2023-07-15 13:47:02" itemprop="dateModified" datetime="2023-07-15T13:47:02+00:00">2023-07-15</time>
     </span>
 
   
@@ -242,36 +242,45 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h2 id="shell-语法"><a href="#shell-语法" class="headerlink" title="shell 语法"></a>shell 语法</h2><ul>
+    <div class="post-body" itemprop="articleBody"><h2 id="shell-语法">shell 语法</h2>
+<ul>
 <li>变量声明以“$”开头后跟变量名</li>
 <li>变量名不区分大小写，可包含数字、字母和下划线</li>
 <li>预定义变量</li>
-<li>$null（空值）$true（真值为真）$false（真值为假）$_（当前处理的元素）</li>
+<li><span
+class="math inline">\(null（空值）\)</span>true（真值为真）<span
+class="math inline">\(false（真值为假）\)</span>_（当前处理的元素）</li>
 </ul>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>命令</th>
 <th>含义</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>net share</td>
 <td>查看共享文件</td>
 </tr>
-</tbody></table>
-<h2 id="脚本运行"><a href="#脚本运行" class="headerlink" title="脚本运行"></a>脚本运行</h2><h3 id="运行权限"><a href="#运行权限" class="headerlink" title="运行权限"></a>运行权限</h3><p>Windows 默认不允许任何脚本运行，可以使用”Set-ExecutionPolicy” cmdlet 来改变的你PowerShell环境。例如，你可以使用如下命令让PowerShell运行在无限制的环境之下：</p>
+</tbody>
+</table>
+<h2 id="脚本运行">脚本运行</h2>
+<h3 id="运行权限">运行权限</h3>
+<p>Windows 默认不允许任何脚本运行，可以使用"Set-ExecutionPolicy" cmdlet
+来改变的你PowerShell环境。例如，你可以使用如下命令让PowerShell运行在无限制的环境之下：</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看当前脚本运行权限</span></span><br><span class="line">ExecutionPolicy</span><br><span class="line"><span class="comment"># 设置脚本运行权限，允许任何脚本运行</span></span><br><span class="line"><span class="built_in">Set-ExecutionPolicy</span> Unrestricted;</span><br></pre></td></tr></table></figure>
-
 <ul>
 <li>Restricted——默认的设置， 不允许任何script运行</li>
 <li>AllSigned——只能运行经过数字证书签名的script</li>
-<li>RemoteSigned——运行本地的script不需要数字签名，但是运行从网络上下载的script就必须要有- 数字签名</li>
+<li>RemoteSigned——运行本地的script不需要数字签名，但是运行从网络上下载的script就必须要有-
+数字签名</li>
 <li>Unrestricted——允许所有的script运行</li>
 </ul>
 <p>如果报错，使用管理员的权限启动命令命令行重试。</p>
-<h3 id="java-调用脚本"><a href="#java-调用脚本" class="headerlink" title="java 调用脚本"></a>java 调用脚本</h3><p>使用 java 调用 powershell 脚本，可以使用以下命令：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">cmd</span> <span class="operator">=</span> <span class="string">&quot;cmd /c powershell </span></span><br><span class="line"><span class="string">-ExecutionPolicy RemoteSigned -noprofile </span></span><br><span class="line"><span class="string">-noninteractive -file \&quot;&quot;</span>+ scriptFilename + <span class="string">&quot;\&quot;&quot;</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="java-调用脚本">java 调用脚本</h3>
+<p>使用 java 调用 powershell 脚本，可以使用以下命令： <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">cmd</span> <span class="operator">=</span> <span class="string">&quot;cmd /c powershell </span></span><br><span class="line"><span class="string">-ExecutionPolicy RemoteSigned -noprofile </span></span><br><span class="line"><span class="string">-noninteractive -file \&quot;&quot;</span>+ scriptFilename + <span class="string">&quot;\&quot;&quot;</span>;</span><br></pre></td></tr></table></figure></p>
+
     </div>
 
     
@@ -404,6 +413,12 @@
   
 
 
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 

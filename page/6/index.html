@@ -223,7 +223,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-15 10:25:32" itemprop="dateModified" datetime="2023-07-15T10:25:32+00:00">2023-07-15</time>
+      <time title="Modified: 2023-07-15 13:47:02" itemprop="dateModified" datetime="2023-07-15T13:47:02+00:00">2023-07-15</time>
     </span>
 
   
@@ -237,8 +237,8 @@
     
     <div class="post-body" itemprop="articleBody">
           <span id="more"></span>
-
-<h1 id="部署-nginx"><a href="#部署-nginx" class="headerlink" title="部署 nginx"></a>部署 nginx</h1><ul>
+<h1 id="部署-nginx">部署 nginx</h1>
+<ul>
 <li>仓库查找镜像 <code>docker search nginx</code></li>
 <li>拉取官网镜像 <code>docker pull nginx</code></li>
 <li>查看本地镜像 <code>docker images</code></li>
@@ -307,7 +307,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-15 10:25:32" itemprop="dateModified" datetime="2023-07-15T10:25:32+00:00">2023-07-15</time>
+      <time title="Modified: 2023-07-15 13:47:02" itemprop="dateModified" datetime="2023-07-15T13:47:02+00:00">2023-07-15</time>
     </span>
 
   
@@ -321,9 +321,9 @@
     
     <div class="post-body" itemprop="articleBody">
           <span id="more"></span>
-
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dnf install MariaDB-server MariaDB-client</span><br></pre></td></tr></table></figure>
-<h2 id="附："><a href="#附：" class="headerlink" title="附："></a>附：</h2><p>MariaDB 下载: <a target="_blank" rel="noopener" href="https://downloads.mariadb.org/mariadb/repositories/">https://downloads.mariadb.org/mariadb/repositories/</a></p>
+<h2 id="附">附：</h2>
+<p>MariaDB 下载: https://downloads.mariadb.org/mariadb/repositories/</p>
 
       
     </div>
@@ -386,7 +386,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-15 10:25:32" itemprop="dateModified" datetime="2023-07-15T10:25:32+00:00">2023-07-15</time>
+      <time title="Modified: 2023-07-15 13:47:02" itemprop="dateModified" datetime="2023-07-15T13:47:02+00:00">2023-07-15</time>
     </span>
 
   
@@ -399,11 +399,13 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="windows"><a href="#windows" class="headerlink" title="windows"></a>windows</h2><p>暴力删除废弃文件夹</p>
-<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">DEL</span> /F /A /Q \\?\%<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">RD</span> /S /Q \\?\%<span class="number">1</span></span><br></pre></td></tr></table></figure>
-<p>&#x2F;P 删除每一个文件之前提示确认。<br>&#x2F;F 强制删除只读文件。<br>&#x2F;S 从所有子目录删除指定文件。<br>&#x2F;Q 安静模式。删除全局通配符时，不要求确认。<br>&#x2F;A 根据属性选择要删除的文件。</p>
-<p>cmd &#x2F;c dir：是执行完dir命令后关闭命令窗口；</p>
-<p>cmd &#x2F;k dir：是执行完dir命令后不关闭命令窗口。</p>
+          <h2 id="windows">windows</h2>
+<p>暴力删除废弃文件夹 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">DEL</span> /F /A /Q \\?\%<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">RD</span> /S /Q \\?\%<span class="number">1</span></span><br></pre></td></tr></table></figure> /P 删除每一个文件之前提示确认。 /F
+强制删除只读文件。 /S 从所有子目录删除指定文件。 /Q
+安静模式。删除全局通配符时，不要求确认。 /A
+根据属性选择要删除的文件。</p>
+<p>cmd /c dir：是执行完dir命令后关闭命令窗口；</p>
+<p>cmd /k dir：是执行完dir命令后不关闭命令窗口。</p>
 
       
     </div>
@@ -466,7 +468,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-15 10:25:32" itemprop="dateModified" datetime="2023-07-15T10:25:32+00:00">2023-07-15</time>
+      <time title="Modified: 2023-07-15 13:47:02" itemprop="dateModified" datetime="2023-07-15T13:47:02+00:00">2023-07-15</time>
     </span>
 
   
@@ -479,17 +481,19 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="参数列表"><a href="#参数列表" class="headerlink" title="参数列表"></a>参数列表</h2><p>linux 命令行规范</p>
-<ol>
+          <h2 id="参数列表">参数列表</h2>
+<p>linux 命令行规范</p>
+<ol type="1">
 <li>短参数：以单横开头，后跟单一字符，例如：<code>ls -h</code></li>
 <li>长参数：以双横开头，后跟字符串，例如：<code>ls -help</code></li>
 </ol>
 <p>程序访问参数列表的方法</p>
-<ol>
+<ol type="1">
 <li>主函数的参数<code>argc</code>和<code>argv</code></li>
 <li>程序接受命令行的输入参数，并解释</li>
 </ol>
-<h2 id="环境变量"><a href="#环境变量" class="headerlink" title="环境变量"></a>环境变量</h2><ul>
+<h2 id="环境变量">环境变量</h2>
+<ul>
 <li>程序推出码</li>
 <li>系统调用错误处理</li>
 <li>资源管理</li>
@@ -558,7 +562,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-15 10:25:32" itemprop="dateModified" datetime="2023-07-15T10:25:32+00:00">2023-07-15</time>
+      <time title="Modified: 2023-07-15 13:47:02" itemprop="dateModified" datetime="2023-07-15T13:47:02+00:00">2023-07-15</time>
     </span>
 
   
@@ -643,7 +647,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-15 10:25:32" itemprop="dateModified" datetime="2023-07-15T10:25:32+00:00">2023-07-15</time>
+      <time title="Modified: 2023-07-15 13:47:02" itemprop="dateModified" datetime="2023-07-15T13:47:02+00:00">2023-07-15</time>
     </span>
 
   
@@ -656,7 +660,9 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>对于一个电脑新手来讲，与其说 Markdown 是一个专门为文档而生的编程语言，还不如是个文档规范，相比 Word 的繁杂，Tex 的晦涩，它就是个非常简单的文字游戏规则。</p>
+          <p>对于一个电脑新手来讲，与其说 Markdown
+是一个专门为文档而生的编程语言，还不如是个文档规范，相比 Word
+的繁杂，Tex 的晦涩，它就是个非常简单的文字游戏规则。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2019/05/31/blog-markdown/#more" rel="contents">
@@ -726,7 +732,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-15 10:25:32" itemprop="dateModified" datetime="2023-07-15T10:25:32+00:00">2023-07-15</time>
+      <time title="Modified: 2023-07-15 13:47:02" itemprop="dateModified" datetime="2023-07-15T13:47:02+00:00">2023-07-15</time>
     </span>
 
   
@@ -739,7 +745,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="Python-3-安装"><a href="#Python-3-安装" class="headerlink" title="Python 3 安装"></a>Python 3 安装</h2>
+          <h2 id="python-3-安装">Python 3 安装</h2>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2018/11/17/os-tool-python-env/#more" rel="contents">
@@ -809,7 +815,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-15 10:25:32" itemprop="dateModified" datetime="2023-07-15T10:25:32+00:00">2023-07-15</time>
+      <time title="Modified: 2023-07-15 13:47:02" itemprop="dateModified" datetime="2023-07-15T13:47:02+00:00">2023-07-15</time>
     </span>
 
   
@@ -822,7 +828,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="Python-3-安装"><a href="#Python-3-安装" class="headerlink" title="Python 3 安装"></a>Python 3 安装</h2>
+          <h2 id="python-3-安装">Python 3 安装</h2>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2018/11/17/python-linux/#more" rel="contents">
@@ -892,7 +898,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-15 10:25:32" itemprop="dateModified" datetime="2023-07-15T10:25:32+00:00">2023-07-15</time>
+      <time title="Modified: 2023-07-15 13:47:02" itemprop="dateModified" datetime="2023-07-15T13:47:02+00:00">2023-07-15</time>
     </span>
 
   
@@ -906,72 +912,76 @@
     
     <div class="post-body" itemprop="articleBody">
           <span id="more"></span>
-
-<h2 id="程序注释"><a href="#程序注释" class="headerlink" title="程序注释"></a>程序注释</h2><ul>
+<h2 id="程序注释">程序注释</h2>
+<ul>
 <li>“;”开头，右边为注释内容</li>
 </ul>
-<h2 id="保留字"><a href="#保留字" class="headerlink" title="保留字"></a>保留字</h2><ul>
+<h2 id="保留字">保留字</h2>
+<ul>
 <li>指令</li>
 <li>伪操作</li>
 <li>操作符</li>
 <li>预定义符号</li>
 </ul>
-<h1 id="符号指令系统"><a href="#符号指令系统" class="headerlink" title="符号指令系统"></a>符号指令系统</h1><table>
+<h1 id="符号指令系统">符号指令系统</h1>
+<table>
 <thead>
-<tr>
+<tr class="header">
 <th>指令</th>
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>ADC</td>
 <td>带进位加法(and with carry)</td>
 </tr>
-<tr>
+<tr class="even">
 <td>ADD</td>
 <td>二进制数加法(add)</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>DEC</td>
 <td>减一(decrease 1)</td>
 </tr>
-<tr>
+<tr class="even">
 <td>DIV</td>
 <td>无符号数除法(divide)</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>IDIV</td>
 <td>带符号数整数除法(integer divide)</td>
 </tr>
-<tr>
+<tr class="even">
 <td>IMUL</td>
 <td>带符号数整数乘法(integer multiplication)</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>INC</td>
 <td>加一(increase 1)</td>
 </tr>
-<tr>
+<tr class="even">
 <td>MUL</td>
 <td>无符号数乘法(multiplication)</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>NEG</td>
 <td>求补(negative)</td>
 </tr>
-<tr>
+<tr class="even">
 <td>SBB</td>
 <td>带借位减法(substract with borrow)</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>SUB</td>
 <td>二进制减法(substact)</td>
 </tr>
-<tr>
+<tr class="even">
 <td>XADD</td>
 <td>交换并相加</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
       
     </div>
@@ -1034,7 +1044,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-15 10:25:32" itemprop="dateModified" datetime="2023-07-15T10:25:32+00:00">2023-07-15</time>
+      <time title="Modified: 2023-07-15 13:47:02" itemprop="dateModified" datetime="2023-07-15T13:47:02+00:00">2023-07-15</time>
     </span>
 
   
@@ -1048,55 +1058,34 @@
     
     <div class="post-body" itemprop="articleBody">
           <span id="more"></span>
-
-<h1 id="PC-硬件的基本特征"><a href="#PC-硬件的基本特征" class="headerlink" title="PC 硬件的基本特征"></a>PC 硬件的基本特征</h1><h2 id="1、计算机存储单位"><a href="#1、计算机存储单位" class="headerlink" title="1、计算机存储单位"></a>1、计算机存储单位</h2><ol>
-<li>位 bit(Binary digit))<blockquote>
-<p>一个位表示 0 或 1</p>
-</blockquote>
-</li>
-<li>字节<blockquote>
-<p>一组 9 个相关的位称为字节，它代表内存储器和外部设备的一个存储单元</p>
-</blockquote>
+<h1 id="pc-硬件的基本特征">PC 硬件的基本特征</h1>
+<h2 id="计算机存储单位">1、计算机存储单位</h2>
+<ol type="1">
+<li>位 bit(Binary digit)) &gt; 一个位表示 0 或 1</li>
+<li>字节 &gt; 一组 9
+个相关的位称为字节，它代表内存储器和外部设备的一个存储单元
 <ul>
-<li>每个字节由 8 个数据位和 1 个奇偶位组成（<a href="">奇偶校验</a>）</li>
+<li>每个字节由 8 个数据位和 1 个奇偶位组成（<a
+href="">奇偶校验</a>）</li>
 <li>一个字节中的各位从右到左是按 0 到 7 编号的</li>
-<li>在存储器中的每个字节都有一个唯一的地址。第一个字节在最低的存储器单元中，编号为 0 ， 第二个字节编号为 1</li>
-</ul>
-</li>
-<li>字<blockquote>
-<p>2 字节（16位）数据项</p>
-</blockquote>
-</li>
-<li>双字<blockquote>
-<p>4 字节（32位）数据项</p>
-</blockquote>
-</li>
-<li>匹字<blockquote>
-<p>8 字节（64位）数据项</p>
-</blockquote>
-</li>
-<li>小段<blockquote>
-<p>16字节（128位）区</p>
-</blockquote>
-</li>
-<li>千字节（KB）<blockquote>
-<p>2^10等于1024字节</p>
-</blockquote>
-</li>
-<li>兆字节（MB）<blockquote>
-<p>2^20等于1048576字节</p>
-</blockquote>
-</li>
+<li>在存储器中的每个字节都有一个唯一的地址。第一个字节在最低的存储器单元中，编号为
+0 ， 第二个字节编号为 1</li>
+</ul></li>
+<li>字 &gt; 2 字节（16位）数据项</li>
+<li>双字 &gt; 4 字节（32位）数据项</li>
+<li>匹字 &gt; 8 字节（64位）数据项</li>
+<li>小段 &gt; 16字节（128位）区</li>
+<li>千字节（KB） &gt; 2^10等于1024字节</li>
+<li>兆字节（MB） &gt; 2^20等于1048576字节</li>
 </ol>
-<h2 id="2、二进制数系统"><a href="#2、二进制数系统" class="headerlink" title="2、二进制数系统"></a>2、二进制数系统</h2><blockquote>
-<p>位的集合可以表示任何数字的值。</p>
+<h2 id="二进制数系统">2、二进制数系统</h2>
+<blockquote>
+<p>位的集合可以表示任何数字的值。 - 二进制数的值是由为 1
+的位及其相关的位置所决定的。</p>
 </blockquote>
-<ul>
-<li>二进制数的值是由为 1 的位及其相关的位置所决定的。</li>
-</ul>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>位编号</th>
 <th></th>
 <th>11</th>
@@ -1115,7 +1104,8 @@
 <th>0</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>位的值</td>
 <td></td>
 <td>1</td>
@@ -1133,7 +1123,7 @@
 <td>1</td>
 <td>1</td>
 </tr>
-<tr>
+<tr class="even">
 <td>位置的值</td>
 <td></td>
 <td>2048</td>
@@ -1151,394 +1141,415 @@
 <td>2</td>
 <td>1</td>
 </tr>
-</tbody></table>
-<h2 id="3、十六进制表示"><a href="#3、十六进制表示" class="headerlink" title="3、十六进制表示"></a>3、十六进制表示</h2><table>
+</tbody>
+</table>
+<h2 id="十六进制表示">3、十六进制表示</h2>
+<table>
 <thead>
-<tr>
-<th align="center">十进制</th>
-<th align="center">二进制</th>
-<th align="center">十六进制</th>
-<th align="center">峘进制</th>
+<tr class="header">
+<th style="text-align: center;">十进制</th>
+<th style="text-align: center;">二进制</th>
+<th style="text-align: center;">十六进制</th>
+<th style="text-align: center;">峘进制</th>
 <th>huán</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">0</td>
-<td align="center">0000</td>
-<td align="center">0</td>
-<td align="center">零</td>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0000</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">零</td>
 <td></td>
 </tr>
-<tr>
-<td align="center">1</td>
-<td align="center">0001</td>
-<td align="center">1</td>
-<td align="center">壹</td>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0001</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">壹</td>
 <td></td>
 </tr>
-<tr>
-<td align="center">2</td>
-<td align="center">0010</td>
-<td align="center">2</td>
-<td align="center">贰</td>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">0010</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">贰</td>
 <td></td>
 </tr>
-<tr>
-<td align="center">3</td>
-<td align="center">0011</td>
-<td align="center">3</td>
-<td align="center">叁</td>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0011</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">叁</td>
 <td></td>
 </tr>
-<tr>
-<td align="center">4</td>
-<td align="center">0100</td>
-<td align="center">4</td>
-<td align="center">肆</td>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">0100</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">肆</td>
 <td></td>
 </tr>
-<tr>
-<td align="center">5</td>
-<td align="center">0101</td>
-<td align="center">5</td>
-<td align="center">伍</td>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">0101</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">伍</td>
 <td></td>
 </tr>
-<tr>
-<td align="center">6</td>
-<td align="center">0110</td>
-<td align="center">6</td>
-<td align="center">陆</td>
+<tr class="odd">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">0110</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">陆</td>
 <td></td>
 </tr>
-<tr>
-<td align="center">7</td>
-<td align="center">0111</td>
-<td align="center">7</td>
-<td align="center">柒</td>
+<tr class="even">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">0111</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">柒</td>
 <td></td>
 </tr>
-<tr>
-<td align="center">8</td>
-<td align="center">1000</td>
-<td align="center">8</td>
-<td align="center">捌</td>
+<tr class="odd">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">1000</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">捌</td>
 <td></td>
 </tr>
-<tr>
-<td align="center">9</td>
-<td align="center">1001</td>
-<td align="center">9</td>
-<td align="center">玖</td>
+<tr class="even">
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">1001</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">玖</td>
 <td></td>
 </tr>
-<tr>
-<td align="center">10</td>
-<td align="center">1010</td>
-<td align="center">A</td>
-<td align="center">拾</td>
+<tr class="odd">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">1010</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">拾</td>
 <td></td>
 </tr>
-<tr>
-<td align="center">11</td>
-<td align="center">1011</td>
-<td align="center">B</td>
-<td align="center">屲</td>
+<tr class="even">
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">1011</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">屲</td>
 <td>wā</td>
 </tr>
-<tr>
-<td align="center">12</td>
-<td align="center">1100</td>
-<td align="center">C</td>
-<td align="center">亗</td>
+<tr class="odd">
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">1100</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">亗</td>
 <td>suì</td>
 </tr>
-<tr>
-<td align="center">13</td>
-<td align="center">1101</td>
-<td align="center">D</td>
-<td align="center">岌</td>
+<tr class="even">
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">1101</td>
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">岌</td>
 <td>jí</td>
 </tr>
-<tr>
-<td align="center">14</td>
-<td align="center">1110</td>
-<td align="center">E</td>
-<td align="center">岄</td>
+<tr class="odd">
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">1110</td>
+<td style="text-align: center;">E</td>
+<td style="text-align: center;">岄</td>
 <td>yuè</td>
 </tr>
-<tr>
-<td align="center">15</td>
-<td align="center">1111</td>
-<td align="center">F</td>
-<td align="center">岪</td>
+<tr class="even">
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">1111</td>
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">岪</td>
 <td>fú</td>
 </tr>
-</tbody></table>
-<h2 id="4、PC-的组成"><a href="#4、PC-的组成" class="headerlink" title="4、PC 的组成"></a>4、PC 的组成</h2><blockquote>
-<p>PC 的主要组成部分是它的主板。它包括<code>处理器</code>、<code>协处理器</code>、<code>主存储器</code>、<code>接插件</code>以及为可选电路卡用的<code>扩展槽</code>。这些槽和接插件为下面部件提供了出入口，比如<code>只读存储器 ROM、随机存取存储器 RAM、硬盘、CD-ROM 设备、附加的主存储器、显示设备、键盘、鼠标、并行与串行设备、声音合成器以及高速缓冲存储器等</code>。处理器利用高速缓冲存储器，减少对较低速主存储器的访问。</p>
+</tbody>
+</table>
+<h2 id="pc-的组成">4、PC 的组成</h2>
+<blockquote>
+<p>PC
+的主要组成部分是它的主板。它包括<code>处理器</code>、<code>协处理器</code>、<code>主存储器</code>、<code>接插件</code>以及为可选电路卡用的<code>扩展槽</code>。这些槽和接插件为下面部件提供了出入口，比如<code>只读存储器 ROM、随机存取存储器 RAM、硬盘、CD-ROM 设备、附加的主存储器、显示设备、键盘、鼠标、并行与串行设备、声音合成器以及高速缓冲存储器等</code>。处理器利用高速缓冲存储器，减少对较低速主存储器的访问。</p>
 </blockquote>
-<ol>
+<ol type="1">
 <li><p>处理器</p>
 <blockquote>
 <p>处理器，也称中央处理器或 CPU ，用来完成所有的指令执行与数据处理。</p>
 </blockquote>
 <ul>
 <li>8088</li>
-</ul>
-</li>
+</ul></li>
 </ol>
-<h3 id="段寄存器"><a href="#段寄存器" class="headerlink" title="段寄存器"></a>段寄存器</h3><table>
+<h3 id="段寄存器">段寄存器</h3>
+<table>
 <thead>
-<tr>
+<tr class="header">
 <th>标志</th>
 <th>名称</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>CS</td>
 <td>代码段(Code Segment)</td>
 </tr>
-<tr>
+<tr class="even">
 <td>DS</td>
 <td>数据段(Data Segment)</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>SS</td>
 <td>堆栈段(Stack Segment)</td>
 </tr>
-<tr>
+<tr class="even">
 <td>ES</td>
 <td>附加段指针(Extra Segment)</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>FS</td>
 <td>附加段指针</td>
 </tr>
-<tr>
+<tr class="even">
 <td>GS</td>
 <td>附加段指针</td>
 </tr>
-</tbody></table>
-<h3 id="通用寄存器"><a href="#通用寄存器" class="headerlink" title="通用寄存器"></a>通用寄存器</h3><table>
+</tbody>
+</table>
+<h3 id="通用寄存器">通用寄存器</h3>
+<table>
 <thead>
-<tr>
+<tr class="header">
 <th>寄存器</th>
 <th>名称</th>
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>EAX</td>
 <td>主累加器(accumulator)寄存器</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>EBX</td>
 <td>基址(base)寄存器</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>ECX</td>
 <td>计数(count)寄存器</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>EDX</td>
 <td>数据(data)寄存器</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>EDI</td>
 <td>目的变址(Destination Index)寄存器</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>ESI</td>
 <td>源变址(Source Index)寄存器</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>ESP</td>
 <td>堆栈指针(Stack Pointer)寄存器</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>EBP</td>
 <td>基址指针(Base Pointer)寄存器</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>EIP</td>
 <td>指令指针(Instruction Pointer)寄存器</td>
 <td>下一条指令的偏移地址</td>
 </tr>
-</tbody></table>
-<h3 id="标志寄存器"><a href="#标志寄存器" class="headerlink" title="标志寄存器"></a>标志寄存器</h3><table>
+</tbody>
+</table>
+<h3 id="标志寄存器">标志寄存器</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
 <thead>
-<tr>
-<th align="center">位编号</th>
-<th align="center">符号</th>
+<tr class="header">
+<th style="text-align: center;">位编号</th>
+<th style="text-align: center;">符号</th>
 <th>标志(Flag)</th>
 <th>置位符号 1</th>
 <th>复位符号 0</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">0</td>
-<td align="center">CF</td>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">CF</td>
 <td>进位(carry)标志</td>
 <td>CY(carry)</td>
 <td>NY(no carry)</td>
 </tr>
-<tr>
-<td align="center">1</td>
-<td align="center">1</td>
+<tr class="even">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr>
-<td align="center">2</td>
-<td align="center">PF</td>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">PF</td>
 <td>奇偶校验(parity)标志</td>
 <td>PE(parity even)</td>
 <td>PO(parity odd)</td>
 </tr>
-<tr>
-<td align="center">3</td>
-<td align="center">0</td>
+<tr class="even">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">0</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr>
-<td align="center">4</td>
-<td align="center">AF</td>
+<tr class="odd">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">AF</td>
 <td>辅助进位(auxiliary carry)标志</td>
 <td>AC(auxiliary carry)</td>
 <td>NA(no auxiliary)</td>
 </tr>
-<tr>
-<td align="center">5</td>
-<td align="center">0</td>
+<tr class="even">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">0</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr>
-<td align="center">6</td>
-<td align="center">ZF</td>
+<tr class="odd">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">ZF</td>
 <td>零(zero)标志</td>
 <td>ZR(zero)</td>
 <td>NZ(no zero)</td>
 </tr>
-<tr>
-<td align="center">7</td>
-<td align="center">SF</td>
+<tr class="even">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">SF</td>
 <td>符号(sign)标志</td>
 <td>NG(negative)</td>
 <td>PL(plus)</td>
 </tr>
-<tr>
-<td align="center">8</td>
-<td align="center">TF</td>
+<tr class="odd">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">TF</td>
 <td>陷阱(trap)标志</td>
 <td></td>
 <td></td>
 </tr>
-<tr>
-<td align="center">9</td>
-<td align="center">IF</td>
+<tr class="even">
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">IF</td>
 <td>中断允许(interrupt)标志</td>
 <td>EI(enable interrupt)</td>
 <td>DI(disable interrupt)</td>
 </tr>
-<tr>
-<td align="center">A</td>
-<td align="center">DF</td>
+<tr class="odd">
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">DF</td>
 <td>方向(direction)标志</td>
 <td>DN(down)</td>
 <td>UP(up)</td>
 </tr>
-<tr>
-<td align="center">B</td>
-<td align="center">OF</td>
+<tr class="even">
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">OF</td>
 <td>溢出(overflow)标志</td>
 <td>OV(overflow)</td>
 <td>NV(no overflow)</td>
 </tr>
-<tr>
-<td align="center">C</td>
-<td align="center">IOPL</td>
-<td>I&#x2F;O 特权级(I&#x2F;O Privilege Level)</td>
+<tr class="odd">
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">IOPL</td>
+<td>I/O 特权级(I/O Privilege Level)</td>
 <td></td>
 <td></td>
 </tr>
-<tr>
-<td align="center">D</td>
-<td align="center">IOPL</td>
-<td>I&#x2F;O 特权级(I&#x2F;O Privilege Level)</td>
+<tr class="even">
+<td style="text-align: center;">D</td>
+<td style="text-align: center;">IOPL</td>
+<td>I/O 特权级(I/O Privilege Level)</td>
 <td></td>
 <td></td>
 </tr>
-<tr>
-<td align="center">E</td>
-<td align="center">NT</td>
+<tr class="odd">
+<td style="text-align: center;">E</td>
+<td style="text-align: center;">NT</td>
 <td>嵌套任务(Nested Task)标志</td>
 <td></td>
 <td></td>
 </tr>
-<tr>
-<td align="center">F</td>
-<td align="center">0</td>
+<tr class="even">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">0</td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr>
-<td align="center">10</td>
-<td align="center">RF</td>
+<tr class="odd">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">RF</td>
 <td>恢复(Resume)标志</td>
 <td></td>
 <td></td>
 </tr>
-<tr>
-<td align="center">11</td>
-<td align="center">VM</td>
+<tr class="even">
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">VM</td>
 <td>虚拟8086模式(Virtual 8086 Mode)</td>
 <td></td>
 <td></td>
 </tr>
-<tr>
-<td align="center">12</td>
-<td align="center">AC</td>
+<tr class="odd">
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">AC</td>
 <td>对齐检查(Alignment Check)</td>
 <td></td>
 <td></td>
 </tr>
-<tr>
-<td align="center">13</td>
-<td align="center">VIF</td>
+<tr class="even">
+<td style="text-align: center;">13</td>
+<td style="text-align: center;">VIF</td>
 <td>虚拟中断(Virtual Interrupt)标志</td>
 <td></td>
 <td></td>
 </tr>
-<tr>
-<td align="center">14</td>
-<td align="center">VIP</td>
+<tr class="odd">
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">VIP</td>
 <td>虚拟中断挂起(Virtual Interrupt Pending)</td>
 <td></td>
 <td></td>
 </tr>
-<tr>
-<td align="center">15</td>
-<td align="center">ID</td>
+<tr class="even">
+<td style="text-align: center;">15</td>
+<td style="text-align: center;">ID</td>
 <td>标志(Identification)标识</td>
 <td></td>
 <td></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 
       
     </div>
@@ -1620,6 +1631,12 @@
   
 
 
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 

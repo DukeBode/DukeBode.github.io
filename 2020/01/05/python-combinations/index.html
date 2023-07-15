@@ -31,7 +31,7 @@
 <meta property="og:description" content="组合是数学的重要概念之一。从 n 个不同元素中每次取出 m 个不同元素 ，不管其顺序合成一组，称为从 n 个元素中不重复地选取 m 个元素的一个组合。所有这样的组合的种数称为组合数。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-05T13:28:31.000Z">
-<meta property="article:modified_time" content="2023-07-15T10:25:32.653Z">
+<meta property="article:modified_time" content="2023-07-15T13:47:02.089Z">
 <meta property="article:author" content="Duke Bode">
 <meta name="twitter:card" content="summary">
 
@@ -228,7 +228,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-15 10:25:32" itemprop="dateModified" datetime="2023-07-15T10:25:32+00:00">2023-07-15</time>
+      <time title="Modified: 2023-07-15 13:47:02" itemprop="dateModified" datetime="2023-07-15T13:47:02+00:00">2023-07-15</time>
     </span>
 
   
@@ -240,31 +240,30 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>组合是数学的重要概念之一。从 n 个不同元素中每次取出 m 个不同元素 ，不管其顺序合成一组，称为从 n 个元素中不重复地选取 m 个元素的一个组合。所有这样的组合的种数称为组合数。</p>
+    <div class="post-body" itemprop="articleBody"><p>组合是数学的重要概念之一。从 n 个不同元素中每次取出 m 个不同元素
+，不管其顺序合成一组，称为从 n 个元素中不重复地选取 m
+个元素的一个组合。所有这样的组合的种数称为组合数。</p>
 <span id="more"></span>
-<p>$$ C_n^m&#x3D;\frac{A_n^m}{m!}&#x3D;\frac{n!}{(n-m)!m!}&#x3D;\frac{\prod_{i&#x3D;n-m+1}^{n}i}{m!}&#x3D;C_n^{n-m} \quad (n \geq m \geq 1)$$</p>
-<p>结论：</p>
-<ol>
-<li>从n个不同元素中取出m个元素的组合数即n的阶乘除以除以(n-m)的阶乘与m的阶乘的积的商。</li>
-</ol>
+<p><span class="math display">\[
+C_n^m=\frac{A_n^m}{m!}=\frac{n!}{(n-m)!m!}=\frac{\prod_{i=n-m+1}^{n}i}{m!}=C_n^{n-m}
+\quad (n \geq m \geq 1)\]</span></p>
+<p>结论： 1.
+从n个不同元素中取出m个元素的组合数即n的阶乘除以除以(n-m)的阶乘与m的阶乘的积的商。</p>
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> math <span class="keyword">import</span> factorial</span><br><span class="line"><span class="keyword">def</span> <span class="title function_">combinations</span>(<span class="params">n,m</span>):</span><br><span class="line">    <span class="keyword">return</span> factorial(n)//factorial(m)//factorial(n-m)</span><br></pre></td></tr></table></figure>
-
-<ol>
+<ol type="1">
 <li>化简可得，从n个不同元素中取出m个元素的组合数即出现一次的偏大整数的积除以出现三次的偏小整数的积的商。</li>
 </ol>
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">combinations</span>(<span class="params">n,m</span>):</span><br><span class="line">    result = <span class="number">1</span></span><br><span class="line">    <span class="built_in">min</span>,<span class="built_in">max</span>=<span class="built_in">sorted</span>((m,n-m))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n,<span class="number">0</span>,-<span class="number">1</span>):</span><br><span class="line">        <span class="keyword">if</span> i&gt;<span class="built_in">max</span>:</span><br><span class="line">            result *= i</span><br><span class="line">        <span class="keyword">elif</span> i &lt;= <span class="built_in">min</span>:</span><br><span class="line">            result = result // i</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
-
-<ol>
+<ol type="1">
 <li>n个连续整数的积可被n的阶乘整除。</li>
 </ol>
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">combinations</span>(<span class="params">n,m</span>):</span><br><span class="line">    result = <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(m):</span><br><span class="line">        result=result*(n-i)//(i+<span class="number">1</span>)</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
-
-<ol>
+<ol type="1">
 <li>从n个不同元素中取出m个元素的组合数与从n个不同元素中取出(n-m)个元素的组合数相等。</li>
 </ol>
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">combinations</span>(<span class="params">n,m</span>):</span><br><span class="line">    result = <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">min</span>(n-m,m)):</span><br><span class="line">        result=result*(n-i)//(i+<span class="number">1</span>)</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
-
-<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzI4MzM2MDgyMQ==&mid=2247484700&idx=1&sn=a92cd5b572f3426215c5077edd911566&chksm=eb8aae46dcfd27504c6c32c3c2b7d12756b97b2850354366e7841ca71df38e9590891dea9c5f&mpshare=1&scene=1&srcid=0105CnjEy8AVCvacDDGmaD2l&sharer_sharetime=1578196700974&sharer_shareid=3726fbb92179608ce6915a88bf3209c9&exportkey=AeVJmUCXvaPlGzrSnNstWZE=&pass_ticket=BTWnZASExfQ2s44l/aa1gGcF8st07sk22Ohh+QylaMjuas6mCV6xn8HzMRrOrhta#rd">Python版组合数计算方法优化思路和源码</a></p>
+<p><a
+target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzI4MzM2MDgyMQ==&amp;mid=2247484700&amp;idx=1&amp;sn=a92cd5b572f3426215c5077edd911566&amp;chksm=eb8aae46dcfd27504c6c32c3c2b7d12756b97b2850354366e7841ca71df38e9590891dea9c5f&amp;mpshare=1&amp;scene=1&amp;srcid=0105CnjEy8AVCvacDDGmaD2l&amp;sharer_sharetime=1578196700974&amp;sharer_shareid=3726fbb92179608ce6915a88bf3209c9&amp;exportkey=AeVJmUCXvaPlGzrSnNstWZE%3D&amp;pass_ticket=BTWnZASExfQ2s44l%2Faa1gGcF8st07sk22Ohh%2BQylaMjuas6mCV6xn8HzMRrOrhta#rd">Python版组合数计算方法优化思路和源码</a></p>
 
     </div>
 
@@ -395,6 +394,12 @@
   
 
 
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 

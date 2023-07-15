@@ -23,15 +23,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"dukebode.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="官方教程概述教程指南">
+    <meta name="description" content="官方教程 概述 教程 指南">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python wheel 打包">
 <meta property="og:url" content="https://dukebode.github.io/2019/11/09/python-wheel/">
 <meta property="og:site_name" content="Duke Blog">
-<meta property="og:description" content="官方教程概述教程指南">
+<meta property="og:description" content="官方教程 概述 教程 指南">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2019-11-09T21:44:03.000Z">
-<meta property="article:modified_time" content="2023-07-15T10:25:32.653Z">
+<meta property="article:modified_time" content="2023-07-15T13:47:02.089Z">
 <meta property="article:author" content="Duke Bode">
 <meta property="article:tag" content="python">
 <meta name="twitter:card" content="summary">
@@ -144,7 +144,8 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#github-action"><span class="nav-number">1.</span> <span class="nav-text">github action</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%80%E5%B0%8Fpypi%E5%8C%85"><span class="nav-number">2.</span> <span class="nav-text">最小pypi包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%89%93%E5%8C%85%E7%8E%AF%E5%A2%83"><span class="nav-number">3.</span> <span class="nav-text">打包环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#init-py"><span class="nav-number">4.</span> <span class="nav-text">init.py</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#init-py-%E4%B8%AD%E5%B8%B8%E9%85%8D%E7%BD%AE%E7%9A%84%E6%A8%A1%E5%9D%97%E5%8F%82%E6%95%B0"><span class="nav-number">4.1.</span> <span class="nav-text">init.py 中常配置的模块参数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#main-py"><span class="nav-number">5.</span> <span class="nav-text">main.py</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#setup-py"><span class="nav-number">6.</span> <span class="nav-text">setup.py</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#github-action"><span class="nav-number">1.</span> <span class="nav-text">github action</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%80%E5%B0%8Fpypi%E5%8C%85"><span class="nav-number">2.</span> <span class="nav-text">最小pypi包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%89%93%E5%8C%85%E7%8E%AF%E5%A2%83"><span class="nav-number">3.</span> <span class="nav-text">打包环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#init.py"><span class="nav-number">4.</span> <span class="nav-text">init.py</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#init.py-%E4%B8%AD%E5%B8%B8%E9%85%8D%E7%BD%AE%E7%9A%84%E6%A8%A1%E5%9D%97%E5%8F%82%E6%95%B0"><span class="nav-number">4.1.</span> <span class="nav-text">init.py
+中常配置的模块参数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#main.py"><span class="nav-number">5.</span> <span class="nav-text">main.py</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#setup.py"><span class="nav-number">6.</span> <span class="nav-text">setup.py</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -230,7 +231,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-15 10:25:32" itemprop="dateModified" datetime="2023-07-15T10:25:32+00:00">2023-07-15</time>
+      <time title="Modified: 2023-07-15 13:47:02" itemprop="dateModified" datetime="2023-07-15T13:47:02+00:00">2023-07-15</time>
     </span>
 
   
@@ -242,10 +243,13 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p><a target="_blank" rel="noopener" href="https://packaging.python.org/">官方教程</a><br><a target="_blank" rel="noopener" href="https://packaging.python.org/overview/">概述</a><br><a target="_blank" rel="noopener" href="https://packaging.python.org/tutorials/">教程</a><br><a target="_blank" rel="noopener" href="https://packaging.python.org/guides/">指南</a></p>
+    <div class="post-body" itemprop="articleBody"><p><a target="_blank" rel="noopener" href="https://packaging.python.org/">官方教程</a> <a
+target="_blank" rel="noopener" href="https://packaging.python.org/overview/">概述</a> <a
+target="_blank" rel="noopener" href="https://packaging.python.org/tutorials/">教程</a> <a
+target="_blank" rel="noopener" href="https://packaging.python.org/guides/">指南</a></p>
 <span id="more"></span>
-
-<h3 id="github-action"><a href="#github-action" class="headerlink" title="github action"></a>github action</h3><ol>
+<h3 id="github-action">github action</h3>
+<ol type="1">
 <li>创建 GitHub 仓库</li>
 <li>配置 pypi token</li>
 <li>配置 action 脚本</li>
@@ -253,22 +257,31 @@
 <li>配置 本地仓库</li>
 <li>配置打包及开发环境</li>
 </ol>
-<h3 id="最小pypi包"><a href="#最小pypi包" class="headerlink" title="最小pypi包"></a>最小pypi包</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.gitignore</span><br><span class="line">LICENSE</span><br><span class="line">README.md</span><br><span class="line">setup.py</span><br><span class="line">docs/</span><br><span class="line">    /README.md</span><br><span class="line">module/</span><br><span class="line">    /__init__.py <span class="comment"># python 包标志</span></span><br><span class="line">    /__main__.py</span><br></pre></td></tr></table></figure>
-
-<h3 id="打包环境"><a href="#打包环境" class="headerlink" title="打包环境"></a>打包环境</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># bdist</span></span><br><span class="line"><span class="comment"># bdist_wheel</span></span><br><span class="line">pip install setuptools wheel twine</span><br><span class="line"><span class="comment"># twine upload dist/*</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="init-py"><a href="#init-py" class="headerlink" title="init.py"></a><strong>init</strong>.py</h3><blockquote>
-<p><strong>init</strong>.py 文件表明当前文件夹为 Python 模块,模块被导入时实际为此文件，模块方式运行时先执行此文件。</p>
+<h3 id="最小pypi包">最小pypi包</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.gitignore</span><br><span class="line">LICENSE</span><br><span class="line">README.md</span><br><span class="line">setup.py</span><br><span class="line">docs/</span><br><span class="line">    /README.md</span><br><span class="line">module/</span><br><span class="line">    /__init__.py <span class="comment"># python 包标志</span></span><br><span class="line">    /__main__.py</span><br></pre></td></tr></table></figure>
+<h3 id="打包环境">打包环境</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># bdist</span></span><br><span class="line"><span class="comment"># bdist_wheel</span></span><br><span class="line">pip install setuptools wheel twine</span><br><span class="line"><span class="comment"># twine upload dist/*</span></span><br></pre></td></tr></table></figure>
+<h3 id="init.py"><strong>init</strong>.py</h3>
+<blockquote>
+<p><strong>init</strong>.py 文件表明当前文件夹为 Python
+模块,模块被导入时实际为此文件，模块方式运行时先执行此文件。</p>
 </blockquote>
-<h4 id="init-py-中常配置的模块参数"><a href="#init-py-中常配置的模块参数" class="headerlink" title="init.py 中常配置的模块参数"></a><strong>init</strong>.py 中常配置的模块参数</h4><ul>
-<li><strong>all</strong> 指定 <code>form package import *</code> 的内容</li>
+<h4 id="init.py-中常配置的模块参数"><strong>init</strong>.py
+中常配置的模块参数</h4>
+<ul>
+<li><strong>all</strong> 指定 <code>form package import *</code>
+的内容</li>
 <li><strong>version</strong> 指定版本</li>
 </ul>
-<h3 id="main-py"><a href="#main-py" class="headerlink" title="main.py"></a><strong>main</strong>.py</h3><blockquote>
-<p><strong>main</strong>.py 文件表明当前文件夹可作为模块运行，可以文件夹、模块方式运行时执行此文件，相当于依赖模块的示例程序。</p>
+<h3 id="main.py"><strong>main</strong>.py</h3>
+<blockquote>
+<p><strong>main</strong>.py
+文件表明当前文件夹可作为模块运行，可以文件夹、模块方式运行时执行此文件，相当于依赖模块的示例程序。</p>
 </blockquote>
-<h3 id="setup-py"><a href="#setup-py" class="headerlink" title="setup.py"></a>setup.py</h3><blockquote>
-<p>setup.py 文件是 setuptools 打包的脚本文件，文件内应当写明包相关信息，以及其它的附属操作。</p>
+<h3 id="setup.py">setup.py</h3>
+<blockquote>
+<p>setup.py 文件是 setuptools
+打包的脚本文件，文件内应当写明包相关信息，以及其它的附属操作。</p>
 </blockquote>
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 官方示例</span></span><br><span class="line"><span class="comment"># https://github.com/pypa/sampleproject/blob/master/setup.py</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># read the contents of README file</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;README.md&quot;</span>, <span class="string">&quot;r&quot;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> fh:</span><br><span class="line">    long_description = fh.read()</span><br><span class="line"></span><br><span class="line">setuptools.setup(</span><br><span class="line">    <span class="comment"># https://packaging.python.org/guides/distributing-packages-using-setuptools/</span></span><br><span class="line">    name=<span class="string">&quot;example-pkg-YOUR-USERNAME-HERE&quot;</span>, <span class="comment"># Replace with your own username</span></span><br><span class="line">    version=<span class="string">&quot;0.0.1&quot;</span>,</span><br><span class="line">    author=<span class="string">&quot;Example Author&quot;</span>,</span><br><span class="line">    author_email=<span class="string">&quot;author@example.com&quot;</span>,</span><br><span class="line">    description=<span class="string">&quot;A small example package&quot;</span>,</span><br><span class="line">    long_description=long_description,</span><br><span class="line">    long_description_content_type=<span class="string">&quot;text/markdown&quot;</span>,</span><br><span class="line">    url=<span class="string">&quot;https://github.com/pypa/sampleproject&quot;</span>,</span><br><span class="line">    packages=setuptools.find_packages(),</span><br><span class="line">    classifiers=[</span><br><span class="line">        <span class="comment"># https://pypi.org/classifiers/</span></span><br><span class="line">        <span class="string">&quot;Programming Language :: Python :: 3&quot;</span>,</span><br><span class="line">        <span class="string">&quot;License :: OSI Approved :: MIT License&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Operating System :: OS Independent&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    python_requires=<span class="string">&#x27;&gt;=3.6&#x27;</span>,</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 
@@ -404,6 +417,12 @@
   
 
 
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 

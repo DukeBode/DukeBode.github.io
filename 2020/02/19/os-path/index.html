@@ -31,7 +31,7 @@
 <meta property="og:description" content="The PATH variable makes it easy to run commonly used programs located in their own folders. If used unwisely, however, the value of the PATH variable can slow down the operating system by searching to">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-02-19T12:25:32.000Z">
-<meta property="article:modified_time" content="2023-07-15T10:25:32.653Z">
+<meta property="article:modified_time" content="2023-07-15T13:47:02.089Z">
 <meta property="article:author" content="Duke Bode">
 <meta name="twitter:card" content="summary">
 
@@ -143,7 +143,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">Linux 命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE-path"><span class="nav-number">1.1.</span> <span class="nav-text">设置 path</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Windows-%E8%BF%90%E8%A1%8C%E5%B8%B8%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">Windows 运行常用的命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE-path-1"><span class="nav-number">2.1.</span> <span class="nav-text">设置 path</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#linux-%E5%91%BD%E4%BB%A4"><span class="nav-number">1.</span> <span class="nav-text">Linux 命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE-path"><span class="nav-number">1.1.</span> <span class="nav-text">设置 path</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#windows-%E8%BF%90%E8%A1%8C%E5%B8%B8%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="nav-number">2.</span> <span class="nav-text">Windows 运行常用的命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE-path-1"><span class="nav-number">2.1.</span> <span class="nav-text">设置 path</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -229,7 +229,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-15 10:25:32" itemprop="dateModified" datetime="2023-07-15T10:25:32+00:00">2023-07-15</time>
+      <time title="Modified: 2023-07-15 13:47:02" itemprop="dateModified" datetime="2023-07-15T13:47:02+00:00">2023-07-15</time>
     </span>
 
   
@@ -241,115 +241,124 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>The PATH variable makes it easy to run commonly used programs located in their own folders. If used unwisely, however, the value of the PATH variable can slow down the operating system by searching too many locations, or invalid locations.</p>
+    <div class="post-body" itemprop="articleBody"><p>The PATH variable makes it easy to run commonly used programs located
+in their own folders. If used unwisely, however, the value of the PATH
+variable can slow down the operating system by searching too many
+locations, or invalid locations.</p>
 <span id="more"></span>
-
-<h2 id="Linux-命令"><a href="#Linux-命令" class="headerlink" title="Linux 命令"></a>Linux 命令</h2><ol>
+<h2 id="linux-命令">Linux 命令</h2>
+<ol type="1">
 <li>date 时间</li>
 <li>useradd 用户添加</li>
 <li>whoami 当前登录用户</li>
 <li>chmod -R 777 dirname 将dirname授权给所有用户</li>
 <li>echo $PS1 显示提示符格式</li>
-<li>ls 深蓝色：文件夹&#x2F;目录 点开头：隐藏文件</li>
+<li>ls 深蓝色：文件夹/目录 点开头：隐藏文件</li>
 <li>ls -a</li>
 <li>alias 起别名</li>
 <li>type -a 查看本质</li>
 </ol>
 <p>! 调用历史</p>
-<h3 id="设置-path"><a href="#设置-path" class="headerlink" title="设置 path"></a>设置 path</h3><p><code>.profile</code> 记录了 bash 会在哪些目录查找命令。 bash 会根据 PATH 变量的设置自动寻找输入的命令。如果有同名的命令，按照路径顺序找到后返回执行，不再继续寻找。有同名的指令可以输入路径运行。</p>
-<p>默认的路径：</p>
-<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">~/bin</span><br><span class="line">~/.local/bin</span><br><span class="line">/usr/local/sbin</span><br><span class="line">/usr/local/bin</span><br><span class="line">/usr/sbin</span><br><span class="line">/usr/bin</span><br><span class="line">/sbin</span><br><span class="line">/bin</span><br><span class="line">/usr/games</span><br><span class="line">/usr/local/games</span><br></pre></td></tr></table></figure>
-
-<h2 id="Windows-运行常用的命令"><a href="#Windows-运行常用的命令" class="headerlink" title="Windows 运行常用的命令"></a>Windows 运行常用的命令</h2><table>
+<h3 id="设置-path">设置 path</h3>
+<p><code>.profile</code> 记录了 bash 会在哪些目录查找命令。 bash 会根据
+PATH
+变量的设置自动寻找输入的命令。如果有同名的命令，按照路径顺序找到后返回执行，不再继续寻找。有同名的指令可以输入路径运行。</p>
+<p>默认的路径： <figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">~/bin</span><br><span class="line">~/.local/bin</span><br><span class="line">/usr/local/sbin</span><br><span class="line">/usr/local/bin</span><br><span class="line">/usr/sbin</span><br><span class="line">/usr/bin</span><br><span class="line">/sbin</span><br><span class="line">/bin</span><br><span class="line">/usr/games</span><br><span class="line">/usr/local/games</span><br></pre></td></tr></table></figure></p>
+<h2 id="windows-运行常用的命令">Windows 运行常用的命令</h2>
+<table>
 <thead>
-<tr>
+<tr class="header">
 <th>命令</th>
 <th>含义</th>
 <th>备注</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>appwiz.cpl</td>
 <td>程序和功能</td>
 <td>常用于卸载软件</td>
 </tr>
-<tr>
+<tr class="even">
 <td>logoff</td>
 <td>注销</td>
 <td>注销计算机</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>shutdown</td>
 <td>60秒倒计时关机命令</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>cmd</td>
 <td>cmd</td>
 <td>命令提示符</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>calc</td>
 <td>计算器</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>cleanmgr</td>
 <td>磁盘清理</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>msconfig</td>
 <td>系统配置实用程序</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>osk</td>
 <td>屏幕键盘</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>psr</td>
 <td>步骤记录器</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>snippingtool</td>
 <td>截图工具</td>
 <td>已被截图和草图取代</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>winver</td>
-<td>关于”Windows”</td>
+<td>关于"Windows"</td>
 <td>查看 Windows 版本</td>
 </tr>
-<tr>
+<tr class="even">
 <td>explorer</td>
 <td>资源管理器</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>regedit</td>
 <td>注册表编辑器</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>taskmgr</td>
 <td>任务管理器</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>compmgmt.msc</td>
 <td>计算机管理</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>devmgmt.msc</td>
 <td>设备管理器</td>
 <td></td>
 </tr>
-</tbody></table>
-<h3 id="设置-path-1"><a href="#设置-path-1" class="headerlink" title="设置 path"></a>设置 path</h3><p>$Env:path&#x3D;”.&#x2F;.venv&#x2F;Scripts&#x2F;;”+$Env:path</p>
+</tbody>
+</table>
+<h3 id="设置-path-1">设置 path</h3>
+<p><span
+class="math inline">\(Env:path=&quot;./.venv/Scripts/;&quot;+\)</span>Env:path</p>
 
     </div>
 
@@ -480,6 +489,12 @@
   
 
 
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 

@@ -32,7 +32,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://dukebode.github.io/img/linux/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png">
 <meta property="article:published_time" content="2019-07-29T15:13:22.000Z">
-<meta property="article:modified_time" content="2023-07-15T10:25:32.653Z">
+<meta property="article:modified_time" content="2023-07-15T13:47:02.085Z">
 <meta property="article:author" content="Duke Bode">
 <meta property="article:tag" content="FAQ">
 <meta name="twitter:card" content="summary">
@@ -146,7 +146,8 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#yum"><span class="nav-number">1.</span> <span class="nav-text">yum</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-%E5%9F%BA%E7%A1%80"><span class="nav-number">1.1.</span> <span class="nav-text">Linux 基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8nohup-%E5%92%8C-amp-%E8%AE%A9%E5%91%BD%E4%BB%A4%E5%90%8E%E5%8F%B0%E6%89%A7%E8%A1%8C"><span class="nav-number">1.2.</span> <span class="nav-text">使用nohup 和 &amp; 让命令后台执行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95"><span class="nav-number">1.3.</span> <span class="nav-text">文件目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux-Setting"><span class="nav-number">1.4.</span> <span class="nav-text">Linux Setting</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#DNF"><span class="nav-number">1.4.1.</span> <span class="nav-text">DNF</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E6%A0%A1%E9%AA%8C"><span class="nav-number">1.5.</span> <span class="nav-text">文件校验</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#yum"><span class="nav-number">1.</span> <span class="nav-text">yum</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#linux-%E5%9F%BA%E7%A1%80"><span class="nav-number">1.1.</span> <span class="nav-text">Linux 基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8nohup-%E5%92%8C-%E8%AE%A9%E5%91%BD%E4%BB%A4%E5%90%8E%E5%8F%B0%E6%89%A7%E8%A1%8C"><span class="nav-number">1.2.</span> <span class="nav-text">使用nohup 和 &amp;
+让命令后台执行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95"><span class="nav-number">1.3.</span> <span class="nav-text">文件目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linux-setting"><span class="nav-number">1.4.</span> <span class="nav-text">Linux Setting</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#dnf"><span class="nav-number">1.4.1.</span> <span class="nav-text">DNF</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E6%A0%A1%E9%AA%8C"><span class="nav-number">1.5.</span> <span class="nav-text">文件校验</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -232,7 +233,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-15 10:25:32" itemprop="dateModified" datetime="2023-07-15T10:25:32+00:00">2023-07-15</time>
+      <time title="Modified: 2023-07-15 13:47:02" itemprop="dateModified" datetime="2023-07-15T13:47:02+00:00">2023-07-15</time>
     </span>
 
   
@@ -246,139 +247,168 @@
     
     <div class="post-body" itemprop="articleBody"><p>Linux Frequently Asked Questions</p>
 <span id="more"></span>
-
-<h1 id="yum"><a href="#yum" class="headerlink" title="yum"></a>yum</h1><p>查看yum源Java包<br>yum list <em>java</em></p>
-<h2 id="Linux-基础"><a href="#Linux-基础" class="headerlink" title="Linux 基础"></a>Linux 基础</h2><p><a href="#%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95">文件目录</a></p>
-<h2 id="使用nohup-和-amp-让命令后台执行"><a href="#使用nohup-和-amp-让命令后台执行" class="headerlink" title="使用nohup 和 &amp; 让命令后台执行"></a>使用nohup 和 &amp; 让命令后台执行</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/jinxiao-pu/p/9131057.html">https://www.cnblogs.com/jinxiao-pu/p/9131057.html</a></li>
-<li><a target="_blank" rel="noopener" href="https://www.jb51.net/article/169783.htm">Linux nohup实现后台运行程序及查看（nohup与&amp;）</a></li>
+<h1 id="yum">yum</h1>
+<p>查看yum源Java包 yum list <em>java</em></p>
+<h2 id="linux-基础">Linux 基础</h2>
+<p><a href="#文件目录">文件目录</a></p>
+<h2 id="使用nohup-和-让命令后台执行">使用nohup 和 &amp;
+让命令后台执行</h2>
+<ul>
+<li>https://www.cnblogs.com/jinxiao-pu/p/9131057.html</li>
+<li><a target="_blank" rel="noopener" href="https://www.jb51.net/article/169783.htm">Linux
+nohup实现后台运行程序及查看（nohup与&amp;）</a></li>
 </ul>
-<p><a target="_blank" rel="noopener" href="https://ywnz.com/linuxyffq/4544.html">在RHEL 8&#x2F;CentOS 8上安装LEMP（Nginx、MariaDB、PHP7.2）的方法</a></p>
-<p><a target="_blank" rel="noopener" href="https://opsx.alibaba.com/mirror/search?q=dnf&lang=zh-CN">https://opsx.alibaba.com/mirror/search?q=dnf&amp;lang=zh-CN</a></p>
-<h2 id="文件目录"><a href="#文件目录" class="headerlink" title="文件目录"></a>文件目录</h2><p><img src="/img/linux/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png" alt="目录结构"></p>
+<p><a target="_blank" rel="noopener" href="https://ywnz.com/linuxyffq/4544.html">在RHEL 8/CentOS
+8上安装LEMP（Nginx、MariaDB、PHP7.2）的方法</a></p>
+<p>https://opsx.alibaba.com/mirror/search?q=dnf&amp;lang=zh-CN</p>
+<h2 id="文件目录">文件目录</h2>
+<figure>
+<img src="/img/linux/目录结构.png" alt="目录结构" />
+<figcaption aria-hidden="true">目录结构</figcaption>
+</figure>
 <table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
 <thead>
-<tr>
+<tr class="header">
 <th>根目录</th>
 <th>-</th>
 <th>-</th>
 </tr>
 </thead>
-<tbody><tr>
-<td>bin -&gt; usr&#x2F;bin</td>
+<tbody>
+<tr class="odd">
+<td>bin -&gt; usr/bin</td>
 <td>存放二进制可执行文件(ls,cat,mkdir等)，常用命令 普通用户命令</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>boot</td>
 <td>系统启动相关文件</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>dev</td>
 <td>设备文件</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>etc</td>
 <td>存放系统管理和配置文件</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>home</td>
 <td>普通用户家目录 存放所有用户文件的根目录，是用户主目录的基点</td>
 <td></td>
 </tr>
-<tr>
-<td>lib -&gt; usr&#x2F;lib</td>
+<tr class="even">
+<td>lib -&gt; usr/lib</td>
 <td>系统库文件 存放着和系统运行相关的库文件</td>
 <td></td>
 </tr>
-<tr>
-<td>lib64 -&gt; usr&#x2F;lib64</td>
+<tr class="odd">
+<td>lib64 -&gt; usr/lib64</td>
 <td></td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>media</td>
 <td>媒介目录</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>mnt</td>
-<td>临时挂载目录 系统管理员安装临时文件系统的安装点，系统提供这个目录是让用户临时挂载其他的文件系统；</td>
+<td>临时挂载目录
+系统管理员安装临时文件系统的安装点，系统提供这个目录是让用户临时挂载其他的文件系统；</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>proc</td>
 <td>虚拟文件系统目录，是系统内存的映射。可直接访问这个目录来获取系统信息；</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>root</td>
 <td>root的Home</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>run</td>
 <td>临时文件</td>
 <td></td>
 </tr>
-<tr>
-<td>sbin -&gt; usr&#x2F;sbin</td>
+<tr class="odd">
+<td>sbin -&gt; usr/sbin</td>
 <td>root用户命令</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>srv</td>
 <td>服务产生文件</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>sys</td>
 <td>系统内核</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>tmp</td>
 <td>临时目录，用于存放各种临时文件，是公用的临时文件存储点；</td>
 <td></td>
 </tr>
-<tr>
+<tr class="odd">
 <td>usr</td>
 <td>程序目录</td>
 <td></td>
 </tr>
-<tr>
+<tr class="even">
 <td>var</td>
-<td>存放日志 用于存放运行时需要改变数据的文件，也是某些大文件的溢出区，比方说各种服务的日志文件（系统启动日志等。）等</td>
+<td>存放日志
+用于存放运行时需要改变数据的文件，也是某些大文件的溢出区，比方说各种服务的日志文件（系统启动日志等。）等</td>
 <td></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <ul>
-<li>&#x2F;lost+found 这个目录平时是空的，系统非正常关机而留下“无家可归”的文件（windows下叫什么.chk）就在这里。</li>
-<li>&#x2F;opt 额外安装的可选应用程序包所放置的位置。一般情况下，我们可以把tomcat等都安装到这里；</li>
-<li>&#x2F;proc 系统启动的进程文件<ul>
+<li>/lost+found
+这个目录平时是空的，系统非正常关机而留下“无家可归”的文件（windows下叫什么.chk）就在这里。</li>
+<li>/opt
+额外安装的可选应用程序包所放置的位置。一般情况下，我们可以把tomcat等都安装到这里；</li>
+<li>/proc 系统启动的进程文件
+<ul>
 <li>Linux 内核的窗口，只存在于内存中，并不占用磁盘空间</li>
 <li>进程信息：进程项、进程参数列表、进程环境、进程可执行文件、进程文件描述符、进程内存统计信息等</li>
 <li>硬件信息：CPU信息、设备信息、PCI总线信息、串口信息等</li>
 <li>内核信息：版本信息、主机名与与域名信息、内存使用等</li>
 <li>设备、挂载点与文件系统</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="Linux-Setting"><a href="#Linux-Setting" class="headerlink" title="Linux Setting"></a>Linux Setting</h2><h3 id="DNF"><a href="#DNF" class="headerlink" title="DNF"></a>DNF</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># /etc/yum.repos.d/dnf.repo</span></span><br><span class="line">wget https://mirrors.aliyun.com/centos/7.5.1804/extras/x86_64/Packages/centos-release-yum4-1-2.el7.centos.noarch.rpm</span><br><span class="line">yum install centos-release-yum4-1-2.el7.centos.noarch.rpm</span><br><span class="line"></span><br><span class="line"><span class="comment"># install DNF</span></span><br><span class="line">yum install dnf</span><br><span class="line">dnf upgrade</span><br></pre></td></tr></table></figure>
-
+<h2 id="linux-setting">Linux Setting</h2>
+<h3 id="dnf">DNF</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># /etc/yum.repos.d/dnf.repo</span></span><br><span class="line">wget https://mirrors.aliyun.com/centos/7.5.1804/extras/x86_64/Packages/centos-release-yum4-1-2.el7.centos.noarch.rpm</span><br><span class="line">yum install centos-release-yum4-1-2.el7.centos.noarch.rpm</span><br><span class="line"></span><br><span class="line"><span class="comment"># install DNF</span></span><br><span class="line">yum install dnf</span><br><span class="line">dnf upgrade</span><br></pre></td></tr></table></figure>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">dnf -y groupinstall <span class="string">&quot;Development Tools&quot;</span></span><br><span class="line">dnf -y install bzip2-devel sqlite-devel readline-devel libffi-devel systemtap-sdt-devel openssl-static  lzma tk-devel xz-devel  ncurses-devel gdbm-devel  gcc</span><br><span class="line"><span class="comment"># zlib 实现 gzip 压缩解压缩功能</span></span><br><span class="line"><span class="comment"># pcre 实现配置文件里的正则表达式解析功能</span></span><br><span class="line"><span class="comment"># openssl 实现 SSL 功能</span></span><br><span class="line">dnf -y install zlib zlib-devel openssl openssl-devel pcre pcre-devel</span><br></pre></td></tr></table></figure>
-
-<h2 id="文件校验"><a href="#文件校验" class="headerlink" title="文件校验"></a>文件校验</h2><p>linux</p>
-<p>md5sum hero.png<br>fefd01c9db6e3e83b978eff1b7a67c02  hero.png</p>
-<p>sha1sum hero.png<br>f1e929db9cef34a8786ee4b6246fb739566c799d  hero.png</p>
-<p>sha256sum hero.png<br>5b654b2297f17d9106388db31c1190240cfb359144925e892468b40d692c780f  hero.png</p>
+<h2 id="文件校验">文件校验</h2>
+<p>linux</p>
+<p>md5sum hero.png fefd01c9db6e3e83b978eff1b7a67c02 hero.png</p>
+<p>sha1sum hero.png f1e929db9cef34a8786ee4b6246fb739566c799d
+hero.png</p>
+<p>sha256sum hero.png
+5b654b2297f17d9106388db31c1190240cfb359144925e892468b40d692c780f
+hero.png</p>
 <p>windows</p>
-<p>E:&gt;certutil -hashfile hero.png md5<br>MD5 哈希(文件 hero.png):<br>fefd01c9db6e3e83b978eff1b7a67c02<br>CertUtil: -hashfile 命令成功完成。</p>
-<p>E:&gt;certutil -hashfile hero.png SHA1<br>SHA1 哈希(文件 hero.png):<br>f1e929db9cef34a8786ee4b6246fb739566c799d<br>CertUtil: -hashfile 命令成功完成。</p>
-<p>E:&gt;certutil -hashfile hero.png SHA256<br>SHA256 哈希(文件 hero.png):<br>5b654b2297f17d9106388db31c1190240cfb359144925e892468b40d692c780f<br>CertUtil: -hashfile 命令成功完成。</p>
+<p>E:&gt;certutil -hashfile hero.png md5 MD5 哈希(文件 hero.png):
+fefd01c9db6e3e83b978eff1b7a67c02 CertUtil: -hashfile 命令成功完成。</p>
+<p>E:&gt;certutil -hashfile hero.png SHA1 SHA1 哈希(文件 hero.png):
+f1e929db9cef34a8786ee4b6246fb739566c799d CertUtil: -hashfile
+命令成功完成。</p>
+<p>E:&gt;certutil -hashfile hero.png SHA256 SHA256 哈希(文件 hero.png):
+5b654b2297f17d9106388db31c1190240cfb359144925e892468b40d692c780f
+CertUtil: -hashfile 命令成功完成。</p>
 
     </div>
 
@@ -512,6 +542,12 @@
   
 
 
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
 
 
 
