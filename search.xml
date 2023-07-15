@@ -23,6 +23,141 @@
 ]]></content>
   </entry>
   <entry>
+    <title>计算机网络</title>
+    <url>/2023/07/14/408/</url>
+    <content><![CDATA[<h1 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><ul>
+<li>计算机网络是互联的、自治的计算机集合。</li>
+</ul>
+<h3 id="组成"><a href="#组成" class="headerlink" title="组成"></a>组成</h3><h4 id="从组成部分"><a href="#从组成部分" class="headerlink" title="从组成部分"></a>从组成部分</h4><ul>
+<li>软件</li>
+<li>硬件</li>
+<li>协议</li>
+</ul>
+<h4 id="从工作方式"><a href="#从工作方式" class="headerlink" title="从工作方式"></a>从工作方式</h4><ul>
+<li>边缘部分</li>
+<li>核心部分</li>
+</ul>
+<h4 id="从功能组成"><a href="#从功能组成" class="headerlink" title="从功能组成"></a>从功能组成</h4><ul>
+<li>通信子网</li>
+<li>资源子网</li>
+</ul>
+<h3 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h3><ul>
+<li>数据通信</li>
+<li>资源共享</li>
+<li>分布式处理</li>
+<li>提高可靠性</li>
+<li>负载均衡</li>
+</ul>
+<h3 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h3><h4 id="按分布范围"><a href="#按分布范围" class="headerlink" title="按分布范围"></a>按分布范围</h4><ul>
+<li>WAN 广域网</li>
+<li>MAN 城域网</li>
+<li>LAN 局域网</li>
+<li>PAN 个人区域网</li>
+</ul>
+<h4 id="按传输技术"><a href="#按传输技术" class="headerlink" title="按传输技术"></a>按传输技术</h4><ul>
+<li>广播式网络</li>
+<li>点对点式网络</li>
+</ul>
+<h4 id="按拓扑结构"><a href="#按拓扑结构" class="headerlink" title="按拓扑结构"></a>按拓扑结构</h4><ul>
+<li>总线型</li>
+<li>星型</li>
+<li>环型</li>
+<li>网状型</li>
+</ul>
+<h4 id="按交换技术"><a href="#按交换技术" class="headerlink" title="按交换技术"></a>按交换技术</h4><ul>
+<li>电路交换网络</li>
+<li>报文交换网络</li>
+<li>分组交换网络</li>
+</ul>
+<h4 id="按使用者"><a href="#按使用者" class="headerlink" title="按使用者"></a>按使用者</h4><ul>
+<li>公用网</li>
+<li>专用网</li>
+</ul>
+<h4 id="按传输介质"><a href="#按传输介质" class="headerlink" title="按传输介质"></a>按传输介质</h4><ul>
+<li>有线网络</li>
+<li>无线网络</li>
+</ul>
+<h3 id="标准化"><a href="#标准化" class="headerlink" title="标准化"></a>标准化</h3><h4 id="分类-1"><a href="#分类-1" class="headerlink" title="分类"></a>分类</h4><ul>
+<li>法定标准</li>
+<li>事实标准</li>
+</ul>
+<h4 id="组织"><a href="#组织" class="headerlink" title="组织"></a>组织</h4><ul>
+<li>IETF 互联网工程任务组</li>
+<li>RFC 征求意见稿</li>
+<li>ISO 国际标准化组织联盟</li>
+<li>ITU 国际电信联盟</li>
+<li>IEEE 国际电气电子工程师协会</li>
+</ul>
+<h3 id="性能指标"><a href="#性能指标" class="headerlink" title="性能指标"></a>性能指标</h3><h4 id="速率（数据率、数据传输率、比特率）"><a href="#速率（数据率、数据传输率、比特率）" class="headerlink" title="速率（数据率、数据传输率、比特率）"></a>速率（数据率、数据传输率、比特率）</h4><ul>
+<li>连接在计算机网络上的主机在数字信道上传送数据位数的速率</li>
+</ul>
+<h5 id="单位"><a href="#单位" class="headerlink" title="单位"></a>单位</h5><ul>
+<li>$b&#x2F;s$</li>
+<li>$kb&#x2F;s&#x3D;10^3b&#x2F;s$</li>
+<li>$Mb&#x2F;s&#x3D;10^3kb&#x2F;s&#x3D;10^6b&#x2F;s$</li>
+<li>$Gb&#x2F;s&#x3D;10^3Mb&#x2F;s&#x3D;10^6kb&#x2F;s&#x3D;10^9b&#x2F;s$</li>
+<li>$Tb&#x2F;s&#x3D;10^3Gb&#x2F;s&#x3D;10^6Mb&#x2F;s&#x3D;10^9kb&#x2F;s&#x3D;10^{12}b&#x2F;s$</li>
+</ul>
+<h4 id="带宽"><a href="#带宽" class="headerlink" title="带宽"></a>带宽</h4><ul>
+<li>网络设备支持的最高速率</li>
+</ul>
+<h4 id="吞吐量"><a href="#吞吐量" class="headerlink" title="吞吐量"></a>吞吐量</h4><ul>
+<li>表示单位时间内通过某个网络（或信道、接口）的数据量。</li>
+<li>受网络带宽和网络的额定速率的限制。</li>
+</ul>
+<h4 id="时延"><a href="#时延" class="headerlink" title="时延"></a>时延</h4><ul>
+<li>数据（报文&#x2F;分组&#x2F;比特流）从网络（或链路）的一段传送到另一端所需要的时间。</li>
+<li>单位 s</li>
+<li>总时延&#x3D;发送时延+传播时延+处理时延+排队时延</li>
+</ul>
+<h5 id="发送时延"><a href="#发送时延" class="headerlink" title="发送时延"></a>发送时延</h5><ul>
+<li>$发送时延&#x3D;\frac{数据长度}{信道带宽}$</li>
+</ul>
+<h5 id="传播时延"><a href="#传播时延" class="headerlink" title="传播时延"></a>传播时延</h5><ul>
+<li>$传播时延&#x3D;\frac{信道长度}{电磁波在信道上的传播速率}$</li>
+</ul>
+<h5 id="排队时延"><a href="#排队时延" class="headerlink" title="排队时延"></a>排队时延</h5><h5 id="处理时延"><a href="#处理时延" class="headerlink" title="处理时延"></a>处理时延</h5><h4 id="时延带宽积"><a href="#时延带宽积" class="headerlink" title="时延带宽积"></a>时延带宽积</h4><ul>
+<li>发送端发送的第一个bit即将到达终点时，发送端已经发出了多少个bit</li>
+<li>单位 bit</li>
+<li>$时延带宽积&#x3D;传播时延\times带宽$</li>
+</ul>
+<h4 id="往返时延RTT"><a href="#往返时延RTT" class="headerlink" title="往返时延RTT"></a>往返时延RTT</h4><ul>
+<li>从发送方发送数据开始，到发送方收到接收方的确认，总共经历的时延</li>
+<li>$往返传播时延&#x3D;传播时延\times2$</li>
+<li>$RTT&#x3D;末端处理时间+传播时延\times2$</li>
+</ul>
+<h4 id="信道利用率"><a href="#信道利用率" class="headerlink" title="信道利用率"></a>信道利用率</h4><ul>
+<li>$信道利用率&#x3D;\frac{有数据通过时间}{(有+无)数据通过时间}$</li>
+</ul>
+<h2 id="体系结构和参考模型"><a href="#体系结构和参考模型" class="headerlink" title="体系结构和参考模型"></a>体系结构和参考模型</h2><h3 id="分层结构"><a href="#分层结构" class="headerlink" title="分层结构"></a>分层结构</h3><h4 id="为什么分层"><a href="#为什么分层" class="headerlink" title="为什么分层"></a>为什么分层</h4><h4 id="怎么分层"><a href="#怎么分层" class="headerlink" title="怎么分层"></a>怎么分层</h4><ul>
+<li>协议</li>
+<li>服务</li>
+<li>接口</li>
+</ul>
+<h3 id="OSI-参考模型（7层）"><a href="#OSI-参考模型（7层）" class="headerlink" title="OSI 参考模型（7层）"></a>OSI 参考模型（7层）</h3><ul>
+<li>通信子网<ul>
+<li>物理层</li>
+<li>数据链路层</li>
+<li>网络层</li>
+</ul>
+</li>
+<li>传输层</li>
+<li>资源子网<ul>
+<li>会话层</li>
+<li>表示层</li>
+<li>应用层</li>
+</ul>
+</li>
+</ul>
+<h3 id="TCP-x2F-IP-参考模型-（四层）"><a href="#TCP-x2F-IP-参考模型-（四层）" class="headerlink" title="TCP&#x2F;IP 参考模型 （四层）"></a>TCP&#x2F;IP 参考模型 （四层）</h3><ul>
+<li>网络接口层</li>
+<li>网际层</li>
+<li>传输层</li>
+<li>应用层</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>BeautifulSoup</title>
     <url>/2018/01/23/BeautifulSoup/</url>
     <content><![CDATA[<p>Beautiful Soup提供一些简单的、python式的函数用来处理导航、搜索、修改分析树等功能。它是一个工具箱，通过解析文档为用户提供需要抓取的数据，因为简单，所以不需要多少代码就可以写出一个完整的应用程序</p>
@@ -1129,7 +1264,7 @@
 </li>
 <li><p>配置 github 用户 ssh</p>
 </li>
-<li><p>ssh -T <a href="mailto:&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;">&#103;&#105;&#x74;&#x40;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;</a></p>
+<li><p>ssh -T <a href="mailto:&#x67;&#105;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#98;&#46;&#x63;&#x6f;&#109;">&#x67;&#105;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#117;&#98;&#46;&#x63;&#x6f;&#109;</a></p>
 </li>
 <li><p>创建<code>用户名.github.io</code>仓库</p>
 </li>
@@ -1300,7 +1435,7 @@
 <p>举个例子，我的为：</p>
 <ul>
 <li>① DukeBode</li>
-<li>② <a href="mailto:&#68;&#x75;&#107;&#x65;&#49;&#50;&#x33;&#64;&#x61;&#108;&#105;&#121;&#x75;&#110;&#x2e;&#99;&#111;&#109;">&#68;&#x75;&#107;&#x65;&#49;&#50;&#x33;&#64;&#x61;&#108;&#105;&#121;&#x75;&#110;&#x2e;&#99;&#111;&#109;</a></li>
+<li>② <a href="mailto:&#x44;&#x75;&#107;&#x65;&#49;&#50;&#51;&#x40;&#97;&#108;&#105;&#x79;&#117;&#110;&#46;&#99;&#x6f;&#109;">&#x44;&#x75;&#107;&#x65;&#49;&#50;&#51;&#x40;&#97;&#108;&#105;&#x79;&#117;&#110;&#46;&#99;&#x6f;&#109;</a></li>
 </ul>
 <p>剩余的<code>红色标记</code>请自行记录，此处仅记录重要信息</p>
 <h3 id="创建-GitPage-仓库"><a href="#创建-GitPage-仓库" class="headerlink" title="创建 GitPage 仓库"></a>创建 GitPage 仓库</h3><p>登录 GitHub,在相关位置输入上文记录的内容。<a href="https://github.com/login">登录地址</a></p>
@@ -1551,6 +1686,61 @@
 ]]></content>
   </entry>
   <entry>
+    <title>english</title>
+    <url>/2023/07/13/english/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<h2 id="代词"><a href="#代词" class="headerlink" title="代词"></a>代词</h2><h3 id="人称代词"><a href="#人称代词" class="headerlink" title="人称代词"></a>人称代词</h3><h4 id="主格"><a href="#主格" class="headerlink" title="主格"></a>主格</h4><ul>
+<li>作主语</li>
+<li>I、you、he、she、it、we、they</li>
+</ul>
+<h4 id="宾格"><a href="#宾格" class="headerlink" title="宾格"></a>宾格</h4><ul>
+<li>作宾语、表语</li>
+<li>me、you、him、her、it、us、them</li>
+</ul>
+<h3 id="物主代词"><a href="#物主代词" class="headerlink" title="物主代词"></a>物主代词</h3><h4 id="形容词性"><a href="#形容词性" class="headerlink" title="形容词性"></a>形容词性</h4><ul>
+<li>在名词前作定语</li>
+<li>my、your、his、her、its、our、their</li>
+</ul>
+<h4 id="名词性"><a href="#名词性" class="headerlink" title="名词性"></a>名词性</h4><p>- </p>
+<ul>
+<li>mine、yours、his、hers、its、ours、theirs</li>
+</ul>
+<h3 id="反身代词"><a href="#反身代词" class="headerlink" title="反身代词"></a>反身代词</h3><ul>
+<li>宾语、表语、同位语</li>
+<li>myself、yourself、himself、herself、itself、ourselves、yourselves、themselves</li>
+</ul>
+<p>| 分类       | 主格   | 宾格     | 形容词性  | 名词性     | 反身代词     |<br>| :——-:  | :—-: | : —- : | : —– : | :——–: | :——–:   |<br>| 我         | I      | me       | my        | mine       | myself       |<br>| 我们       | we     | us       | our       | ours       | ourselves    |<br>| 你         | you    | you      | your      | yours      | yourself     |<br>| 你们       | you    | you      | your      | yours      | yourselves   |<br>| 他         | he     | him      | his       | his        | himself      |<br>| 她         | she    | her      | her       | hers       | herself      |<br>| 它         | it     | it       | its       | its        | itself       |<br>| 他&#x2F;她&#x2F;它们 | they   | them     | their     | theirs     | themselves   |</p>
+<h3 id="指示代词"><a href="#指示代词" class="headerlink" title="指示代词"></a>指示代词</h3><ul>
+<li>作主语、宾语、表语、定语</li>
+<li>this、that、these、those</li>
+</ul>
+<h3 id="相互代词"><a href="#相互代词" class="headerlink" title="相互代词"></a>相互代词</h3><h3 id="疑问代词"><a href="#疑问代词" class="headerlink" title="疑问代词"></a>疑问代词</h3><ul>
+<li>who、whom、whose、which、what</li>
+</ul>
+<h3 id="关系代词"><a href="#关系代词" class="headerlink" title="关系代词"></a>关系代词</h3><h3 id="连接代词"><a href="#连接代词" class="headerlink" title="连接代词"></a>连接代词</h3><h3 id="不定代词"><a href="#不定代词" class="headerlink" title="不定代词"></a>不定代词</h3><h2 id="介词"><a href="#介词" class="headerlink" title="介词"></a>介词</h2><ul>
+<li>介词后面通常接名词、代词、动名词来构成介词短语</li>
+</ul>
+<h3 id="表示时间"><a href="#表示时间" class="headerlink" title="表示时间"></a>表示时间</h3><ul>
+<li>at &#x2F; on &#x2F; in 在……时间点&#x2F;上&#x2F;内</li>
+<li>before&#x2F;after 在……时间之前&#x2F;后</li>
+<li>form，since 自从……时间</li>
+<li>by，until 截止到（直到）……时间</li>
+<li>for 持续……时间</li>
+<li>during 在……期间</li>
+</ul>
+<h3 id="表示地点或范围"><a href="#表示地点或范围" class="headerlink" title="表示地点或范围"></a>表示地点或范围</h3><ul>
+<li>a&#x2F; in 在……地点&#x2F;里面</li>
+<li>on，above，over &#x2F; under，below，beneath 在……上面&#x2F;下面</li>
+<li>in front of &#x2F; behing 在……之前&#x2F;后</li>
+<li></li>
+</ul>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3>]]></content>
+      <tags>
+        <tag>english</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>git 仓库配置</title>
     <url>/2019/08/15/git/</url>
     <content><![CDATA[<p>Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</p>
@@ -1715,7 +1905,12 @@
   <entry>
     <title>latex</title>
     <url>/2019/09/06/latex/</url>
-    <content><![CDATA[<span id="more"></span>]]></content>
+    <content><![CDATA[<span id="more"></span>
+
+<p>付费快速阅读<br>付费快速加载<br>付费提高网速</p>
+<p>$a^2$</p>
+<p>$$\sqrt[2]{2}$$<br>$$\sqrt{3}$$<br>$$\sqrt{4}$$<br>$\sqrt{6}$</p>
+]]></content>
   </entry>
   <entry>
     <title>linux-usr</title>
