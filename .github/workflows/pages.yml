@@ -16,7 +16,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "16"
-
       - name: Install Pandoc
 	run: |
 	  sudo apt-get install pandoc
