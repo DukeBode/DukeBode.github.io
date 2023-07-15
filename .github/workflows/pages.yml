@@ -16,9 +16,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "16"
-      - name: Pandoc
-	run: |
-	  sudo apt-get install pandoc
+	  
+      - uses: nikeee/setup-pandoc@v1
 
       - name: Cache NPM dependencies
         uses: actions/cache@v2
