@@ -140,8 +140,13 @@ site_state: true
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
   GitHub: https://github.com/DukeBode || fab fa-github
+  微视: https://video.weishi.qq.com/tDGaUYvH
+  快手: https://v.kuaishou.com/10446tX
+  抖音: https://v.douyin.com/i91gnVE/
+  哔哩哔哩: https://b23.tv/w0ntwkD
+  波点音乐: https://h5app.kuwo.cn/m/bdpersonal/index.html?uid=20774524
   #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
-  #Weibo: https://weibo.com/yourname || fab fa-weibo
+  Weibo: https://weibo.com/u/2190042072 || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
