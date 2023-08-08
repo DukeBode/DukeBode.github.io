@@ -21,7 +21,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" integrity="sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"dukebode.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dukebode.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="Duke Blog">
@@ -151,12 +151,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">75</span>
+          <span class="site-state-item-count">72</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">31</span>
+        <span class="site-state-item-count">29</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -205,789 +205,6 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2018/11/10/asm-base/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Duke Bode">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Duke Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Duke Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2018/11/10/asm-base/" class="post-title-link" itemprop="url">汇编语言基础</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2018-11-10 16:15:47" itemprop="dateCreated datePublished" datetime="2018-11-10T16:15:47+00:00">2018-11-10</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-17 12:43:23" itemprop="dateModified" datetime="2023-07-17T12:43:23+00:00">2023-07-17</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <span id="more"></span>
-<h1 id="pc-硬件的基本特征">PC 硬件的基本特征</h1>
-<h2 id="计算机存储单位">1、计算机存储单位</h2>
-<ol type="1">
-<li>位 bit(Binary digit)) &gt; 一个位表示 0 或 1</li>
-<li>字节 &gt; 一组 9
-个相关的位称为字节，它代表内存储器和外部设备的一个存储单元
-<ul>
-<li>每个字节由 8 个数据位和 1 个奇偶位组成（<a
-href="">奇偶校验</a>）</li>
-<li>一个字节中的各位从右到左是按 0 到 7 编号的</li>
-<li>在存储器中的每个字节都有一个唯一的地址。第一个字节在最低的存储器单元中，编号为
-0 ， 第二个字节编号为 1</li>
-</ul></li>
-<li>字 &gt; 2 字节（16位）数据项</li>
-<li>双字 &gt; 4 字节（32位）数据项</li>
-<li>匹字 &gt; 8 字节（64位）数据项</li>
-<li>小段 &gt; 16字节（128位）区</li>
-<li>千字节（KB） &gt; 2^10等于1024字节</li>
-<li>兆字节（MB） &gt; 2^20等于1048576字节</li>
-</ol>
-<h2 id="二进制数系统">2、二进制数系统</h2>
-<blockquote>
-<p>位的集合可以表示任何数字的值。 - 二进制数的值是由为 1
-的位及其相关的位置所决定的。</p>
-</blockquote>
-<table>
-<thead>
-<tr class="header">
-<th>位编号</th>
-<th></th>
-<th>11</th>
-<th>10</th>
-<th>9</th>
-<th>8</th>
-<th></th>
-<th>7</th>
-<th>6</th>
-<th>5</th>
-<th>4</th>
-<th></th>
-<th>3</th>
-<th>2</th>
-<th>1</th>
-<th>0</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>位的值</td>
-<td></td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td></td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td></td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr class="even">
-<td>位置的值</td>
-<td></td>
-<td>2048</td>
-<td>1024</td>
-<td>512</td>
-<td>256</td>
-<td></td>
-<td>128</td>
-<td>64</td>
-<td>32</td>
-<td>16</td>
-<td></td>
-<td>8</td>
-<td>4</td>
-<td>2</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<h2 id="十六进制表示">3、十六进制表示</h2>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: center;">十进制</th>
-<th style="text-align: center;">二进制</th>
-<th style="text-align: center;">十六进制</th>
-<th style="text-align: center;">峘进制</th>
-<th>huán</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">0000</td>
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">零</td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">0001</td>
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">壹</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">0010</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">贰</td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">0011</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">叁</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">0100</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">肆</td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">0101</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">伍</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">0110</td>
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">陆</td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">0111</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">柒</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">1000</td>
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">捌</td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">9</td>
-<td style="text-align: center;">1001</td>
-<td style="text-align: center;">9</td>
-<td style="text-align: center;">玖</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">10</td>
-<td style="text-align: center;">1010</td>
-<td style="text-align: center;">A</td>
-<td style="text-align: center;">拾</td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">11</td>
-<td style="text-align: center;">1011</td>
-<td style="text-align: center;">B</td>
-<td style="text-align: center;">屲</td>
-<td>wā</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">12</td>
-<td style="text-align: center;">1100</td>
-<td style="text-align: center;">C</td>
-<td style="text-align: center;">亗</td>
-<td>suì</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">13</td>
-<td style="text-align: center;">1101</td>
-<td style="text-align: center;">D</td>
-<td style="text-align: center;">岌</td>
-<td>jí</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">14</td>
-<td style="text-align: center;">1110</td>
-<td style="text-align: center;">E</td>
-<td style="text-align: center;">岄</td>
-<td>yuè</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">15</td>
-<td style="text-align: center;">1111</td>
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">岪</td>
-<td>fú</td>
-</tr>
-</tbody>
-</table>
-<h2 id="pc-的组成">4、PC 的组成</h2>
-<blockquote>
-<p>PC
-的主要组成部分是它的主板。它包括<code>处理器</code>、<code>协处理器</code>、<code>主存储器</code>、<code>接插件</code>以及为可选电路卡用的<code>扩展槽</code>。这些槽和接插件为下面部件提供了出入口，比如<code>只读存储器 ROM、随机存取存储器 RAM、硬盘、CD-ROM 设备、附加的主存储器、显示设备、键盘、鼠标、并行与串行设备、声音合成器以及高速缓冲存储器等</code>。处理器利用高速缓冲存储器，减少对较低速主存储器的访问。</p>
-</blockquote>
-<ol type="1">
-<li><p>处理器</p>
-<blockquote>
-<p>处理器，也称中央处理器或 CPU ，用来完成所有的指令执行与数据处理。</p>
-</blockquote>
-<ul>
-<li>8088</li>
-</ul></li>
-</ol>
-<h3 id="段寄存器">段寄存器</h3>
-<table>
-<thead>
-<tr class="header">
-<th>标志</th>
-<th>名称</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>CS</td>
-<td>代码段(Code Segment)</td>
-</tr>
-<tr class="even">
-<td>DS</td>
-<td>数据段(Data Segment)</td>
-</tr>
-<tr class="odd">
-<td>SS</td>
-<td>堆栈段(Stack Segment)</td>
-</tr>
-<tr class="even">
-<td>ES</td>
-<td>附加段指针(Extra Segment)</td>
-</tr>
-<tr class="odd">
-<td>FS</td>
-<td>附加段指针</td>
-</tr>
-<tr class="even">
-<td>GS</td>
-<td>附加段指针</td>
-</tr>
-</tbody>
-</table>
-<h3 id="通用寄存器">通用寄存器</h3>
-<table>
-<thead>
-<tr class="header">
-<th>寄存器</th>
-<th>名称</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>EAX</td>
-<td>主累加器(accumulator)寄存器</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>EBX</td>
-<td>基址(base)寄存器</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>ECX</td>
-<td>计数(count)寄存器</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>EDX</td>
-<td>数据(data)寄存器</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>EDI</td>
-<td>目的变址(Destination Index)寄存器</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>ESI</td>
-<td>源变址(Source Index)寄存器</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>ESP</td>
-<td>堆栈指针(Stack Pointer)寄存器</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>EBP</td>
-<td>基址指针(Base Pointer)寄存器</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>EIP</td>
-<td>指令指针(Instruction Pointer)寄存器</td>
-<td>下一条指令的偏移地址</td>
-</tr>
-</tbody>
-</table>
-<h3 id="标志寄存器">标志寄存器</h3>
-<table>
-<colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-<col style="width: 11%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">位编号</th>
-<th style="text-align: center;">符号</th>
-<th>标志(Flag)</th>
-<th>置位符号 1</th>
-<th>复位符号 0</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">0</td>
-<td style="text-align: center;">CF</td>
-<td>进位(carry)标志</td>
-<td>CY(carry)</td>
-<td>NY(no carry)</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">1</td>
-<td style="text-align: center;">1</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">2</td>
-<td style="text-align: center;">PF</td>
-<td>奇偶校验(parity)标志</td>
-<td>PE(parity even)</td>
-<td>PO(parity odd)</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">3</td>
-<td style="text-align: center;">0</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">AF</td>
-<td>辅助进位(auxiliary carry)标志</td>
-<td>AC(auxiliary carry)</td>
-<td>NA(no auxiliary)</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">0</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">6</td>
-<td style="text-align: center;">ZF</td>
-<td>零(zero)标志</td>
-<td>ZR(zero)</td>
-<td>NZ(no zero)</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">SF</td>
-<td>符号(sign)标志</td>
-<td>NG(negative)</td>
-<td>PL(plus)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">TF</td>
-<td>陷阱(trap)标志</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">9</td>
-<td style="text-align: center;">IF</td>
-<td>中断允许(interrupt)标志</td>
-<td>EI(enable interrupt)</td>
-<td>DI(disable interrupt)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">A</td>
-<td style="text-align: center;">DF</td>
-<td>方向(direction)标志</td>
-<td>DN(down)</td>
-<td>UP(up)</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">B</td>
-<td style="text-align: center;">OF</td>
-<td>溢出(overflow)标志</td>
-<td>OV(overflow)</td>
-<td>NV(no overflow)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">C</td>
-<td style="text-align: center;">IOPL</td>
-<td>I/O 特权级(I/O Privilege Level)</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">D</td>
-<td style="text-align: center;">IOPL</td>
-<td>I/O 特权级(I/O Privilege Level)</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">E</td>
-<td style="text-align: center;">NT</td>
-<td>嵌套任务(Nested Task)标志</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">F</td>
-<td style="text-align: center;">0</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">10</td>
-<td style="text-align: center;">RF</td>
-<td>恢复(Resume)标志</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">11</td>
-<td style="text-align: center;">VM</td>
-<td>虚拟8086模式(Virtual 8086 Mode)</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">12</td>
-<td style="text-align: center;">AC</td>
-<td>对齐检查(Alignment Check)</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">13</td>
-<td style="text-align: center;">VIF</td>
-<td>虚拟中断(Virtual Interrupt)标志</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">14</td>
-<td style="text-align: center;">VIP</td>
-<td>虚拟中断挂起(Virtual Interrupt Pending)</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">15</td>
-<td style="text-align: center;">ID</td>
-<td>标志(Identification)标识</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2018/11/08/os-tool-eclipse/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Duke Bode">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Duke Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Duke Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2018/11/08/os-tool-eclipse/" class="post-title-link" itemprop="url">Eclipse</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2018-11-08 17:09:03" itemprop="dateCreated datePublished" datetime="2018-11-08T17:09:03+00:00">2018-11-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-17 12:43:23" itemprop="dateModified" datetime="2023-07-17T12:43:23+00:00">2023-07-17</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <span id="more"></span>
-<h2 id="eclipse-下载">Eclipse 下载</h2>
-<ul>
-<li><a target="_blank" rel="noopener" href="http://www.eclipse.org/downloads/packages/">Eclipse
-Packages</a></li>
-<li><a
-target="_blank" rel="noopener" href="https://wiki.eclipse.org/Eclipse/Installation#Install_a_JVM">Eclipse
-/安装-Eclipsepedia</a></li>
-</ul>
-<h2 id="java-se-下载eclipse-4.7-之后-jdk-版本最低为-1.8">JAVA SE
-下载（Eclipse 4.7 之后 jdk 版本最低为 1.8）</h2>
-<ul>
-<li><a
-target="_blank" rel="noopener" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java
-SE - Downloads | Oracle Technology Network | Oracle</a></li>
-<li><a target="_blank" rel="noopener" href="http://openjdk.java.net/">OpenJDK</a></li>
-<li><a
-target="_blank" rel="noopener" href="http://www.loongnix.org/index.php/Java">龙芯OpenJDK</a></li>
-</ul>
-<h2 id="eclipse-安装语言包">Eclipse 安装语言包</h2>
-<ul>
-<li><p><a target="_blank" rel="noopener" href="https://archive.eclipse.org/technology/babel/">Babel
-Archived downloads</a> 使用“”&gt;Help“Install New
-Software...”打开安装向导 添加Babel
-p2存储库：http://download.eclipse.org/technology/babel/update-site/R0.16.0/photon/
-选择/安装您选择的语言包（Babel Language Packs in Chinese
-(Simplified)），一路同意
-完成后，重启Eclipse，你应该得到一个翻译的Eclipse</p></li>
-<li><p><a
-target="_blank" rel="noopener" href="https://wiki.eclipse.org/Eclipse.ini">eclipse.ini-Eclipsepedia</a></p></li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2018/11/08/nginx/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Duke Bode">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Duke Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Duke Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2018/11/08/nginx/" class="post-title-link" itemprop="url">nginx</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2018-11-08 16:48:45" itemprop="dateCreated datePublished" datetime="2018-11-08T16:48:45+00:00">2018-11-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-17 12:43:23" itemprop="dateModified" datetime="2023-07-17T12:43:23+00:00">2023-07-17</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <span id="more"></span>
-<p><a target="_blank" rel="noopener" href="https://www.nginx.com/">官网</a></p>
-<ul>
-<li>expires</li>
-</ul>
-<p><a
-target="_blank" rel="noopener" href="https://www.cnblogs.com/yuanzai12345/p/5946743.html">Nginx设置expires设定页面缓存时间
-不缓存或一直使用缓存</a></p>
-<h1 id="版本简介">版本简介</h1>
-<ul>
-<li>Mainline 主线开发版本，版本号为奇数</li>
-<li>Stable 当前稳定版本，版本号为偶数</li>
-<li>Legacy 历年稳定版本</li>
-</ul>
-<h2 id="源码安装">源码安装</h2>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">wget http://nginx.org/download/nginx-1.14.0.tar.gz</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">tar -zxvf nginx-1.14.0.tar.gz</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">cd</span> nginx-1.14.0</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">./configure --with-http_ssl_module --with-http_v2_module</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">make</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">Configuration summary</span><br><span class="line">  + using system PCRE library</span><br><span class="line">  + OpenSSL library is not used</span><br><span class="line">  + using system zlib library</span><br><span class="line"></span><br><span class="line">  nginx path prefix:          &quot;/usr/local/nginx&quot;</span><br><span class="line">  nginx binary file:          &quot;/usr/local/nginx/sbin/nginx&quot;</span><br><span class="line">  nginx modules path:         &quot;/usr/local/nginx/modules&quot;</span><br><span class="line">  nginx configuration prefix: &quot;/usr/local/nginx/conf&quot;</span><br><span class="line">  nginx configuration file:   &quot;/usr/local/nginx/conf/nginx.conf&quot;</span><br><span class="line">  nginx pid file:             &quot;/usr/local/nginx/logs/nginx.pid&quot;</span><br><span class="line">  nginx error log file:       &quot;/usr/local/nginx/logs/error.log&quot;</span><br><span class="line">  nginx http access log file: &quot;/usr/local/nginx/logs/access.log&quot;</span><br><span class="line">  nginx http client request body temporary files: &quot;client_body_temp&quot;</span><br><span class="line">  nginx http proxy temporary files:   &quot;proxy_temp&quot;</span><br><span class="line">  nginx http fastcgi temporary files: &quot;fastcgi_temp&quot;</span><br><span class="line">  nginx http uwsgi temporary files:   &quot;uwsgi_temp&quot;</span><br><span class="line">  nginx http scgi temporary files:    &quot;scgi_temp&quot;</span><br></pre></td></tr></table></figure>
-<h2 id="nginx-操作命令">Nginx 操作命令</h2>
-<ul>
-<li>nginx -s reload 重新加载配置文件</li>
-<li>nginx -s reopen 重新打开日志文件</li>
-<li>nginx -t 测试 nginx 配置文件是否正确</li>
-<li>nginx -t -c /path/to/nginx.conf 测试 nginx 配置文件是否正确</li>
-<li>nginx -s stop 快速停止 nginx</li>
-</ul>
-<h2 id="附">附：</h2>
-<blockquote>
-<ul>
-<li>NGINX 官网 www.nginx.org</li>
-<li>NGINX docs nginx.org/en/docs</li>
-<li>NGINX configure nginx.org/en/docs/configure.html</li>
-<li>tar 命令 man.linuxde.net/tartar</li>
-</ul>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2018/11/08/json/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1024,7 +241,7 @@ target="_blank" rel="noopener" href="https://www.cnblogs.com/yuanzai12345/p/5946
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-17 12:43:23" itemprop="dateModified" datetime="2023-07-17T12:43:23+00:00">2023-07-17</time>
+      <time title="Modified: 2023-08-08 11:44:40" itemprop="dateModified" datetime="2023-08-08T11:44:40+00:00">2023-08-08</time>
     </span>
 
   
@@ -1108,7 +325,7 @@ target="_blank" rel="noopener" href="https://www.cnblogs.com/yuanzai12345/p/5946
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-17 12:43:23" itemprop="dateModified" datetime="2023-07-17T12:43:23+00:00">2023-07-17</time>
+      <time title="Modified: 2023-08-08 11:44:40" itemprop="dateModified" datetime="2023-08-08T11:44:40+00:00">2023-08-08</time>
     </span>
 
   
@@ -1325,7 +542,7 @@ shell 显示在屏幕上。</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-17 12:43:23" itemprop="dateModified" datetime="2023-07-17T12:43:23+00:00">2023-07-17</time>
+      <time title="Modified: 2023-08-08 11:44:40" itemprop="dateModified" datetime="2023-08-08T11:44:40+00:00">2023-08-08</time>
     </span>
 
   
@@ -1548,7 +765,7 @@ v3.0</a></li>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-17 12:43:23" itemprop="dateModified" datetime="2023-07-17T12:43:23+00:00">2023-07-17</time>
+      <time title="Modified: 2023-08-08 11:44:40" itemprop="dateModified" datetime="2023-08-08T11:44:40+00:00">2023-08-08</time>
     </span>
 
   
@@ -1635,7 +852,7 @@ id_rsa.pub，私钥 id_rsa 2. 复制公钥至主机</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-17 12:43:23" itemprop="dateModified" datetime="2023-07-17T12:43:23+00:00">2023-07-17</time>
+      <time title="Modified: 2023-08-08 11:44:40" itemprop="dateModified" datetime="2023-08-08T11:44:40+00:00">2023-08-08</time>
     </span>
 
   
@@ -1714,7 +931,7 @@ id_rsa.pub，私钥 id_rsa 2. 复制公钥至主机</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-17 12:43:23" itemprop="dateModified" datetime="2023-07-17T12:43:23+00:00">2023-07-17</time>
+      <time title="Modified: 2023-08-08 11:44:40" itemprop="dateModified" datetime="2023-08-08T11:44:40+00:00">2023-08-08</time>
     </span>
 
   
@@ -1827,7 +1044,7 @@ class="math inline">\(false（真值为假）\)</span>_（当前处理的元素�
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-07-17 12:43:23" itemprop="dateModified" datetime="2023-07-17T12:43:23+00:00">2023-07-17</time>
+      <time title="Modified: 2023-08-08 11:44:40" itemprop="dateModified" datetime="2023-08-08T11:44:40+00:00">2023-08-08</time>
     </span>
 
   
@@ -1849,6 +1066,291 @@ class="math inline">\(false（真值为假）\)</span>_（当前处理的元素�
             </div>
           <!--/noindex-->
         
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2018/01/23/BeautifulSoup/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Duke Bode">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2018/01/23/BeautifulSoup/" class="post-title-link" itemprop="url">BeautifulSoup</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2018-01-23 16:26:48" itemprop="dateCreated datePublished" datetime="2018-01-23T16:26:48+00:00">2018-01-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-08-08 11:44:40" itemprop="dateModified" datetime="2023-08-08T11:44:40+00:00">2023-08-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Beautiful
+Soup提供一些简单的、python式的函数用来处理导航、搜索、修改分析树等功能。它是一个工具箱，通过解析文档为用户提供需要抓取的数据，因为简单，所以不需要多少代码就可以写出一个完整的应用程序</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2018/01/23/BeautifulSoup/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2018/01/14/%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/1_%E4%BB%80%E4%B9%88%E6%98%AF%E4%BC%A0%E6%84%9F%E5%99%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Duke Bode">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2018/01/14/%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/1_%E4%BB%80%E4%B9%88%E6%98%AF%E4%BC%A0%E6%84%9F%E5%99%A8/" class="post-title-link" itemprop="url">什么是传感器</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2018-01-14 16:34:30" itemprop="dateCreated datePublished" datetime="2018-01-14T16:34:30+00:00">2018-01-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-08-08 11:44:40" itemprop="dateModified" datetime="2023-08-08T11:44:40+00:00">2023-08-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="什么是传感器">什么是传感器</h1>
+<blockquote>
+<p><code>传感器</code>：能够感受<code>规定的被测量</code>，并按照<code>一定的规律</code>转换成可用输出信号的<code>器件</code>或<code>装置</code>。</p>
+</blockquote>
+<h2 id="传感器的特点">传感器的特点</h2>
+<ol type="1">
+<li>传感器是<code>器件</code>或<code>测量装置</code>，能完成检测任务；</li>
+<li>输入量是某一被测量，可能是<code>物理量</code>，也可能是<code>化学量、生物量</code>；</li>
+<li>输出量是某种<code>物理量，便于传输、转换、处理、显示</code>等，可以是光、电物理量，主要是电物理量；</li>
+<li>输入输出有<code>对应关系</code>，且应有<code>一定的精确程度</code>。</li>
+</ol>
+<h2 id="传感器的分类">传感器的分类</h2>
+<table>
+<thead>
+<tr class="header">
+<th>分类方法</th>
+<th>种类</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>输入信息特征</td>
+<td>物理量传感器、化学量传感器、生物量传感器</td>
+</tr>
+<tr class="even">
+<td>敏感的能量域</td>
+<td>力敏、电敏、磁敏、光敏、热敏、声敏、气敏、离子敏</td>
+</tr>
+<tr class="odd">
+<td>信息转换原理</td>
+<td>压电、压阻、光电、热电等</td>
+</tr>
+<tr class="even">
+<td>技术发展阶段</td>
+<td>分立传感器、集成传感器、智能传感器</td>
+</tr>
+</tbody>
+</table>
+<h2 id="传感器的别称">传感器的别称</h2>
+<ul>
+<li>发送器、传送器、变送器、检测器、探头……</li>
+<li>Sensor,Transducer,Detector,Guage……</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2018/01/14/%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/2_%E4%BB%80%E4%B9%88%E6%98%AF%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Duke Bode">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2018/01/14/%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/2_%E4%BB%80%E4%B9%88%E6%98%AF%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/" class="post-title-link" itemprop="url">什么是集成传感器</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2018-01-14 16:34:30" itemprop="dateCreated datePublished" datetime="2018-01-14T16:34:30+00:00">2018-01-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-08-08 11:44:40" itemprop="dateModified" datetime="2023-08-08T11:44:40+00:00">2023-08-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="集成传感器">集成传感器</h1>
+<blockquote>
+<p>把<code>敏感元件</code>和<code>放大电路、运算电路、补偿电路</code>等模块，集成在<code>一个芯片</code>、或<code>同一个封装</code>上的传感器成为集成传感器。</p>
+</blockquote>
+<ul>
+<li>本课程论及范围 &gt;
+利用<code>微加工</code>和<code>集成工艺</code>，把一个或多个传感器及其信号处理、补偿电路集成在同一个芯片（<code>SoC，System-on-Chip</code>）</li>
+</ul>
+
       
     </div>
 
