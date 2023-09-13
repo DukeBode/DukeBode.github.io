@@ -1789,7 +1789,8 @@ the Web. It defines the meaning and structure of web content.</p>
     <url>/2023/04/28/iPadOS/</url>
     <content><![CDATA[<p>iPad 的一些问题，软件。 Your next computer is not a computer.</p>
 <span id="more"></span>
-<h2 id="已知问题">已知问题</h2>
+<p>修改锁屏密码应验证账户密码 重置系统自动云备份</p>
+<h2 id="已知问题">1. 已知问题</h2>
 <ul>
 <li>返回按钮飘忽不定不定，完全针对手机开发的返回按钮有时候会找不到，苹果的返回手势，苹果也存在不兼容的情况。</li>
 <li>系统自带输入法本地化很差，没有第三方输入法舒服，但受限于苹果设计，第三方输入法用起来也很难受。</li>
@@ -1806,7 +1807,7 @@ pencil时并不方便。</li>
 <li>官方服务只支持苹果设备，对非苹果设备兼容性非常差。</li>
 <li>连接外接显示器时，无放声设备选项，默认外接显示器发声，需要手动设置回蓝牙耳机，不支持选择iPad设备发声；无扩展还是镜像选项，默认镜像显示，需要使用键鼠进行操作，不支持显示器触屏操作。</li>
 </ul>
-<h2 id="外接显示器">外接显示器</h2>
+<h2 id="外接显示器">2. 外接显示器</h2>
 <ul>
 <li>外接显示器的触摸功能与键鼠操作存在冲突，触摸后键鼠失灵</li>
 <li>播放视频时暂停不方便，平板上也无遥控器功能</li>
@@ -1816,7 +1817,7 @@ pencil时并不方便。</li>
 <li>使用时Ipad必须常亮耗电</li>
 <li>不支持外接显示器单独使用</li>
 </ul>
-<h2 id="app">app</h2>
+<h2 id="app">3. app</h2>
 <ul>
 <li><a
 href="https://apps.apple.com/cn/app/spacedesk-multi-monitor-app/id1069217220">spacedesk</a></li>
