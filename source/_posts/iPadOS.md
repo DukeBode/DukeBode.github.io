@@ -11,7 +11,10 @@ Your next computer is not a computer.
 
 <!-- more -->
 
-## 已知问题
+修改锁屏密码应验证账户密码
+重置系统自动云备份
+
+## 1. 已知问题
 
 - 返回按钮飘忽不定不定，完全针对手机开发的返回按钮有时候会找不到，苹果的返回手势，苹果也存在不兼容的情况。
 - 系统自带输入法本地化很差，没有第三方输入法舒服，但受限于苹果设计，第三方输入法用起来也很难受。
@@ -27,7 +30,7 @@ Your next computer is not a computer.
 - 官方服务只支持苹果设备，对非苹果设备兼容性非常差。
 - 连接外接显示器时，无放声设备选项，默认外接显示器发声，需要手动设置回蓝牙耳机，不支持选择iPad设备发声；无扩展还是镜像选项，默认镜像显示，需要使用键鼠进行操作，不支持显示器触屏操作。
 
-## 外接显示器
+## 2. 外接显示器
 
 - 外接显示器的触摸功能与键鼠操作存在冲突，触摸后键鼠失灵
 - 播放视频时暂停不方便，平板上也无遥控器功能
@@ -37,7 +40,7 @@ Your next computer is not a computer.
 - 使用时Ipad必须常亮耗电
 - 不支持外接显示器单独使用
 
-## app
+## 3. app
 - [spacedesk](https://apps.apple.com/cn/app/spacedesk-multi-monitor-app/id1069217220)
 - [iSH](https://apps.apple.com/cn/app/ish-shell/id1436902243)
 - [a-Shell](https://apps.apple.com/cn/app/a-shell/id1473805438)

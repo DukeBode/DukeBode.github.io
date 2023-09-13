@@ -85,7 +85,7 @@ menu:
   # tags: /tags/ || fa fa-tags
   # categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
-  #schedule: /schedule/ || fa fa-calendar
+  schedule: https://outlook.live.com/owa/calendar/00000000-0000-0000-0000-000000000000/7d9935f4-33bd-4e49-9a40-ee9dc5604bac/cid-F83A821E39BFDA64/index.html || fa fa-calendar
   sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
 
