@@ -23,14 +23,9 @@ number headings: first-level 2, auto,max 3
 - 值域 $R_{f}=f(D)=\{y|y=f(x),x\in{D}\}$
 
 ##### 符号函数
-- $$y=sgnx=
- \left\{\begin{aligned}
-	-1&,x<0\\
- 0&,x=0\\
- 1&,x>0
- \end{aligned}\right.$$
+- \$$y=sgnx=\left\{\begin{aligned}-1&,x<0\\0&,x=0\\1&,x>0\end{aligned}\right.$$
 ##### 取整函数
-- $x-1<[x]<x$
+- \$$x-1<[x]<x$$
 #### 1.1.2. 复合函数
 
 #### 1.1.3. 反函数
@@ -135,8 +130,7 @@ $$
 $$
 泰勒公式
 拉格朗日余项
-$$
-\begin{align}
+$$\begin{align}
 &f(x)=\left(\sum_{n=0}^\infty\frac{1}{n!}f(x_0)^{(n)}(x-x_0)^n\right)+o[(x-x_0)^n] \\
 &f(x)=\left(\sum_{n=0}^\infty\frac{1}{n!}f(0)^{(n)}x^n\right)+o(x^n)\\
 &f(x)=\left(\sum_{n=0}^\infty\frac{1}{n!}f(x_0)^{(n)}(x-x_0)^n\right)+\frac{f(\xi)^{(n+1)}}{(n+1)!}(x-x_0)^{n+1} \\
@@ -145,8 +139,7 @@ $$
 &\cos x=\left(\sum_{n=0}^\infty(-1)^n\frac{x^{2n}}{(2n)!}\right)+(-1)^{n+1}\frac{\cos(\theta x)}{(2n+2)!}x^{2n+2},\theta\in(0,1)\\
 &\ln{(1+x)}=\left(\sum_{n=1}^\infty(-1)^{n-1}\frac{x^n}{n}\right)+(-1)^n\frac{x^{(n+1)}}{(n+1)(1+\theta x)^{n+1}},\theta\in(0,1)\\
 &(1+x)^a=\left(\sum_{n=0}^\infty\tbinom{a}{n}x^n\right)+\tbinom{a}{n+1}(1+\theta x)^{a-n-1}x^{n+1},\theta\in(0,1)
-\end{align}
-$$
+\end{align}$$
 ## 3 一元函数微分学
 
 ## 4 不定积分
