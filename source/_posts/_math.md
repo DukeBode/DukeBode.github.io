@@ -87,10 +87,70 @@ number headings: first-level 2, auto,max 3
 ### 1.2 极限
 ### 1.3 连续
 ## 2 导数与微分
-
+$$
+\begin{align}
+&导数公式&&积分公式\\
+&(C)'=0 &&\int 0dx=C\\
+&\begin{split}
+&(x^a)'=a x^{a-1}\\
+&(\ln{\left|x\right|})'=\frac{1}{x}\\
+&(\log_a{x})'=\frac{1}{x\ln{a}}\end{split} && \int x^adx=
+\begin{cases}\frac{1}{a+1}x^{a+1}+C &,a\neq-1\\
+\ln{\left|x\right|}+C&,a=-1
+\end{cases}\\
+&(a^x)'=a^x\ln a &&\int a^xdx=\frac{a^x}{\ln a}+C,(a>0,a\neq1)\\
+&(e^x)'=e^x&&\int e^xdx=e^x+C \\
+&(\sin{x})'=\cos{x}&&\int \sin xdx=-\cos x+C\\
+&(\cos{x})'=-\sin{x}&&\int\cos xdx=\sin x+C\\
+&(\tan{x})'=\sec^2{x}&&\int\sec^2 xdx=\tan x+C\\
+&(\cot{x})'=-\csc^2{x}&&\int\csc^2 xdx=-\cot x+C\\
+&(\sec{x})'=\sec{x}\tan{x}
+&&\begin{split}&\int\sec x\tan xdx=\sec x+C
+\\&\int\sec xdx=\ln\left|\sec x+\tan x\right|+C\end{split}\\
+&(\csc{x})'=-\csc{x}\cot{x}
+&&\begin{split}&\int\csc x\cot xdx=\csc x+C
+\\&\int\csc xdx=-\ln\left|\csc x+\cot x\right|+C\end{split}\\
+&(\arcsin{x})'=\frac{1}{1-x^2}
+&&\int\frac{1}{\sqrt{a^2-x^2}}dx=\arcsin\frac{x}{a}+C\\
+&(\arccos{x})'=-\frac{1}{\sqrt{1-x^2}}\\
+&(\arctan{x})'=\frac{1}{1+x^2}
+&&\begin{split}
+&\int\frac{1}{a^2+x^2}dx=\frac{1}{a}\arctan\frac{x}{a}+C\\
+&\int\frac{1}{x^2-a^2}dx=\frac{1}{2a}\ln\left|\frac{x-a}{x+a}\right|+C\end{split}\\
+&(\arccot{x})'=-\frac{1}{1+x^2}\\
+& 
+&&\begin{split}&\int\frac{1}{\sqrt{x^2+a^2}}dx=\ln(x+\sqrt{x^2+a^2})+C\\
+&\int\frac{1}{\sqrt{x^2-a^2}}dx=\ln\left|x+\sqrt{x^2-a^2})\right|+C
+\end{split}
+\end{align}
+$$
+高阶导数公式
+$$
+\begin{align}
+&\left(\sin{x}\right)^{\left(n\right)}=\sin\left(x+n\cdot\frac{\pi}{2}\right)\\
+&(\cos{x})^{(n)}=\cos\left(x+n\cdot\frac{\pi}{2}\right)\\
+&(u\pm{v})^{(n)}=u^{(n)}\pm{v^{(n)}}\\
+&(uv)^{(n)}=\sum_{k=0}^{n}C_n^ku^{(k)}v^{(n-k)}
+\end{align}
+$$
+泰勒公式
+拉格朗日余项
+$$
+\begin{align}
+&f(x)=\left(\sum_{n=0}^\infty\frac{1}{n!}f(x_0)^{(n)}(x-x_0)^n\right)+o[(x-x_0)^n] \\
+&f(x)=\left(\sum_{n=0}^\infty\frac{1}{n!}f(0)^{(n)}x^n\right)+o(x^n)\\
+&f(x)=\left(\sum_{n=0}^\infty\frac{1}{n!}f(x_0)^{(n)}(x-x_0)^n\right)+\frac{f(\xi)^{(n+1)}}{(n+1)!}(x-x_0)^{n+1} \\
+&e^x=\left(\sum_{n=0}^\infty\frac{x^n}{n!}\right)+\frac{e^{\theta x}}{(n+1)!}x^{n+1},\theta\in(0,1)\\
+&\sin x=\left(\sum_{n=1}^\infty(-1)^{n-1}\frac{x^{2n-1}}{(2n-1)!}\right)+(-1)^n\frac{\cos(\theta x)}{(2n+1)!}x^{2n+1},\theta\in(0,1)\\
+&\cos x=\left(\sum_{n=0}^\infty(-1)^n\frac{x^{2n}}{(2n)!}\right)+(-1)^{n+1}\frac{\cos(\theta x)}{(2n+2)!}x^{2n+2},\theta\in(0,1)\\
+&\ln{(1+x)}=\left(\sum_{n=1}^\infty(-1)^{n-1}\frac{x^n}{n}\right)+(-1)^n\frac{x^{(n+1)}}{(n+1)(1+\theta x)^{n+1}},\theta\in(0,1)\\
+&(1+x)^a=\left(\sum_{n=0}^\infty\tbinom{a}{n}x^n\right)+\tbinom{a}{n+1}(1+\theta x)^{a-n-1}x^{n+1},\theta\in(0,1)
+\end{align}
+$$
 ## 3 一元函数微分学
 
 ## 4 不定积分
+
 ## 5 定积分
 ## 6 多元函数微分学
 ## 7 微分方程
