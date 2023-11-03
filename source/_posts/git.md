@@ -6,37 +6,38 @@ tags:
 - git
 ---
 
+
 Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
 <!-- more -->
 
-## 常用 Git 仓库
+## 1. 常用 Git 仓库
 
 腾讯工蜂 https://git.code.tencent.com
 
-## git
+## 2. git
 
 ![git 官网](/img/git/0.png)
 
 [官网](https://git-scm.com/) | [中国下载](https://github.com/waylau/git-for-win)
 
-## 安装 git
+## 3. 安装 git
 
 蝈蝈强烈要求读者，先读下文，然后再碰安装包。
 
-### 中国用户问题
+### 3.1. 中国用户问题
 
 中国地区的 Window 宝宝请访问中国下载地址，最新日期的第一个链接即可
 
 ![git 下载页面](/img/blog/5.png)
 
-### path 环境变量问题
+### 3.2. path 环境变量问题
 
 安装的时候，为了方便以后操作，下面的修改环境变量操作选第二个，其它操作建议选择默认。
 
 ![git 安装界面](/img/git/4.png)
 
-## shell 操作
+## 4. shell 操作
 
 1. 点击 `Windows + R` 打开在运行界面
 1. 输入powershell 后，打开powershell
@@ -49,7 +50,7 @@ Git is a free and open source distributed version control system designed to han
 
 确认成功安装后，依次输入以下命令回车执行，使用前面记录的信息替换相关内容，全程一律回车，直到执行完毕。
 
-## 设置 git
+## 5. 设置 git
 
 ```sh
 # 查看 git 版本
@@ -60,28 +61,31 @@ git config --global user.name "DukeBode"
 git config --global user.email Duke123@aliyun.com
 ```
 
-## 创建本地仓库
+## 6. 创建本地仓库
 ```sh
 git init  # 初始化仓库
 git add * # 添加全部文件
 ```
 
-## 配置远程仓库
+## 7. 配置远程仓库
 
 git remote add origin git@。。。。。。。。。。。。。。。
 git push -u origin --all
 
-## 配置 SSH-Key
+## 8. 配置 SSH-Key
 
-### 生成密钥对
+### 8.1. 生成密钥对
 
 ```sh
 # 格式 
 # ssh-keygen -t rsa -C "通常为邮箱" -f "私钥文件绝对路径"
-ssh-keygen -t rsa -C "Duke123@aliyun.com" -f "C:\Users\Duke1\.ssh\github"
+ssh-keygen -t ed25519 -C "giee.com" -f "~\.ssh\gitee"
+ssh-keygen -t ed25519 -C "github.com" -f "~\.ssh\github"
+ssh-keygen -t ed25519 -C "gitlab.com" -f "~\.ssh\gitlab"
+ssh-keygen -t ed25519 -C "gitcode.com" -f "~\.ssh\gitcode"
 ```
 
-### 配置 ssh config 文件
+### 8.2. 配置 ssh config 文件
 
 模板
 
@@ -102,13 +106,13 @@ config
 Host github.com
     HostName github.com
     PreferredAuthentications publickey
-    IdentityFile C:\Users\Duke1\.ssh\github
+    IdentityFile ~\.ssh\github
 ```
 ```sh
 git -T git@github.com
 ```
 
-## git 撤销已经push的提交
+## 9. git 撤销已经push的提交
 - [git branch](https://git-scm.com/docs/git-branch) 查看分支
 - [git log](https://git-scm.com/docs/git-log/) 查看提交日志
 - [git reset](https://git-scm.com/docs/git-reset) 重置当前HEAD到指定的状态
@@ -119,7 +123,7 @@ git -T git@github.com
 
 3. git push origin master --force
 
-## 参考文章
+## 10. 参考文章
 
 1. [Git命令备份](https://www.jianshu.com/p/dbb352ea14cf)
 1. [Git配置多个SSH-Key](https://gitee.com/help/articles/4229)

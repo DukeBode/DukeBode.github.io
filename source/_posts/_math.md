@@ -23,7 +23,10 @@ number headings: first-level 2, auto,max 3
 - 值域 $R_{f}=f(D)=\{y|y=f(x),x\in{D}\}$
 
 ##### 符号函数
-- $$y=sgnx=\left\{\begin{aligned}-1&,x<0\\0&,x=0\\1&,x>0\end{aligned}\right.$$
+- 
+$$y=sgnx=\left\{\begin{aligned}-1&,x<0\\
+ 0&,x=0\\
+ 1&,x>0\end{aligned}\right.$$
 ##### 取整函数
 
 - $x-1<[x]<x$
@@ -150,11 +153,21 @@ $$\begin{equation}\begin{aligned}
 ## 4 不定积分
 
 $$
-\begin{equation}\begin{aligned}
-&\int f(ax+b)dx=\frac{1}{a}\int(ax+b)d(ax+b)\\
-&\int x^m
-\end{aligned}\end{equation}
+\begin{equation*}\begin{aligned}
+&\int f(ax+b)dx=\frac{1}{a}\int(ax+b)d(ax+b)
+\\&\int x^mf(ax^{m+1}+b)dx=\frac{1}{(m+1)a}\int f(ax^{m+1}+b)d(ax^{m+1}+b),m\neq-1
+\\&\int f(\sqrt{x})\frac{1}{\sqrt{x}}dx=2\int f(\sqrt{x})d(\sqrt{x})
+\\&\int f(e^x)e^xdx=\int f(e^x)d(e^x)
+\\&\int f(\ln x)\frac{1}{x}dx=\int f(\ln x)d(\ln x)
+\\&\int f(\sin x)\cos xdx=\int f(\sin x)d(\sin x)
+\\&\int f(\cos x)\sin xdx=\int f(\cos x)d(\cos x)
+\\&\int f(\tan x)\frac{1}{\cos^2 x}dx=\int f(\tan x)d(\tan x)
+\\&\int f(\arcsin x)\frac{1}{\sqrt{1-x^2}}dx=\int f(\arcsin x)d(\arcsin x)
+\\&\int f(\arctan x)\frac{1}{\sqrt(1+x^2)}dx=\int f(\arctan x)d(\arctan x)
+\end{aligned}\end{equation*}
 $$
+
+
 
 ## 5 定积分
 ## 6 多元函数微分学
