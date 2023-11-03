@@ -1280,6 +1280,21 @@ GitPage 固定写法。<a href="https://github.com/new">新建仓库地址</a></
 ]]></content>
   </entry>
   <entry>
+    <title>init</title>
+    <url>/2021/02/19/blog-init/</url>
+    <content><![CDATA[<span id="more"></span>
+<h1 id="about_execution_policies">about_execution_policies</h1>
+<figure class="highlight ps1"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Get-ExecutionPolicy</span></span><br><span class="line"><span class="built_in">Set-ExecutionPolicy</span> <span class="literal">-ExecutionPolicy</span> RemoteSigned <span class="literal">-Scope</span> CurrentUser</span><br></pre></td></tr></table></figure>
+<figure class="highlight ps1"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 检查程序版本，确认所需程序存在。</span></span><br><span class="line">node <span class="literal">-v</span>; git version; npm <span class="literal">-v</span>; npx <span class="literal">-v</span></span><br><span class="line"><span class="comment"># 创建并切换到工作目录</span></span><br><span class="line">mkdir blog; <span class="built_in">cd</span> blog</span><br><span class="line"><span class="comment"># 初始化 项目，git 仓库</span></span><br><span class="line">npx hexo init; git init</span><br><span class="line"><span class="comment"># rss,sitemap</span></span><br><span class="line">npm install hexo<span class="literal">-generator-feed</span> hexo<span class="literal">-generator-sitemap</span> hexo<span class="literal">-deployer-git</span></span><br><span class="line"><span class="comment"># 创建CNAME,404,README</span></span><br><span class="line"><span class="built_in">cd</span> source</span><br><span class="line"><span class="string">&quot;&quot;</span> &gt; CNAME</span><br><span class="line"><span class="string">&quot;---&quot;</span> &gt;&gt; <span class="number">404</span>.md; <span class="string">&quot;permalink: /404.html&quot;</span> &gt;&gt; <span class="number">404</span>.md; <span class="string">&quot;---&quot;</span> &gt;&gt; <span class="number">404</span>.md</span><br><span class="line"><span class="string">&quot;&quot;</span> &gt; README.md</span><br><span class="line"><span class="built_in">cd</span> ../</span><br><span class="line"><span class="comment"># 创建项目简介</span></span><br><span class="line"><span class="string">&quot;&quot;</span>&gt; README.md</span><br><span class="line"><span class="comment"># 为项目建立捐助方式</span></span><br><span class="line">mkdir .github;<span class="built_in">cd</span> .github;<span class="string">&quot;custom: [&#x27;https://DukeBode.github.io/sponsor&#x27;]&quot;</span> &gt; FUNDING.yml;<span class="built_in">cd</span> ../</span><br><span class="line"><span class="comment"># 安装 hexo-theme-next 主题</span></span><br><span class="line">npm install hexo<span class="literal">-theme-next</span>; <span class="built_in">cp</span> node_modules/hexo<span class="literal">-theme-next</span>/_config.yml _config.next.yml</span><br><span class="line">npm uninstall hexo<span class="literal">-theme-landscape</span></span><br><span class="line"><span class="comment"># 别名 hexo</span></span><br><span class="line"><span class="comment"># 安装 npm scripts 依赖</span></span><br><span class="line">npm install hexo<span class="literal">-cli</span></span><br></pre></td></tr></table></figure>
+<h2 id="faq">FAQ</h2>
+<ul>
+<li><a
+href="https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_execution_policies#change-the-execution-policy">Set-ExecutionPolicy</a></li>
+<li></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>HEXO 进阶操作</title>
     <url>/2019/09/22/blog-hexo/</url>
     <content><![CDATA[<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用
@@ -1323,21 +1338,6 @@ Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓
         <tag>blog</tag>
         <tag>hexo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>init</title>
-    <url>/2021/02/19/blog-init/</url>
-    <content><![CDATA[<span id="more"></span>
-<h1 id="about_execution_policies">about_execution_policies</h1>
-<figure class="highlight ps1"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Get-ExecutionPolicy</span></span><br><span class="line"><span class="built_in">Set-ExecutionPolicy</span> <span class="literal">-ExecutionPolicy</span> RemoteSigned <span class="literal">-Scope</span> CurrentUser</span><br></pre></td></tr></table></figure>
-<figure class="highlight ps1"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 检查程序版本，确认所需程序存在。</span></span><br><span class="line">node <span class="literal">-v</span>; git version; npm <span class="literal">-v</span>; npx <span class="literal">-v</span></span><br><span class="line"><span class="comment"># 创建并切换到工作目录</span></span><br><span class="line">mkdir blog; <span class="built_in">cd</span> blog</span><br><span class="line"><span class="comment"># 初始化 项目，git 仓库</span></span><br><span class="line">npx hexo init; git init</span><br><span class="line"><span class="comment"># rss,sitemap</span></span><br><span class="line">npm install hexo<span class="literal">-generator-feed</span> hexo<span class="literal">-generator-sitemap</span> hexo<span class="literal">-deployer-git</span></span><br><span class="line"><span class="comment"># 创建CNAME,404,README</span></span><br><span class="line"><span class="built_in">cd</span> source</span><br><span class="line"><span class="string">&quot;&quot;</span> &gt; CNAME</span><br><span class="line"><span class="string">&quot;---&quot;</span> &gt;&gt; <span class="number">404</span>.md; <span class="string">&quot;permalink: /404.html&quot;</span> &gt;&gt; <span class="number">404</span>.md; <span class="string">&quot;---&quot;</span> &gt;&gt; <span class="number">404</span>.md</span><br><span class="line"><span class="string">&quot;&quot;</span> &gt; README.md</span><br><span class="line"><span class="built_in">cd</span> ../</span><br><span class="line"><span class="comment"># 创建项目简介</span></span><br><span class="line"><span class="string">&quot;&quot;</span>&gt; README.md</span><br><span class="line"><span class="comment"># 为项目建立捐助方式</span></span><br><span class="line">mkdir .github;<span class="built_in">cd</span> .github;<span class="string">&quot;custom: [&#x27;https://DukeBode.github.io/sponsor&#x27;]&quot;</span> &gt; FUNDING.yml;<span class="built_in">cd</span> ../</span><br><span class="line"><span class="comment"># 安装 hexo-theme-next 主题</span></span><br><span class="line">npm install hexo<span class="literal">-theme-next</span>; <span class="built_in">cp</span> node_modules/hexo<span class="literal">-theme-next</span>/_config.yml _config.next.yml</span><br><span class="line">npm uninstall hexo<span class="literal">-theme-landscape</span></span><br><span class="line"><span class="comment"># 别名 hexo</span></span><br><span class="line"><span class="comment"># 安装 npm scripts 依赖</span></span><br><span class="line">npm install hexo<span class="literal">-cli</span></span><br></pre></td></tr></table></figure>
-<h2 id="faq">FAQ</h2>
-<ul>
-<li><a
-href="https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_execution_policies#change-the-execution-policy">Set-ExecutionPolicy</a></li>
-<li></li>
-</ul>
-]]></content>
   </entry>
   <entry>
     <title>用 Markdown 做笔记</title>
@@ -1899,15 +1899,6 @@ href="https://downloads.mariadb.org/mariadb/repositories/">page</a></li>
 ]]></content>
   </entry>
   <entry>
-    <title>mariadb</title>
-    <url>/2019/06/07/mariadb/</url>
-    <content><![CDATA[<span id="more"></span>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">dnf install MariaDB-server MariaDB-client</span><br></pre></td></tr></table></figure>
-<h2 id="附">附：</h2>
-<p>MariaDB 下载: https://downloads.mariadb.org/mariadb/repositories/</p>
-]]></content>
-  </entry>
-  <entry>
     <title>nginx</title>
     <url>/2018/11/08/nginx/</url>
     <content><![CDATA[<span id="more"></span>
@@ -1949,6 +1940,15 @@ href="https://www.cnblogs.com/yuanzai12345/p/5946743.html">Nginx设置expires设
         <tag>linux</tag>
         <tag>nginx</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>mariadb</title>
+    <url>/2019/06/07/mariadb/</url>
+    <content><![CDATA[<span id="more"></span>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">dnf install MariaDB-server MariaDB-client</span><br></pre></td></tr></table></figure>
+<h2 id="附">附：</h2>
+<p>MariaDB 下载: https://downloads.mariadb.org/mariadb/repositories/</p>
+]]></content>
   </entry>
   <entry>
     <title>os-host</title>
@@ -3520,6 +3520,14 @@ cannot be represented by other HTML meta-related elements, like
       </tags>
   </entry>
   <entry>
+    <title>windows 快捷方式</title>
+    <url>/2021/08/10/windows-lnk/</url>
+    <content><![CDATA[<span id="more"></span>
+<p>C#</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> 创建桌面快捷键</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;LnkName&quot;&gt;</span>快捷键名称<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;AssemblyFullPath&quot;&gt;</span>程序集的完整路径<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;IconLocation&quot;&gt;</span>图标位置<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;Description&quot;&gt;</span>描述<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;returns&gt;</span><span class="doctag">&lt;/returns&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">bool</span> <span class="title">CreateDesktopShortcut</span>(<span class="params"><span class="built_in">string</span> LnkName, <span class="built_in">string</span> AssemblyFullPath, <span class="built_in">string</span> IconLocation = <span class="literal">null</span>, <span class="built_in">string</span> Description = <span class="literal">null</span></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">string</span> DesktopLnkPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), <span class="string">$&quot;<span class="subst">&#123;LnkName&#125;</span>.lnk&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (File.Exists(DesktopLnkPath)) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    IWshRuntimeLibrary.IWshShortcut shortcut = <span class="keyword">new</span> IWshRuntimeLibrary.WshShell().CreateShortcut(DesktopLnkPath);</span><br><span class="line">    shortcut.WorkingDirectory = Path.GetDirectoryName(AssemblyFullPath);</span><br><span class="line">    shortcut.TargetPath = AssemblyFullPath;</span><br><span class="line">    shortcut.WindowStyle = <span class="number">1</span>;</span><br><span class="line">    shortcut.Description = Description;</span><br><span class="line">    shortcut.IconLocation = IconLocation ?? AssemblyFullPath;</span><br><span class="line">    shortcut.Save();</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
     <title>Hyper Text Markup Language</title>
     <url>/2020/01/21/web-html/</url>
     <content><![CDATA[<p>HTML (HyperText Markup Language) is the most basic building block of
@@ -3670,14 +3678,6 @@ aside页面左或右模块， footer底脚模块。</p>
       <tags>
         <tag>前端</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>windows 快捷方式</title>
-    <url>/2021/08/10/windows-lnk/</url>
-    <content><![CDATA[<span id="more"></span>
-<p>C#</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> 创建桌面快捷键</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;LnkName&quot;&gt;</span>快捷键名称<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;AssemblyFullPath&quot;&gt;</span>程序集的完整路径<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;IconLocation&quot;&gt;</span>图标位置<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;Description&quot;&gt;</span>描述<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;returns&gt;</span><span class="doctag">&lt;/returns&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">bool</span> <span class="title">CreateDesktopShortcut</span>(<span class="params"><span class="built_in">string</span> LnkName, <span class="built_in">string</span> AssemblyFullPath, <span class="built_in">string</span> IconLocation = <span class="literal">null</span>, <span class="built_in">string</span> Description = <span class="literal">null</span></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">string</span> DesktopLnkPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), <span class="string">$&quot;<span class="subst">&#123;LnkName&#125;</span>.lnk&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (File.Exists(DesktopLnkPath)) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    IWshRuntimeLibrary.IWshShortcut shortcut = <span class="keyword">new</span> IWshRuntimeLibrary.WshShell().CreateShortcut(DesktopLnkPath);</span><br><span class="line">    shortcut.WorkingDirectory = Path.GetDirectoryName(AssemblyFullPath);</span><br><span class="line">    shortcut.TargetPath = AssemblyFullPath;</span><br><span class="line">    shortcut.WindowStyle = <span class="number">1</span>;</span><br><span class="line">    shortcut.Description = Description;</span><br><span class="line">    shortcut.IconLocation = IconLocation ?? AssemblyFullPath;</span><br><span class="line">    shortcut.Save();</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
   </entry>
   <entry>
     <title>wordpress</title>
