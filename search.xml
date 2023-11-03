@@ -504,21 +504,6 @@ CertUtil: -hashfile 命令成功完成。</p>
       </tags>
   </entry>
   <entry>
-    <title>Office-Excel</title>
-    <url>/2021/07/26/Office-Excel/</url>
-    <content><![CDATA[<span id="more"></span>
-<h3 id="excel-批量添加图片">EXCEL 批量添加图片</h3>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;图片链接&quot;</span> <span class="attr">height</span>=<span class="string">&quot;42&quot;</span> <span class="attr">width</span>=<span class="string">&quot;42&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-<p>宽高可提前修改为对应值
-复制html文本，选择性粘贴”，选择Unicode文本。</p>
-<p>可用于条码的批量生成，早期有规律的网络图片爬虫。</p>
-<p>实例网址
-https://image-charts.com/chart?chs=150x150&amp;cht=qr&amp;chl=Hello%20world&amp;choe=UTF-8</p>
-<h3 id="excel-图片居中">EXCEL 图片居中</h3>
-<figure class="highlight vb"><table><tr><td class="code"><pre><span class="line"><span class="keyword">Sub</span> dq()</span><br><span class="line"><span class="keyword">Dim</span> shp <span class="keyword">As</span> Shape</span><br><span class="line"><span class="keyword">For</span> <span class="keyword">Each</span> shp <span class="keyword">In</span> ActiveSheet.Shapes</span><br><span class="line">shp.Left = (shp.TopLeftCell.Width - shp.Width) / <span class="number">2</span> + shp.TopLeftCell.Left</span><br><span class="line">shp.Top = (shp.TopLeftCell.Height - shp.Height) / <span class="number">2</span> + shp.TopLeftCell.Top</span><br><span class="line"><span class="keyword">Next</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
     <title>SSH 配置</title>
     <url>/2018/06/11/SSH/</url>
     <content><![CDATA[<span id="more"></span>
@@ -533,6 +518,21 @@ id_rsa.pub，私钥 id_rsa 2. 复制公钥至主机</p>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> pub_file_path | ssh  root@host <span class="string">&#x27;cat &gt;&gt; .ssh/authorized_keys&#x27;</span></span><br><span class="line"><span class="comment"># 首次登录使用，覆盖已有的 id_rsa 之后即可无密码登录，如果设置了 passphrase 登录时需要输入 passphrase</span></span><br><span class="line">ssh-keygen; <span class="built_in">cat</span> ~/.ssh/id_*.pub | ssh  root@host <span class="string">&#x27;cat &gt;&gt; .ssh/authorized_keys&#x27;</span>; ssh user@host</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">host ecs（主机别名）</span><br><span class="line">HostName 主机地址</span><br><span class="line">User 用户名</span><br><span class="line">Port 22（sshd 端口号）</span><br><span class="line">IdentitiesOnly yes</span><br><span class="line">IdentityFile 私钥路径</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">PermitRootLogin yes</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
+    <title>Office-Excel</title>
+    <url>/2021/07/26/Office-Excel/</url>
+    <content><![CDATA[<span id="more"></span>
+<h3 id="excel-批量添加图片">EXCEL 批量添加图片</h3>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;图片链接&quot;</span> <span class="attr">height</span>=<span class="string">&quot;42&quot;</span> <span class="attr">width</span>=<span class="string">&quot;42&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>宽高可提前修改为对应值
+复制html文本，选择性粘贴”，选择Unicode文本。</p>
+<p>可用于条码的批量生成，早期有规律的网络图片爬虫。</p>
+<p>实例网址
+https://image-charts.com/chart?chs=150x150&amp;cht=qr&amp;chl=Hello%20world&amp;choe=UTF-8</p>
+<h3 id="excel-图片居中">EXCEL 图片居中</h3>
+<figure class="highlight vb"><table><tr><td class="code"><pre><span class="line"><span class="keyword">Sub</span> dq()</span><br><span class="line"><span class="keyword">Dim</span> shp <span class="keyword">As</span> Shape</span><br><span class="line"><span class="keyword">For</span> <span class="keyword">Each</span> shp <span class="keyword">In</span> ActiveSheet.Shapes</span><br><span class="line">shp.Left = (shp.TopLeftCell.Width - shp.Width) / <span class="number">2</span> + shp.TopLeftCell.Left</span><br><span class="line">shp.Top = (shp.TopLeftCell.Height - shp.Height) / <span class="number">2</span> + shp.TopLeftCell.Top</span><br><span class="line"><span class="keyword">Next</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
   <entry>
@@ -1087,6 +1087,20 @@ href="">奇偶校验</a>）</li>
       </tags>
   </entry>
   <entry>
+    <title>汇编语言环境搭建</title>
+    <url>/2019/07/09/asm-env/</url>
+    <content><![CDATA[<span id="more"></span>
+<p>DOSBOX 配置 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 挂载程序目录</span><br><span class="line">mount c D:\Programs_Add\ASM</span><br><span class="line"># 挂载工作目录</span><br><span class="line">mount d E:\DukeLab\ASM</span><br><span class="line"># 将程序加入 path 环境</span><br><span class="line">set path=%path%;c:\;</span><br><span class="line"># 切换到工作目录</span><br><span class="line">d:</span><br><span class="line"># 清屏</span><br><span class="line">cls</span><br></pre></td></tr></table></figure></p>
+<h2 id="参考文章">参考文章</h2>
+<ul>
+<li><a href="https://www.dosbox.com/">DOSBOX 官网</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>Assembly</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>汇编语言</title>
     <url>/2018/11/10/asm-code/</url>
     <content><![CDATA[<span id="more"></span>
@@ -1160,20 +1174,6 @@ href="">奇偶校验</a>）</li>
 </tr>
 </tbody>
 </table>
-]]></content>
-      <tags>
-        <tag>Assembly</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>汇编语言环境搭建</title>
-    <url>/2019/07/09/asm-env/</url>
-    <content><![CDATA[<span id="more"></span>
-<p>DOSBOX 配置 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 挂载程序目录</span><br><span class="line">mount c D:\Programs_Add\ASM</span><br><span class="line"># 挂载工作目录</span><br><span class="line">mount d E:\DukeLab\ASM</span><br><span class="line"># 将程序加入 path 环境</span><br><span class="line">set path=%path%;c:\;</span><br><span class="line"># 切换到工作目录</span><br><span class="line">d:</span><br><span class="line"># 清屏</span><br><span class="line">cls</span><br></pre></td></tr></table></figure></p>
-<h2 id="参考文章">参考文章</h2>
-<ul>
-<li><a href="https://www.dosbox.com/">DOSBOX 官网</a></li>
-</ul>
 ]]></content>
       <tags>
         <tag>Assembly</tag>
@@ -1273,13 +1273,6 @@ GitPage 固定写法。<a href="https://github.com/new">新建仓库地址</a></
       </tags>
   </entry>
   <entry>
-    <title>blog-hexo-gitpage</title>
-    <url>/2021/02/25/blog-hexo-gitpage/</url>
-    <content><![CDATA[<span id="more"></span>
-<p>Creating a repository for your site</p>
-]]></content>
-  </entry>
-  <entry>
     <title>HEXO 进阶操作</title>
     <url>/2019/09/22/blog-hexo/</url>
     <content><![CDATA[<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用
@@ -1325,6 +1318,13 @@ Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓
       </tags>
   </entry>
   <entry>
+    <title>blog-hexo-gitpage</title>
+    <url>/2021/02/25/blog-hexo-gitpage/</url>
+    <content><![CDATA[<span id="more"></span>
+<p>Creating a repository for your site</p>
+]]></content>
+  </entry>
+  <entry>
     <title>init</title>
     <url>/2021/02/19/blog-init/</url>
     <content><![CDATA[<span id="more"></span>
@@ -1356,96 +1356,6 @@ href="https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.co
       <tags>
         <tag>blog</tag>
         <tag>markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>零基础建博客</title>
-    <url>/2019/06/07/blog/</url>
-    <content><![CDATA[<h3 id="hexo-博客">Hexo 博客</h3>
-<p>Hexo
-不是博客而是快速、简洁且高效的博客框架，适合任何有打字基础的人建立属于自己、完全定制的个人博客，可用于个人生活记录、学习笔记整理、连载个人小说等。</p>
-<span id="more"></span>
-<p><a href="hexo">hexo</a></p>
-<table>
-<tbody>
-<tr class="odd">
-<td>### 流程简介</td>
-</tr>
-<tr class="even">
-<td>- 前期准备：申请 GitHub 账户、创建 GitPage 仓库、配置 Git 环境、配置
-Nodejs 环境</td>
-</tr>
-<tr class="odd">
-<td>- 搭建博客：安装 Hexo-cli、搭建博客环境、设置博客主题、部署博客至
-GitPage</td>
-</tr>
-<tr class="even">
-<td>- 博客编写：Hexo 命令、安装 VScode 插件、Markdown 编写博客</td>
-</tr>
-</tbody>
-</table>
-<h3 id="申请-github-账户">申请 GitHub 账户</h3>
-<p>访问 GitHub 官网 建立自己的 GitHub 帐号：<a
-href="https://github.com/join">注册地址</a></p>
-<figure>
-<img src="/img/blog/1.png" alt="Github 注册界面" />
-<figcaption aria-hidden="true">Github 注册界面</figcaption>
-</figure>
-<p>请将自己在图中标记的项目中所填写的内容记录下，以便后期的操作。</p>
-<p>建议用户名①尽量使用全英文字母，避免不必要的麻烦</p>
-<p>举个例子，我的为：</p>
-<ul>
-<li>① DukeBode</li>
-<li>② Duke123@aliyun.com</li>
-</ul>
-<p>剩余的<code>红色标记</code>请自行记录，此处仅记录重要信息</p>
-<h3 id="创建-gitpage-仓库">创建 GitPage 仓库</h3>
-<p>登录 GitHub,在相关位置输入上文记录的内容。<a
-href="https://github.com/login">登录地址</a></p>
-<figure>
-<img src="/img/blog/2.png" alt="GitHub 登录界面" />
-<figcaption aria-hidden="true">GitHub 登录界面</figcaption>
-</figure>
-<p>如图所示，新建仓库，输入相关信息。仓库名（用户名.github.io）为
-GitPage 固定写法。<a href="https://github.com/new">新建仓库地址</a></p>
-<figure>
-<img src="/img/blog/3.png" alt="仓库创建界面" />
-<figcaption aria-hidden="true">仓库创建界面</figcaption>
-</figure>
-<p>说明：
-<code>黄色标记</code>会自动显示对应的个人信息，<code>绿色标记</code>需要自己填写，填写时请勿遗漏点等字母或符号。</p>
-<h3 id="配置-git-环境">配置 Git 环境</h3>
-<p>不是<code>中国地区</code>的<code>Windows 系统</code>用户请自行阅读官网文档安装，切记配置
-path 环境。 <a href="https://git-scm.com/downloads">git
-官方下载地址</a></p>
-<figure>
-<img src="/img/blog/4.png" alt="Git 下载界面" />
-<figcaption aria-hidden="true">Git 下载界面</figcaption>
-</figure>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;①&quot;</span><br><span class="line"></span><br><span class="line">git config --global user.email ②</span><br><span class="line"></span><br><span class="line">ssh-keygen -t rsa -C &quot;②&quot;</span><br></pre></td></tr></table></figure>
-<h3 id="配置-nodejs-环境">配置 Nodejs 环境</h3>
-<p><a href="">NodeJS 官网</a></p>
-<h3 id="安装-hexo-cli">安装 Hexo-cli</h3>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-<h3 id="搭建博客环境">搭建博客环境</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line"><span class="comment"># </span></span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line"><span class="comment"># </span></span><br><span class="line">npm install</span><br><span class="line"><span class="comment"># </span></span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p>git clone -b <指定分支名> <远程仓库地址></p>
-<h3 id="编写博客">编写博客</h3>
-<figure class="highlight bat"><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> <span class="built_in">PATH</span>=<span class="variable">%PATH%</span>;</span><br><span class="line">reg add &quot;HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment&quot; /v &quot;<span class="built_in">Path</span>&quot; /t REG_EXPAND_SZ /d &quot;<span class="variable">%PATH%</span>&quot; /f</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>参考文章 - <a
-href="https://blog.csdn.net/lucklymm/article/details/89014085">hexo搭建个人博客</a></p>
-</blockquote>
-<p>用电脑记笔记 让更多人看到自己的笔记 备份笔记</p>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
-        <tag>VScode</tag>
-        <tag>git</tag>
-        <tag>nodejs</tag>
-        <tag>GitHub</tag>
-        <tag>GitPage</tag>
-        <tag>博客</tag>
       </tags>
   </entry>
   <entry>
@@ -1610,6 +1520,96 @@ INTERFACING</li>
 <li>深入理解计算机网络</li>
 </ul>
 ]]></content>
+  </entry>
+  <entry>
+    <title>零基础建博客</title>
+    <url>/2019/06/07/blog/</url>
+    <content><![CDATA[<h3 id="hexo-博客">Hexo 博客</h3>
+<p>Hexo
+不是博客而是快速、简洁且高效的博客框架，适合任何有打字基础的人建立属于自己、完全定制的个人博客，可用于个人生活记录、学习笔记整理、连载个人小说等。</p>
+<span id="more"></span>
+<p><a href="hexo">hexo</a></p>
+<table>
+<tbody>
+<tr class="odd">
+<td>### 流程简介</td>
+</tr>
+<tr class="even">
+<td>- 前期准备：申请 GitHub 账户、创建 GitPage 仓库、配置 Git 环境、配置
+Nodejs 环境</td>
+</tr>
+<tr class="odd">
+<td>- 搭建博客：安装 Hexo-cli、搭建博客环境、设置博客主题、部署博客至
+GitPage</td>
+</tr>
+<tr class="even">
+<td>- 博客编写：Hexo 命令、安装 VScode 插件、Markdown 编写博客</td>
+</tr>
+</tbody>
+</table>
+<h3 id="申请-github-账户">申请 GitHub 账户</h3>
+<p>访问 GitHub 官网 建立自己的 GitHub 帐号：<a
+href="https://github.com/join">注册地址</a></p>
+<figure>
+<img src="/img/blog/1.png" alt="Github 注册界面" />
+<figcaption aria-hidden="true">Github 注册界面</figcaption>
+</figure>
+<p>请将自己在图中标记的项目中所填写的内容记录下，以便后期的操作。</p>
+<p>建议用户名①尽量使用全英文字母，避免不必要的麻烦</p>
+<p>举个例子，我的为：</p>
+<ul>
+<li>① DukeBode</li>
+<li>② Duke123@aliyun.com</li>
+</ul>
+<p>剩余的<code>红色标记</code>请自行记录，此处仅记录重要信息</p>
+<h3 id="创建-gitpage-仓库">创建 GitPage 仓库</h3>
+<p>登录 GitHub,在相关位置输入上文记录的内容。<a
+href="https://github.com/login">登录地址</a></p>
+<figure>
+<img src="/img/blog/2.png" alt="GitHub 登录界面" />
+<figcaption aria-hidden="true">GitHub 登录界面</figcaption>
+</figure>
+<p>如图所示，新建仓库，输入相关信息。仓库名（用户名.github.io）为
+GitPage 固定写法。<a href="https://github.com/new">新建仓库地址</a></p>
+<figure>
+<img src="/img/blog/3.png" alt="仓库创建界面" />
+<figcaption aria-hidden="true">仓库创建界面</figcaption>
+</figure>
+<p>说明：
+<code>黄色标记</code>会自动显示对应的个人信息，<code>绿色标记</code>需要自己填写，填写时请勿遗漏点等字母或符号。</p>
+<h3 id="配置-git-环境">配置 Git 环境</h3>
+<p>不是<code>中国地区</code>的<code>Windows 系统</code>用户请自行阅读官网文档安装，切记配置
+path 环境。 <a href="https://git-scm.com/downloads">git
+官方下载地址</a></p>
+<figure>
+<img src="/img/blog/4.png" alt="Git 下载界面" />
+<figcaption aria-hidden="true">Git 下载界面</figcaption>
+</figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;①&quot;</span><br><span class="line"></span><br><span class="line">git config --global user.email ②</span><br><span class="line"></span><br><span class="line">ssh-keygen -t rsa -C &quot;②&quot;</span><br></pre></td></tr></table></figure>
+<h3 id="配置-nodejs-环境">配置 Nodejs 环境</h3>
+<p><a href="">NodeJS 官网</a></p>
+<h3 id="安装-hexo-cli">安装 Hexo-cli</h3>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h3 id="搭建博客环境">搭建博客环境</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line"><span class="comment"># </span></span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line"><span class="comment"># </span></span><br><span class="line">npm install</span><br><span class="line"><span class="comment"># </span></span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<p>git clone -b <指定分支名> <远程仓库地址></p>
+<h3 id="编写博客">编写博客</h3>
+<figure class="highlight bat"><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> <span class="built_in">PATH</span>=<span class="variable">%PATH%</span>;</span><br><span class="line">reg add &quot;HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment&quot; /v &quot;<span class="built_in">Path</span>&quot; /t REG_EXPAND_SZ /d &quot;<span class="variable">%PATH%</span>&quot; /f</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>参考文章 - <a
+href="https://blog.csdn.net/lucklymm/article/details/89014085">hexo搭建个人博客</a></p>
+</blockquote>
+<p>用电脑记笔记 让更多人看到自己的笔记 备份笔记</p>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
+        <tag>VScode</tag>
+        <tag>git</tag>
+        <tag>nodejs</tag>
+        <tag>GitHub</tag>
+        <tag>GitPage</tag>
+        <tag>博客</tag>
+      </tags>
   </entry>
   <entry>
     <title>产品追溯</title>
@@ -1951,6 +1951,34 @@ href="https://www.cnblogs.com/yuanzai12345/p/5946743.html">Nginx设置expires设
       </tags>
   </entry>
   <entry>
+    <title>开源镜像站</title>
+    <url>/2019/09/01/os-mirror/</url>
+    <content><![CDATA[<p>Mirror sites or mirrors are replicas of other websites or any network
+node. Such sites have different URLs than the original site, but host
+identical or near-identical content. Mirror sites are often located in a
+different geographic region than the original, or upstream site. The
+purpose of mirrors is to reduce network traffic, improve access speed,
+ensure availability of the original site for technical or political
+reasons, or provide a real-time backup of the original site.</p>
+<span id="more"></span>
+<ul>
+<li><a
+href="https://mirrors.tuna.tsinghua.edu.cn/">清华大学开源软件镜像站</a></li>
+<li><a href="http://mirrors.163.com/">网易开源镜像站</a></li>
+<li><a href="https://mirrors.cloud.tencent.com/">腾讯云软件源站</a></li>
+<li><a href="https://mirrors.huaweicloud.com/">华为开源镜像站</a></li>
+<li><a href="https://mirrors.aliyun.com">阿里巴巴开源镜像站</a></li>
+<li><a
+href="http://mirrors.ustc.edu.cn/">中国科学技术大学开源软件镜像</a></li>
+<li><a
+href="http://mirrors.neusoft.edu.cn/">东软信息学院开源镜像站</a></li>
+<li><a
+href="https://mirror.bjtu.edu.cn/">北京交通大学自由与开源软件镜像站</a></li>
+<li><a href="http://mirrors.zju.edu.cn/">浙江大学开源镜像站</a></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>os-host</title>
     <url>/2020/02/24/os-host/</url>
     <content><![CDATA[<p>The hosts file is one of several system facilities that assists in
@@ -1988,34 +2016,6 @@ in an IP network.</p>
 <p>添加下面两行内容到hosts文件中</p>
 <p>151.101.72.249 github.global.ssl.fastly.net</p>
 <p>192.30.253.112 github.com</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>开源镜像站</title>
-    <url>/2019/09/01/os-mirror/</url>
-    <content><![CDATA[<p>Mirror sites or mirrors are replicas of other websites or any network
-node. Such sites have different URLs than the original site, but host
-identical or near-identical content. Mirror sites are often located in a
-different geographic region than the original, or upstream site. The
-purpose of mirrors is to reduce network traffic, improve access speed,
-ensure availability of the original site for technical or political
-reasons, or provide a real-time backup of the original site.</p>
-<span id="more"></span>
-<ul>
-<li><a
-href="https://mirrors.tuna.tsinghua.edu.cn/">清华大学开源软件镜像站</a></li>
-<li><a href="http://mirrors.163.com/">网易开源镜像站</a></li>
-<li><a href="https://mirrors.cloud.tencent.com/">腾讯云软件源站</a></li>
-<li><a href="https://mirrors.huaweicloud.com/">华为开源镜像站</a></li>
-<li><a href="https://mirrors.aliyun.com">阿里巴巴开源镜像站</a></li>
-<li><a
-href="http://mirrors.ustc.edu.cn/">中国科学技术大学开源软件镜像</a></li>
-<li><a
-href="http://mirrors.neusoft.edu.cn/">东软信息学院开源镜像站</a></li>
-<li><a
-href="https://mirror.bjtu.edu.cn/">北京交通大学自由与开源软件镜像站</a></li>
-<li><a href="http://mirrors.zju.edu.cn/">浙江大学开源镜像站</a></li>
-</ul>
 ]]></content>
   </entry>
   <entry>
@@ -2142,18 +2142,6 @@ class="math inline">\(Env:path=&quot;./.venv/Scripts/;&quot;+\)</span>Env:path</
 ]]></content>
   </entry>
   <entry>
-    <title>OS Setting</title>
-    <url>/2019/06/07/os-setting/</url>
-    <content><![CDATA[<h2 id="windows">windows</h2>
-<p>暴力删除废弃文件夹 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">DEL</span> /F /A /Q \\?\%<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">RD</span> /S /Q \\?\%<span class="number">1</span></span><br></pre></td></tr></table></figure> /P 删除每一个文件之前提示确认。 /F
-强制删除只读文件。 /S 从所有子目录删除指定文件。 /Q
-安静模式。删除全局通配符时，不要求确认。 /A
-根据属性选择要删除的文件。</p>
-<p>cmd /c dir：是执行完dir命令后关闭命令窗口；</p>
-<p>cmd /k dir：是执行完dir命令后不关闭命令窗口。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Chrome的使用</title>
     <url>/2019/06/11/os-software-chrome/</url>
     <content><![CDATA[<span id="more"></span>
@@ -2170,6 +2158,18 @@ class="math inline">\(Env:path=&quot;./.venv/Scripts/;&quot;+\)</span>Env:path</
 </ul>
 <h3 id="图片助手imageassistant">图片助手（ImageAssistant）</h3>
 <p><a href="https://www.pullywood.com/ImageAssistant/">官网</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>OS Setting</title>
+    <url>/2019/06/07/os-setting/</url>
+    <content><![CDATA[<h2 id="windows">windows</h2>
+<p>暴力删除废弃文件夹 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">DEL</span> /F /A /Q \\?\%<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">RD</span> /S /Q \\?\%<span class="number">1</span></span><br></pre></td></tr></table></figure> /P 删除每一个文件之前提示确认。 /F
+强制删除只读文件。 /S 从所有子目录删除指定文件。 /Q
+安静模式。删除全局通配符时，不要求确认。 /A
+根据属性选择要删除的文件。</p>
+<p>cmd /c dir：是执行完dir命令后关闭命令窗口；</p>
+<p>cmd /k dir：是执行完dir命令后不关闭命令窗口。</p>
 ]]></content>
   </entry>
   <entry>
@@ -2330,20 +2330,6 @@ href="https://wiki.eclipse.org/Eclipse.ini">eclipse.ini-Eclipsepedia</a></p></li
       </tags>
   </entry>
   <entry>
-    <title>java</title>
-    <url>/2019/12/16/os-tool-java/</url>
-    <content><![CDATA[<span id="more"></span>
-<p><a
-href="https://www.oracle.com/java/technologies/javase-downloads.html">Java
-SE Downloads</a> <a href="https://docs.oracle.com/en/java/">Java
-Documentation</a> <a href="https://jakarta.ee/">Jakarta® EE
-Software</a></p>
-<p>yum install java-latest-openjdk</p>
-<p>java 中文显示不正常 &gt; JAVA_TOOL_OPTIONS -Dfile.encoding=UTF-8</p>
-<p>jlink 部署</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Nodejs</title>
     <url>/2019/08/06/os-tool-node/</url>
     <content><![CDATA[<span id="more"></span>
@@ -2373,6 +2359,20 @@ Linux 7.5上安装Node.js</a></p>
         <tag>yarn</tag>
         <tag>npm</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>java</title>
+    <url>/2019/12/16/os-tool-java/</url>
+    <content><![CDATA[<span id="more"></span>
+<p><a
+href="https://www.oracle.com/java/technologies/javase-downloads.html">Java
+SE Downloads</a> <a href="https://docs.oracle.com/en/java/">Java
+Documentation</a> <a href="https://jakarta.ee/">Jakarta® EE
+Software</a></p>
+<p>yum install java-latest-openjdk</p>
+<p>java 中文显示不正常 &gt; JAVA_TOOL_OPTIONS -Dfile.encoding=UTF-8</p>
+<p>jlink 部署</p>
+]]></content>
   </entry>
   <entry>
     <title>oracle</title>
@@ -3721,15 +3721,6 @@ src="/img/yiban/180526a.png" alt="功能截图" /></p>
 ]]></content>
   </entry>
   <entry>
-    <title>电脑新手指南</title>
-    <url>/2018/06/07/%E7%94%B5%E8%84%91%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<p>0 系统的选择及安装 1 联网，请备好网线 2 浏览器的使用 3
-我的电脑，配置系统文件 4 软件安装及卸载 5 拒绝广告和病毒 6
-快捷键及shell基础 7 浅谈自学知识 8 电脑是工具，不是玩具 9
-必经之路，交流经验 * 电脑的保养及维护技巧</p>
-]]></content>
-  </entry>
-  <entry>
     <title>程序执行环境</title>
     <url>/2019/06/07/%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E7%8E%AF%E5%A2%83/</url>
     <content><![CDATA[<h2 id="参数列表">参数列表</h2>
@@ -3751,6 +3742,15 @@ src="/img/yiban/180526a.png" alt="功能截图" /></p>
 <li>系统日志</li>
 <li>用户信息</li>
 </ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>电脑新手指南</title>
+    <url>/2018/06/07/%E7%94%B5%E8%84%91%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<p>0 系统的选择及安装 1 联网，请备好网线 2 浏览器的使用 3
+我的电脑，配置系统文件 4 软件安装及卸载 5 拒绝广告和病毒 6
+快捷键及shell基础 7 浅谈自学知识 8 电脑是工具，不是玩具 9
+必经之路，交流经验 * 电脑的保养及维护技巧</p>
 ]]></content>
   </entry>
   <entry>
