@@ -24,9 +24,9 @@ number headings: first-level 2, auto,max 3
 
 ##### 符号函数
 - 
-$$\begin{equation*}y=sgnx=\left\{\begin{aligned}-1&,x<0\\
+$$\begin{equation*}y=sgnx=\begin{cases}-1&,x<0\\
  0&,x=0\\
- 1&,x>0\end{aligned}\right.\end{equation*}$$
+ 1&,x>0\end{cases}\end{equation*}$$
 ##### 取整函数
 
 - $x-1<[x]<x$
