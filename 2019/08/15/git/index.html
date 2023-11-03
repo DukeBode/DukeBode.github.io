@@ -36,7 +36,7 @@
 <meta property="og:image" content="https://dukebode.github.io/img/git/11.png">
 <meta property="og:image" content="https://dukebode.github.io/img/git/12.png">
 <meta property="article:published_time" content="2019-08-15T14:57:42.000Z">
-<meta property="article:modified_time" content="2023-11-03T09:04:15.573Z">
+<meta property="article:modified_time" content="2023-11-03T10:40:36.871Z">
 <meta property="article:author" content="Duke Bode">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
@@ -150,7 +150,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8-git-%E4%BB%93%E5%BA%93"><span class="nav-number">1.</span> <span class="nav-text">常用 Git 仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git"><span class="nav-number">2.</span> <span class="nav-text">git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-git"><span class="nav-number">3.</span> <span class="nav-text">安装 git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%AD%E5%9B%BD%E7%94%A8%E6%88%B7%E9%97%AE%E9%A2%98"><span class="nav-number">3.1.</span> <span class="nav-text">中国用户问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#path-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%97%AE%E9%A2%98"><span class="nav-number">3.2.</span> <span class="nav-text">path 环境变量问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shell-%E6%93%8D%E4%BD%9C"><span class="nav-number">4.</span> <span class="nav-text">shell 操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE-git"><span class="nav-number">5.</span> <span class="nav-text">设置 git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93"><span class="nav-number">6.</span> <span class="nav-text">创建本地仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="nav-number">7.</span> <span class="nav-text">配置远程仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-ssh-key"><span class="nav-number">8.</span> <span class="nav-text">配置 SSH-Key</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%AF%86%E9%92%A5%E5%AF%B9"><span class="nav-number">8.1.</span> <span class="nav-text">生成密钥对</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-ssh-config-%E6%96%87%E4%BB%B6"><span class="nav-number">8.2.</span> <span class="nav-text">配置 ssh config 文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-%E6%92%A4%E9%94%80%E5%B7%B2%E7%BB%8Fpush%E7%9A%84%E6%8F%90%E4%BA%A4"><span class="nav-number">9.</span> <span class="nav-text">git 撤销已经push的提交</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-number">10.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B8%B8%E7%94%A8-git-%E4%BB%93%E5%BA%93"><span class="nav-number">1.</span> <span class="nav-text">1. 常用 Git 仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git"><span class="nav-number">2.</span> <span class="nav-text">2. git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-git"><span class="nav-number">3.</span> <span class="nav-text">3. 安装 git</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%AD%E5%9B%BD%E7%94%A8%E6%88%B7%E9%97%AE%E9%A2%98"><span class="nav-number">3.1.</span> <span class="nav-text">3.1. 中国用户问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#path-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%97%AE%E9%A2%98"><span class="nav-number">3.2.</span> <span class="nav-text">3.2. path 环境变量问题</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shell-%E6%93%8D%E4%BD%9C"><span class="nav-number">4.</span> <span class="nav-text">4. shell 操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE-git"><span class="nav-number">5.</span> <span class="nav-text">5. 设置 git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93"><span class="nav-number">6.</span> <span class="nav-text">6. 创建本地仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="nav-number">7.</span> <span class="nav-text">7. 配置远程仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-ssh-key"><span class="nav-number">8.</span> <span class="nav-text">8. 配置 SSH-Key</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%AF%86%E9%92%A5%E5%AF%B9"><span class="nav-number">8.1.</span> <span class="nav-text">8.1. 生成密钥对</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-ssh-config-%E6%96%87%E4%BB%B6"><span class="nav-number">8.2.</span> <span class="nav-text">8.2. 配置 ssh config 文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#git-%E6%92%A4%E9%94%80%E5%B7%B2%E7%BB%8Fpush%E7%9A%84%E6%8F%90%E4%BA%A4"><span class="nav-number">9.</span> <span class="nav-text">9. git 撤销已经push的提交</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-number">10.</span> <span class="nav-text">10. 参考文章</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -254,7 +254,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-11-03 09:04:15" itemprop="dateModified" datetime="2023-11-03T09:04:15+00:00">2023-11-03</time>
+      <time title="Modified: 2023-11-03 10:40:36" itemprop="dateModified" datetime="2023-11-03T10:40:36+00:00">2023-11-03</time>
     </span>
 
   
@@ -270,31 +270,31 @@
 designed to handle everything from small to very large projects with
 speed and efficiency.</p>
 <span id="more"></span>
-<h2 id="常用-git-仓库">常用 Git 仓库</h2>
+<h2 id="常用-git-仓库">1. 常用 Git 仓库</h2>
 <p>腾讯工蜂 https://git.code.tencent.com</p>
-<h2 id="git">git</h2>
+<h2 id="git">2. git</h2>
 <figure>
 <img src="/img/git/0.png" alt="git 官网" />
 <figcaption aria-hidden="true">git 官网</figcaption>
 </figure>
 <p><a target="_blank" rel="noopener" href="https://git-scm.com/">官网</a> | <a
 target="_blank" rel="noopener" href="https://github.com/waylau/git-for-win">中国下载</a></p>
-<h2 id="安装-git">安装 git</h2>
+<h2 id="安装-git">3. 安装 git</h2>
 <p>蝈蝈强烈要求读者，先读下文，然后再碰安装包。</p>
-<h3 id="中国用户问题">中国用户问题</h3>
+<h3 id="中国用户问题">3.1. 中国用户问题</h3>
 <p>中国地区的 Window
 宝宝请访问中国下载地址，最新日期的第一个链接即可</p>
 <figure>
 <img src="/img/blog/5.png" alt="git 下载页面" />
 <figcaption aria-hidden="true">git 下载页面</figcaption>
 </figure>
-<h3 id="path-环境变量问题">path 环境变量问题</h3>
+<h3 id="path-环境变量问题">3.2. path 环境变量问题</h3>
 <p>安装的时候，为了方便以后操作，下面的修改环境变量操作选第二个，其它操作建议选择默认。</p>
 <figure>
 <img src="/img/git/4.png" alt="git 安装界面" />
 <figcaption aria-hidden="true">git 安装界面</figcaption>
 </figure>
-<h2 id="shell-操作">shell 操作</h2>
+<h2 id="shell-操作">4. shell 操作</h2>
 <ol type="1">
 <li>点击 <code>Windows + R</code> 打开在运行界面</li>
 <li>输入powershell 后，打开powershell</li>
@@ -310,22 +310,22 @@ target="_blank" rel="noopener" href="https://github.com/waylau/git-for-win">中�
 <figcaption aria-hidden="true">验证 git 安装</figcaption>
 </figure>
 <p>确认成功安装后，依次输入以下命令回车执行，使用前面记录的信息替换相关内容，全程一律回车，直到执行完毕。</p>
-<h2 id="设置-git">设置 git</h2>
+<h2 id="设置-git">5. 设置 git</h2>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看 git 版本</span></span><br><span class="line">git version</span><br><span class="line"><span class="comment"># 设置 git 全局用户名</span></span><br><span class="line">git config --global user.name <span class="string">&quot;DukeBode&quot;</span></span><br><span class="line"><span class="comment"># 设置 git 全局邮箱</span></span><br><span class="line">git config --global user.email Duke123@aliyun.com</span><br></pre></td></tr></table></figure>
-<h2 id="创建本地仓库">创建本地仓库</h2>
+<h2 id="创建本地仓库">6. 创建本地仓库</h2>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git init  <span class="comment"># 初始化仓库</span></span><br><span class="line">git add * <span class="comment"># 添加全部文件</span></span><br></pre></td></tr></table></figure>
-<h2 id="配置远程仓库">配置远程仓库</h2>
+<h2 id="配置远程仓库">7. 配置远程仓库</h2>
 <p>git remote add origin git@。。。。。。。。。。。。。。。 git push -u
 origin --all</p>
-<h2 id="配置-ssh-key">配置 SSH-Key</h2>
-<h3 id="生成密钥对">生成密钥对</h3>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 格式 </span></span><br><span class="line"><span class="comment"># ssh-keygen -t rsa -C &quot;通常为邮箱&quot; -f &quot;私钥文件绝对路径&quot;</span></span><br><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;Duke123@aliyun.com&quot;</span> -f <span class="string">&quot;C:\Users\Duke1\.ssh\github&quot;</span></span><br></pre></td></tr></table></figure>
-<h3 id="配置-ssh-config-文件">配置 ssh config 文件</h3>
+<h2 id="配置-ssh-key">8. 配置 SSH-Key</h2>
+<h3 id="生成密钥对">8.1. 生成密钥对</h3>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 格式 </span></span><br><span class="line"><span class="comment"># ssh-keygen -t rsa -C &quot;通常为邮箱&quot; -f &quot;私钥文件绝对路径&quot;</span></span><br><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;giee.com&quot;</span> -f <span class="string">&quot;~\.ssh\gitee&quot;</span></span><br><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;github.com&quot;</span> -f <span class="string">&quot;~\.ssh\github&quot;</span></span><br><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;gitlab.com&quot;</span> -f <span class="string">&quot;~\.ssh\gitlab&quot;</span></span><br><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;gitcode.com&quot;</span> -f <span class="string">&quot;~\.ssh\gitcode&quot;</span></span><br></pre></td></tr></table></figure>
+<h3 id="配置-ssh-config-文件">8.2. 配置 ssh config 文件</h3>
 <p>模板</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 仓库名</span><br><span class="line"># 仓库地址</span><br><span class="line">Host 仓库 git 地址</span><br><span class="line">Host 仓库 git 地址</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile 私钥文件绝对路径</span><br></pre></td></tr></table></figure>
-<p>config <a href="/config/ssh/config">config</a> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># github</span><br><span class="line"># https://github.com/</span><br><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    IdentityFile C:\Users\Duke1\.ssh\github</span><br></pre></td></tr></table></figure>
+<p>config <a href="/config/ssh/config">config</a> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># github</span><br><span class="line"># https://github.com/</span><br><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    IdentityFile ~\.ssh\github</span><br></pre></td></tr></table></figure>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git -T git@github.com</span><br></pre></td></tr></table></figure></p>
-<h2 id="git-撤销已经push的提交">git 撤销已经push的提交</h2>
+<h2 id="git-撤销已经push的提交">9. git 撤销已经push的提交</h2>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://git-scm.com/docs/git-branch">git branch</a>
 查看分支</li>
@@ -340,7 +340,7 @@ origin --all</p>
 <li><p>git reset --soft</p></li>
 <li><p>git push origin master --force</p></li>
 </ol>
-<h2 id="参考文章">参考文章</h2>
+<h2 id="参考文章">10. 参考文章</h2>
 <ol type="1">
 <li><a
 target="_blank" rel="noopener" href="https://www.jianshu.com/p/dbb352ea14cf">Git命令备份</a></li>
