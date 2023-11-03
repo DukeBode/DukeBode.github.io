@@ -120,7 +120,9 @@ $$
 \end{split}
 \end{align}
 $$
+
 高阶导数公式
+
 $$
 \begin{align}
 &\left(\sin{x}\right)^{\left(n\right)}=\sin\left(x+n\cdot\frac{\pi}{2}\right)\\
@@ -129,10 +131,11 @@ $$
 &(uv)^{(n)}=\sum_{k=0}^{n}C_n^ku^{(k)}v^{(n-k)}
 \end{align}
 $$
+
 泰勒公式
 拉格朗日余项
-$$
-\begin{equation}\begin{aligned}
+
+$$\begin{equation}\begin{aligned}
 &f(x)=\left(\sum_{n=0}^\infty\frac{1}{n!}f(x_0)^{(n)}(x-x_0)^n\right)+o[(x-x_0)^n] \\
 &f(x)=\left(\sum_{n=0}^\infty\frac{1}{n!}f(0)^{(n)}x^n\right)+o(x^n)\\
 &f(x)=\left(\sum_{n=0}^\infty\frac{1}{n!}f(x_0)^{(n)}(x-x_0)^n\right)+\frac{f(\xi)^{(n+1)}}{(n+1)!}(x-x_0)^{n+1} \\
@@ -147,10 +150,10 @@ $$
 ## 4 不定积分
 
 $$
-\begin{equation}
-\int f(ax+b)dx=\frac{1}{a}\int(ax+b)d(ax+b)\\
-\int x^m
-\end{equation}
+\begin{equation}\begin{aligned}
+&\int f(ax+b)dx=\frac{1}{a}\int(ax+b)d(ax+b)\\
+&\int x^m
+\end{aligned}\end{equation}
 $$
 
 ## 5 定积分
