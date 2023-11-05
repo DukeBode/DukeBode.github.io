@@ -84,6 +84,25 @@ $$\begin{equation*}y=sgnx=\begin{cases}-1&,x<0\\
 
 有界性
 ### 1.2 极限
+$\lim\limits_{x \to 0}\frac{\sin x}{x}=1$ $\lim\limits_{x \to 0}(1+x)^{\frac{1}{x}}=e$ $\lim\limits_{x \to \infty}\left(1+\frac{1}{x}\right)^x=e$ 
+#### 无穷小量
+##### 无穷小的比较
+##### 无穷小的性质
+1. 有限个无穷小的和仍是无穷小
+2. 有限个无穷小的积仍是无穷小
+3. 无穷小量与有界量的积仍是无穷小
+#### 无穷大量
+
+##### 无穷大量的比较
+
+1. 当 $x \to +\infty$ 时， $\ln^\alpha x\ll x^\beta\ll a^x,\alpha > 0,\beta > 0,a>1$ 。
+2. 当 $n \to \infty$ 时，$\ln^\alpha n \ll n^\beta \ll n! \ll n^n,\alpha >0,\beta >0,a>1$ 。
+##### 无穷大量的性质
+
+1. 有限个无穷大量的积仍为无穷大量
+2. 无穷大量与有界变量之和仍为无穷大量
+3. 无穷大量必为无界变量，无界变量不一定是无穷大量
+4. 在同一极限过程中，如果 $f(x)$ 是无穷大，则 $\frac{1}{f(x)}$ 是无穷小，如果 $f(x)$ 是无穷小，且$f(x)\neq 0$ ，则 $\frac{1}{f(x)}$ 是无穷大
 ### 1.3 连续
 ## 2 导数与微分
 $$
@@ -170,6 +189,16 @@ $$
 
 
 ## 5 定积分
+
+由几何意义可知当 $a>0$ 时，
+$$
+\begin{equation}\begin{aligned}
+&\int_0^a\sqrt{a^2-x^2}dx=\frac{\pi a^2}{4}
+\\&\int_0^a\sqrt{2ax-x^2}dx=\frac{\pi a^2}{4}
+\\&\int_0^{2a}\sqrt{2ax-x^2}dx=\frac{\pi a^2}{2}
+\end{aligned}|\end{equation}
+$$
+
 ## 6 多元函数微分学
 ## 7 微分方程
 ## 8 重积分

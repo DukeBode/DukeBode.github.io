@@ -41,10 +41,6 @@ Your next computer is not a computer.
 - 不支持外接显示器单独使用
 
 ## 3. app
-- [spacedesk](https://apps.apple.com/cn/app/spacedesk-multi-monitor-app/id1069217220)
-- [iSH](https://apps.apple.com/cn/app/ish-shell/id1436902243)
 - [a-Shell](https://apps.apple.com/cn/app/a-shell/id1473805438)
 - [Swift Playgrounds](https://apps.apple.com/cn/app/swift-playgrounds/id908519492)
 - [LocalSend](https://apps.apple.com/cn/app/localsend/id1661733229)
-- [obsidian](https://apps.apple.com/cn/app/obsidian-connected-notes/id1557175442)
-- 

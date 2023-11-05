@@ -39,6 +39,6 @@ npm uninstall hexo-theme-landscape
 npm install hexo-cli
 ```
 
-## FAQ 
+## 1. FAQ 
 - [Set-ExecutionPolicy](https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_execution_policies#change-the-execution-policy)
 - 

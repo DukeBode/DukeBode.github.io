@@ -7,8 +7,10 @@ tags:
 
 <!-- more -->
 
-## 挂载
+## 1. 挂载
 
 
 midair -p ~/obsidian
 mount -t ios . obsidian
+
+

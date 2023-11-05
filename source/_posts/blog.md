@@ -13,7 +13,7 @@ tags:
 ---
 
 
-### Hexo 博客
+### 0.1. Hexo 博客
 Hexo 不是博客而是快速、简洁且高效的博客框架，适合任何有打字基础的人建立属于自己、完全定制的个人博客，可用于个人生活记录、学习笔记整理、连载个人小说等。
 
 <!-- more -->
@@ -21,13 +21,13 @@ Hexo 不是博客而是快速、简洁且高效的博客框架，适合任何有
 [hexo](hexo) 
 
 ---
-### 流程简介
+### 0.2. 流程简介
 - 前期准备：申请 GitHub 账户、创建 GitPage 仓库、配置 Git 环境、配置 Nodejs 环境
 - 搭建博客：安装 Hexo-cli、搭建博客环境、设置博客主题、部署博客至 GitPage
 - 博客编写：Hexo 命令、安装 VScode 插件、Markdown 编写博客
 ---
 
-### 申请 GitHub 账户
+### 0.3. 申请 GitHub 账户
 
 访问 GitHub 官网 建立自己的 GitHub 帐号：[注册地址](https://github.com/join)
 
@@ -44,7 +44,7 @@ Hexo 不是博客而是快速、简洁且高效的博客框架，适合任何有
 
 剩余的`红色标记`请自行记录，此处仅记录重要信息
 
-### 创建 GitPage 仓库
+### 0.4. 创建 GitPage 仓库
 
 登录 GitHub,在相关位置输入上文记录的内容。[登录地址](https://github.com/login)
 
@@ -57,7 +57,7 @@ Hexo 不是博客而是快速、简洁且高效的博客框架，适合任何有
 说明：
 `黄色标记`会自动显示对应的个人信息，`绿色标记`需要自己填写，填写时请勿遗漏点等字母或符号。
 
-### 配置 Git 环境
+### 0.5. 配置 Git 环境
 
 不是`中国地区`的` Windows 系统`用户请自行阅读官网文档安装，切记配置 path 环境。 [git 官方下载地址](https://git-scm.com/downloads)
 
@@ -71,17 +71,17 @@ git config --global user.email ②
 ssh-keygen -t rsa -C "②"
 ```
 
-### 配置 Nodejs 环境
+### 0.6. 配置 Nodejs 环境
 
 [NodeJS 官网]()
 
-### 安装 Hexo-cli
+### 0.7. 安装 Hexo-cli
 
 ```shell
 npm install hexo-cli -g
 ```
 
-### 搭建博客环境
+### 0.8. 搭建博客环境
 
 ```sh
 hexo init blog
@@ -95,7 +95,7 @@ hexo server
 
 git clone -b <指定分支名> <远程仓库地址>
 
-### 编写博客
+### 0.9. 编写博客
 
 ```bat
 set PATH=%PATH%;

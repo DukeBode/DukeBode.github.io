@@ -9,7 +9,7 @@ Vimium is a Chrome extension that provides keyboard-based navigation and control
 
 <!-- more -->
 
-### vimium 
+### 0.1. vimium 
 [官网](https://github.com/philc/vimium)
 
 ```Custom key mappings

@@ -59,8 +59,10 @@ git version
 git config --global user.name "DukeBode"
 # 设置 git 全局邮箱
 git config --global user.email Duke123@aliyun.com
+# 设置 git 对比工具
+git config --global diff.tool vimdiff
+git config --global difftool.prompt false
 ```
-
 ## 6. 创建本地仓库
 ```sh
 git init  # 初始化仓库
@@ -99,7 +101,7 @@ IdentityFile 私钥文件绝对路径
 ```
 
 config
-[config](/config/ssh/config)
+
 ```
 # github
 # https://github.com/

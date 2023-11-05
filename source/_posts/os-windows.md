@@ -1,12 +1,12 @@
 ---
 title: Windows
 date: 2020-03-24 13:55:33
-cover:
+cover: 
 tags:
+  - Windows
 ---
 
 <!-- more -->
-
 备忘录
 
 - 选 管理员配置符号链接
@@ -84,7 +84,7 @@ New-Item -ItemType HardLink -Path Link -Target Target
 - 选 关闭虚拟内存
 
 
-备份
+## 1. 备份
 
 - 环境变量 set path
 - 配置文件 wifi、ssh、gradle
@@ -97,3 +97,4 @@ netsh wlan export profile folder=D:\ key=clear
 ```
 - 软件安装包
 
+[在Windows中启用和禁用触摸屏](https://support.microsoft.com/zh-cn/windows/在屏幕中启用和禁用触摸屏windows-b774e29d-be94-990f-c20f-e02892e572fc)

@@ -2,6 +2,8 @@
 title: windows 快捷方式
 date: 2021-08-10 10:15:39
 tags:
+  - Windows
+  - cshape
 ---
 
 <!-- more -->
