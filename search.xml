@@ -584,6 +584,10 @@ palette）。</li>
 <p>C#</p>
 <figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> 为指定程序注册URL Protocol,方便浏览器调用</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;ProtocolName&quot;&gt;</span>协议名称<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;path&quot;&gt;</span>程序的完整路径<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;Exists&quot;&gt;</span>写入前存在状态<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;Override&quot;&gt;</span>如果存在是否重写数据，默认 false 不重写<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;exception cref=&quot;ArgumentException&quot;&gt;</span>参数异常<span class="doctag">&lt;/exception&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">RegisterUrlProtocol</span>(<span class="params"><span class="built_in">string</span> ProtocolName, <span class="built_in">string</span> path, <span class="keyword">out</span> <span class="built_in">bool</span> Exists, <span class="built_in">bool</span> Override = <span class="literal">false</span></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">string</span>.IsNullOrWhiteSpace(ProtocolName))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> ArgumentException(<span class="string">&quot;协议名称为空！！！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.ClassesRoot.OpenSubKey(ProtocolName, <span class="literal">true</span>);</span><br><span class="line">    Exists = key != <span class="literal">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (Exists &amp;&amp; !Override)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">string</span>.IsNullOrWhiteSpace(path))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> ArgumentException(<span class="string">&quot;关联程序路径为空！！！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!File.Exists(path))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> ArgumentException(<span class="string">&quot;关联程序不存在！！！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    key = key ?? Microsoft.Win32.Registry.ClassesRoot.CreateSubKey(ProtocolName);</span><br><span class="line">    key.SetValue(<span class="string">&quot;&quot;</span>, <span class="string">$&quot;<span class="subst">&#123;ProtocolName&#125;</span> Protocol&quot;</span>, Microsoft.Win32.RegistryValueKind.String);</span><br><span class="line">    key.SetValue(<span class="string">&quot;URL Protocol&quot;</span>, path, Microsoft.Win32.RegistryValueKind.String);</span><br><span class="line">    key.CreateSubKey(<span class="string">&quot;DefaultIcon&quot;</span>).SetValue(<span class="string">&quot;&quot;</span>, <span class="string">$&quot;<span class="subst">&#123;path&#125;</span>,1&quot;</span>, Microsoft.Win32.RegistryValueKind.String);</span><br><span class="line">    key.CreateSubKey(<span class="string">&quot;shell&quot;</span>).CreateSubKey(<span class="string">&quot;open&quot;</span>).CreateSubKey(<span class="string">&quot;command&quot;</span>)</span><br><span class="line">        .SetValue(<span class="string">&quot;&quot;</span>, <span class="string">$&quot;\&quot;<span class="subst">&#123;path&#125;</span>\&quot; \&quot;%1\&quot;&quot;</span>, Microsoft.Win32.RegistryValueKind.String);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <tags>
+        <tag>Windows</tag>
+        <tag>cshape</tag>
+      </tags>
   </entry>
   <entry>
     <title>汇编语言基础</title>
@@ -1090,11 +1094,11 @@ href="">奇偶校验</a>）</li>
     <title>汇编语言</title>
     <url>/2018/11/10/asm-code/</url>
     <content><![CDATA[<span id="more"></span>
-<h2 id="程序注释">程序注释</h2>
+<h2 id="程序注释">1. 程序注释</h2>
 <ul>
 <li>“;”开头，右边为注释内容</li>
 </ul>
-<h2 id="保留字">保留字</h2>
+<h2 id="保留字">2. 保留字</h2>
 <ul>
 <li>指令</li>
 <li>伪操作</li>
@@ -1331,7 +1335,7 @@ Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓
 <h1 id="about_execution_policies">about_execution_policies</h1>
 <figure class="highlight ps1"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Get-ExecutionPolicy</span></span><br><span class="line"><span class="built_in">Set-ExecutionPolicy</span> <span class="literal">-ExecutionPolicy</span> RemoteSigned <span class="literal">-Scope</span> CurrentUser</span><br></pre></td></tr></table></figure>
 <figure class="highlight ps1"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 检查程序版本，确认所需程序存在。</span></span><br><span class="line">node <span class="literal">-v</span>; git version; npm <span class="literal">-v</span>; npx <span class="literal">-v</span></span><br><span class="line"><span class="comment"># 创建并切换到工作目录</span></span><br><span class="line">mkdir blog; <span class="built_in">cd</span> blog</span><br><span class="line"><span class="comment"># 初始化 项目，git 仓库</span></span><br><span class="line">npx hexo init; git init</span><br><span class="line"><span class="comment"># rss,sitemap</span></span><br><span class="line">npm install hexo<span class="literal">-generator-feed</span> hexo<span class="literal">-generator-sitemap</span> hexo<span class="literal">-deployer-git</span></span><br><span class="line"><span class="comment"># 创建CNAME,404,README</span></span><br><span class="line"><span class="built_in">cd</span> source</span><br><span class="line"><span class="string">&quot;&quot;</span> &gt; CNAME</span><br><span class="line"><span class="string">&quot;---&quot;</span> &gt;&gt; <span class="number">404</span>.md; <span class="string">&quot;permalink: /404.html&quot;</span> &gt;&gt; <span class="number">404</span>.md; <span class="string">&quot;---&quot;</span> &gt;&gt; <span class="number">404</span>.md</span><br><span class="line"><span class="string">&quot;&quot;</span> &gt; README.md</span><br><span class="line"><span class="built_in">cd</span> ../</span><br><span class="line"><span class="comment"># 创建项目简介</span></span><br><span class="line"><span class="string">&quot;&quot;</span>&gt; README.md</span><br><span class="line"><span class="comment"># 为项目建立捐助方式</span></span><br><span class="line">mkdir .github;<span class="built_in">cd</span> .github;<span class="string">&quot;custom: [&#x27;https://DukeBode.github.io/sponsor&#x27;]&quot;</span> &gt; FUNDING.yml;<span class="built_in">cd</span> ../</span><br><span class="line"><span class="comment"># 安装 hexo-theme-next 主题</span></span><br><span class="line">npm install hexo<span class="literal">-theme-next</span>; <span class="built_in">cp</span> node_modules/hexo<span class="literal">-theme-next</span>/_config.yml _config.next.yml</span><br><span class="line">npm uninstall hexo<span class="literal">-theme-landscape</span></span><br><span class="line"><span class="comment"># 别名 hexo</span></span><br><span class="line"><span class="comment"># 安装 npm scripts 依赖</span></span><br><span class="line">npm install hexo<span class="literal">-cli</span></span><br></pre></td></tr></table></figure>
-<h2 id="faq">FAQ</h2>
+<h2 id="faq">1. FAQ</h2>
 <ul>
 <li><a
 href="https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_execution_policies#change-the-execution-policy">Set-ExecutionPolicy</a></li>
@@ -1361,7 +1365,7 @@ href="https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.co
   <entry>
     <title>零基础建博客</title>
     <url>/2019/06/07/blog/</url>
-    <content><![CDATA[<h3 id="hexo-博客">Hexo 博客</h3>
+    <content><![CDATA[<h3 id="hexo-博客">0.1. Hexo 博客</h3>
 <p>Hexo
 不是博客而是快速、简洁且高效的博客框架，适合任何有打字基础的人建立属于自己、完全定制的个人博客，可用于个人生活记录、学习笔记整理、连载个人小说等。</p>
 <span id="more"></span>
@@ -1369,7 +1373,7 @@ href="https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.co
 <table>
 <tbody>
 <tr class="odd">
-<td>### 流程简介</td>
+<td>### 0.2. 流程简介</td>
 </tr>
 <tr class="even">
 <td>- 前期准备：申请 GitHub 账户、创建 GitPage 仓库、配置 Git 环境、配置
@@ -1384,7 +1388,7 @@ GitPage</td>
 </tr>
 </tbody>
 </table>
-<h3 id="申请-github-账户">申请 GitHub 账户</h3>
+<h3 id="申请-github-账户">0.3. 申请 GitHub 账户</h3>
 <p>访问 GitHub 官网 建立自己的 GitHub 帐号：<a
 href="https://github.com/join">注册地址</a></p>
 <figure>
@@ -1399,7 +1403,7 @@ href="https://github.com/join">注册地址</a></p>
 <li>② Duke123@aliyun.com</li>
 </ul>
 <p>剩余的<code>红色标记</code>请自行记录，此处仅记录重要信息</p>
-<h3 id="创建-gitpage-仓库">创建 GitPage 仓库</h3>
+<h3 id="创建-gitpage-仓库">0.4. 创建 GitPage 仓库</h3>
 <p>登录 GitHub,在相关位置输入上文记录的内容。<a
 href="https://github.com/login">登录地址</a></p>
 <figure>
@@ -1414,7 +1418,7 @@ GitPage 固定写法。<a href="https://github.com/new">新建仓库地址</a></
 </figure>
 <p>说明：
 <code>黄色标记</code>会自动显示对应的个人信息，<code>绿色标记</code>需要自己填写，填写时请勿遗漏点等字母或符号。</p>
-<h3 id="配置-git-环境">配置 Git 环境</h3>
+<h3 id="配置-git-环境">0.5. 配置 Git 环境</h3>
 <p>不是<code>中国地区</code>的<code>Windows 系统</code>用户请自行阅读官网文档安装，切记配置
 path 环境。 <a href="https://git-scm.com/downloads">git
 官方下载地址</a></p>
@@ -1423,14 +1427,14 @@ path 环境。 <a href="https://git-scm.com/downloads">git
 <figcaption aria-hidden="true">Git 下载界面</figcaption>
 </figure>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git config --global user.name &quot;①&quot;</span><br><span class="line"></span><br><span class="line">git config --global user.email ②</span><br><span class="line"></span><br><span class="line">ssh-keygen -t rsa -C &quot;②&quot;</span><br></pre></td></tr></table></figure>
-<h3 id="配置-nodejs-环境">配置 Nodejs 环境</h3>
+<h3 id="配置-nodejs-环境">0.6. 配置 Nodejs 环境</h3>
 <p><a href="">NodeJS 官网</a></p>
-<h3 id="安装-hexo-cli">安装 Hexo-cli</h3>
+<h3 id="安装-hexo-cli">0.7. 安装 Hexo-cli</h3>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-<h3 id="搭建博客环境">搭建博客环境</h3>
+<h3 id="搭建博客环境">0.8. 搭建博客环境</h3>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line"><span class="comment"># </span></span><br><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line"><span class="comment"># </span></span><br><span class="line">npm install</span><br><span class="line"><span class="comment"># </span></span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 <p>git clone -b <指定分支名> <远程仓库地址></p>
-<h3 id="编写博客">编写博客</h3>
+<h3 id="编写博客">0.9. 编写博客</h3>
 <figure class="highlight bat"><table><tr><td class="code"><pre><span class="line"><span class="built_in">set</span> <span class="built_in">PATH</span>=<span class="variable">%PATH%</span>;</span><br><span class="line">reg add &quot;HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment&quot; /v &quot;<span class="built_in">Path</span>&quot; /t REG_EXPAND_SZ /d &quot;<span class="variable">%PATH%</span>&quot; /f</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>参考文章 - <a
@@ -1612,18 +1616,12 @@ INTERFACING</li>
 ]]></content>
   </entry>
   <entry>
-    <title>产品追溯</title>
-    <url>/2023/04/28/box/</url>
-    <content><![CDATA[<p>厂商编号 产品编号 生产日期 流水号</p>
-]]></content>
-  </entry>
-  <entry>
     <title>vimium</title>
     <url>/2020/01/08/chrome-vimium/</url>
     <content><![CDATA[<p>Vimium is a Chrome extension that provides keyboard-based navigation
 and control of the web in the spirit of the Vim editor.</p>
 <span id="more"></span>
-<h3 id="vimium">vimium</h3>
+<h3 id="vimium">0.1. vimium</h3>
 <p><a href="https://github.com/philc/vimium">官网</a></p>
 <figure class="highlight plaintext"><figcaption><span>key mappings</span></figcaption><table><tr><td class="code"><pre><span class="line"># Insert your preferred key mappings here.</span><br><span class="line">map h previousTab</span><br><span class="line">map l nextTab</span><br><span class="line"></span><br><span class="line">map H scrollLeft</span><br><span class="line">map J scrollPageDown</span><br><span class="line">map K scrollPageUp</span><br><span class="line">map L scrollRight</span><br><span class="line"></span><br><span class="line">map gh goBack</span><br><span class="line">map gj scrollToBottom</span><br><span class="line">map gk scrollToTop</span><br><span class="line">map gl goForward</span><br><span class="line">map gt Vomnibar.activateTabSelection</span><br><span class="line"></span><br><span class="line">map th firstTab</span><br><span class="line">map tl lastTab</span><br><span class="line"># map tn createTab</span><br><span class="line">map tn Vomnibar.activateInNewTab</span><br><span class="line">map tb Vomnibar.activateBookmarksInNewTab</span><br><span class="line">map tr reload</span><br><span class="line">map tg Vomnibar.activateTabSelection</span><br><span class="line">unmap t</span><br><span class="line"></span><br><span class="line">unmap x</span><br><span class="line">map xx restoreTab</span><br><span class="line">map &#x27; removeTab</span><br><span class="line">map xh&#x27; closeTabsOnLeft</span><br><span class="line">map xl&#x27; closeTabsOnRight</span><br><span class="line">map xo&#x27; closeOtherTabs</span><br><span class="line"></span><br><span class="line">map u Vomnibar.activateEditUrl</span><br><span class="line"></span><br><span class="line">map c LinkHints.activateMode</span><br><span class="line"># map f LinkHints.activateModeToOpenInNewTab</span><br><span class="line">map o LinkHints.activateModeToOpenInNewTab</span><br><span class="line">map mo Vomnibar.activateBookmarksInNewTab</span><br></pre></td></tr></table></figure>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># w: https://www.wikipedia.org/w/index.php?title=Special:Search&amp;search=%s Wikipedia</span><br><span class="line"></span><br><span class="line"># More examples.</span><br><span class="line">#</span><br><span class="line"># (Vimium supports search completion Wikipedia, as</span><br><span class="line"># above, and for these.)</span><br><span class="line">#</span><br><span class="line"></span><br><span class="line"># l: https://www.google.com/search?q=%s&amp;btnI I&#x27;m feeling lucky...</span><br><span class="line"># y: https://www.youtube.com/results?search_query=%s Youtube</span><br><span class="line"># gm: https://www.google.com/maps?q=%s Google maps</span><br><span class="line">bing: https://www.bing.com/search?q=%s Bing</span><br><span class="line">baidu: https://www.baidu.com/s?wd=%s Baidu</span><br><span class="line">google: https://www.google.com/search?q=%s Google</span><br><span class="line">github: https://github.com/search?q=%s GitHub</span><br><span class="line">weibo: https://s.weibo.com/weibo?q=%s 微博搜索</span><br><span class="line">cqvip: http://www.cqvip.com/main/search.aspx?k=%s 维普期刊</span><br><span class="line">pypi: https://pypi.org/search/?q=%s Python Package Index</span><br><span class="line">te: https://translate.google.cn/#view=home&amp;op=translate&amp;sl=zh-CN&amp;tl=en&amp;text= Google 中译英</span><br><span class="line">x: https://x.cnki.net/kns/brief/Default_Result.aspx?code=SCDB&amp;kw=%s China National Knowledge Infrastructure</span><br><span class="line"># d: https://duckduckgo.com/?q=%s DuckDuckGo</span><br><span class="line"># az: https://www.amazon.com/s/?field-keywords=%s Amazon</span><br><span class="line"># qw: https://www.qwant.com/?q=%s Qwant</span><br></pre></td></tr></table></figure>
@@ -1707,7 +1705,7 @@ href="https://github.com/waylau/git-for-win">中国下载</a></p>
 </figure>
 <p>确认成功安装后，依次输入以下命令回车执行，使用前面记录的信息替换相关内容，全程一律回车，直到执行完毕。</p>
 <h2 id="设置-git">5. 设置 git</h2>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看 git 版本</span></span><br><span class="line">git version</span><br><span class="line"><span class="comment"># 设置 git 全局用户名</span></span><br><span class="line">git config --global user.name <span class="string">&quot;DukeBode&quot;</span></span><br><span class="line"><span class="comment"># 设置 git 全局邮箱</span></span><br><span class="line">git config --global user.email Duke123@aliyun.com</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看 git 版本</span></span><br><span class="line">git version</span><br><span class="line"><span class="comment"># 设置 git 全局用户名</span></span><br><span class="line">git config --global user.name <span class="string">&quot;DukeBode&quot;</span></span><br><span class="line"><span class="comment"># 设置 git 全局邮箱</span></span><br><span class="line">git config --global user.email Duke123@aliyun.com</span><br><span class="line"><span class="comment"># 设置 git 对比工具</span></span><br><span class="line">git config --global diff.tool vimdiff</span><br><span class="line">git config --global difftool.prompt <span class="literal">false</span></span><br></pre></td></tr></table></figure>
 <h2 id="创建本地仓库">6. 创建本地仓库</h2>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git init  <span class="comment"># 初始化仓库</span></span><br><span class="line">git add * <span class="comment"># 添加全部文件</span></span><br></pre></td></tr></table></figure>
 <h2 id="配置远程仓库">7. 配置远程仓库</h2>
@@ -1719,8 +1717,9 @@ origin --all</p>
 <h3 id="配置-ssh-config-文件">8.2. 配置 ssh config 文件</h3>
 <p>模板</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 仓库名</span><br><span class="line"># 仓库地址</span><br><span class="line">Host 仓库 git 地址</span><br><span class="line">Host 仓库 git 地址</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile 私钥文件绝对路径</span><br></pre></td></tr></table></figure>
-<p>config <a href="/config/ssh/config">config</a> <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># github</span><br><span class="line"># https://github.com/</span><br><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    IdentityFile ~\.ssh\github</span><br></pre></td></tr></table></figure>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git -T git@github.com</span><br></pre></td></tr></table></figure></p>
+<p>config</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># github</span><br><span class="line"># https://github.com/</span><br><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    IdentityFile ~\.ssh\github</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git -T git@github.com</span><br></pre></td></tr></table></figure>
 <h2 id="git-撤销已经push的提交">9. git 撤销已经push的提交</h2>
 <ul>
 <li><a href="https://git-scm.com/docs/git-branch">git branch</a>
@@ -1761,8 +1760,10 @@ href="https://www.cnblogs.com/sahara/p/5683066.html">CentOS安装GIT</a></li>
     <url>/2019/07/08/gvim/</url>
     <content><![CDATA[<p>Vim是从vi发展出来的一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。和Emacs并列成为类Unix系统用户最喜欢的编辑器。</p>
 <span id="more"></span>
-<h2 id="显示行号">显示行号</h2>
+<h2 id="显示行号">1. 显示行号</h2>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">set nu</span><br><span class="line">设置编码</span><br><span class="line">set encoding=utf-8</span><br><span class="line">空格表示 tab</span><br><span class="line">set noexpandtab</span><br><span class="line">一 tab 四字符</span><br><span class="line">set tabstop=4</span><br></pre></td></tr></table></figure>
+<h2 id="显示文件列表">2. 显示文件列表</h2>
+<h2 id="执行-shell-命令">3. 执行 shell 命令</h2>
 ]]></content>
       <tags>
         <tag>软件</tag>
@@ -1820,19 +1821,12 @@ pencil时并不方便。</li>
 <h2 id="app">3. app</h2>
 <ul>
 <li><a
-href="https://apps.apple.com/cn/app/spacedesk-multi-monitor-app/id1069217220">spacedesk</a></li>
-<li><a
-href="https://apps.apple.com/cn/app/ish-shell/id1436902243">iSH</a></li>
-<li><a
 href="https://apps.apple.com/cn/app/a-shell/id1473805438">a-Shell</a></li>
 <li><a
 href="https://apps.apple.com/cn/app/swift-playgrounds/id908519492">Swift
 Playgrounds</a></li>
 <li><a
 href="https://apps.apple.com/cn/app/localsend/id1661733229">LocalSend</a></li>
-<li><a
-href="https://apps.apple.com/cn/app/obsidian-connected-notes/id1557175442">obsidian</a></li>
-<li></li>
 </ul>
 ]]></content>
       <tags>
@@ -1844,7 +1838,7 @@ href="https://apps.apple.com/cn/app/obsidian-connected-notes/id1557175442">obsid
     <title>ish</title>
     <url>/2023/07/12/ish/</url>
     <content><![CDATA[<span id="more"></span>
-<h2 id="挂载">挂载</h2>
+<h2 id="挂载">1. 挂载</h2>
 <p>midair -p ~/obsidian mount -t ios . obsidian</p>
 ]]></content>
   </entry>
@@ -2177,12 +2171,12 @@ class="math inline">\(Env:path=&quot;./.venv/Scripts/;&quot;+\)</span>Env:path</
     <url>/2019/12/16/os-software/</url>
     <content><![CDATA[<p>常用的软件官网</p>
 <span id="more"></span>
-<h2 id="windows-环境下常用的软件">Windows 环境下常用的软件</h2>
+<h2 id="windows-环境下常用的软件">1. Windows 环境下常用的软件</h2>
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col style="width: 16%" />
+<col style="width: 6%" />
+<col style="width: 76%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -2285,9 +2279,34 @@ href="http://www.ashongsoft.com/product/image-converter-one.html">http://www.ash
 <td>系统运维</td>
 <td>http://www.wepe.com.cn/</td>
 </tr>
+<tr class="odd">
+<td>ish</td>
+<td></td>
+<td>https://apps.apple.com/cn/app/ish-shell/id1436902243</td>
+</tr>
+<tr class="even">
+<td>obsidian</td>
+<td></td>
+<td>https://apps.apple.com/cn/app/obsidian-connected-notes/id1557175442</td>
+</tr>
+<tr class="odd">
+<td>spacedesk</td>
+<td></td>
+<td>https://apps.apple.com/cn/app/spacedesk-multi-monitor-app/id1069217220</td>
+</tr>
+<tr class="even">
+<td>vimlike</td>
+<td></td>
+<td>https://apps.apple.com/cn/app/vimlike/id1584519802</td>
+</tr>
 </tbody>
 </table>
 ]]></content>
+      <tags>
+        <tag>Windows</tag>
+        <tag>iPadOS</tag>
+        <tag>software</tag>
+      </tags>
   </entry>
   <entry>
     <title>Eclipse</title>
@@ -2543,13 +2562,18 @@ href="https://www.microsoft.com/zh-cn/software-download/windows10">windows
 <li><p>安装 浏览器</p></li>
 <li><p>选 关闭虚拟内存</p></li>
 </ul>
-<p>备份</p>
+<h2 id="备份">1. 备份</h2>
 <ul>
 <li>环境变量 set path</li>
 <li>配置文件 wifi、ssh、gradle <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 显示配置文件</span></span><br><span class="line">netsh wlan show profile</span><br><span class="line"></span><br><span class="line"><span class="comment"># 导出 WiFi 文件</span></span><br><span class="line">netsh wlan <span class="built_in">export</span> profile folder=D:\ key=clear</span><br></pre></td></tr></table></figure></li>
 <li>软件安装包</li>
 </ul>
+<p><a
+href="https://support.microsoft.com/zh-cn/windows/在屏幕中启用和禁用触摸屏windows-b774e29d-be94-990f-c20f-e02892e572fc">在Windows中启用和禁用触摸屏</a></p>
 ]]></content>
+      <tags>
+        <tag>Windows</tag>
+      </tags>
   </entry>
   <entry>
     <title>CentOS 下安装 PHP7</title>
@@ -3245,6 +3269,9 @@ functools.reduce(function,iterable)累function处理 sorted() reverse为ture
     <content><![CDATA[<span id="more"></span>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">decimal v = decimal.Parse(&quot;123.00&quot;);</span><br><span class="line">            var s = v.ToString(&quot;#L#E#D#C#K#E#D#C#J#E#D#C#I#E#D#C#H#E#D#C#G#E#D#C#F#E#D#C0.0B0A/&quot;);</span><br><span class="line">            var d = Regex.Replace(s, @&quot;(((?&lt;=^-)|(^[^-]))[^1-9]*((?=[1-9])|((?&lt;c&gt;0\.)[^1-9]*(?=/$))))|((?&lt;=[1-9]A)/)|((?&lt;z&gt;0)[0A-E]*((?=[1-9])|(?&lt;-z&gt;(?=[F-L\./]|$))))|((?&lt;b&gt;[F-L])(?&lt;z&gt;0)[0A-L]*(?=[1-9]|(?&lt;-z&gt;(?=[\./]|$))))&quot;, &quot;$&#123;b&#125;$&#123;z&#125;$&#123;c&#125;&quot;);</span><br><span class="line">            var r = Regex.Replace(d, &quot;.&quot;, m =&gt; &quot;正，负元整零壹贰叁肆伍陆柒捌玖拾屲亗岌岄岪峘分角拾佰仟万亿兆京垓秭穰沟涧正载极&quot;[m.Value[0] - &#x27;+&#x27;].ToString());</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <tags>
+        <tag>cshape</tag>
+      </tags>
   </entry>
   <entry>
     <title>shell</title>
@@ -3678,6 +3705,10 @@ aside页面左或右模块， footer底脚模块。</p>
 <p>C#</p>
 <figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> 创建桌面快捷键</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;LnkName&quot;&gt;</span>快捷键名称<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;AssemblyFullPath&quot;&gt;</span>程序集的完整路径<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;IconLocation&quot;&gt;</span>图标位置<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;Description&quot;&gt;</span>描述<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;returns&gt;</span><span class="doctag">&lt;/returns&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">bool</span> <span class="title">CreateDesktopShortcut</span>(<span class="params"><span class="built_in">string</span> LnkName, <span class="built_in">string</span> AssemblyFullPath, <span class="built_in">string</span> IconLocation = <span class="literal">null</span>, <span class="built_in">string</span> Description = <span class="literal">null</span></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">string</span> DesktopLnkPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), <span class="string">$&quot;<span class="subst">&#123;LnkName&#125;</span>.lnk&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (File.Exists(DesktopLnkPath)) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    IWshRuntimeLibrary.IWshShortcut shortcut = <span class="keyword">new</span> IWshRuntimeLibrary.WshShell().CreateShortcut(DesktopLnkPath);</span><br><span class="line">    shortcut.WorkingDirectory = Path.GetDirectoryName(AssemblyFullPath);</span><br><span class="line">    shortcut.TargetPath = AssemblyFullPath;</span><br><span class="line">    shortcut.WindowStyle = <span class="number">1</span>;</span><br><span class="line">    shortcut.Description = Description;</span><br><span class="line">    shortcut.IconLocation = IconLocation ?? AssemblyFullPath;</span><br><span class="line">    shortcut.Save();</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <tags>
+        <tag>Windows</tag>
+        <tag>cshape</tag>
+      </tags>
   </entry>
   <entry>
     <title>wordpress</title>
