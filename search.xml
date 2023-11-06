@@ -3,7 +3,7 @@
   <entry>
     <title>2019-nCoV</title>
     <url>/2020/02/26/2019-nCoV/</url>
-    <content><![CDATA[<p>疫情下，总结下问题。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>疫情下，总结下问题。</p>
 <span id="more"></span>
 <ol type="1">
 <li><p>学生票不能买半程票，必须全程！！！学校附近旅游比回家消费还高！！！</p>
@@ -20,7 +20,7 @@
   <entry>
     <title>BeautifulSoup</title>
     <url>/2018/01/23/BeautifulSoup/</url>
-    <content><![CDATA[<p>Beautiful
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Beautiful
 Soup提供一些简单的、python式的函数用来处理导航、搜索、修改分析树等功能。它是一个工具箱，通过解析文档为用户提供需要抓取的数据，因为简单，所以不需要多少代码就可以写出一个完整的应用程序</p>
 <span id="more"></span>
 <h2 id="beautiful-soup的简介">1. Beautiful Soup的简介</h2>
@@ -286,7 +286,7 @@ soup.select()，返回类型是 list</p>
   <entry>
     <title>Blazor-WebAssembly</title>
     <url>/2021/01/04/Blazor-WebAssembly/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <h2 id="名词解释">名词解释</h2>
 <h3 id="blazor-webassembly">Blazor WebAssembly</h3>
 <blockquote>
@@ -317,7 +317,7 @@ JavaScript 互操作性，通常简称为 JavaScript 互操作或 JS
   <entry>
     <title>Docker</title>
     <url>/2019/06/07/Docker/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <h1 id="部署-nginx">部署 nginx</h1>
 <ul>
 <li>仓库查找镜像 <code>docker search nginx</code></li>
@@ -334,7 +334,7 @@ JavaScript 互操作性，通常简称为 JavaScript 互操作或 JS
   <entry>
     <title>Linux</title>
     <url>/2019/07/29/Linux/</url>
-    <content><![CDATA[<p>Linux Frequently Asked Questions</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Linux Frequently Asked Questions</p>
 <span id="more"></span>
 <h1 id="yum">yum</h1>
 <p>查看yum源Java包 yum list <em>java</em></p>
@@ -506,7 +506,7 @@ CertUtil: -hashfile 命令成功完成。</p>
   <entry>
     <title>Office-Excel</title>
     <url>/2021/07/26/Office-Excel/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <h3 id="excel-批量添加图片">EXCEL 批量添加图片</h3>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;图片链接&quot;</span> <span class="attr">height</span>=<span class="string">&quot;42&quot;</span> <span class="attr">width</span>=<span class="string">&quot;42&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
 <p>宽高可提前修改为对应值
@@ -521,7 +521,7 @@ https://image-charts.com/chart?chs=150x150&amp;cht=qr&amp;chl=Hello%20world&amp;
   <entry>
     <title>SSH 配置</title>
     <url>/2018/06/11/SSH/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <h2 id="口令登录">口令登录</h2>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">ssh [-p 22] [user@]host</span><br></pre></td></tr></table></figure>
 <p>说明： - 默认端口22可省略 - 用户名与本地用户名相同时可省略</p>
@@ -538,7 +538,7 @@ id_rsa.pub，私钥 id_rsa 2. 复制公钥至主机</p>
   <entry>
     <title>Screenshot 截图其实很简单</title>
     <url>/2019/05/31/Screenshot/</url>
-    <content><![CDATA[<blockquote>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><blockquote>
 <p>截图是现代数字用户人人必会的技能，掌握一种或多种截图方法有助于在使用数字产品中避免一些琐碎的问题。在问题咨询、操作记录、问题复现等有着消除行业隔阂，快速描述的巨大的作用。</p>
 </blockquote>
 <span id="more"></span>
@@ -580,7 +580,7 @@ palette）。</li>
   <entry>
     <title>URL Protocol</title>
     <url>/2021/08/10/URL_Protocol/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <p>C#</p>
 <figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> 为指定程序注册URL Protocol,方便浏览器调用</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;ProtocolName&quot;&gt;</span>协议名称<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;path&quot;&gt;</span>程序的完整路径<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;Exists&quot;&gt;</span>写入前存在状态<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;Override&quot;&gt;</span>如果存在是否重写数据，默认 false 不重写<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;exception cref=&quot;ArgumentException&quot;&gt;</span>参数异常<span class="doctag">&lt;/exception&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">RegisterUrlProtocol</span>(<span class="params"><span class="built_in">string</span> ProtocolName, <span class="built_in">string</span> path, <span class="keyword">out</span> <span class="built_in">bool</span> Exists, <span class="built_in">bool</span> Override = <span class="literal">false</span></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">string</span>.IsNullOrWhiteSpace(ProtocolName))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> ArgumentException(<span class="string">&quot;协议名称为空！！！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.ClassesRoot.OpenSubKey(ProtocolName, <span class="literal">true</span>);</span><br><span class="line">    Exists = key != <span class="literal">null</span>;</span><br><span class="line">    <span class="keyword">if</span> (Exists &amp;&amp; !Override)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">string</span>.IsNullOrWhiteSpace(path))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> ArgumentException(<span class="string">&quot;关联程序路径为空！！！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (!File.Exists(path))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> ArgumentException(<span class="string">&quot;关联程序不存在！！！&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    key = key ?? Microsoft.Win32.Registry.ClassesRoot.CreateSubKey(ProtocolName);</span><br><span class="line">    key.SetValue(<span class="string">&quot;&quot;</span>, <span class="string">$&quot;<span class="subst">&#123;ProtocolName&#125;</span> Protocol&quot;</span>, Microsoft.Win32.RegistryValueKind.String);</span><br><span class="line">    key.SetValue(<span class="string">&quot;URL Protocol&quot;</span>, path, Microsoft.Win32.RegistryValueKind.String);</span><br><span class="line">    key.CreateSubKey(<span class="string">&quot;DefaultIcon&quot;</span>).SetValue(<span class="string">&quot;&quot;</span>, <span class="string">$&quot;<span class="subst">&#123;path&#125;</span>,1&quot;</span>, Microsoft.Win32.RegistryValueKind.String);</span><br><span class="line">    key.CreateSubKey(<span class="string">&quot;shell&quot;</span>).CreateSubKey(<span class="string">&quot;open&quot;</span>).CreateSubKey(<span class="string">&quot;command&quot;</span>)</span><br><span class="line">        .SetValue(<span class="string">&quot;&quot;</span>, <span class="string">$&quot;\&quot;<span class="subst">&#123;path&#125;</span>\&quot; \&quot;%1\&quot;&quot;</span>, Microsoft.Win32.RegistryValueKind.String);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -592,7 +592,7 @@ palette）。</li>
   <entry>
     <title>汇编语言基础</title>
     <url>/2018/11/10/asm-base/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <h1 id="pc-硬件的基本特征">PC 硬件的基本特征</h1>
 <h2 id="计算机存储单位">1、计算机存储单位</h2>
 <ol type="1">
@@ -1093,7 +1093,7 @@ href="">奇偶校验</a>）</li>
   <entry>
     <title>汇编语言</title>
     <url>/2018/11/10/asm-code/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <h2 id="程序注释">1. 程序注释</h2>
 <ul>
 <li>“;”开头，右边为注释内容</li>
@@ -1172,7 +1172,7 @@ href="">奇偶校验</a>）</li>
   <entry>
     <title>汇编语言环境搭建</title>
     <url>/2019/07/09/asm-env/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <p>DOSBOX 配置 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 挂载程序目录</span><br><span class="line">mount c D:\Programs_Add\ASM</span><br><span class="line"># 挂载工作目录</span><br><span class="line">mount d E:\DukeLab\ASM</span><br><span class="line"># 将程序加入 path 环境</span><br><span class="line">set path=%path%;c:\;</span><br><span class="line"># 切换到工作目录</span><br><span class="line">d:</span><br><span class="line"># 清屏</span><br><span class="line">cls</span><br></pre></td></tr></table></figure></p>
 <h2 id="参考文章">参考文章</h2>
 <ul>
@@ -1186,7 +1186,7 @@ href="">奇偶校验</a>）</li>
   <entry>
     <title>博客环境，让我们专注写笔记</title>
     <url>/2019/09/08/blog-env/</url>
-    <content><![CDATA[<div class="line-block"><a href="https://nodejs.org">NodeJS
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><div class="line-block"><a href="https://nodejs.org">NodeJS
 官网</a><br />
 <a href="https://yarnpkg.com">yarn 官网</a><br />
 <a href="https://git-scm.com/">git 官网</a><br />
@@ -1238,7 +1238,7 @@ hexo-cli</li>
   <entry>
     <title>gitpage 从笔记到博客</title>
     <url>/2019/09/08/blog-gitpage/</url>
-    <content><![CDATA[<h2 id="读前准备">读前准备</h2>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="读前准备">读前准备</h2>
 <ul class="task-list">
 <li><label><input type="checkbox" checked="" />node install</label></li>
 <li><label><input type="checkbox" checked="" />hexo project</label></li>
@@ -1279,14 +1279,14 @@ GitPage 固定写法。<a href="https://github.com/new">新建仓库地址</a></
   <entry>
     <title>blog-hexo-gitpage</title>
     <url>/2021/02/25/blog-hexo-gitpage/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <p>Creating a repository for your site</p>
 ]]></content>
   </entry>
   <entry>
     <title>HEXO 进阶操作</title>
     <url>/2019/09/22/blog-hexo/</url>
-    <content><![CDATA[<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用
 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
 <span id="more"></span>
 <h2 id="初始化博客环境">初始化博客环境</h2>
@@ -1331,7 +1331,7 @@ Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓
   <entry>
     <title>init</title>
     <url>/2021/02/19/blog-init/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <h1 id="about_execution_policies">about_execution_policies</h1>
 <figure class="highlight ps1"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Get-ExecutionPolicy</span></span><br><span class="line"><span class="built_in">Set-ExecutionPolicy</span> <span class="literal">-ExecutionPolicy</span> RemoteSigned <span class="literal">-Scope</span> CurrentUser</span><br></pre></td></tr></table></figure>
 <figure class="highlight ps1"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 检查程序版本，确认所需程序存在。</span></span><br><span class="line">node <span class="literal">-v</span>; git version; npm <span class="literal">-v</span>; npx <span class="literal">-v</span></span><br><span class="line"><span class="comment"># 创建并切换到工作目录</span></span><br><span class="line">mkdir blog; <span class="built_in">cd</span> blog</span><br><span class="line"><span class="comment"># 初始化 项目，git 仓库</span></span><br><span class="line">npx hexo init; git init</span><br><span class="line"><span class="comment"># rss,sitemap</span></span><br><span class="line">npm install hexo<span class="literal">-generator-feed</span> hexo<span class="literal">-generator-sitemap</span> hexo<span class="literal">-deployer-git</span></span><br><span class="line"><span class="comment"># 创建CNAME,404,README</span></span><br><span class="line"><span class="built_in">cd</span> source</span><br><span class="line"><span class="string">&quot;&quot;</span> &gt; CNAME</span><br><span class="line"><span class="string">&quot;---&quot;</span> &gt;&gt; <span class="number">404</span>.md; <span class="string">&quot;permalink: /404.html&quot;</span> &gt;&gt; <span class="number">404</span>.md; <span class="string">&quot;---&quot;</span> &gt;&gt; <span class="number">404</span>.md</span><br><span class="line"><span class="string">&quot;&quot;</span> &gt; README.md</span><br><span class="line"><span class="built_in">cd</span> ../</span><br><span class="line"><span class="comment"># 创建项目简介</span></span><br><span class="line"><span class="string">&quot;&quot;</span>&gt; README.md</span><br><span class="line"><span class="comment"># 为项目建立捐助方式</span></span><br><span class="line">mkdir .github;<span class="built_in">cd</span> .github;<span class="string">&quot;custom: [&#x27;https://DukeBode.github.io/sponsor&#x27;]&quot;</span> &gt; FUNDING.yml;<span class="built_in">cd</span> ../</span><br><span class="line"><span class="comment"># 安装 hexo-theme-next 主题</span></span><br><span class="line">npm install hexo<span class="literal">-theme-next</span>; <span class="built_in">cp</span> node_modules/hexo<span class="literal">-theme-next</span>/_config.yml _config.next.yml</span><br><span class="line">npm uninstall hexo<span class="literal">-theme-landscape</span></span><br><span class="line"><span class="comment"># 别名 hexo</span></span><br><span class="line"><span class="comment"># 安装 npm scripts 依赖</span></span><br><span class="line">npm install hexo<span class="literal">-cli</span></span><br></pre></td></tr></table></figure>
@@ -1346,7 +1346,7 @@ href="https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.co
   <entry>
     <title>用 Markdown 做笔记</title>
     <url>/2019/05/31/blog-markdown/</url>
-    <content><![CDATA[<p>对于一个电脑新手来讲，与其说 Markdown
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>对于一个电脑新手来讲，与其说 Markdown
 是一个专门为文档而生的编程语言，还不如是个文档规范，相比 Word
 的繁杂，Tex 的晦涩，它就是个非常简单的文字游戏规则。</p>
 <span id="more"></span>
@@ -1365,7 +1365,7 @@ href="https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.co
   <entry>
     <title>零基础建博客</title>
     <url>/2019/06/07/blog/</url>
-    <content><![CDATA[<h3 id="hexo-博客">0.1. Hexo 博客</h3>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h3 id="hexo-博客">0.1. Hexo 博客</h3>
 <p>Hexo
 不是博客而是快速、简洁且高效的博客框架，适合任何有打字基础的人建立属于自己、完全定制的个人博客，可用于个人生活记录、学习笔记整理、连载个人小说等。</p>
 <span id="more"></span>
@@ -1455,7 +1455,7 @@ href="https://blog.csdn.net/lucklymm/article/details/89014085">hexo搭建个人�
   <entry>
     <title>books</title>
     <url>/2020/01/12/books/</url>
-    <content><![CDATA[<p>大学期间在图书馆借的所有书，大一忙的看教科书了，大二没怎么买书，全是图书馆借的看的。每本看完是不可能的，事实是阅读量还没3成。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>大学期间在图书馆借的所有书，大一忙的看教科书了，大二没怎么买书，全是图书馆借的看的。每本看完是不可能的，事实是阅读量还没3成。</p>
 <span id="more"></span>
 <ul>
 <li>JAVA从入门到项目实践</li>
@@ -1618,7 +1618,7 @@ INTERFACING</li>
   <entry>
     <title>vimium</title>
     <url>/2020/01/08/chrome-vimium/</url>
-    <content><![CDATA[<p>Vimium is a Chrome extension that provides keyboard-based navigation
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Vimium is a Chrome extension that provides keyboard-based navigation
 and control of the web in the spirit of the Vim editor.</p>
 <span id="more"></span>
 <h3 id="vimium">0.1. vimium</h3>
@@ -1630,7 +1630,7 @@ and control of the web in the spirit of the Vim editor.</p>
   <entry>
     <title>易班动态</title>
     <url>/2017/06/11/college-app/</url>
-    <content><![CDATA[<h1 id="易月动态">易月动态</h1>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h1 id="易月动态">易月动态</h1>
 <h2 id="特色学院轻应用">特色学院轻应用</h2>
 <ol type="1">
 <li><p>导出上月1日至本月1日的轻应用数据</p></li>
@@ -1654,13 +1654,13 @@ and control of the web in the spirit of the Vim editor.</p>
   <entry>
     <title>emulator</title>
     <url>/2023/07/08/emulator/</url>
-    <content><![CDATA[<p>qemu bochs limbo ExaGear</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>qemu bochs limbo ExaGear</p>
 ]]></content>
   </entry>
   <entry>
     <title>git 仓库配置</title>
     <url>/2019/08/15/git/</url>
-    <content><![CDATA[<p>Git is a free and open source distributed version control system
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Git is a free and open source distributed version control system
 designed to handle everything from small to very large projects with
 speed and efficiency.</p>
 <span id="more"></span>
@@ -1758,7 +1758,7 @@ href="https://www.cnblogs.com/sahara/p/5683066.html">CentOS安装GIT</a></li>
   <entry>
     <title>gVim</title>
     <url>/2019/07/08/gvim/</url>
-    <content><![CDATA[<p>Vim是从vi发展出来的一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。和Emacs并列成为类Unix系统用户最喜欢的编辑器。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Vim是从vi发展出来的一个文本编辑器。代码补完、编译及错误跳转等方便编程的功能特别丰富，在程序员中被广泛使用。和Emacs并列成为类Unix系统用户最喜欢的编辑器。</p>
 <span id="more"></span>
 <h2 id="显示行号">1. 显示行号</h2>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">set nu</span><br><span class="line">设置编码</span><br><span class="line">set encoding=utf-8</span><br><span class="line">空格表示 tab</span><br><span class="line">set noexpandtab</span><br><span class="line">一 tab 四字符</span><br><span class="line">set tabstop=4</span><br></pre></td></tr></table></figure>
@@ -1774,7 +1774,7 @@ href="https://www.cnblogs.com/sahara/p/5683066.html">CentOS安装GIT</a></li>
   <entry>
     <title>html</title>
     <url>/2017/09/07/html/</url>
-    <content><![CDATA[<p>HTML (HyperText Markup Language) is the most basic building block of
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>HTML (HyperText Markup Language) is the most basic building block of
 the Web. It defines the meaning and structure of web content.</p>
 <span id="more"></span>
 <p>跑马灯 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">marquee</span>&gt;</span>...<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span>普通卷动</span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">behavior</span>=<span class="string">slide</span>&gt;</span>...<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span>滑动</span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">behavior</span>=<span class="string">scroll</span>&gt;</span>...<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span>预设卷动</span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">behavior</span>=<span class="string">alternate</span>&gt;</span>...<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span>来回卷动</span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">direction</span>=<span class="string">down</span>&gt;</span>...<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span>向下卷动</span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">direction</span>=<span class="string">up</span>&gt;</span>...<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span>向上卷动</span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">direction</span>=<span class="string">right</span>&gt;</span><span class="tag">&lt;/<span class="name">marquee</span>&gt;</span>向右卷动</span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">direction</span>=<span class="string">’left’</span>&gt;</span><span class="tag">&lt;/<span class="name">marquee</span>&gt;</span>向左卷动</span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">loop</span>=<span class="string">2</span>&gt;</span>...<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span>卷动次数</span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">width</span>=<span class="string">180</span>&gt;</span>...<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span>设定宽度</span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">height</span>=<span class="string">30</span>&gt;</span>...<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span>设定高度</span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">bgcolor</span>=<span class="string">FF0000</span>&gt;</span>...<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span>设定背景颜色</span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">scrollamount</span>=<span class="string">30</span>&gt;</span>...<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span>设定滚动速度</span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">scrolldelay</span>=<span class="string">300</span>&gt;</span>...<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span>设定卷动时间</span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">onmouseover</span>=<span class="string">&quot;this.stop()&quot;</span>&gt;</span>...<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span>鼠标经过上面时停止滚动</span><br><span class="line"><span class="tag">&lt;<span class="name">marquee</span> <span class="attr">onmouseover</span>=<span class="string">&quot;this.start()&quot;</span>&gt;</span>...<span class="tag">&lt;/<span class="name">marquee</span>&gt;</span>鼠标离开时开始滚动</span><br><span class="line">&lt;!&gt;字体效果</span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>...<span class="tag">&lt;/<span class="name">h1</span>&gt;</span>标题字(最大)</span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>...<span class="tag">&lt;/<span class="name">h6</span>&gt;</span>标题字(最小)</span><br><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span>...粗体字</span><br><span class="line"><span class="tag">&lt;<span class="name">strong</span>&gt;</span>...<span class="tag">&lt;/<span class="name">strong</span>&gt;</span>粗体字(强调) （同上效果略同）</span><br><span class="line"><span class="tag">&lt;<span class="name">i</span>&gt;</span>...<span class="tag">&lt;/<span class="name">i</span>&gt;</span>斜体字</span><br><span class="line"><span class="tag">&lt;<span class="name">em</span>&gt;</span>...<span class="tag">&lt;/<span class="name">em</span>&gt;</span>斜体字(强调)</span><br><span class="line"><span class="tag">&lt;<span class="name">dfn</span>&gt;</span>...<span class="tag">&lt;/<span class="name">dfn</span>&gt;</span>斜体字(表示定义)</span><br><span class="line"><span class="tag">&lt;<span class="name">u</span>&gt;</span>...<span class="tag">&lt;/<span class="name">u</span>&gt;</span>底线</span><br><span class="line"><span class="tag">&lt;<span class="name">ins</span>&gt;</span>...<span class="tag">&lt;/<span class="name">ins</span>&gt;</span>底线(表示插入文字)</span><br><span class="line"><span class="tag">&lt;<span class="name">strike</span>&gt;</span>...<span class="tag">&lt;/<span class="name">strike</span>&gt;</span>横线</span><br><span class="line"><span class="tag">&lt;<span class="name">s</span>&gt;</span>...<span class="tag">&lt;/<span class="name">s</span>&gt;</span>删除线</span><br><span class="line"><span class="tag">&lt;<span class="name">del</span>&gt;</span>...<span class="tag">&lt;/<span class="name">del</span>&gt;</span>删除线(表示删除)</span><br><span class="line"><span class="tag">&lt;<span class="name">kbd</span>&gt;</span>...<span class="tag">&lt;/<span class="name">kbd</span>&gt;</span>键盘文字</span><br><span class="line"><span class="tag">&lt;<span class="name">tt</span>&gt;</span>...<span class="tag">&lt;/<span class="name">tt</span>&gt;</span> 打字体</span><br><span class="line"><span class="tag">&lt;<span class="name">xmp</span>&gt;</span>...<span class="tag">&lt;/<span class="name">xmp</span>&gt;</span>固定宽度字体(在文件中空白、换行、定位功能有效)</span><br><span class="line"><span class="tag">&lt;<span class="name">plaintext</span>&gt;</span>...<span class="tag">&lt;/<span class="name">plaintext</span>&gt;</span>固定宽度字体(不执行标记符号)</span><br><span class="line"><span class="tag">&lt;<span class="name">listing</span>&gt;</span>...<span class="tag">&lt;/<span class="name">listing</span>&gt;</span> 固定宽度小字体</span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">00ff00</span>&gt;</span>...<span class="tag">&lt;/<span class="name">font</span>&gt;</span>字体颜色</span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">size</span>=<span class="string">1</span>&gt;</span>...<span class="tag">&lt;/<span class="name">font</span>&gt;</span>最小字体</span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">style</span> =<span class="string">’font-size:100</span> <span class="attr">px</span>’&gt;</span>...<span class="tag">&lt;/<span class="name">font</span>&gt;</span>无限增大</span><br><span class="line">区断标记</span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span>&gt;</span>水平线</span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span> <span class="attr">size</span>=<span class="string">’9’</span>&gt;</span>水平线(设定大小)</span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span> <span class="attr">width</span>=<span class="string">’80%’</span>&gt;</span>水平线(设定宽度)</span><br><span class="line"><span class="tag">&lt;<span class="name">hr</span> <span class="attr">color</span>=<span class="string">’ff0000’</span>&gt;</span>水平线(设定颜色)</span><br><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span>(换行)</span><br><span class="line"><span class="tag">&lt;<span class="name">nobr</span>&gt;</span>...<span class="tag">&lt;/<span class="name">nobr</span>&gt;</span>水域(不换行)</span><br><span class="line">...</span><br><span class="line"></span><br><span class="line">水域(段落)</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span>...<span class="tag">&lt;/<span class="name">center</span>&gt;</span>置中</span><br><span class="line">&lt;!&gt;连结格式</span><br><span class="line"><span class="tag">&lt;<span class="name">base</span> <span class="attr">href</span>=<span class="string">位址</span>&gt;</span>(预设好连结路径)</span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">位址</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span>外部连结</span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">位址</span> <span class="attr">target</span>=<span class="string">’_blank’</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span>外部连结(另开新视窗)</span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">位址</span> <span class="attr">target</span>=<span class="string">’_top’</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span>外部连结(全视窗连结)</span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">位址</span> <span class="attr">target</span>=<span class="string">’页框名’</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span>外部连结(在指定页框连结)</span><br><span class="line">&lt;!&gt;贴图/音乐</span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">图片位址</span>&gt;</span>贴图</span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">图片位址</span> <span class="attr">width</span>=<span class="string">’180’</span>&gt;</span>设定图片宽度</span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">图片位址</span> <span class="attr">height</span>=<span class="string">’30’</span>&gt;</span>设定图片高度</span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">图片位址</span> <span class="attr">alt</span>=<span class="string">’提示文字’</span>&gt;</span>设定图片提示文字</span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">图片位址’</span> <span class="attr">border</span>=<span class="string">’1’</span>&gt;</span>设定图片边框</span><br><span class="line"><span class="tag">&lt;<span class="name">bgsound</span> <span class="attr">src</span>=<span class="string">MID音乐档位址</span>&gt;</span>背景音乐设定</span><br><span class="line">&lt;!&gt;表格语法</span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">aling</span>=<span class="string">left</span>&gt;</span>...<span class="tag">&lt;/<span class="name">table</span>&gt;</span>表格位置,置左</span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">aling</span>=<span class="string">center</span>&gt;</span>...<span class="tag">&lt;/<span class="name">table</span>&gt;</span>表格位置,置中</span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">background</span>=<span class="string">图片路径</span>&gt;</span>...<span class="tag">&lt;/<span class="name">table</span>&gt;</span>背景图片的URL=就是路径网址</span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">边框大小</span>&gt;</span>...<span class="tag">&lt;/<span class="name">table</span>&gt;</span>设定表格边框大小(使用数字)</span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">bgcolor</span>=<span class="string">颜色码</span>&gt;</span>...<span class="tag">&lt;/<span class="name">table</span>&gt;</span>设定表格的背景颜色</span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">borderclor</span>=<span class="string">颜色码</span>&gt;</span>...<span class="tag">&lt;/<span class="name">table</span>&gt;</span>设定表格边框的颜色</span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">borderclordark</span>=<span class="string">颜色码</span>&gt;</span>...<span class="tag">&lt;/<span class="name">table</span>&gt;</span>设定表格暗边框的颜色</span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">borderclorlight</span>=<span class="string">颜色码</span>&gt;</span>...<span class="tag">&lt;/<span class="name">table</span>&gt;</span>设定表格亮边框的颜色</span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">cellpadding</span>=<span class="string">参数</span>&gt;</span>...<span class="tag">&lt;/<span class="name">table</span>&gt;</span>指定内容与格线之间的间距(使用数字)</span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">cellspacing</span>=<span class="string">参数</span>&gt;</span>...<span class="tag">&lt;/<span class="name">table</span>&gt;</span>指定格线与格线之间的距离(使用数字)</span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">cols</span>=<span class="string">参数</span>&gt;</span>...<span class="tag">&lt;/<span class="name">table</span>&gt;</span>指定表格的栏数</span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">frame</span>=<span class="string">参数</span>&gt;</span>...<span class="tag">&lt;/<span class="name">table</span>&gt;</span>设定表格外框线的显示方式</span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">width</span>=<span class="string">宽度</span>&gt;</span>...<span class="tag">&lt;/<span class="name">table</span>&gt;</span>指定表格的宽度大小(使用数字)</span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">height</span>=<span class="string">高度</span>&gt;</span>...<span class="tag">&lt;/<span class="name">table</span>&gt;</span>指定表格的高度大小(使用数字)</span><br><span class="line"><span class="tag">&lt;<span class="name">td</span> <span class="attr">colspan</span>=<span class="string">参数</span>&gt;</span>...<span class="tag">&lt;/<span class="name">td</span>&gt;</span>指定储存格合并栏的栏数(使用数字)</span><br><span class="line"><span class="tag">&lt;<span class="name">td</span> <span class="attr">rowspan</span>=<span class="string">参数</span>&gt;</span>...<span class="tag">&lt;/<span class="name">td</span>&gt;</span>指定储存格合并列的列数(使用数字)</span><br><span class="line">分割视窗</span><br><span class="line"><span class="tag">&lt;<span class="name">frameset</span> <span class="attr">cols</span>=<span class="string">&quot;20%,*&quot;</span>&gt;</span>左右分割,将左边框架分割大小为20%右边框架的大小浏览器会自动调整</span><br><span class="line"><span class="tag">&lt;<span class="name">frameset</span> <span class="attr">rows</span>=<span class="string">&quot;20%,*&quot;</span>&gt;</span>上下分割,将上面框架分割大小为20%下面框架的大小浏览器会自动调整</span><br><span class="line"><span class="tag">&lt;<span class="name">frameset</span> <span class="attr">cols</span>=<span class="string">&quot;20%,*&quot;</span>&gt;</span>分割左右两个框架</span><br><span class="line"><span class="tag">&lt;<span class="name">frameset</span> <span class="attr">cols</span>=<span class="string">&quot;20%,*,20%&quot;</span>&gt;</span>分割左中右三个框架</span><br><span class="line"><span class="tag">&lt;<span class="name">分割上下两个框架</span></span></span><br><span class="line"><span class="tag">&lt;<span class="attr">frameset</span> <span class="attr">rows</span>=<span class="string">&quot;20%,*,20%&quot;</span>&gt;</span>分割上中下三个框架</span><br><span class="line">属性：</span><br><span class="line">cols 垂直切割窗口（如左右分割两个窗口）接受整数值，百分数，*（*代表占用余下空间）数值的个数代表分成的部分数目，要以逗号分隔。例：cols=&quot;30,*,50%&quot;可以 切成三个视窗，第一部分是30像素（pixels）为绝对分割，第二部分是当分配完第一和第三视图后剩下的空间，第三部分则占整个窗口的50%宽度，为相对分割。</span><br><span class="line">rows 就是横向切割，将窗口上下分开，数值设置同上。</span><br><span class="line">以上两属性尽量不要在同一个<span class="tag">&lt;<span class="name">frameset</span>&gt;</span>标记中，因为王井（netscape）不支持，尽量采用多重分割。</span><br><span class="line">frameborder 设置框架的边框，其值有0不要边框，1要边框。</span><br><span class="line">border 设置框架边框厚度</span><br><span class="line">framespacing 表示框架与框架间保留空白的距离</span><br><span class="line">frame 元素（单标签）</span><br><span class="line">语法格式：</span><br><span class="line"><span class="tag">&lt;<span class="name">frame</span> <span class="attr">name</span>=<span class="string">&quot;&quot;</span> <span class="attr">src</span>=<span class="string">&quot;url&quot;</span> <span class="attr">scrolling</span>=<span class="string">&quot;yes/no&quot;</span> <span class="attr">noresize</span>&gt;</span></span><br><span class="line">属性：</span><br><span class="line">name 框架名称，指定框架来做连接的目标窗口。</span><br><span class="line">src 框架中要显示的网页文当url地址，每个个框架要对应一个html文挡。</span><br><span class="line">scrolling 是否显示滚动条，yes/no,auto是自动。</span><br><span class="line">noresize 设置不让使用者改变这个框架的大小，</span><br><span class="line">noframe元素</span><br><span class="line">指定当使用了框架的页面在不支持框架的浏览器中打开时显示的信息</span><br><span class="line">语法格式：</span><br><span class="line"><span class="tag">&lt;<span class="name">noframe</span>&gt;</span></span><br><span class="line">......</span><br><span class="line"><span class="tag">&lt;/<span class="name">noframe</span>&gt;</span></span><br><span class="line"></span><br><span class="line">表单<span class="tag">&lt;<span class="name">form</span>&gt;</span><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">语法格式：</span><br><span class="line"><span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;url&quot;</span> <span class="attr">method</span>=<span class="string">&quot;get/post&quot;</span>&gt;</span></span><br><span class="line">....</span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">submit</span>&gt;</span><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">reset</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">method有两种提交方式get,post</span><br><span class="line">action 是指明处理该表单的程序位置，这样表单所填的资料才能传给cgi做处里，可设定此参数为action=&quot;mailto:lwr8494@163.com&quot; 这样此表单所填的资料将会发送到这个邮箱地址。</span><br><span class="line">method 是指传送信息给cgi等网络程序的方式。可选post方法， get方法，post方法容许传送大量信息。get方法只接受低于1k的信息。</span><br><span class="line">申请表单用的是post搜索引擎用的是get</span><br><span class="line"> </span><br><span class="line">&lt;! - - ... - -&gt; 注解</span><br><span class="line"><span class="tag">&lt;<span class="name">A</span> <span class="attr">HREF</span> <span class="attr">TARGET</span>&gt;</span> 指定超连结的分割视窗</span><br><span class="line"><span class="tag">&lt;<span class="name">A</span> <span class="attr">HREF</span>=<span class="string">#锚的名称</span>&gt;</span> 指定锚名称的超连结</span><br><span class="line"><span class="tag">&lt;<span class="name">A</span> <span class="attr">HREF</span>&gt;</span> 指定超连结</span><br><span class="line"><span class="tag">&lt;<span class="name">A</span> <span class="attr">NAME</span>=<span class="string">锚的名称</span>&gt;</span> 被连结点的名称</span><br><span class="line"><span class="tag">&lt;<span class="name">ADDRESS</span>&gt;</span>....<span class="tag">&lt;/<span class="name">ADDRESS</span>&gt;</span> 用来显示电子邮箱地址</span><br><span class="line"><span class="tag">&lt;<span class="name">B</span>&gt;</span> 粗体字</span><br><span class="line"><span class="tag">&lt;<span class="name">BASE</span> <span class="attr">TARGET</span>&gt;</span> 指定超连结的分割视窗</span><br><span class="line"><span class="tag">&lt;<span class="name">BASEFONT</span> <span class="attr">SIZE</span>&gt;</span> 更改预设字形大小</span><br><span class="line"><span class="tag">&lt;<span class="name">BGSOUND</span> <span class="attr">SRC</span>&gt;</span> 加入背景音乐</span><br><span class="line"><span class="tag">&lt;<span class="name">BIG</span>&gt;</span> 显示大字体</span><br><span class="line"><span class="tag">&lt;<span class="name">BLINK</span>&gt;</span> 闪烁的文字</span><br><span class="line"><span class="tag">&lt;<span class="name">BODY</span> <span class="attr">TEXT</span> <span class="attr">LINK</span> <span class="attr">VLINK</span>&gt;</span> 设定文字颜色</span><br><span class="line"><span class="tag">&lt;<span class="name">BODY</span>&gt;</span> 显示本文</span><br><span class="line"><span class="tag">&lt;<span class="name">BR</span>&gt;</span> 换行</span><br><span class="line"><span class="tag">&lt;<span class="name">CAPTION</span> <span class="attr">ALIGN</span>&gt;</span> 设定表格标题位置</span><br><span class="line"><span class="tag">&lt;<span class="name">CAPTION</span>&gt;</span>...<span class="tag">&lt;/<span class="name">CAPTION</span>&gt;</span> 为表格加上标题</span><br><span class="line"><span class="tag">&lt;<span class="name">CENTER</span>&gt;</span> 向中对齐</span><br><span class="line"><span class="tag">&lt;<span class="name">CITE</span>&gt;</span>...<span class="tag">&lt;<span class="name">CITE</span>&gt;</span> 用於引经据典的文字</span><br><span class="line"><span class="tag">&lt;<span class="name">CODE</span>&gt;</span>...<span class="tag">&lt;/<span class="name">CODE</span>&gt;</span> 用於列出一段程式码</span><br><span class="line"><span class="tag">&lt;<span class="name">COMMENT</span>&gt;</span>...<span class="tag">&lt;/<span class="name">COMMENT</span>&gt;</span> 加上注解</span><br><span class="line"><span class="tag">&lt;<span class="name">DD</span>&gt;</span> 设定定义列表的项目解说</span><br><span class="line"><span class="tag">&lt;<span class="name">DFN</span>&gt;</span>...<span class="tag">&lt;/<span class="name">DFN</span>&gt;</span> 显示&quot;定义&quot;文字</span><br><span class="line"><span class="tag">&lt;<span class="name">DIR</span>&gt;</span>...<span class="tag">&lt;/<span class="name">DIR</span>&gt;</span> 列表文字标签</span><br><span class="line"><span class="tag">&lt;<span class="name">DL</span>&gt;</span>...<span class="tag">&lt;/<span class="name">DL</span>&gt;</span> 设定定义列表的标签</span><br><span class="line"><span class="tag">&lt;<span class="name">DT</span>&gt;</span> 设定定义列表的项目</span><br><span class="line"><span class="tag">&lt;<span class="name">EM</span>&gt;</span> 强调之用</span><br><span class="line"><span class="tag">&lt;<span class="name">FONT</span> <span class="attr">FACE</span>&gt;</span> 任意指定所用的字形</span><br><span class="line"><span class="tag">&lt;<span class="name">FONT</span> <span class="attr">SIZE</span>&gt;</span> 设定字体大小</span><br><span class="line"><span class="tag">&lt;<span class="name">FORM</span> <span class="attr">ACTION</span>&gt;</span> 设定户动式表单的处理方式</span><br><span class="line"><span class="tag">&lt;<span class="name">FORM</span> <span class="attr">METHOD</span>&gt;</span> 设定户动式表单之资料传送方式</span><br><span class="line"><span class="tag">&lt;<span class="name">FRame</span> <span class="attr">MARGINHEIGHT</span>&gt;</span> 设定视窗的上下边界</span><br><span class="line"><span class="tag">&lt;<span class="name">FRame</span> <span class="attr">MARGINWIDTH</span>&gt;</span> 设定视窗的左右边界</span><br><span class="line"><span class="tag">&lt;<span class="name">FRame</span> <span class="attr">NAME</span>&gt;</span> 为分割视窗命名</span><br><span class="line"><span class="tag">&lt;<span class="name">FRame</span> <span class="attr">NORESIZE</span>&gt;</span> 锁住分割视窗的大小</span><br><span class="line"><span class="tag">&lt;<span class="name">FRame</span> <span class="attr">SCROLLING</span>&gt;</span> 设定分割视窗的卷轴</span><br><span class="line"><span class="tag">&lt;<span class="name">FRame</span> <span class="attr">SRC</span>&gt;</span> 将HTML档加入视窗</span><br><span class="line"><span class="tag">&lt;<span class="name">FRameSET</span> <span class="attr">COLS</span>&gt;</span> 将视窗分割成左右的子视窗</span><br><span class="line"><span class="tag">&lt;<span class="name">FRameSET</span> <span class="attr">ROWS</span>&gt;</span> 将视窗分割成上下的子视窗</span><br><span class="line"><span class="tag">&lt;<span class="name">FRameSET</span>&gt;</span>...<span class="tag">&lt;/<span class="name">FRameSET</span>&gt;</span> 划分分割视窗</span><br><span class="line"><span class="tag">&lt;<span class="name">H1</span>&gt;</span>~<span class="tag">&lt;<span class="name">H6</span>&gt;</span> 设定文字大小</span><br><span class="line"><span class="tag">&lt;<span class="name">HEAD</span>&gt;</span> 标示文件资讯</span><br><span class="line"><span class="tag">&lt;<span class="name">HR</span>&gt;</span> 加上分格线</span><br><span class="line"><span class="tag">&lt;<span class="name">HTML</span>&gt;</span> 文件的开始与结束</span><br><span class="line"><span class="tag">&lt;<span class="name">I</span>&gt;</span> 斜体字</span><br><span class="line"><span class="tag">&lt;<span class="name">IMG</span> <span class="attr">ALIGN</span>&gt;</span> 调整图形影像的位置</span><br><span class="line"><span class="tag">&lt;<span class="name">IMG</span> <span class="attr">ALT</span>&gt;</span> 为你的图形影像加注</span><br><span class="line"><span class="tag">&lt;<span class="name">IMG</span> <span class="attr">DYNSRC</span> <span class="attr">LOOP</span>&gt;</span> 加入影片</span><br><span class="line"><span class="tag">&lt;<span class="name">IMG</span> <span class="attr">HEIGHT</span> <span class="attr">WIDTH</span>&gt;</span> 插入图片并预设图形大小</span><br><span class="line"><span class="tag">&lt;<span class="name">IMG</span> <span class="attr">HSPACE</span>&gt;</span> 插入图片并预设图形的左右边界</span><br><span class="line"><span class="tag">&lt;<span class="name">IMG</span> <span class="attr">LOWSRC</span>&gt;</span> 预载图片功能</span><br><span class="line"><span class="tag">&lt;<span class="name">IMG</span> <span class="attr">SRC</span> <span class="attr">BORDER</span>&gt;</span> 设定图片边界</span><br><span class="line"><span class="tag">&lt;<span class="name">IMG</span> <span class="attr">SRC</span>&gt;</span> 插入图片</span><br><span class="line"><span class="tag">&lt;<span class="name">IMG</span> <span class="attr">VSPACE</span>&gt;</span> 插入图片并预设图形的上下边界</span><br><span class="line"><span class="tag">&lt;<span class="name">INPUT</span> <span class="attr">TYPE</span> <span class="attr">NAME</span> <span class="attr">value</span>&gt;</span> 在表单中加入输入栏位</span><br><span class="line"><span class="tag">&lt;<span class="name">ISINDEX</span>&gt;</span> 定义查询用表单</span><br><span class="line"><span class="tag">&lt;<span class="name">KBD</span>&gt;</span>...<span class="tag">&lt;/<span class="name">KBD</span>&gt;</span> 表示使用者输入文字</span><br><span class="line"><span class="tag">&lt;<span class="name">LI</span> <span class="attr">TYPE</span>&gt;</span>...<span class="tag">&lt;/<span class="name">LI</span>&gt;</span> 列表的项目 ( 可指定符号 )</span><br><span class="line"><span class="tag">&lt;<span class="name">MARQUEE</span>&gt;</span> 跑马灯效果</span><br><span class="line"><span class="tag">&lt;<span class="name">MENU</span>&gt;</span>...<span class="tag">&lt;/<span class="name">MENU</span>&gt;</span> 条列文字标签</span><br><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">NAME</span>=<span class="string">&quot;REFRESH&quot;</span> <span class="attr">CONTENT</span> <span class="attr">URL</span>&gt;</span> 自动更新文件内容</span><br><span class="line"><span class="tag">&lt;<span class="name">MULTIPLE</span>&gt;</span> 可同时选择多项的列表栏</span><br><span class="line"><span class="tag">&lt;<span class="name">NOFRame</span>&gt;</span> 定义不出现分割视窗的文字</span><br><span class="line"><span class="tag">&lt;<span class="name">OL</span>&gt;</span>...<span class="tag">&lt;/<span class="name">OL</span>&gt;</span> 有序号的列表</span><br><span class="line"><span class="tag">&lt;<span class="name">OPTION</span>&gt;</span> 定义表单中列表栏的项目</span><br><span class="line"><span class="tag">&lt;<span class="name">P</span> <span class="attr">ALIGN</span>&gt;</span> 设定对齐方向</span><br><span class="line"><span class="tag">&lt;<span class="name">P</span>&gt;</span> 分段</span><br><span class="line"><span class="tag">&lt;<span class="name">PERSON</span>&gt;</span>...<span class="tag">&lt;/<span class="name">PERSON</span>&gt;</span> 显示人名</span><br><span class="line"><span class="tag">&lt;<span class="name">PRE</span>&gt;</span> 使用原有排列</span><br><span class="line"><span class="tag">&lt;<span class="name">SAMP</span>&gt;</span>...<span class="tag">&lt;/<span class="name">SAMP</span>&gt;</span> 用於引用字</span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> &gt;</span>...&lt;/select &gt; 在表单中定义列表栏</span><br><span class="line"><span class="tag">&lt;<span class="name">SMALL</span>&gt;</span> 显示小字体</span><br><span class="line"><span class="tag">&lt;<span class="name">STRIKE</span>&gt;</span> 文字加横线</span><br><span class="line"><span class="tag">&lt;<span class="name">STRONG</span>&gt;</span> 用於加强语气</span><br><span class="line"><span class="tag">&lt;<span class="name">SUB</span>&gt;</span> 下标字</span><br><span class="line"><span class="tag">&lt;<span class="name">SUP</span>&gt;</span> 上标字</span><br><span class="line"><span class="tag">&lt;<span class="name">TABLE</span> <span class="attr">BORDER</span>=<span class="string">n</span>&gt;</span> 调整表格的宽线高度</span><br><span class="line"><span class="tag">&lt;<span class="name">TABLE</span> <span class="attr">CELLPADDING</span>&gt;</span> 调整资料栏位之边界</span><br><span class="line"><span class="tag">&lt;<span class="name">TABLE</span> <span class="attr">CELLSPACING</span>&gt;</span> 调整表格线的宽度</span><br><span class="line"><span class="tag">&lt;<span class="name">TABLE</span> <span class="attr">HEIGHT</span>&gt;</span> 调整表格的高度</span><br><span class="line"><span class="tag">&lt;<span class="name">TABLE</span> <span class="attr">WIDTH</span>&gt;</span> 调整表格的宽度</span><br><span class="line"><span class="tag">&lt;<span class="name">TABLE</span>&gt;</span>...<span class="tag">&lt;/<span class="name">TABLE</span>&gt;</span> 产生表格的标签</span><br><span class="line"><span class="tag">&lt;<span class="name">TD</span> <span class="attr">ALIGN</span>&gt;</span> 调整表格栏位之左右对齐</span><br><span class="line"><span class="tag">&lt;<span class="name">TD</span> <span class="attr">BGCOLOR</span>&gt;</span> 设定表格栏位之背景颜色</span><br><span class="line"><span class="tag">&lt;<span class="name">TD</span> <span class="attr">COLSPAN</span> <span class="attr">ROWSPAN</span>&gt;</span> 表格栏位的合并</span><br><span class="line"><span class="tag">&lt;<span class="name">TD</span> <span class="attr">NOWRAP</span>&gt;</span> 设定表格栏位不换行</span><br><span class="line"><span class="tag">&lt;<span class="name">TD</span> <span class="attr">VALIGN</span>&gt;</span> 调整表格栏位之上下对齐</span><br><span class="line"><span class="tag">&lt;<span class="name">TD</span> <span class="attr">WIDTH</span>&gt;</span> 调整表格栏位宽度</span><br><span class="line"><span class="tag">&lt;<span class="name">TD</span>&gt;</span>...<span class="tag">&lt;/<span class="name">TD</span>&gt;</span> 定义表格的资料栏位</span><br><span class="line"><span class="tag">&lt;<span class="name">TEXTAREA</span> <span class="attr">NAME</span> <span class="attr">ROWS</span> <span class="attr">COLS</span>&gt;</span> 表单中加入多少列的文字输入栏</span><br><span class="line"><span class="tag">&lt;<span class="name">TEXTAREA</span> <span class="attr">WRAP</span>&gt;</span> 决定文字输入栏是自动否换行</span><br><span class="line"><span class="tag">&lt;<span class="name">TH</span>&gt;</span>...<span class="tag">&lt;/<span class="name">TH</span>&gt;</span> 定义表格的标头栏位</span><br><span class="line"><span class="tag">&lt;<span class="name">TITLE</span>&gt;</span> 文件标题</span><br><span class="line"><span class="tag">&lt;<span class="name">TR</span>&gt;</span>...<span class="tag">&lt;/<span class="name">TR</span>&gt;</span> 定义表格美一行</span><br><span class="line"><span class="tag">&lt;<span class="name">TT</span>&gt;</span> 打字机字体</span><br><span class="line"><span class="tag">&lt;<span class="name">U</span>&gt;</span> 文字加底线</span><br><span class="line"><span class="tag">&lt;<span class="name">UL</span> <span class="attr">TYPE</span>&gt;</span>...<span class="tag">&lt;/<span class="name">UL</span>&gt;</span> 无序号的列表 ( 可指定符号 )</span><br><span class="line"><span class="tag">&lt;<span class="name">var</span>&gt;</span>...<span class="tag">&lt;/<span class="name">var</span>&gt;</span> 用於显示变数</span><br><span class="line">BlockQuotc文本缩进</span><br><span class="line">表示颜色的有三种方式；</span><br><span class="line">1，16进制颜色代码</span><br><span class="line">语法：#RRGGBB</span><br><span class="line">例：<span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;#ff0000&quot;</span>&gt;</span>红色<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line">2，10进制RGB码</span><br><span class="line">语法：RGB（RRR，GGG，BBB）</span><br><span class="line">例：<span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;rgb(255,000,000)&quot;</span>&gt;</span>红色<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line">3,直接用颜色的英文名称</span><br><span class="line">例：<span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">&quot;red&quot;</span>&gt;</span>红色<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span>.....<span class="tag">&lt;/<span class="name">body</span>&gt;</span>属性可分为三种：</span><br><span class="line">1，背景属性</span><br><span class="line">包括：bgcolor,background</span><br><span class="line">2,文字属性：</span><br><span class="line">包括：text,link,alink,vlink,</span><br><span class="line">3,留白属性：</span><br><span class="line">其中分为：leftmargin,topmargin</span><br><span class="line">.bgcolor背景色</span><br><span class="line">语法格式：<span class="tag">&lt;<span class="name">body</span> <span class="attr">bgcolor</span>=<span class="string">&quot;#ff0000&quot;</span>&gt;</span></span><br><span class="line">.background背景图案。</span><br><span class="line">语法格式：<span class="tag">&lt;<span class="name">body</span> <span class="attr">background</span>=<span class="string">&quot;url&quot;</span>&gt;</span></span><br><span class="line">.text文本颜色（非连接文字颜色）</span><br><span class="line">.link连接文字颜色（可连接文字颜色）</span><br><span class="line">.alink活动连接文字颜色（正被点击的可连接文字的颜色）</span><br><span class="line">.vlink已访问连接文字颜色）（已经点击访问过的可连接文字的颜色）</span><br><span class="line"></span><br><span class="line">语法格式：<span class="tag">&lt;<span class="name">body</span> <span class="attr">text</span>=<span class="string">&quot;color&quot;</span> <span class="attr">link</span>=<span class="string">&quot;color&quot;</span> <span class="attr">alink</span>=<span class="string">&quot;color&quot;</span> <span class="attr">vlink</span>=<span class="string">&quot;color&quot;</span>&gt;</span></span><br><span class="line">.leftmargin 页面左侧的留白距离</span><br><span class="line">.topmargin 页面顶部的留白距离</span><br><span class="line"></span><br><span class="line">语法格式：<span class="tag">&lt;<span class="name">body</span> <span class="attr">leftmargin</span>=<span class="string">&quot;value&quot;</span> <span class="attr">topmargin</span>=<span class="string">&quot;value&quot;</span>&gt;</span></span><br><span class="line">注：value为长度值为数字</span><br><span class="line">align 属性</span><br><span class="line">语法：<span class="tag">&lt;<span class="name">h2</span> <span class="attr">align</span>=<span class="string">&quot;?&quot;</span>&gt;</span>文字<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">其属性有三种：left靠左,center居中,right靠右</span><br><span class="line">〈p〉</span><br><span class="line">为段落标记，可利用以上属性对整个段落进行设置</span><br></pre></td></tr></table></figure></p>
@@ -1788,7 +1788,7 @@ the Web. It defines the meaning and structure of web content.</p>
   <entry>
     <title>iPad</title>
     <url>/2023/04/28/iPadOS/</url>
-    <content><![CDATA[<p>iPad 的一些问题，软件。 Your next computer is not a computer.</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>iPad 的一些问题，软件。 Your next computer is not a computer.</p>
 <span id="more"></span>
 <p>修改锁屏密码应验证账户密码 重置系统自动云备份</p>
 <h2 id="已知问题">1. 已知问题</h2>
@@ -1837,7 +1837,7 @@ href="https://apps.apple.com/cn/app/localsend/id1661733229">LocalSend</a></li>
   <entry>
     <title>ish</title>
     <url>/2023/07/12/ish/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <h2 id="挂载">1. 挂载</h2>
 <p>midair -p ~/obsidian mount -t ios . obsidian</p>
 ]]></content>
@@ -1845,7 +1845,7 @@ href="https://apps.apple.com/cn/app/localsend/id1661733229">LocalSend</a></li>
   <entry>
     <title>json</title>
     <url>/2018/11/08/json/</url>
-    <content><![CDATA[<p>JSON(JavaScript Object Notation)
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>JSON(JavaScript Object Notation)
 是一种轻量级数据交换格式，可以对复杂数据进行表达和存储，易于阅读和理解。</p>
 <span id="more"></span>
 <h1 id="规则">规则</h1>
@@ -1864,7 +1864,7 @@ href="https://apps.apple.com/cn/app/localsend/id1661733229">LocalSend</a></li>
   <entry>
     <title>latex</title>
     <url>/2019/09/06/latex/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <p>付费快速阅读 付费快速加载 付费提高网速</p>
 <p><span class="math inline">\(a^2\)</span></p>
 <p><span class="math display">\[\sqrt[2]{2}\]</span> <span
@@ -1876,7 +1876,7 @@ class="math inline">\(\sqrt{6}\)</span></p>
   <entry>
     <title>linux-usr</title>
     <url>/2020/02/01/linux-usr/</url>
-    <content><![CDATA[<p>/usr/src</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>/usr/src</p>
 <span id="more"></span>
 <ul>
 <li>php <a href="https://www.php.net/downloads">download</a></li>
@@ -1895,7 +1895,7 @@ href="https://downloads.mariadb.org/mariadb/repositories/">page</a></li>
   <entry>
     <title>mariadb</title>
     <url>/2019/06/07/mariadb/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">dnf install MariaDB-server MariaDB-client</span><br></pre></td></tr></table></figure>
 <h2 id="附">附：</h2>
 <p>MariaDB 下载: https://downloads.mariadb.org/mariadb/repositories/</p>
@@ -1904,7 +1904,7 @@ href="https://downloads.mariadb.org/mariadb/repositories/">page</a></li>
   <entry>
     <title>nginx</title>
     <url>/2018/11/08/nginx/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <p><a href="https://www.nginx.com/">官网</a></p>
 <ul>
 <li>expires</li>
@@ -1947,7 +1947,7 @@ href="https://www.cnblogs.com/yuanzai12345/p/5946743.html">Nginx设置expires设
   <entry>
     <title>os-host</title>
     <url>/2020/02/24/os-host/</url>
-    <content><![CDATA[<p>The hosts file is one of several system facilities that assists in
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>The hosts file is one of several system facilities that assists in
 addressing network nodes in a computer network. It is a common part of
 an operating system's Internet Protocol (IP) implementation, and serves
 the function of translating human-friendly hostnames into numeric
@@ -1987,7 +1987,7 @@ in an IP network.</p>
   <entry>
     <title>开源镜像站</title>
     <url>/2019/09/01/os-mirror/</url>
-    <content><![CDATA[<p>Mirror sites or mirrors are replicas of other websites or any network
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Mirror sites or mirrors are replicas of other websites or any network
 node. Such sites have different URLs than the original site, but host
 identical or near-identical content. Mirror sites are often located in a
 different geographic region than the original, or upstream site. The
@@ -2015,7 +2015,7 @@ href="https://mirror.bjtu.edu.cn/">北京交通大学自由与开源软件镜像
   <entry>
     <title>System Variables Path</title>
     <url>/2020/02/19/os-path/</url>
-    <content><![CDATA[<p>The PATH variable makes it easy to run commonly used programs located
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>The PATH variable makes it easy to run commonly used programs located
 in their own folders. If used unwisely, however, the value of the PATH
 variable can slow down the operating system by searching too many
 locations, or invalid locations.</p>
@@ -2138,7 +2138,7 @@ class="math inline">\(Env:path=&quot;./.venv/Scripts/;&quot;+\)</span>Env:path</
   <entry>
     <title>OS Setting</title>
     <url>/2019/06/07/os-setting/</url>
-    <content><![CDATA[<h2 id="windows">windows</h2>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="windows">windows</h2>
 <p>暴力删除废弃文件夹 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">DEL</span> /F /A /Q \\?\%<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">RD</span> /S /Q \\?\%<span class="number">1</span></span><br></pre></td></tr></table></figure> /P 删除每一个文件之前提示确认。 /F
 强制删除只读文件。 /S 从所有子目录删除指定文件。 /Q
 安静模式。删除全局通配符时，不要求确认。 /A
@@ -2150,7 +2150,7 @@ class="math inline">\(Env:path=&quot;./.venv/Scripts/;&quot;+\)</span>Env:path</
   <entry>
     <title>Chrome的使用</title>
     <url>/2019/06/11/os-software-chrome/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <ol type="1">
 <li>设置搜索引擎</li>
 </ol>
@@ -2169,7 +2169,7 @@ class="math inline">\(Env:path=&quot;./.venv/Scripts/;&quot;+\)</span>Env:path</
   <entry>
     <title>Most Used Software</title>
     <url>/2019/12/16/os-software/</url>
-    <content><![CDATA[<p>常用的软件官网</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>常用的软件官网</p>
 <span id="more"></span>
 <h2 id="windows-环境下常用的软件">1. Windows 环境下常用的软件</h2>
 <table>
@@ -2311,7 +2311,7 @@ href="http://www.ashongsoft.com/product/image-converter-one.html">http://www.ash
   <entry>
     <title>Eclipse</title>
     <url>/2018/11/08/os-tool-eclipse/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <h2 id="eclipse-下载">Eclipse 下载</h2>
 <ul>
 <li><a href="http://www.eclipse.org/downloads/packages/">Eclipse
@@ -2351,7 +2351,7 @@ href="https://wiki.eclipse.org/Eclipse.ini">eclipse.ini-Eclipsepedia</a></p></li
   <entry>
     <title>java</title>
     <url>/2019/12/16/os-tool-java/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <p><a
 href="https://www.oracle.com/java/technologies/javase-downloads.html">Java
 SE Downloads</a> <a href="https://docs.oracle.com/en/java/">Java
@@ -2365,7 +2365,7 @@ Software</a></p>
   <entry>
     <title>Nodejs</title>
     <url>/2019/08/06/os-tool-node/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <p><a href="https://nodejs.org/">官网</a></p>
 <p><a
 href="https://github.com/nvm-sh/nvm#node-version-manager---">nvm</a></p>
@@ -2396,7 +2396,7 @@ Linux 7.5上安装Node.js</a></p>
   <entry>
     <title>oracle</title>
     <url>/2020/03/02/os-tool-oracle/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <ul>
 <li><p><a
 href="https://www.oracle.com/database/technologies/oracle-database-software-downloads.html">Database
@@ -2421,7 +2421,7 @@ Database Documentation - Oracle Database</a></p></li>
   <entry>
     <title>Python 3.x</title>
     <url>/2018/11/17/os-tool-python-env/</url>
-    <content><![CDATA[<h2 id="python-3-安装">Python 3 安装</h2>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="python-3-安装">Python 3 安装</h2>
 <span id="more"></span>
 <h2 id="pypi-源配置">pypi 源配置</h2>
 <h3 id="常见在线-pypi-repository">常见在线 pypi repository</h3>
@@ -2457,7 +2457,7 @@ https://docs.conda.io/en/latest/miniconda.html</li>
   <entry>
     <title>Windows</title>
     <url>/2020/03/24/os-windows/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <p>备忘录</p>
 <ul>
 <li>选 管理员配置符号链接 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># google C:\Program Files (x86)\Google</span></span><br><span class="line"><span class="comment"># C:\Program Files\Microsoft Office</span></span><br><span class="line"><span class="comment"># C:\Program Files\Microsoft Office 15</span></span><br><span class="line">mklink /d 默认安装位置 用户指定的安装位置</span><br><span class="line"></span><br><span class="line">New-Item -ItemType SymbolicLink -Path E:\DukePath\path3 -Target E:\DukePath\julia.lnk</span><br></pre></td></tr></table></figure></li>
@@ -2578,7 +2578,7 @@ href="https://support.microsoft.com/zh-cn/windows/在屏幕中启用和禁用触
   <entry>
     <title>CentOS 下安装 PHP7</title>
     <url>/2019/07/08/php-env/</url>
-    <content><![CDATA[<p>PHP Frequently Asked Questions</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>PHP Frequently Asked Questions</p>
 <span id="more"></span>
 <h2 id="环境说明">环境说明</h2>
 <ul>
@@ -2625,7 +2625,7 @@ href="https://support.microsoft.com/zh-cn/windows/在屏幕中启用和禁用触
   <entry>
     <title>php Web Server</title>
     <url>/2019/07/31/php-run/</url>
-    <content><![CDATA[<blockquote>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><blockquote>
 <p>PHP 5.4.0起， CLI SAPI
 提供了一个内置的Web服务器。主要用于本地开发使用，不可用于线上产品环境。</p>
 </blockquote>
@@ -2655,7 +2655,7 @@ Server</a></p>
   <entry>
     <title>PowerShell笔记</title>
     <url>/2018/06/03/powershell/</url>
-    <content><![CDATA[<h2 id="shell-语法">shell 语法</h2>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="shell-语法">shell 语法</h2>
 <ul>
 <li>变量声明以“$”开头后跟变量名</li>
 <li>变量名不区分大小写，可包含数字、字母和下划线</li>
@@ -2701,7 +2701,7 @@ class="math inline">\(false（真值为假）\)</span>_（当前处理的元素�
   <entry>
     <title>Django 部署</title>
     <url>/2018/07/18/python-Django/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <h2 id="阅读基础">阅读基础</h2>
 <ul>
 <li><a href="Python3.md">Python3 安装</a></li>
@@ -2859,7 +2859,7 @@ v3.0</a></li>
   <entry>
     <title>Jupyter</title>
     <url>/2019/07/16/python-Jupyter/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装</span></span><br><span class="line">pip install jupyterlab</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <h2 id="参考文档">参考文档</h2>
 <ol type="1">
@@ -2888,7 +2888,7 @@ kernels</a></li>
   <entry>
     <title>python 组合数</title>
     <url>/2020/01/05/python-combinations/</url>
-    <content><![CDATA[<p>组合是数学的重要概念之一。从 n 个不同元素中每次取出 m 个不同元素
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>组合是数学的重要概念之一。从 n 个不同元素中每次取出 m 个不同元素
 ，不管其顺序合成一组，称为从 n 个元素中不重复地选取 m
 个元素的一个组合。所有这样的组合的种数称为组合数。</p>
 <span id="more"></span>
@@ -2917,7 +2917,7 @@ href="https://mp.weixin.qq.com/s?__biz=MzI4MzM2MDgyMQ==&amp;mid=2247484700&amp;i
   <entry>
     <title>Python DataBase</title>
     <url>/2019/10/25/python-database/</url>
-    <content><![CDATA[<p>DataBase</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>DataBase</p>
 <span id="more"></span>
 <h2 id="database">DataBase</h2>
 <table>
@@ -3051,13 +3051,13 @@ href="https://docs.sqlalchemy.org/">Docs</a></td>
   <entry>
     <title>python-functions</title>
     <url>/2020/03/27/python-functions/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 ]]></content>
   </entry>
   <entry>
     <title>Python 3.x</title>
     <url>/2018/11/17/python-linux/</url>
-    <content><![CDATA[<h2 id="python-3-安装">Python 3 安装</h2>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="python-3-安装">Python 3 安装</h2>
 <span id="more"></span>
 <h3 id="源码安装推荐">源码安装（推荐）</h3>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 下载安装包</span></span><br><span class="line">wget https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz</span><br><span class="line"><span class="comment"># 解压</span></span><br><span class="line">tar -xzvf Python-3.7.1.tgz</span><br><span class="line"><span class="comment"># 切换目录</span></span><br><span class="line"><span class="built_in">cd</span> Python-3.7.1</span><br><span class="line"><span class="comment"># 生成 makefile 文件</span></span><br><span class="line">./configure --prefix=/usr/local/Python --enable-optimizations</span><br><span class="line"><span class="comment"># 编译安装</span></span><br><span class="line">make</span><br><span class="line">make install</span><br><span class="line"><span class="built_in">hash</span> -r</span><br><span class="line"><span class="built_in">ln</span> -s /usr/local/Python/bin/python3.7 /usr/bin/python3</span><br><span class="line"><span class="built_in">ln</span> -s /usr/local/Python/bin/pip /usr/bin/pip3</span><br></pre></td></tr></table></figure>
@@ -3073,7 +3073,7 @@ href="https://docs.sqlalchemy.org/">Docs</a></td>
   <entry>
     <title>Python Web</title>
     <url>/2020/02/06/python-web/</url>
-    <content><![CDATA[<p>Python Web Frequently Asked Questions</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Python Web Frequently Asked Questions</p>
 <span id="more"></span>
 <ul>
 <li><a href="https://weppy.org/">weppy</a></li>
@@ -3163,7 +3163,7 @@ id="部署测试uwsgi-中-httphttp-socketsocket-区别unix套字节">部署测�
   <entry>
     <title>python wheel 打包</title>
     <url>/2019/11/09/python-wheel/</url>
-    <content><![CDATA[<p><a href="https://packaging.python.org/">官方教程</a> <a
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p><a href="https://packaging.python.org/">官方教程</a> <a
 href="https://packaging.python.org/overview/">概述</a> <a
 href="https://packaging.python.org/tutorials/">教程</a> <a
 href="https://packaging.python.org/guides/">指南</a></p>
@@ -3212,7 +3212,7 @@ href="https://packaging.python.org/guides/">指南</a></p>
   <entry>
     <title>Python Windows</title>
     <url>/2019/10/21/python-win/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <h3 id="window-下-python-多版本问题">Window 下 Python 多版本问题</h3>
 <ul>
 <li>python 2 使用 python</li>
@@ -3266,7 +3266,7 @@ functools.reduce(function,iterable)累function处理 sorted() reverse为ture
   <entry>
     <title>人民币转大写</title>
     <url>/2022/03/19/rmb/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">decimal v = decimal.Parse(&quot;123.00&quot;);</span><br><span class="line">            var s = v.ToString(&quot;#L#E#D#C#K#E#D#C#J#E#D#C#I#E#D#C#H#E#D#C#G#E#D#C#F#E#D#C0.0B0A/&quot;);</span><br><span class="line">            var d = Regex.Replace(s, @&quot;(((?&lt;=^-)|(^[^-]))[^1-9]*((?=[1-9])|((?&lt;c&gt;0\.)[^1-9]*(?=/$))))|((?&lt;=[1-9]A)/)|((?&lt;z&gt;0)[0A-E]*((?=[1-9])|(?&lt;-z&gt;(?=[F-L\./]|$))))|((?&lt;b&gt;[F-L])(?&lt;z&gt;0)[0A-L]*(?=[1-9]|(?&lt;-z&gt;(?=[\./]|$))))&quot;, &quot;$&#123;b&#125;$&#123;z&#125;$&#123;c&#125;&quot;);</span><br><span class="line">            var r = Regex.Replace(d, &quot;.&quot;, m =&gt; &quot;正，负元整零壹贰叁肆伍陆柒捌玖拾屲亗岌岄岪峘分角拾佰仟万亿兆京垓秭穰沟涧正载极&quot;[m.Value[0] - &#x27;+&#x27;].ToString());</span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
@@ -3276,7 +3276,7 @@ functools.reduce(function,iterable)累function处理 sorted() reverse为ture
   <entry>
     <title>shell</title>
     <url>/2018/08/22/shell/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <h2 id="重定向">重定向</h2>
 <p>在 shell
 中输入命令运行程序，程序的正常输出信息（标准输出）和一些出错信息（标准错误）会通过
@@ -3423,7 +3423,7 @@ shell 显示在屏幕上。</p>
   <entry>
     <title>Visual Studio Code</title>
     <url>/2019/07/29/vscode/</url>
-    <content><![CDATA[<p>Visual Studio
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Visual Studio
 Code是简化的代码编辑器，支持诸如调试，任务运行和版本控制之类的开发操作。
 <span id="more"></span></p>
 <h3 id="正则匹配">正则匹配</h3>
@@ -3434,7 +3434,7 @@ Code是简化的代码编辑器，支持诸如调试，任务运行和版本控�
   <entry>
     <title>web-Redirect</title>
     <url>/2021/07/26/web-Redirect/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 避免缓存 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Pragma&quot;</span> <span class="attr">content</span>=<span class="string">&quot;no-cache&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Cache-Control&quot;</span> <span class="attr">content</span>=<span class="string">&quot;no-cache&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Expires&quot;</span> <span class="attr">content</span>=<span class="string">&quot;0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">        location.<span class="property">href</span>=<span class="string">&quot;http://www.baidu.com&quot;</span>;</span></span><br><span class="line"><span class="language-javascript">        location.<span class="title function_">replace</span>(<span class="string">&quot;http://www.baidu.com&quot;</span>)</span></span><br><span class="line"><span class="language-javascript">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>Ctrl + F5 强制刷新</p>
 ]]></content>
@@ -3442,7 +3442,7 @@ Code是简化的代码编辑器，支持诸如调试，任务运行和版本控�
   <entry>
     <title>Cascading Style Sheets</title>
     <url>/2020/01/21/web-css/</url>
-    <content><![CDATA[<p>Cascading Style Sheets (CSS) is a stylesheet language used to
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Cascading Style Sheets (CSS) is a stylesheet language used to
 describe the presentation of a document written in HTML or XML
 (including XML dialects such as SVG, MathML or XHTML). CSS describes how
 elements should be rendered on screen, on paper, in speech, or on other
@@ -3518,7 +3518,7 @@ css结构 例：td{font-size:10.5pt;color:#666666} css样式包含两个基础�
   <entry>
     <title>web-html-meta</title>
     <url>/2020/01/22/web-html-meta/</url>
-    <content><![CDATA[<p>The HTML <code>&lt;meta&gt;</code> element represents metadata that
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>The HTML <code>&lt;meta&gt;</code> element represents metadata that
 cannot be represented by other HTML meta-related elements, like
 <code>&lt;base&gt;</code>, <code>&lt;link&gt;</code>,
 <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code> or
@@ -3549,7 +3549,7 @@ cannot be represented by other HTML meta-related elements, like
   <entry>
     <title>Hyper Text Markup Language</title>
     <url>/2020/01/21/web-html/</url>
-    <content><![CDATA[<p>HTML (HyperText Markup Language) is the most basic building block of
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>HTML (HyperText Markup Language) is the most basic building block of
 the Web. It defines the meaning and structure of web content.</p>
 <span id="more"></span>
 <p>预格式化：</p>
@@ -3701,7 +3701,7 @@ aside页面左或右模块， footer底脚模块。</p>
   <entry>
     <title>windows 快捷方式</title>
     <url>/2021/08/10/windows-lnk/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <p>C#</p>
 <figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> 创建桌面快捷键</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;LnkName&quot;&gt;</span>快捷键名称<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;AssemblyFullPath&quot;&gt;</span>程序集的完整路径<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;IconLocation&quot;&gt;</span>图标位置<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;Description&quot;&gt;</span>描述<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;returns&gt;</span><span class="doctag">&lt;/returns&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">bool</span> <span class="title">CreateDesktopShortcut</span>(<span class="params"><span class="built_in">string</span> LnkName, <span class="built_in">string</span> AssemblyFullPath, <span class="built_in">string</span> IconLocation = <span class="literal">null</span>, <span class="built_in">string</span> Description = <span class="literal">null</span></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">string</span> DesktopLnkPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), <span class="string">$&quot;<span class="subst">&#123;LnkName&#125;</span>.lnk&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (File.Exists(DesktopLnkPath)) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    IWshRuntimeLibrary.IWshShortcut shortcut = <span class="keyword">new</span> IWshRuntimeLibrary.WshShell().CreateShortcut(DesktopLnkPath);</span><br><span class="line">    shortcut.WorkingDirectory = Path.GetDirectoryName(AssemblyFullPath);</span><br><span class="line">    shortcut.TargetPath = AssemblyFullPath;</span><br><span class="line">    shortcut.WindowStyle = <span class="number">1</span>;</span><br><span class="line">    shortcut.Description = Description;</span><br><span class="line">    shortcut.IconLocation = IconLocation ?? AssemblyFullPath;</span><br><span class="line">    shortcut.Save();</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
@@ -3713,7 +3713,7 @@ aside页面左或右模块， footer底脚模块。</p>
   <entry>
     <title>wordpress</title>
     <url>/2019/08/07/wordpress/</url>
-    <content><![CDATA[<span id="more"></span>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <ul>
 <li><a
 href="https://codex.wordpress.org/zh-cn:%E5%AE%89%E8%A3%85_WordPress">官方教程-安装
@@ -3725,7 +3725,7 @@ WordPress</a></li>
   <entry>
     <title>易班 APP</title>
     <url>/2018/05/26/yiban/</url>
-    <content><![CDATA[<p>基于 AppInvento 技术对兰州理工大学及易班服务的封装。</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>基于 AppInvento 技术对兰州理工大学及易班服务的封装。</p>
 <span id="more"></span>
 <blockquote>
 <p>为避免腾讯等安全软件误报，强烈建议大家先使用浏览器打开此页</p>
@@ -3754,7 +3754,7 @@ src="/img/yiban/180526a.png" alt="功能截图" /></p>
   <entry>
     <title>电脑新手指南</title>
     <url>/2018/06/07/%E7%94%B5%E8%84%91%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<p>0 系统的选择及安装 1 联网，请备好网线 2 浏览器的使用 3
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>0 系统的选择及安装 1 联网，请备好网线 2 浏览器的使用 3
 我的电脑，配置系统文件 4 软件安装及卸载 5 拒绝广告和病毒 6
 快捷键及shell基础 7 浅谈自学知识 8 电脑是工具，不是玩具 9
 必经之路，交流经验 * 电脑的保养及维护技巧</p>
@@ -3763,7 +3763,7 @@ src="/img/yiban/180526a.png" alt="功能截图" /></p>
   <entry>
     <title>程序执行环境</title>
     <url>/2019/06/07/%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E7%8E%AF%E5%A2%83/</url>
-    <content><![CDATA[<h2 id="参数列表">参数列表</h2>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="参数列表">参数列表</h2>
 <p>linux 命令行规范</p>
 <ol type="1">
 <li>短参数：以单横开头，后跟单一字符，例如：<code>ls -h</code></li>
@@ -3787,7 +3787,7 @@ src="/img/yiban/180526a.png" alt="功能截图" /></p>
   <entry>
     <title>什么是传感器</title>
     <url>/2018/01/14/%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/1_%E4%BB%80%E4%B9%88%E6%98%AF%E4%BC%A0%E6%84%9F%E5%99%A8/</url>
-    <content><![CDATA[<h1 id="什么是传感器">什么是传感器</h1>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h1 id="什么是传感器">什么是传感器</h1>
 <blockquote>
 <p><code>传感器</code>：能够感受<code>规定的被测量</code>，并按照<code>一定的规律</code>转换成可用输出信号的<code>器件</code>或<code>装置</code>。</p>
 </blockquote>
@@ -3835,7 +3835,7 @@ src="/img/yiban/180526a.png" alt="功能截图" /></p>
   <entry>
     <title>什么是集成传感器</title>
     <url>/2018/01/14/%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/2_%E4%BB%80%E4%B9%88%E6%98%AF%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/</url>
-    <content><![CDATA[<h1 id="集成传感器">集成传感器</h1>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h1 id="集成传感器">集成传感器</h1>
 <blockquote>
 <p>把<code>敏感元件</code>和<code>放大电路、运算电路、补偿电路</code>等模块，集成在<code>一个芯片</code>、或<code>同一个封装</code>上的传感器成为集成传感器。</p>
 </blockquote>
