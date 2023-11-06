@@ -519,6 +519,23 @@ https://image-charts.com/chart?chs=150x150&amp;cht=qr&amp;chl=Hello%20world&amp;
 ]]></content>
   </entry>
   <entry>
+    <title>SSH 配置</title>
+    <url>/2018/06/11/SSH/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<h2 id="口令登录">口令登录</h2>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">ssh [-p 22] [user@]host</span><br></pre></td></tr></table></figure>
+<p>说明： - 默认端口22可省略 - 用户名与本地用户名相同时可省略</p>
+<h2 id="公钥登录">公钥登录</h2>
+<pre><code>1. 生成公钥</code></pre>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 格式 </span></span><br><span class="line"><span class="comment"># ssh-keygen -t rsa -C &quot;通常为邮箱&quot; -f &quot;私钥文件绝对路径&quot;</span></span><br><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
+<p>说明： - 私钥口令 passphrase，若担心私钥的安全，设置一个 - 公钥
+id_rsa.pub，私钥 id_rsa 2. 复制公钥至主机</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> pub_file_path | ssh  root@host <span class="string">&#x27;cat &gt;&gt; .ssh/authorized_keys&#x27;</span></span><br><span class="line"><span class="comment"># 首次登录使用，覆盖已有的 id_rsa 之后即可无密码登录，如果设置了 passphrase 登录时需要输入 passphrase</span></span><br><span class="line">ssh-keygen; <span class="built_in">cat</span> ~/.ssh/id_*.pub | ssh  root@host <span class="string">&#x27;cat &gt;&gt; .ssh/authorized_keys&#x27;</span>; ssh user@host</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">host ecs（主机别名）</span><br><span class="line">HostName 主机地址</span><br><span class="line">User 用户名</span><br><span class="line">Port 22（sshd 端口号）</span><br><span class="line">IdentitiesOnly yes</span><br><span class="line">IdentityFile 私钥路径</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">PermitRootLogin yes</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
     <title>Screenshot 截图其实很简单</title>
     <url>/2019/05/31/Screenshot/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><blockquote>
@@ -559,23 +576,6 @@ palette）。</li>
       <tags>
         <tag>新手技能</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>SSH 配置</title>
-    <url>/2018/06/11/SSH/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<h2 id="口令登录">口令登录</h2>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">ssh [-p 22] [user@]host</span><br></pre></td></tr></table></figure>
-<p>说明： - 默认端口22可省略 - 用户名与本地用户名相同时可省略</p>
-<h2 id="公钥登录">公钥登录</h2>
-<pre><code>1. 生成公钥</code></pre>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 格式 </span></span><br><span class="line"><span class="comment"># ssh-keygen -t rsa -C &quot;通常为邮箱&quot; -f &quot;私钥文件绝对路径&quot;</span></span><br><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
-<p>说明： - 私钥口令 passphrase，若担心私钥的安全，设置一个 - 公钥
-id_rsa.pub，私钥 id_rsa 2. 复制公钥至主机</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> pub_file_path | ssh  root@host <span class="string">&#x27;cat &gt;&gt; .ssh/authorized_keys&#x27;</span></span><br><span class="line"><span class="comment"># 首次登录使用，覆盖已有的 id_rsa 之后即可无密码登录，如果设置了 passphrase 登录时需要输入 passphrase</span></span><br><span class="line">ssh-keygen; <span class="built_in">cat</span> ~/.ssh/id_*.pub | ssh  root@host <span class="string">&#x27;cat &gt;&gt; .ssh/authorized_keys&#x27;</span>; ssh user@host</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">host ecs（主机别名）</span><br><span class="line">HostName 主机地址</span><br><span class="line">User 用户名</span><br><span class="line">Port 22（sshd 端口号）</span><br><span class="line">IdentitiesOnly yes</span><br><span class="line">IdentityFile 私钥路径</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">PermitRootLogin yes</span><br></pre></td></tr></table></figure>
-]]></content>
   </entry>
   <entry>
     <title>URL Protocol</title>
@@ -1786,14 +1786,6 @@ the Web. It defines the meaning and structure of web content.</p>
       </tags>
   </entry>
   <entry>
-    <title>ish</title>
-    <url>/2023/07/12/ish/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<h2 id="挂载">1. 挂载</h2>
-<p>midair -p ~/obsidian mount -t ios . obsidian</p>
-]]></content>
-  </entry>
-  <entry>
     <title>iPad</title>
     <url>/2023/04/28/iPadOS/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>iPad 的一些问题，软件。 Your next computer is not a computer.</p>
@@ -1841,6 +1833,14 @@ href="https://apps.apple.com/cn/app/localsend/id1661733229">LocalSend</a></li>
         <tag>iPad</tag>
         <tag>iPadOS</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>ish</title>
+    <url>/2023/07/12/ish/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<h2 id="挂载">1. 挂载</h2>
+<p>midair -p ~/obsidian mount -t ios . obsidian</p>
+]]></content>
   </entry>
   <entry>
     <title>json</title>
@@ -2576,36 +2576,6 @@ href="https://support.microsoft.com/zh-cn/windows/在屏幕中启用和禁用触
       </tags>
   </entry>
   <entry>
-    <title>php Web Server</title>
-    <url>/2019/07/31/php-run/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><blockquote>
-<p>PHP 5.4.0起， CLI SAPI
-提供了一个内置的Web服务器。主要用于本地开发使用，不可用于线上产品环境。</p>
-</blockquote>
-<span id="more"></span>
-<h2 id="php-web-server">php Web Server</h2>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 方式一，仅配置端口启动，以当前目录为服务器根目录</span></span><br><span class="line">php -S localhost:8000</span><br><span class="line"><span class="comment"># 方式二，配置端口，并指定根目录</span></span><br><span class="line">php -S localhost:8000 -t foo/</span><br><span class="line"><span class="comment"># 方式三，配置端口，调用路由（router）脚本</span></span><br><span class="line">php -S localhost:8000 router.php</span><br></pre></td></tr></table></figure>
-<p>URI请求会被发送到PHP所在的的工作目录（Working
-Directory）进行处理，除非你使用了-t参数来自定义不同的目录。</p>
-<p>如果请求未指定执行哪个PHP文件，则默认执行目录内的index.php 或者
-index.html。如果这两个文件都不存在，服务器会返回404错误。</p>
-<p>当你在命令行启动这个Web
-Server时，如果指定了一个PHP文件，则这个文件会作为一个“路由”脚本，意味着每次请求都会先执行这个脚本。如果这个脚本返回
-FALSE
-，那么直接返回请求的文件（例如请求静态文件不作任何处理）。否则会把输出返回到浏览器。</p>
-<h3 id="router.php-示例代码">router.php 示例代码</h3>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">// router.php</span></span><br><span class="line"><span class="comment">// 请求图片直接显示图片，请求HTML则显示“Welcome to PHP”</span></span><br><span class="line"><span class="keyword">if</span> (<span class="title function_ invoke__">preg_match</span>(<span class="string">&#x27;/\.(?:png|jpg|jpeg|gif)$/&#x27;</span>, <span class="variable">$_SERVER</span>[<span class="string">&quot;REQUEST_URI&quot;</span>]))</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;    <span class="comment">// 直接返回请求的文件</span></span><br><span class="line"><span class="keyword">else</span> &#123; </span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;&lt;p&gt;Welcome to PHP&lt;/p&gt;&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>参考文章 - <a
-href="https://www.php.net/manual/zh/features.commandline.webserver.php">内置Web
-Server</a></p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>php</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CentOS 下安装 PHP7</title>
     <url>/2019/07/08/php-env/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>PHP Frequently Asked Questions</p>
@@ -2647,6 +2617,36 @@ Server</a></p>
 </table>
 <p>./configure --prefix=/usr/local/php --with-iconv=/usr/local/libiconv
 --enable-fpm --with-pdo-mysql</p>
+]]></content>
+      <tags>
+        <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>php Web Server</title>
+    <url>/2019/07/31/php-run/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><blockquote>
+<p>PHP 5.4.0起， CLI SAPI
+提供了一个内置的Web服务器。主要用于本地开发使用，不可用于线上产品环境。</p>
+</blockquote>
+<span id="more"></span>
+<h2 id="php-web-server">php Web Server</h2>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 方式一，仅配置端口启动，以当前目录为服务器根目录</span></span><br><span class="line">php -S localhost:8000</span><br><span class="line"><span class="comment"># 方式二，配置端口，并指定根目录</span></span><br><span class="line">php -S localhost:8000 -t foo/</span><br><span class="line"><span class="comment"># 方式三，配置端口，调用路由（router）脚本</span></span><br><span class="line">php -S localhost:8000 router.php</span><br></pre></td></tr></table></figure>
+<p>URI请求会被发送到PHP所在的的工作目录（Working
+Directory）进行处理，除非你使用了-t参数来自定义不同的目录。</p>
+<p>如果请求未指定执行哪个PHP文件，则默认执行目录内的index.php 或者
+index.html。如果这两个文件都不存在，服务器会返回404错误。</p>
+<p>当你在命令行启动这个Web
+Server时，如果指定了一个PHP文件，则这个文件会作为一个“路由”脚本，意味着每次请求都会先执行这个脚本。如果这个脚本返回
+FALSE
+，那么直接返回请求的文件（例如请求静态文件不作任何处理）。否则会把输出返回到浏览器。</p>
+<h3 id="router.php-示例代码">router.php 示例代码</h3>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">// router.php</span></span><br><span class="line"><span class="comment">// 请求图片直接显示图片，请求HTML则显示“Welcome to PHP”</span></span><br><span class="line"><span class="keyword">if</span> (<span class="title function_ invoke__">preg_match</span>(<span class="string">&#x27;/\.(?:png|jpg|jpeg|gif)$/&#x27;</span>, <span class="variable">$_SERVER</span>[<span class="string">&quot;REQUEST_URI&quot;</span>]))</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;    <span class="comment">// 直接返回请求的文件</span></span><br><span class="line"><span class="keyword">else</span> &#123; </span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;&lt;p&gt;Welcome to PHP&lt;/p&gt;&quot;</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>参考文章 - <a
+href="https://www.php.net/manual/zh/features.commandline.webserver.php">内置Web
+Server</a></p>
+</blockquote>
 ]]></content>
       <tags>
         <tag>php</tag>
@@ -3547,18 +3547,6 @@ cannot be represented by other HTML meta-related elements, like
       </tags>
   </entry>
   <entry>
-    <title>windows 快捷方式</title>
-    <url>/2021/08/10/windows-lnk/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<p>C#</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> 创建桌面快捷键</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;LnkName&quot;&gt;</span>快捷键名称<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;AssemblyFullPath&quot;&gt;</span>程序集的完整路径<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;IconLocation&quot;&gt;</span>图标位置<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;Description&quot;&gt;</span>描述<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;returns&gt;</span><span class="doctag">&lt;/returns&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">bool</span> <span class="title">CreateDesktopShortcut</span>(<span class="params"><span class="built_in">string</span> LnkName, <span class="built_in">string</span> AssemblyFullPath, <span class="built_in">string</span> IconLocation = <span class="literal">null</span>, <span class="built_in">string</span> Description = <span class="literal">null</span></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">string</span> DesktopLnkPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), <span class="string">$&quot;<span class="subst">&#123;LnkName&#125;</span>.lnk&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (File.Exists(DesktopLnkPath)) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    IWshRuntimeLibrary.IWshShortcut shortcut = <span class="keyword">new</span> IWshRuntimeLibrary.WshShell().CreateShortcut(DesktopLnkPath);</span><br><span class="line">    shortcut.WorkingDirectory = Path.GetDirectoryName(AssemblyFullPath);</span><br><span class="line">    shortcut.TargetPath = AssemblyFullPath;</span><br><span class="line">    shortcut.WindowStyle = <span class="number">1</span>;</span><br><span class="line">    shortcut.Description = Description;</span><br><span class="line">    shortcut.IconLocation = IconLocation ?? AssemblyFullPath;</span><br><span class="line">    shortcut.Save();</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <tags>
-        <tag>Windows</tag>
-        <tag>cshape</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hyper Text Markup Language</title>
     <url>/2020/01/21/web-html/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>HTML (HyperText Markup Language) is the most basic building block of
@@ -3721,6 +3709,18 @@ WordPress</a></li>
 </ul>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 下载最新版 wordpress</span></span><br><span class="line">wget https://wordpress.org/latest.tar.gz</span><br><span class="line"><span class="comment"># 解压</span></span><br><span class="line">tar -zxvf latest.tar.gz</span><br></pre></td></tr></table></figure>
 ]]></content>
+  </entry>
+  <entry>
+    <title>windows 快捷方式</title>
+    <url>/2021/08/10/windows-lnk/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<p>C#</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> 创建桌面快捷键</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;LnkName&quot;&gt;</span>快捷键名称<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;AssemblyFullPath&quot;&gt;</span>程序集的完整路径<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;IconLocation&quot;&gt;</span>图标位置<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;Description&quot;&gt;</span>描述<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;returns&gt;</span><span class="doctag">&lt;/returns&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">bool</span> <span class="title">CreateDesktopShortcut</span>(<span class="params"><span class="built_in">string</span> LnkName, <span class="built_in">string</span> AssemblyFullPath, <span class="built_in">string</span> IconLocation = <span class="literal">null</span>, <span class="built_in">string</span> Description = <span class="literal">null</span></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">string</span> DesktopLnkPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), <span class="string">$&quot;<span class="subst">&#123;LnkName&#125;</span>.lnk&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (File.Exists(DesktopLnkPath)) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    IWshRuntimeLibrary.IWshShortcut shortcut = <span class="keyword">new</span> IWshRuntimeLibrary.WshShell().CreateShortcut(DesktopLnkPath);</span><br><span class="line">    shortcut.WorkingDirectory = Path.GetDirectoryName(AssemblyFullPath);</span><br><span class="line">    shortcut.TargetPath = AssemblyFullPath;</span><br><span class="line">    shortcut.WindowStyle = <span class="number">1</span>;</span><br><span class="line">    shortcut.Description = Description;</span><br><span class="line">    shortcut.IconLocation = IconLocation ?? AssemblyFullPath;</span><br><span class="line">    shortcut.Save();</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>Windows</tag>
+        <tag>cshape</tag>
+      </tags>
   </entry>
   <entry>
     <title>易班 APP</title>
