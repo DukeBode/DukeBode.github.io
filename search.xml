@@ -3210,6 +3210,16 @@ href="https://packaging.python.org/guides/">指南</a></p>
       </tags>
   </entry>
   <entry>
+    <title>人民币转大写</title>
+    <url>/2022/03/19/rmb/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">decimal v = decimal.Parse(&quot;123.00&quot;);</span><br><span class="line">            var s = v.ToString(&quot;#L#E#D#C#K#E#D#C#J#E#D#C#I#E#D#C#H#E#D#C#G#E#D#C#F#E#D#C0.0B0A/&quot;);</span><br><span class="line">            var d = Regex.Replace(s, @&quot;(((?&lt;=^-)|(^[^-]))[^1-9]*((?=[1-9])|((?&lt;c&gt;0\.)[^1-9]*(?=/$))))|((?&lt;=[1-9]A)/)|((?&lt;z&gt;0)[0A-E]*((?=[1-9])|(?&lt;-z&gt;(?=[F-L\./]|$))))|((?&lt;b&gt;[F-L])(?&lt;z&gt;0)[0A-L]*(?=[1-9]|(?&lt;-z&gt;(?=[\./]|$))))&quot;, &quot;$&#123;b&#125;$&#123;z&#125;$&#123;c&#125;&quot;);</span><br><span class="line">            var r = Regex.Replace(d, &quot;.&quot;, m =&gt; &quot;正，负元整零壹贰叁肆伍陆柒捌玖拾屲亗岌岄岪峘分角拾佰仟万亿兆京垓秭穰沟涧正载极&quot;[m.Value[0] - &#x27;+&#x27;].ToString());</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>cshape</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python Windows</title>
     <url>/2019/10/21/python-win/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
@@ -3261,16 +3271,6 @@ functools.reduce(function,iterable)累function处理 sorted() reverse为ture
 ]]></content>
       <tags>
         <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>人民币转大写</title>
-    <url>/2022/03/19/rmb/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">decimal v = decimal.Parse(&quot;123.00&quot;);</span><br><span class="line">            var s = v.ToString(&quot;#L#E#D#C#K#E#D#C#J#E#D#C#I#E#D#C#H#E#D#C#G#E#D#C#F#E#D#C0.0B0A/&quot;);</span><br><span class="line">            var d = Regex.Replace(s, @&quot;(((?&lt;=^-)|(^[^-]))[^1-9]*((?=[1-9])|((?&lt;c&gt;0\.)[^1-9]*(?=/$))))|((?&lt;=[1-9]A)/)|((?&lt;z&gt;0)[0A-E]*((?=[1-9])|(?&lt;-z&gt;(?=[F-L\./]|$))))|((?&lt;b&gt;[F-L])(?&lt;z&gt;0)[0A-L]*(?=[1-9]|(?&lt;-z&gt;(?=[\./]|$))))&quot;, &quot;$&#123;b&#125;$&#123;z&#125;$&#123;c&#125;&quot;);</span><br><span class="line">            var r = Regex.Replace(d, &quot;.&quot;, m =&gt; &quot;正，负元整零壹贰叁肆伍陆柒捌玖拾屲亗岌岄岪峘分角拾佰仟万亿兆京垓秭穰沟涧正载极&quot;[m.Value[0] - &#x27;+&#x27;].ToString());</span><br></pre></td></tr></table></figure>
-]]></content>
-      <tags>
-        <tag>cshape</tag>
       </tags>
   </entry>
   <entry>
@@ -3440,6 +3440,37 @@ Code是简化的代码编辑器，支持诸如调试，任务运行和版本控�
 ]]></content>
   </entry>
   <entry>
+    <title>web-html-meta</title>
+    <url>/2020/01/22/web-html-meta/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>The HTML <code>&lt;meta&gt;</code> element represents metadata that
+cannot be represented by other HTML meta-related elements, like
+<code>&lt;base&gt;</code>, <code>&lt;link&gt;</code>,
+<code>&lt;script&gt;</code>, <code>&lt;style&gt;</code> or
+<code>&lt;title&gt;</code>.</p>
+<span id="more"></span>
+<p>viewport</p>
+<p>使用元视口代码控制浏览器视口的宽度和缩放比例。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>添加 width=device-width
+以便与屏幕宽度（以设备无关像素为单位）进行匹配。</li>
+<li>添加 initial-scale=1 以便将 CSS 像素与设备无关像素的比例设为
+1:1。</li>
+<li>确保在不停用用户缩放功能的情况下，您的网页也可以访问。</li>
+</ul>
+<p>除了设置 initial-scale 外，您还可以在视口上设置以下属性：</p>
+<ul>
+<li>minimum-scale</li>
+<li>maximum-scale</li>
+<li>user-scalable</li>
+</ul>
+<p>但是，设置后，这些属性可以停用用户缩放视口的功能，可能会造成网页访问方面的问题。</p>
+]]></content>
+      <tags>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Cascading Style Sheets</title>
     <url>/2020/01/21/web-css/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Cascading Style Sheets (CSS) is a stylesheet language used to
@@ -3510,37 +3541,6 @@ css结构 例：td{font-size:10.5pt;color:#666666} css样式包含两个基础�
 <li>颜色单位</li>
 <li>url单位 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="selector-tag">div</span>属性</span><br><span class="line"><span class="attribute">color</span> : <span class="number">#999999</span>   文字颜色</span><br><span class="line">font-family : 宋体 文字字型</span><br><span class="line">font-size : <span class="number">10pt</span> 文字大小</span><br><span class="line">font-style:itelic 文字斜体育</span><br><span class="line">font-variant:small-caps 小字体</span><br><span class="line">letter-spacing : <span class="number">1pt</span> 文字间距</span><br><span class="line">line-height : <span class="number">200%</span> 设定行高</span><br><span class="line">font-weight:bold 文字粗体</span><br><span class="line">vertical-align:sub 下标字</span><br><span class="line">vertical-align:super 上标字</span><br><span class="line">text-decoration:line-through 加?h除线</span><br><span class="line">text-decoration:overline 加顶线</span><br><span class="line">text-decoration:underline 加底线</span><br><span class="line">text-decoration:none ?h除连接底线</span><br><span class="line">text-transform : capitalize 首字大写</span><br><span class="line">text-transform : uppercase 英文大写</span><br><span class="line">text-transform : lowercase 英文写</span><br><span class="line">text-align:right 文字*右对齐</span><br><span class="line">text-align:left 文字*左对齐</span><br><span class="line">text-align:center 文字置中对齐</span><br><span class="line">这些是一些简单的文字效果，可以应用到css的页面中。　</span><br><span class="line">背景</span><br><span class="line">background-color:black 背景颜色</span><br><span class="line">background-image : none 背景图片</span><br><span class="line">background-attachment : fixed 固定背景</span><br><span class="line">background-repeat : repeat 重复排列-网页预设</span><br><span class="line">background-repeat : no-repeat 不重复排列</span><br><span class="line">background-repeat : repeat-x 在x轴重复排列</span><br><span class="line">background-repeat : repeat-y 在y轴重复排列</span><br><span class="line">background-position : <span class="number">90%</span> <span class="number">90%</span> 背景图片x与y轴的位置 　</span><br><span class="line">链接</span><br><span class="line">A 所有超连接</span><br><span class="line">A:link 超连接文字格式</span><br><span class="line">A:visited 浏览过的连接文字格式</span><br><span class="line">A:active 按下连接的格式</span><br><span class="line">A:hover 鼠标移至连接</span><br><span class="line">边框</span><br><span class="line">border-top : <span class="number">1px</span> solid black 上框</span><br><span class="line">border-bottom : <span class="number">1px</span> solid <span class="number">#6699cc</span> 下框</span><br><span class="line">border-left : <span class="number">1px</span> solid <span class="number">#6699cc</span> 左框</span><br><span class="line">border-right : <span class="number">1px</span> solid <span class="number">#6699cc</span> 右框</span><br><span class="line">border: <span class="number">1px</span> solid <span class="number">#6699cc</span> 四边框</span><br></pre></td></tr></table></figure></li>
 </ol>
-]]></content>
-      <tags>
-        <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>web-html-meta</title>
-    <url>/2020/01/22/web-html-meta/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>The HTML <code>&lt;meta&gt;</code> element represents metadata that
-cannot be represented by other HTML meta-related elements, like
-<code>&lt;base&gt;</code>, <code>&lt;link&gt;</code>,
-<code>&lt;script&gt;</code>, <code>&lt;style&gt;</code> or
-<code>&lt;title&gt;</code>.</p>
-<span id="more"></span>
-<p>viewport</p>
-<p>使用元视口代码控制浏览器视口的宽度和缩放比例。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>添加 width=device-width
-以便与屏幕宽度（以设备无关像素为单位）进行匹配。</li>
-<li>添加 initial-scale=1 以便将 CSS 像素与设备无关像素的比例设为
-1:1。</li>
-<li>确保在不停用用户缩放功能的情况下，您的网页也可以访问。</li>
-</ul>
-<p>除了设置 initial-scale 外，您还可以在视口上设置以下属性：</p>
-<ul>
-<li>minimum-scale</li>
-<li>maximum-scale</li>
-<li>user-scalable</li>
-</ul>
-<p>但是，设置后，这些属性可以停用用户缩放视口的功能，可能会造成网页访问方面的问题。</p>
 ]]></content>
       <tags>
         <tag>前端</tag>
@@ -3699,18 +3699,6 @@ aside页面左或右模块， footer底脚模块。</p>
       </tags>
   </entry>
   <entry>
-    <title>windows 快捷方式</title>
-    <url>/2021/08/10/windows-lnk/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<p>C#</p>
-<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> 创建桌面快捷键</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;LnkName&quot;&gt;</span>快捷键名称<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;AssemblyFullPath&quot;&gt;</span>程序集的完整路径<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;IconLocation&quot;&gt;</span>图标位置<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;Description&quot;&gt;</span>描述<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;returns&gt;</span><span class="doctag">&lt;/returns&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">bool</span> <span class="title">CreateDesktopShortcut</span>(<span class="params"><span class="built_in">string</span> LnkName, <span class="built_in">string</span> AssemblyFullPath, <span class="built_in">string</span> IconLocation = <span class="literal">null</span>, <span class="built_in">string</span> Description = <span class="literal">null</span></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">string</span> DesktopLnkPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), <span class="string">$&quot;<span class="subst">&#123;LnkName&#125;</span>.lnk&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (File.Exists(DesktopLnkPath)) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    IWshRuntimeLibrary.IWshShortcut shortcut = <span class="keyword">new</span> IWshRuntimeLibrary.WshShell().CreateShortcut(DesktopLnkPath);</span><br><span class="line">    shortcut.WorkingDirectory = Path.GetDirectoryName(AssemblyFullPath);</span><br><span class="line">    shortcut.TargetPath = AssemblyFullPath;</span><br><span class="line">    shortcut.WindowStyle = <span class="number">1</span>;</span><br><span class="line">    shortcut.Description = Description;</span><br><span class="line">    shortcut.IconLocation = IconLocation ?? AssemblyFullPath;</span><br><span class="line">    shortcut.Save();</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <tags>
-        <tag>Windows</tag>
-        <tag>cshape</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>wordpress</title>
     <url>/2019/08/07/wordpress/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
@@ -3721,6 +3709,18 @@ WordPress</a></li>
 </ul>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 下载最新版 wordpress</span></span><br><span class="line">wget https://wordpress.org/latest.tar.gz</span><br><span class="line"><span class="comment"># 解压</span></span><br><span class="line">tar -zxvf latest.tar.gz</span><br></pre></td></tr></table></figure>
 ]]></content>
+  </entry>
+  <entry>
+    <title>windows 快捷方式</title>
+    <url>/2021/08/10/windows-lnk/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<p>C#</p>
+<figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> 创建桌面快捷键</span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;/summary&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;LnkName&quot;&gt;</span>快捷键名称<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;AssemblyFullPath&quot;&gt;</span>程序集的完整路径<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;IconLocation&quot;&gt;</span>图标位置<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;param name=&quot;Description&quot;&gt;</span>描述<span class="doctag">&lt;/param&gt;</span></span></span><br><span class="line"><span class="comment"><span class="doctag">///</span> <span class="doctag">&lt;returns&gt;</span><span class="doctag">&lt;/returns&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">bool</span> <span class="title">CreateDesktopShortcut</span>(<span class="params"><span class="built_in">string</span> LnkName, <span class="built_in">string</span> AssemblyFullPath, <span class="built_in">string</span> IconLocation = <span class="literal">null</span>, <span class="built_in">string</span> Description = <span class="literal">null</span></span>)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">string</span> DesktopLnkPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), <span class="string">$&quot;<span class="subst">&#123;LnkName&#125;</span>.lnk&quot;</span>);</span><br><span class="line">    <span class="keyword">if</span> (File.Exists(DesktopLnkPath)) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    IWshRuntimeLibrary.IWshShortcut shortcut = <span class="keyword">new</span> IWshRuntimeLibrary.WshShell().CreateShortcut(DesktopLnkPath);</span><br><span class="line">    shortcut.WorkingDirectory = Path.GetDirectoryName(AssemblyFullPath);</span><br><span class="line">    shortcut.TargetPath = AssemblyFullPath;</span><br><span class="line">    shortcut.WindowStyle = <span class="number">1</span>;</span><br><span class="line">    shortcut.Description = Description;</span><br><span class="line">    shortcut.IconLocation = IconLocation ?? AssemblyFullPath;</span><br><span class="line">    shortcut.Save();</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <tags>
+        <tag>Windows</tag>
+        <tag>cshape</tag>
+      </tags>
   </entry>
   <entry>
     <title>易班 APP</title>
