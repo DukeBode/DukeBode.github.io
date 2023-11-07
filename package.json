@@ -25,6 +25,7 @@
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
     "hexo-theme-next": "^8.17.1",
-    "hexo-tag-aplayer": "^3.0.4"
+    "hexo-tag-aplayer": "^3.0.4",
+    "hexo-sliding-spoiler": "^1.2.1"
   }
 }
