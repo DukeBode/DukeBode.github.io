@@ -31,7 +31,7 @@
 <meta property="og:description" content="1234decimal v &#x3D; decimal.Parse(&quot;123.00&quot;);            var s &#x3D; v.ToString(&quot;#L#E#D#C#K#E#D#C#J#E#D#C#I#E#D#C#H#E#D#C#G#E#D#C#F#E#D#C0.0B0A&#x2F;&quot;);            var d &#x3D; Regex.Replace(s, @&amp;qu">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-03-19T19:26:55.000Z">
-<meta property="article:modified_time" content="2023-11-07T07:18:40.666Z">
+<meta property="article:modified_time" content="2023-11-07T10:23:13.407Z">
 <meta property="article:author" content="Duke Bode">
 <meta property="article:tag" content="cshape">
 <meta name="twitter:card" content="summary">
@@ -249,7 +249,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-11-07 07:18:40" itemprop="dateModified" datetime="2023-11-07T07:18:40+00:00">2023-11-07</time>
+      <time title="Modified: 2023-11-07 10:23:13" itemprop="dateModified" datetime="2023-11-07T10:23:13+00:00">2023-11-07</time>
     </span>
 
   
@@ -263,7 +263,7 @@
     
     <div class="post-body" itemprop="articleBody"><span id="more"></span>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">decimal v = decimal.Parse(&quot;123.00&quot;);</span><br><span class="line">            var s = v.ToString(&quot;#L#E#D#C#K#E#D#C#J#E#D#C#I#E#D#C#H#E#D#C#G#E#D#C#F#E#D#C0.0B0A/&quot;);</span><br><span class="line">            var d = Regex.Replace(s, @&quot;(((?&lt;=^-)|(^[^-]))[^1-9]*((?=[1-9])|((?&lt;c&gt;0\.)[^1-9]*(?=/$))))|((?&lt;=[1-9]A)/)|((?&lt;z&gt;0)[0A-E]*((?=[1-9])|(?&lt;-z&gt;(?=[F-L\./]|$))))|((?&lt;b&gt;[F-L])(?&lt;z&gt;0)[0A-L]*(?=[1-9]|(?&lt;-z&gt;(?=[\./]|$))))&quot;, &quot;$&#123;b&#125;$&#123;z&#125;$&#123;c&#125;&quot;);</span><br><span class="line">            var r = Regex.Replace(d, &quot;.&quot;, m =&gt; &quot;正，负元整零壹贰叁肆伍陆柒捌玖拾屲亗岌岄岪峘分角拾佰仟万亿兆京垓秭穰沟涧正载极&quot;[m.Value[0] - &#x27;+&#x27;].ToString());</span><br></pre></td></tr></table></figure>
-
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 
     

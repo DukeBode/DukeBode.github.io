@@ -31,7 +31,7 @@
 <meta property="og:description" content="组合是数学的重要概念之一。从 n 个不同元素中每次取出 m 个不同元素 ，不管其顺序合成一组，称为从 n 个元素中不重复地选取 m 个元素的一个组合。所有这样的组合的种数称为组合数。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-05T13:28:31.000Z">
-<meta property="article:modified_time" content="2023-11-07T07:18:40.666Z">
+<meta property="article:modified_time" content="2023-11-07T10:23:13.407Z">
 <meta property="article:author" content="Duke Bode">
 <meta name="twitter:card" content="summary">
 
@@ -248,7 +248,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-11-07 07:18:40" itemprop="dateModified" datetime="2023-11-07T07:18:40+00:00">2023-11-07</time>
+      <time title="Modified: 2023-11-07 10:23:13" itemprop="dateModified" datetime="2023-11-07T10:23:13+00:00">2023-11-07</time>
     </span>
 
   
@@ -284,7 +284,7 @@ C_n^m=\frac{A_n^m}{m!}=\frac{n!}{(n-m)!m!}=\frac{\prod_{i=n-m+1}^{n}i}{m!}=C_n^{
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">combinations</span>(<span class="params">n,m</span>):</span><br><span class="line">    result = <span class="number">1</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">min</span>(n-m,m)):</span><br><span class="line">        result=result*(n-i)//(i+<span class="number">1</span>)</span><br><span class="line">    <span class="keyword">return</span> result</span><br></pre></td></tr></table></figure>
 <p><a
 target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzI4MzM2MDgyMQ==&amp;mid=2247484700&amp;idx=1&amp;sn=a92cd5b572f3426215c5077edd911566&amp;chksm=eb8aae46dcfd27504c6c32c3c2b7d12756b97b2850354366e7841ca71df38e9590891dea9c5f&amp;mpshare=1&amp;scene=1&amp;srcid=0105CnjEy8AVCvacDDGmaD2l&amp;sharer_sharetime=1578196700974&amp;sharer_shareid=3726fbb92179608ce6915a88bf3209c9&amp;exportkey=AeVJmUCXvaPlGzrSnNstWZE%3D&amp;pass_ticket=BTWnZASExfQ2s44l%2Faa1gGcF8st07sk22Ohh%2BQylaMjuas6mCV6xn8HzMRrOrhta#rd">Python版组合数计算方法优化思路和源码</a></p>
-
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 
     
