@@ -2,123 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://dukebode.github.io/2020/03/24/os-windows/</loc>
-    
-    <lastmod>2023-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/2019/07/08/php-env/</loc>
-    
-    <lastmod>2023-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/2019/07/31/php-run/</loc>
-    
-    <lastmod>2023-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/2018/06/03/powershell/</loc>
-    
-    <lastmod>2023-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/2018/07/18/python-Django/</loc>
-    
-    <lastmod>2023-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/2019/07/16/python-Jupyter/</loc>
-    
-    <lastmod>2023-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/2020/01/05/python-combinations/</loc>
-    
-    <lastmod>2023-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/2019/10/25/python-database/</loc>
-    
-    <lastmod>2023-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/2020/03/27/python-functions/</loc>
-    
-    <lastmod>2023-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/2018/11/17/python-linux/</loc>
-    
-    <lastmod>2023-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/2020/02/06/python-web/</loc>
-    
-    <lastmod>2023-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/2019/10/21/python-win/</loc>
-    
-    <lastmod>2023-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://dukebode.github.io/2019/11/09/python-wheel/</loc>
-    
-    <lastmod>2023-11-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://dukebode.github.io/2022/03/19/rmb/</loc>
     
     <lastmod>2023-11-07</lastmod>
@@ -164,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://dukebode.github.io/2020/01/21/web-html/</loc>
+    <loc>https://dukebode.github.io/2020/01/22/web-html-meta/</loc>
     
     <lastmod>2023-11-07</lastmod>
     
@@ -173,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://dukebode.github.io/2020/01/22/web-html-meta/</loc>
+    <loc>https://dukebode.github.io/2020/01/21/web-html/</loc>
     
     <lastmod>2023-11-07</lastmod>
     
@@ -633,6 +516,123 @@
   
   <url>
     <loc>https://dukebode.github.io/2018/11/17/os-tool-python-env/</loc>
+    
+    <lastmod>2023-11-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dukebode.github.io/2020/03/24/os-windows/</loc>
+    
+    <lastmod>2023-11-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dukebode.github.io/2019/07/08/php-env/</loc>
+    
+    <lastmod>2023-11-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dukebode.github.io/2019/07/31/php-run/</loc>
+    
+    <lastmod>2023-11-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dukebode.github.io/2018/06/03/powershell/</loc>
+    
+    <lastmod>2023-11-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dukebode.github.io/2018/07/18/python-Django/</loc>
+    
+    <lastmod>2023-11-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dukebode.github.io/2019/07/16/python-Jupyter/</loc>
+    
+    <lastmod>2023-11-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dukebode.github.io/2020/01/05/python-combinations/</loc>
+    
+    <lastmod>2023-11-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dukebode.github.io/2019/10/25/python-database/</loc>
+    
+    <lastmod>2023-11-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dukebode.github.io/2020/03/27/python-functions/</loc>
+    
+    <lastmod>2023-11-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dukebode.github.io/2018/11/17/python-linux/</loc>
+    
+    <lastmod>2023-11-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dukebode.github.io/2020/02/06/python-web/</loc>
+    
+    <lastmod>2023-11-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dukebode.github.io/2019/11/09/python-wheel/</loc>
+    
+    <lastmod>2023-11-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dukebode.github.io/2019/10/21/python-win/</loc>
     
     <lastmod>2023-11-07</lastmod>
     

@@ -3161,6 +3161,55 @@ id="部署测试uwsgi-中-httphttp-socketsocket-区别unix套字节">部署测�
       </tags>
   </entry>
   <entry>
+    <title>python wheel 打包</title>
+    <url>/2019/11/09/python-wheel/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p><a href="https://packaging.python.org/">官方教程</a> <a
+href="https://packaging.python.org/overview/">概述</a> <a
+href="https://packaging.python.org/tutorials/">教程</a> <a
+href="https://packaging.python.org/guides/">指南</a></p>
+<span id="more"></span>
+<h3 id="github-action">github action</h3>
+<ol type="1">
+<li>创建 GitHub 仓库</li>
+<li>配置 pypi token</li>
+<li>配置 action 脚本</li>
+<li>配置本地 git 环境</li>
+<li>配置 本地仓库</li>
+<li>配置打包及开发环境</li>
+</ol>
+<h3 id="最小pypi包">最小pypi包</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">.gitignore</span><br><span class="line">LICENSE</span><br><span class="line">README.md</span><br><span class="line">setup.py</span><br><span class="line">docs/</span><br><span class="line">    /README.md</span><br><span class="line">module/</span><br><span class="line">    /__init__.py <span class="comment"># python 包标志</span></span><br><span class="line">    /__main__.py</span><br></pre></td></tr></table></figure>
+<h3 id="打包环境">打包环境</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># bdist</span></span><br><span class="line"><span class="comment"># bdist_wheel</span></span><br><span class="line">pip install setuptools wheel twine</span><br><span class="line"><span class="comment"># twine upload dist/*</span></span><br></pre></td></tr></table></figure>
+<h3 id="init.py"><strong>init</strong>.py</h3>
+<blockquote>
+<p><strong>init</strong>.py 文件表明当前文件夹为 Python
+模块,模块被导入时实际为此文件，模块方式运行时先执行此文件。</p>
+</blockquote>
+<h4 id="init.py-中常配置的模块参数"><strong>init</strong>.py
+中常配置的模块参数</h4>
+<ul>
+<li><strong>all</strong> 指定 <code>form package import *</code>
+的内容</li>
+<li><strong>version</strong> 指定版本</li>
+</ul>
+<h3 id="main.py"><strong>main</strong>.py</h3>
+<blockquote>
+<p><strong>main</strong>.py
+文件表明当前文件夹可作为模块运行，可以文件夹、模块方式运行时执行此文件，相当于依赖模块的示例程序。</p>
+</blockquote>
+<h3 id="setup.py">setup.py</h3>
+<blockquote>
+<p>setup.py 文件是 setuptools
+打包的脚本文件，文件内应当写明包相关信息，以及其它的附属操作。</p>
+</blockquote>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 官方示例</span></span><br><span class="line"><span class="comment"># https://github.com/pypa/sampleproject/blob/master/setup.py</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># read the contents of README file</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;README.md&quot;</span>, <span class="string">&quot;r&quot;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> fh:</span><br><span class="line">    long_description = fh.read()</span><br><span class="line"></span><br><span class="line">setuptools.setup(</span><br><span class="line">    <span class="comment"># https://packaging.python.org/guides/distributing-packages-using-setuptools/</span></span><br><span class="line">    name=<span class="string">&quot;example-pkg-YOUR-USERNAME-HERE&quot;</span>, <span class="comment"># Replace with your own username</span></span><br><span class="line">    version=<span class="string">&quot;0.0.1&quot;</span>,</span><br><span class="line">    author=<span class="string">&quot;Example Author&quot;</span>,</span><br><span class="line">    author_email=<span class="string">&quot;author@example.com&quot;</span>,</span><br><span class="line">    description=<span class="string">&quot;A small example package&quot;</span>,</span><br><span class="line">    long_description=long_description,</span><br><span class="line">    long_description_content_type=<span class="string">&quot;text/markdown&quot;</span>,</span><br><span class="line">    url=<span class="string">&quot;https://github.com/pypa/sampleproject&quot;</span>,</span><br><span class="line">    packages=setuptools.find_packages(),</span><br><span class="line">    classifiers=[</span><br><span class="line">        <span class="comment"># https://pypi.org/classifiers/</span></span><br><span class="line">        <span class="string">&quot;Programming Language :: Python :: 3&quot;</span>,</span><br><span class="line">        <span class="string">&quot;License :: OSI Approved :: MIT License&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Operating System :: OS Independent&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    python_requires=<span class="string">&#x27;&gt;=3.6&#x27;</span>,</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python Windows</title>
     <url>/2019/10/21/python-win/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
@@ -3209,55 +3258,6 @@ gc.get_threshold() 获取gc模块中自动执行垃圾回收的频率 gc.get_cou
 filter(function,iterable) function 返回true保留
 functools.reduce(function,iterable)累function处理 sorted() reverse为ture
 则从大到小，自定义对象需要指定key=lambda obj:obj.属性 lambda x:x*2</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python wheel 打包</title>
-    <url>/2019/11/09/python-wheel/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p><a href="https://packaging.python.org/">官方教程</a> <a
-href="https://packaging.python.org/overview/">概述</a> <a
-href="https://packaging.python.org/tutorials/">教程</a> <a
-href="https://packaging.python.org/guides/">指南</a></p>
-<span id="more"></span>
-<h3 id="github-action">github action</h3>
-<ol type="1">
-<li>创建 GitHub 仓库</li>
-<li>配置 pypi token</li>
-<li>配置 action 脚本</li>
-<li>配置本地 git 环境</li>
-<li>配置 本地仓库</li>
-<li>配置打包及开发环境</li>
-</ol>
-<h3 id="最小pypi包">最小pypi包</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">.gitignore</span><br><span class="line">LICENSE</span><br><span class="line">README.md</span><br><span class="line">setup.py</span><br><span class="line">docs/</span><br><span class="line">    /README.md</span><br><span class="line">module/</span><br><span class="line">    /__init__.py <span class="comment"># python 包标志</span></span><br><span class="line">    /__main__.py</span><br></pre></td></tr></table></figure>
-<h3 id="打包环境">打包环境</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># bdist</span></span><br><span class="line"><span class="comment"># bdist_wheel</span></span><br><span class="line">pip install setuptools wheel twine</span><br><span class="line"><span class="comment"># twine upload dist/*</span></span><br></pre></td></tr></table></figure>
-<h3 id="init.py"><strong>init</strong>.py</h3>
-<blockquote>
-<p><strong>init</strong>.py 文件表明当前文件夹为 Python
-模块,模块被导入时实际为此文件，模块方式运行时先执行此文件。</p>
-</blockquote>
-<h4 id="init.py-中常配置的模块参数"><strong>init</strong>.py
-中常配置的模块参数</h4>
-<ul>
-<li><strong>all</strong> 指定 <code>form package import *</code>
-的内容</li>
-<li><strong>version</strong> 指定版本</li>
-</ul>
-<h3 id="main.py"><strong>main</strong>.py</h3>
-<blockquote>
-<p><strong>main</strong>.py
-文件表明当前文件夹可作为模块运行，可以文件夹、模块方式运行时执行此文件，相当于依赖模块的示例程序。</p>
-</blockquote>
-<h3 id="setup.py">setup.py</h3>
-<blockquote>
-<p>setup.py 文件是 setuptools
-打包的脚本文件，文件内应当写明包相关信息，以及其它的附属操作。</p>
-</blockquote>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 官方示例</span></span><br><span class="line"><span class="comment"># https://github.com/pypa/sampleproject/blob/master/setup.py</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># read the contents of README file</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;README.md&quot;</span>, <span class="string">&quot;r&quot;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> fh:</span><br><span class="line">    long_description = fh.read()</span><br><span class="line"></span><br><span class="line">setuptools.setup(</span><br><span class="line">    <span class="comment"># https://packaging.python.org/guides/distributing-packages-using-setuptools/</span></span><br><span class="line">    name=<span class="string">&quot;example-pkg-YOUR-USERNAME-HERE&quot;</span>, <span class="comment"># Replace with your own username</span></span><br><span class="line">    version=<span class="string">&quot;0.0.1&quot;</span>,</span><br><span class="line">    author=<span class="string">&quot;Example Author&quot;</span>,</span><br><span class="line">    author_email=<span class="string">&quot;author@example.com&quot;</span>,</span><br><span class="line">    description=<span class="string">&quot;A small example package&quot;</span>,</span><br><span class="line">    long_description=long_description,</span><br><span class="line">    long_description_content_type=<span class="string">&quot;text/markdown&quot;</span>,</span><br><span class="line">    url=<span class="string">&quot;https://github.com/pypa/sampleproject&quot;</span>,</span><br><span class="line">    packages=setuptools.find_packages(),</span><br><span class="line">    classifiers=[</span><br><span class="line">        <span class="comment"># https://pypi.org/classifiers/</span></span><br><span class="line">        <span class="string">&quot;Programming Language :: Python :: 3&quot;</span>,</span><br><span class="line">        <span class="string">&quot;License :: OSI Approved :: MIT License&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Operating System :: OS Independent&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    python_requires=<span class="string">&#x27;&gt;=3.6&#x27;</span>,</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>python</tag>
@@ -3516,6 +3516,37 @@ css结构 例：td{font-size:10.5pt;color:#666666} css样式包含两个基础�
       </tags>
   </entry>
   <entry>
+    <title>web-html-meta</title>
+    <url>/2020/01/22/web-html-meta/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>The HTML <code>&lt;meta&gt;</code> element represents metadata that
+cannot be represented by other HTML meta-related elements, like
+<code>&lt;base&gt;</code>, <code>&lt;link&gt;</code>,
+<code>&lt;script&gt;</code>, <code>&lt;style&gt;</code> or
+<code>&lt;title&gt;</code>.</p>
+<span id="more"></span>
+<p>viewport</p>
+<p>使用元视口代码控制浏览器视口的宽度和缩放比例。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>添加 width=device-width
+以便与屏幕宽度（以设备无关像素为单位）进行匹配。</li>
+<li>添加 initial-scale=1 以便将 CSS 像素与设备无关像素的比例设为
+1:1。</li>
+<li>确保在不停用用户缩放功能的情况下，您的网页也可以访问。</li>
+</ul>
+<p>除了设置 initial-scale 外，您还可以在视口上设置以下属性：</p>
+<ul>
+<li>minimum-scale</li>
+<li>maximum-scale</li>
+<li>user-scalable</li>
+</ul>
+<p>但是，设置后，这些属性可以停用用户缩放视口的功能，可能会造成网页访问方面的问题。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hyper Text Markup Language</title>
     <url>/2020/01/21/web-html/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>HTML (HyperText Markup Language) is the most basic building block of
@@ -3662,37 +3693,6 @@ aside页面左或右模块， footer底脚模块。</p>
 <h2 id="页面内跳转">页面内跳转</h2>
 <p>如果需要跳转到页面指定的位置，可在该位置设置元素的id属性，然后为链接添加href="#id"。例如：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line">&lt; body id=&quot;top&quot; &gt;</span><br><span class="line">...</span><br><span class="line">&lt; a href=&quot;#top&quot; &gt;Back to top&lt; /a &gt;</span><br><span class="line">...</span><br><span class="line">&lt; /body &gt;</span><br></pre></td></tr></table></figure>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>web-html-meta</title>
-    <url>/2020/01/22/web-html-meta/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>The HTML <code>&lt;meta&gt;</code> element represents metadata that
-cannot be represented by other HTML meta-related elements, like
-<code>&lt;base&gt;</code>, <code>&lt;link&gt;</code>,
-<code>&lt;script&gt;</code>, <code>&lt;style&gt;</code> or
-<code>&lt;title&gt;</code>.</p>
-<span id="more"></span>
-<p>viewport</p>
-<p>使用元视口代码控制浏览器视口的宽度和缩放比例。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>添加 width=device-width
-以便与屏幕宽度（以设备无关像素为单位）进行匹配。</li>
-<li>添加 initial-scale=1 以便将 CSS 像素与设备无关像素的比例设为
-1:1。</li>
-<li>确保在不停用用户缩放功能的情况下，您的网页也可以访问。</li>
-</ul>
-<p>除了设置 initial-scale 外，您还可以在视口上设置以下属性：</p>
-<ul>
-<li>minimum-scale</li>
-<li>maximum-scale</li>
-<li>user-scalable</li>
-</ul>
-<p>但是，设置后，这些属性可以停用用户缩放视口的功能，可能会造成网页访问方面的问题。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>前端</tag>
