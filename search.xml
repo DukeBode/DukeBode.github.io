@@ -3699,18 +3699,6 @@ aside页面左或右模块， footer底脚模块。</p>
       </tags>
   </entry>
   <entry>
-    <title>wordpress</title>
-    <url>/2019/08/07/wordpress/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<ul>
-<li><a
-href="https://codex.wordpress.org/zh-cn:%E5%AE%89%E8%A3%85_WordPress">官方教程-安装
-WordPress</a></li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 下载最新版 wordpress</span></span><br><span class="line">wget https://wordpress.org/latest.tar.gz</span><br><span class="line"><span class="comment"># 解压</span></span><br><span class="line">tar -zxvf latest.tar.gz</span><br></pre></td></tr></table></figure>
-]]></content>
-  </entry>
-  <entry>
     <title>windows 快捷方式</title>
     <url>/2021/08/10/windows-lnk/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
@@ -3721,6 +3709,18 @@ WordPress</a></li>
         <tag>Windows</tag>
         <tag>cshape</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>wordpress</title>
+    <url>/2019/08/07/wordpress/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<ul>
+<li><a
+href="https://codex.wordpress.org/zh-cn:%E5%AE%89%E8%A3%85_WordPress">官方教程-安装
+WordPress</a></li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 下载最新版 wordpress</span></span><br><span class="line">wget https://wordpress.org/latest.tar.gz</span><br><span class="line"><span class="comment"># 解压</span></span><br><span class="line">tar -zxvf latest.tar.gz</span><br></pre></td></tr></table></figure>
+]]></content>
   </entry>
   <entry>
     <title>易班 APP</title>
