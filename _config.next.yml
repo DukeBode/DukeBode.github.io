@@ -139,7 +139,15 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  GitHub: https://github.com/DukeBode || fab fa-github
+  RSS: /atom.xml || fa fa-rss
+  Github: https://github.com/DukeBode || fab fa-github
+  微视: https://video.weishi.qq.com/tDGaUYvH || fa fa-video
+  快手: https://v.kuaishou.com/10446tX || fa fa-video
+  抖音: https://v.douyin.com/i91gnVE/ || fa fa-video
+  哔哩哔哩: https://b23.tv/w0ntwkD || fab fa-bilibili
+  小红书: https://www.xiaohongshu.com/user/profile/64d4332f000000000b0061e7 || 
+  波点音乐: https://h5app.kuwo.cn/m/bdpersonal/index.html?uid=20774524 || fa fa-music
+  Weibo: https://weibo.com/u/2190042072 || fab fa-weibo
   #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
@@ -278,12 +286,13 @@ follow_me:
   #Telegram: https://t.me/channel_name || fab fa-telegram
   #WeChat: /images/wechat_channel.jpg || fab fa-weixin
   RSS: /atom.xml || fa fa-rss
-  Github: https://github.com/DukeBode || fab fa-github
+  #Github: https://github.com/DukeBode || fab fa-github
   微视: https://video.weishi.qq.com/tDGaUYvH || fa fa-video
-  快手: https://v.kuaishou.com/10446tX || fa fa-video
-  抖音: https://v.douyin.com/i91gnVE/ || fa fa-video
-  哔哩哔哩: https://b23.tv/w0ntwkD || fab fa-biliili
-  波点音乐: https://h5app.kuwo.cn/m/bdpersonal/index.html?uid=20774524 || fab fa-music
+  #快手: https://v.kuaishou.com/10446tX || fa fa-video
+  #抖音: https://v.douyin.com/i91gnVE/ || fa fa-video
+  哔哩哔哩: https://b23.tv/w0ntwkD || fab fa-bilibili
+  小红书: https://www.xiaohongshu.com/user/profile/64d4332f000000000b0061e7 || 
+  #波点音乐: https://h5app.kuwo.cn/m/bdpersonal/index.html?uid=20774524 || fa fa-music
   Weibo: https://weibo.com/u/2190042072 || fab fa-weibo
 
 # Related popular posts
