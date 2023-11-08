@@ -298,23 +298,6 @@ JavaScript 互操作性，通常简称为 JavaScript 互操作或 JS
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>Docker</title>
-    <url>/2019/06/07/Docker/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<h1 id="部署-nginx">部署 nginx</h1>
-<ul>
-<li>仓库查找镜像 <code>docker search nginx</code></li>
-<li>拉取官网镜像 <code>docker pull nginx</code></li>
-<li>查看本地镜像 <code>docker images</code></li>
-<li>启动所需容器 <code>docker run -d -p 80:80 nginx</code></li>
-<li>80端口打开</li>
-</ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>软件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux</title>
     <url>/2019/07/29/Linux/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Linux Frequently Asked Questions</p>
@@ -484,6 +467,23 @@ CertUtil: -hashfile 命令成功完成。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>FAQ</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Docker</title>
+    <url>/2019/06/07/Docker/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<h1 id="部署-nginx">部署 nginx</h1>
+<ul>
+<li>仓库查找镜像 <code>docker search nginx</code></li>
+<li>拉取官网镜像 <code>docker pull nginx</code></li>
+<li>查看本地镜像 <code>docker images</code></li>
+<li>启动所需容器 <code>docker run -d -p 80:80 nginx</code></li>
+<li>80端口打开</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>软件</tag>
       </tags>
   </entry>
   <entry>
@@ -3031,6 +3031,12 @@ href="https://docs.sqlalchemy.org/">Docs</a></td>
       </tags>
   </entry>
   <entry>
+    <title>python-functions</title>
+    <url>/2020/03/27/python-functions/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>Python 3.x</title>
     <url>/2018/11/17/python-linux/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="python-3-安装">Python 3 安装</h2>
@@ -3045,12 +3051,6 @@ href="https://docs.sqlalchemy.org/">Docs</a></td>
         <tag>Django</tag>
         <tag>框架</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>python-functions</title>
-    <url>/2020/03/27/python-functions/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>Python Web</title>
@@ -3422,37 +3422,6 @@ Code是简化的代码编辑器，支持诸如调试，任务运行和版本控�
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>web-html-meta</title>
-    <url>/2020/01/22/web-html-meta/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>The HTML <code>&lt;meta&gt;</code> element represents metadata that
-cannot be represented by other HTML meta-related elements, like
-<code>&lt;base&gt;</code>, <code>&lt;link&gt;</code>,
-<code>&lt;script&gt;</code>, <code>&lt;style&gt;</code> or
-<code>&lt;title&gt;</code>.</p>
-<span id="more"></span>
-<p>viewport</p>
-<p>使用元视口代码控制浏览器视口的宽度和缩放比例。</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<ul>
-<li>添加 width=device-width
-以便与屏幕宽度（以设备无关像素为单位）进行匹配。</li>
-<li>添加 initial-scale=1 以便将 CSS 像素与设备无关像素的比例设为
-1:1。</li>
-<li>确保在不停用用户缩放功能的情况下，您的网页也可以访问。</li>
-</ul>
-<p>除了设置 initial-scale 外，您还可以在视口上设置以下属性：</p>
-<ul>
-<li>minimum-scale</li>
-<li>maximum-scale</li>
-<li>user-scalable</li>
-</ul>
-<p>但是，设置后，这些属性可以停用用户缩放视口的功能，可能会造成网页访问方面的问题。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Cascading Style Sheets</title>
     <url>/2020/01/21/web-css/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Cascading Style Sheets (CSS) is a stylesheet language used to
@@ -3523,6 +3492,37 @@ css结构 例：td{font-size:10.5pt;color:#666666} css样式包含两个基础�
 <li>颜色单位</li>
 <li>url单位 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="selector-tag">div</span>属性</span><br><span class="line"><span class="attribute">color</span> : <span class="number">#999999</span>   文字颜色</span><br><span class="line">font-family : 宋体 文字字型</span><br><span class="line">font-size : <span class="number">10pt</span> 文字大小</span><br><span class="line">font-style:itelic 文字斜体育</span><br><span class="line">font-variant:small-caps 小字体</span><br><span class="line">letter-spacing : <span class="number">1pt</span> 文字间距</span><br><span class="line">line-height : <span class="number">200%</span> 设定行高</span><br><span class="line">font-weight:bold 文字粗体</span><br><span class="line">vertical-align:sub 下标字</span><br><span class="line">vertical-align:super 上标字</span><br><span class="line">text-decoration:line-through 加?h除线</span><br><span class="line">text-decoration:overline 加顶线</span><br><span class="line">text-decoration:underline 加底线</span><br><span class="line">text-decoration:none ?h除连接底线</span><br><span class="line">text-transform : capitalize 首字大写</span><br><span class="line">text-transform : uppercase 英文大写</span><br><span class="line">text-transform : lowercase 英文写</span><br><span class="line">text-align:right 文字*右对齐</span><br><span class="line">text-align:left 文字*左对齐</span><br><span class="line">text-align:center 文字置中对齐</span><br><span class="line">这些是一些简单的文字效果，可以应用到css的页面中。　</span><br><span class="line">背景</span><br><span class="line">background-color:black 背景颜色</span><br><span class="line">background-image : none 背景图片</span><br><span class="line">background-attachment : fixed 固定背景</span><br><span class="line">background-repeat : repeat 重复排列-网页预设</span><br><span class="line">background-repeat : no-repeat 不重复排列</span><br><span class="line">background-repeat : repeat-x 在x轴重复排列</span><br><span class="line">background-repeat : repeat-y 在y轴重复排列</span><br><span class="line">background-position : <span class="number">90%</span> <span class="number">90%</span> 背景图片x与y轴的位置 　</span><br><span class="line">链接</span><br><span class="line">A 所有超连接</span><br><span class="line">A:link 超连接文字格式</span><br><span class="line">A:visited 浏览过的连接文字格式</span><br><span class="line">A:active 按下连接的格式</span><br><span class="line">A:hover 鼠标移至连接</span><br><span class="line">边框</span><br><span class="line">border-top : <span class="number">1px</span> solid black 上框</span><br><span class="line">border-bottom : <span class="number">1px</span> solid <span class="number">#6699cc</span> 下框</span><br><span class="line">border-left : <span class="number">1px</span> solid <span class="number">#6699cc</span> 左框</span><br><span class="line">border-right : <span class="number">1px</span> solid <span class="number">#6699cc</span> 右框</span><br><span class="line">border: <span class="number">1px</span> solid <span class="number">#6699cc</span> 四边框</span><br></pre></td></tr></table></figure></li>
 </ol>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>web-html-meta</title>
+    <url>/2020/01/22/web-html-meta/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>The HTML <code>&lt;meta&gt;</code> element represents metadata that
+cannot be represented by other HTML meta-related elements, like
+<code>&lt;base&gt;</code>, <code>&lt;link&gt;</code>,
+<code>&lt;script&gt;</code>, <code>&lt;style&gt;</code> or
+<code>&lt;title&gt;</code>.</p>
+<span id="more"></span>
+<p>viewport</p>
+<p>使用元视口代码控制浏览器视口的宽度和缩放比例。</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>添加 width=device-width
+以便与屏幕宽度（以设备无关像素为单位）进行匹配。</li>
+<li>添加 initial-scale=1 以便将 CSS 像素与设备无关像素的比例设为
+1:1。</li>
+<li>确保在不停用用户缩放功能的情况下，您的网页也可以访问。</li>
+</ul>
+<p>除了设置 initial-scale 外，您还可以在视口上设置以下属性：</p>
+<ul>
+<li>minimum-scale</li>
+<li>maximum-scale</li>
+<li>user-scalable</li>
+</ul>
+<p>但是，设置后，这些属性可以停用用户缩放视口的功能，可能会造成网页访问方面的问题。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>前端</tag>
@@ -3743,6 +3743,30 @@ src="/img/yiban/180526a.png" alt="功能截图" /></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>程序执行环境</title>
+    <url>/2019/06/07/%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E7%8E%AF%E5%A2%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="参数列表">参数列表</h2>
+<p>linux 命令行规范</p>
+<ol type="1">
+<li>短参数：以单横开头，后跟单一字符，例如：<code>ls -h</code></li>
+<li>长参数：以双横开头，后跟字符串，例如：<code>ls -help</code></li>
+</ol>
+<p>程序访问参数列表的方法</p>
+<ol type="1">
+<li>主函数的参数<code>argc</code>和<code>argv</code></li>
+<li>程序接受命令行的输入参数，并解释</li>
+</ol>
+<h2 id="环境变量">环境变量</h2>
+<ul>
+<li>程序推出码</li>
+<li>系统调用错误处理</li>
+<li>资源管理</li>
+<li>系统日志</li>
+<li>用户信息</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>什么是传感器</title>
     <url>/2018/01/14/%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/1_%E4%BB%80%E4%B9%88%E6%98%AF%E4%BC%A0%E6%84%9F%E5%99%A8/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h1 id="什么是传感器">什么是传感器</h1>
@@ -3800,30 +3824,6 @@ src="/img/yiban/180526a.png" alt="功能截图" /></p>
 <ul>
 <li>本课程论及范围 &gt;
 利用<code>微加工</code>和<code>集成工艺</code>，把一个或多个传感器及其信号处理、补偿电路集成在同一个芯片（<code>SoC，System-on-Chip</code>）</li>
-</ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>程序执行环境</title>
-    <url>/2019/06/07/%E7%A8%8B%E5%BA%8F%E6%89%A7%E8%A1%8C%E7%8E%AF%E5%A2%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="参数列表">参数列表</h2>
-<p>linux 命令行规范</p>
-<ol type="1">
-<li>短参数：以单横开头，后跟单一字符，例如：<code>ls -h</code></li>
-<li>长参数：以双横开头，后跟字符串，例如：<code>ls -help</code></li>
-</ol>
-<p>程序访问参数列表的方法</p>
-<ol type="1">
-<li>主函数的参数<code>argc</code>和<code>argv</code></li>
-<li>程序接受命令行的输入参数，并解释</li>
-</ol>
-<h2 id="环境变量">环境变量</h2>
-<ul>
-<li>程序推出码</li>
-<li>系统调用错误处理</li>
-<li>资源管理</li>
-<li>系统日志</li>
-<li>用户信息</li>
 </ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
