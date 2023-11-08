@@ -6,7 +6,7 @@ tags:
   - blog
 ---
 
-## 读前准备
+## 1. 读前准备
 - [x] node install
 - [x] hexo project
 - [ ] hexo-generator-feed
@@ -14,7 +14,7 @@ tags:
 
 <!-- more -->
 
-### 创建 GitPage 仓库
+### 1.1. 创建 GitPage 仓库
 
 登录 GitHub,在相关位置输入上文记录的内容。[登录地址](https://github.com/login)
 
@@ -24,7 +24,7 @@ tags:
 
 ![仓库创建界面](/img/gitpage/2.png)
 
-### 配置config
+### 1.2. 配置config
 
 ```diff
 # _config.yml

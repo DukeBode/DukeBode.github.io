@@ -146,7 +146,6 @@ social:
   哔哩哔哩: https://b23.tv/w0ntwkD
   波点音乐: https://h5app.kuwo.cn/m/bdpersonal/index.html?uid=20774524
   #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
-  Weibo: https://weibo.com/u/2190042072 || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
@@ -284,6 +283,9 @@ follow_me:
   #Telegram: https://t.me/channel_name || fab fa-telegram
   #WeChat: /images/wechat_channel.jpg || fab fa-weixin
   RSS: /atom.xml || fa fa-rss
+  Github: / || fa fa-github
+  bilibili: / || fab fa-bilibili
+  Weibo: https://weibo.com/u/2190042072 || fab fa-weibo
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
@@ -708,7 +710,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # For more information: http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
-  enable: false
+  enable: true
   total_visitors: true
   total_visitors_icon: fa fa-user
   total_views: true

@@ -47,7 +47,7 @@ yarn global add docusaurus-init
 
 [hexo 官网](https://hexo.io/)
 
-## 软件/插件
+## 1. 软件/插件
 
 [NodeJS 官网](https://nodejs.org) | 
 [VSCode 官网](https://code.visualstudio.com/) | 
@@ -59,5 +59,5 @@ yarn global add docusaurus-init
 - shell 执行 
 `npm install hexo-cli -g` 命令安装  hexo-cli
 
-## 记事本
+## 2. 记事本
 首行 .LOG
