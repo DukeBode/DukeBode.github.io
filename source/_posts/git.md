@@ -125,7 +125,18 @@ git -T git@github.com
 
 3. git push origin master --force
 
-## 10. 参考文章
+## 10. 模块
+```sh
+# 添加默认分支
+git submodule add url [path]
+# 添加指定分支
+git submodule add -b dev git@ip:src/name.git submodule_filename
+# 更新 submodule 为远程项目的最新版本
+git submodule update --remote
+git clone url.git --recurse-submodules
+```
+
+## 11. 参考文章
 
 1. [Git命令备份](https://www.jianshu.com/p/dbb352ea14cf)
 1. [Git配置多个SSH-Key](https://gitee.com/help/articles/4229)
@@ -133,3 +144,4 @@ git -T git@github.com
 1. [在Windows下配置多个git账号](https://www.cnblogs.com/liuguanglin/p/8351616.html)
 1. [Linux下安装Git](https://blog.csdn.net/sinat_29963957/article/details/81256227)
 1. [CentOS安装GIT](https://www.cnblogs.com/sahara/p/5683066.html)
+3. [Git Submodule 使用](https://zhuanlan.zhihu.com/p/374662328)
