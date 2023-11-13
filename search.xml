@@ -1718,7 +1718,9 @@ origin --all</p>
 <li><p>git reset --soft</p></li>
 <li><p>git push origin master --force</p></li>
 </ol>
-<h2 id="参考文章">10. 参考文章</h2>
+<h2 id="模块">10. 模块</h2>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加默认分支</span></span><br><span class="line">git submodule add url [path]</span><br><span class="line"><span class="comment"># 添加指定分支</span></span><br><span class="line">git submodule add -b dev git@ip:src/name.git submodule_filename</span><br><span class="line"><span class="comment"># 更新 submodule 为远程项目的最新版本</span></span><br><span class="line">git submodule update --remote</span><br><span class="line">git <span class="built_in">clone</span> url.git --recurse-submodules</span><br></pre></td></tr></table></figure>
+<h2 id="参考文章">11. 参考文章</h2>
 <ol type="1">
 <li><a
 href="https://www.jianshu.com/p/dbb352ea14cf">Git命令备份</a></li>
@@ -1732,6 +1734,8 @@ href="https://www.cnblogs.com/liuguanglin/p/8351616.html">在Windows下配置多
 href="https://blog.csdn.net/sinat_29963957/article/details/81256227">Linux下安装Git</a></li>
 <li><a
 href="https://www.cnblogs.com/sahara/p/5683066.html">CentOS安装GIT</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/374662328">Git Submodule
+使用</a></li>
 </ol>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>

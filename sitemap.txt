@@ -1,3 +1,6 @@
+https://dukebode.github.io/2019/07/08/php-env/
+https://dukebode.github.io/2019/07/31/php-run/
+https://dukebode.github.io/2018/06/03/powershell/
 https://dukebode.github.io/2018/07/18/python-Django/
 https://dukebode.github.io/2019/07/16/python-Jupyter/
 https://dukebode.github.io/2020/01/05/python-combinations/
@@ -65,9 +68,6 @@ https://dukebode.github.io/2019/08/06/os-tool-node/
 https://dukebode.github.io/2020/03/02/os-tool-oracle/
 https://dukebode.github.io/2018/11/17/os-tool-python-env/
 https://dukebode.github.io/2020/03/24/os-windows/
-https://dukebode.github.io/2019/07/08/php-env/
-https://dukebode.github.io/2019/07/31/php-run/
-https://dukebode.github.io/2018/06/03/powershell/
 https://dukebode.github.io/T201
 https://dukebode.github.io/T201A
 https://dukebode.github.io/T301
