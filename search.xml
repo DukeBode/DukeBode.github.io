@@ -1719,7 +1719,7 @@ origin --all</p>
 <li><p>git push origin master --force</p></li>
 </ol>
 <h2 id="模块">10. 模块</h2>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加默认分支</span></span><br><span class="line">git submodule add url [path]</span><br><span class="line"><span class="comment"># 添加指定分支</span></span><br><span class="line">git submodule add -b dev git@ip:src/name.git submodule_filename</span><br><span class="line"><span class="comment"># 更新 submodule 为远程项目的最新版本</span></span><br><span class="line">git submodule update --remote</span><br><span class="line">git <span class="built_in">clone</span> url.git --recurse-submodules</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加默认分支</span></span><br><span class="line">git submodule add url [path]</span><br><span class="line"><span class="comment"># 添加指定分支</span></span><br><span class="line">git submodule add -b dev git@ip:src/name.git submodule_filename</span><br><span class="line"><span class="comment"># 更新 submodule 为远程项目的最新版本</span></span><br><span class="line"> update --remote</span><br><span class="line">git <span class="built_in">clone</span> url.git --recurse-submodules</span><br></pre></td></tr></table></figure>
 <h2 id="参考文章">11. 参考文章</h2>
 <ol type="1">
 <li><a
@@ -2007,6 +2007,18 @@ href="https://mirror.bjtu.edu.cn/">北京交通大学自由与开源软件镜像
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
+    <title>OS Setting</title>
+    <url>/2019/06/07/os-setting/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="windows">windows</h2>
+<p>暴力删除废弃文件夹 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">DEL</span> /F /A /Q \\?\%<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">RD</span> /S /Q \\?\%<span class="number">1</span></span><br></pre></td></tr></table></figure> /P 删除每一个文件之前提示确认。 /F
+强制删除只读文件。 /S 从所有子目录删除指定文件。 /Q
+安静模式。删除全局通配符时，不要求确认。 /A
+根据属性选择要删除的文件。</p>
+<p>cmd /c dir：是执行完dir命令后关闭命令窗口；</p>
+<p>cmd /k dir：是执行完dir命令后不关闭命令窗口。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>System Variables Path</title>
     <url>/2020/02/19/os-path/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>The PATH variable makes it easy to run commonly used programs located
@@ -2127,18 +2139,6 @@ PATH
 <h3 id="设置-path-1">设置 path</h3>
 <p><span
 class="math inline">\(Env:path=&quot;./.venv/Scripts/;&quot;+\)</span>Env:path</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>OS Setting</title>
-    <url>/2019/06/07/os-setting/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="windows">windows</h2>
-<p>暴力删除废弃文件夹 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">DEL</span> /F /A /Q \\?\%<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">RD</span> /S /Q \\?\%<span class="number">1</span></span><br></pre></td></tr></table></figure> /P 删除每一个文件之前提示确认。 /F
-强制删除只读文件。 /S 从所有子目录删除指定文件。 /Q
-安静模式。删除全局通配符时，不要求确认。 /A
-根据属性选择要删除的文件。</p>
-<p>cmd /c dir：是执行完dir命令后关闭命令窗口；</p>
-<p>cmd /k dir：是执行完dir命令后不关闭命令窗口。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -2388,31 +2388,6 @@ Linux 7.5上安装Node.js</a></p>
       </tags>
   </entry>
   <entry>
-    <title>oracle</title>
-    <url>/2020/03/02/os-tool-oracle/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<ul>
-<li><p><a
-href="https://www.oracle.com/database/technologies/oracle-database-software-downloads.html">Database
-Software Downloads | Oracle</a></p></li>
-<li><p><a
-href="https://docs.oracle.com/en/database/oracle/oracle-database/index.html">Oracle
-Database Documentation - Oracle Database</a></p></li>
-<li><p>Oracle Enterprise Manager Database Express</p></li>
-</ul>
-<p>https://localhost:5500/em</p>
-<ul>
-<li>lsnrctl 监听服务管理</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看运行状态</span></span><br><span class="line">lsnrctl status</span><br><span class="line"><span class="comment"># 启动监听</span></span><br><span class="line">lsnrctl start</span><br><span class="line"><span class="comment"># 关闭监听</span></span><br><span class="line">lsnrctl stop</span><br></pre></td></tr></table></figure>
-<ul>
-<li>sqlplus</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sqlplus -H</span><br><span class="line"><span class="comment"># 不登录</span></span><br><span class="line">sqlplus /nolog</span><br><span class="line"><span class="comment"># 超级管理员</span></span><br><span class="line">conn / as sysdba <span class="comment"># 操作系统身份认证</span></span><br><span class="line">conn sys as sysdba</span><br><span class="line"><span class="comment"># 普通管理员</span></span><br><span class="line">conn system</span><br><span class="line"><span class="comment"># 普通用户(用户名无效)</span></span><br><span class="line">conn scott</span><br></pre></td></tr></table></figure>
-<figure class="highlight sql"><figcaption><span>plus</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 启动实例并打开数据库</span></span><br><span class="line">startup</span><br><span class="line"><span class="comment">-- 关闭实例</span></span><br><span class="line">shutdown</span><br><span class="line"><span class="comment">-- 查看当前登录用户</span></span><br><span class="line"><span class="keyword">show</span> <span class="keyword">user</span>;</span><br><span class="line"><span class="comment">-- 查看当前登录的用户信息</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> user_users;</span><br><span class="line"><span class="comment">-- 查询用户</span></span><br><span class="line"><span class="keyword">select</span> username <span class="keyword">from</span> dba_users;</span><br><span class="line"><span class="comment">-- 执行 sql 文件，导入 scott 用户</span></span><br><span class="line"><span class="variable">@oracle_installer_path</span>\rdbms\admin\scott.sql</span><br><span class="line"><span class="comment">-- 解锁 scott 用户</span></span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">user</span> scott account unlock ; </span><br><span class="line"><span class="comment">-- 设置 scott 用户的密码为 tiger</span></span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">user</span> scott identified <span class="keyword">by</span> tiger;</span><br></pre></td></tr></table></figure>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>Python 3.x</title>
     <url>/2018/11/17/os-tool-python-env/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="python-3-安装">Python 3 安装</h2>
@@ -2447,6 +2422,31 @@ https://docs.conda.io/en/latest/miniconda.html</li>
         <tag>Django</tag>
         <tag>框架</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>oracle</title>
+    <url>/2020/03/02/os-tool-oracle/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<ul>
+<li><p><a
+href="https://www.oracle.com/database/technologies/oracle-database-software-downloads.html">Database
+Software Downloads | Oracle</a></p></li>
+<li><p><a
+href="https://docs.oracle.com/en/database/oracle/oracle-database/index.html">Oracle
+Database Documentation - Oracle Database</a></p></li>
+<li><p>Oracle Enterprise Manager Database Express</p></li>
+</ul>
+<p>https://localhost:5500/em</p>
+<ul>
+<li>lsnrctl 监听服务管理</li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看运行状态</span></span><br><span class="line">lsnrctl status</span><br><span class="line"><span class="comment"># 启动监听</span></span><br><span class="line">lsnrctl start</span><br><span class="line"><span class="comment"># 关闭监听</span></span><br><span class="line">lsnrctl stop</span><br></pre></td></tr></table></figure>
+<ul>
+<li>sqlplus</li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sqlplus -H</span><br><span class="line"><span class="comment"># 不登录</span></span><br><span class="line">sqlplus /nolog</span><br><span class="line"><span class="comment"># 超级管理员</span></span><br><span class="line">conn / as sysdba <span class="comment"># 操作系统身份认证</span></span><br><span class="line">conn sys as sysdba</span><br><span class="line"><span class="comment"># 普通管理员</span></span><br><span class="line">conn system</span><br><span class="line"><span class="comment"># 普通用户(用户名无效)</span></span><br><span class="line">conn scott</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><figcaption><span>plus</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 启动实例并打开数据库</span></span><br><span class="line">startup</span><br><span class="line"><span class="comment">-- 关闭实例</span></span><br><span class="line">shutdown</span><br><span class="line"><span class="comment">-- 查看当前登录用户</span></span><br><span class="line"><span class="keyword">show</span> <span class="keyword">user</span>;</span><br><span class="line"><span class="comment">-- 查看当前登录的用户信息</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> user_users;</span><br><span class="line"><span class="comment">-- 查询用户</span></span><br><span class="line"><span class="keyword">select</span> username <span class="keyword">from</span> dba_users;</span><br><span class="line"><span class="comment">-- 执行 sql 文件，导入 scott 用户</span></span><br><span class="line"><span class="variable">@oracle_installer_path</span>\rdbms\admin\scott.sql</span><br><span class="line"><span class="comment">-- 解锁 scott 用户</span></span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">user</span> scott account unlock ; </span><br><span class="line"><span class="comment">-- 设置 scott 用户的密码为 tiger</span></span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">user</span> scott identified <span class="keyword">by</span> tiger;</span><br></pre></td></tr></table></figure>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>Windows</title>
