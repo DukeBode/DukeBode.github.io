@@ -132,7 +132,7 @@ git submodule add url [path]
 # 添加指定分支
 git submodule add -b dev git@ip:src/name.git submodule_filename
 # 更新 submodule 为远程项目的最新版本
-git submodule update --remote
+ update --remote
 git clone url.git --recurse-submodules
 ```
 
