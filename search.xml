@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Blazor-WebAssembly</title>
+    <url>/2021/01/04/Blazor-WebAssembly/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<h2 id="名词解释">1. 名词解释</h2>
+<h3 id="blazor-webassembly">1.1. Blazor WebAssembly</h3>
+<blockquote>
+<p>Blazor WebAssembly 是单页应用 (SPA) 框架，用于使用 .NET
+生成交互式客户端 Web 应用。 Blazor WebAssembly
+使用无插件或将代码重新编译为其他语言的开放式 Web 标准。 Blazor
+WebAssembly 适用于所有新式 Web 浏览器，包括移动浏览器。</p>
+</blockquote>
+<h3 id="blazor">1.2. Blazor</h3>
+<blockquote>
+<p>Blazor 是一个使用 .NET 生成交互式客户端 Web UI 的框架。使用 C# 代替
+JavaScript 来编写代码，创建信息丰富的交互式 UI，共享使用 .NET
+编写的服务器端和客户端应用逻辑。</p>
+</blockquote>
+<h3 id="webassembly">1.3. WebAssembly</h3>
+<blockquote>
+<p>WebAssembly（缩写为
+wasm），是针对快速下载和最大执行速度优化的压缩字节码格式。 WebAssembly
+是开放的 Web 标准，支持用于无插件的 Web 浏览器。通过 JavaScript（称为
+JavaScript 互操作性，通常简称为 JavaScript 互操作或 JS
+互操作）访问浏览器的完整功能 。 通过浏览器中的 WebAssembly 执行的 .NET
+代码在浏览器的 JavaScript
+沙盒中运行，沙盒提供的保护可防御客户端计算机上的恶意操作。</p>
+</blockquote>
+<p>Razor 组件文件名要求首字母大写，文件以razor为后缀。</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>BeautifulSoup</title>
     <url>/2018/01/23/BeautifulSoup/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Beautiful
@@ -265,37 +296,6 @@ soup.select()，返回类型是 list</p>
         <tag>python</tag>
         <tag>爬虫</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Blazor-WebAssembly</title>
-    <url>/2021/01/04/Blazor-WebAssembly/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<h2 id="名词解释">1. 名词解释</h2>
-<h3 id="blazor-webassembly">1.1. Blazor WebAssembly</h3>
-<blockquote>
-<p>Blazor WebAssembly 是单页应用 (SPA) 框架，用于使用 .NET
-生成交互式客户端 Web 应用。 Blazor WebAssembly
-使用无插件或将代码重新编译为其他语言的开放式 Web 标准。 Blazor
-WebAssembly 适用于所有新式 Web 浏览器，包括移动浏览器。</p>
-</blockquote>
-<h3 id="blazor">1.2. Blazor</h3>
-<blockquote>
-<p>Blazor 是一个使用 .NET 生成交互式客户端 Web UI 的框架。使用 C# 代替
-JavaScript 来编写代码，创建信息丰富的交互式 UI，共享使用 .NET
-编写的服务器端和客户端应用逻辑。</p>
-</blockquote>
-<h3 id="webassembly">1.3. WebAssembly</h3>
-<blockquote>
-<p>WebAssembly（缩写为
-wasm），是针对快速下载和最大执行速度优化的压缩字节码格式。 WebAssembly
-是开放的 Web 标准，支持用于无插件的 Web 浏览器。通过 JavaScript（称为
-JavaScript 互操作性，通常简称为 JavaScript 互操作或 JS
-互操作）访问浏览器的完整功能 。 通过浏览器中的 WebAssembly 执行的 .NET
-代码在浏览器的 JavaScript
-沙盒中运行，沙盒提供的保护可防御客户端计算机上的恶意操作。</p>
-</blockquote>
-<p>Razor 组件文件名要求首字母大写，文件以razor为后缀。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>Docker</title>
@@ -577,7 +577,7 @@ palette）。</li>
     <url>/2018/11/10/asm-base/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
 <h1 id="pc-硬件的基本特征">PC 硬件的基本特征</h1>
-<h2 id="计算机存储单位">1、计算机存储单位</h2>
+<h2 id="计算机存储单位">1. 1、计算机存储单位</h2>
 <ol type="1">
 <li>位 bit(Binary digit)) &gt; 一个位表示 0 或 1</li>
 <li>字节 &gt; 一组 9
@@ -596,7 +596,7 @@ href="">奇偶校验</a>）</li>
 <li>千字节（KB） &gt; 2^10等于1024字节</li>
 <li>兆字节（MB） &gt; 2^20等于1048576字节</li>
 </ol>
-<h2 id="二进制数系统">2、二进制数系统</h2>
+<h2 id="二进制数系统">2. 2、二进制数系统</h2>
 <blockquote>
 <p>位的集合可以表示任何数字的值。 - 二进制数的值是由为 1
 的位及其相关的位置所决定的。</p>
@@ -661,7 +661,7 @@ href="">奇偶校验</a>）</li>
 </tr>
 </tbody>
 </table>
-<h2 id="十六进制表示">3、十六进制表示</h2>
+<h2 id="十六进制表示">3. 3、十六进制表示</h2>
 <table>
 <thead>
 <tr class="header">
@@ -787,7 +787,231 @@ href="">奇偶校验</a>）</li>
 </tr>
 </tbody>
 </table>
-<h2 id="pc-的组成">4、PC 的组成</h2>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>n+1位定点数表示</th>
+<th><span class="math inline">\(D \geq 2^n\)</span></th>
+<th><span class="math inline">\(D&lt;2^n\)</span></th>
+<th><span class="math inline">\(D \geq 0\)</span></th>
+<th><span class="math inline">\(D \leq 0\)</span></th>
+<th><span class="math inline">\(\times 2,D&lt;0\)</span></th>
+<th><span class="math inline">\(\div 2,D&lt;0\)</span></th>
+<th><span class="math inline">\(\times 2,D&gt;0\)</span></th>
+<th><span class="math inline">\(\div 2，D&gt;0\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>无符号数</td>
+<td><span class="math inline">\(D\)</span></td>
+<td><span class="math inline">\(D\)</span></td>
+<td><span class="math inline">\(D\)</span></td>
+<td>不存在</td>
+<td>不存在</td>
+<td>不存在</td>
+<td>低位补0</td>
+<td>高位补0</td>
+</tr>
+<tr class="even">
+<td>原码</td>
+<td><span class="math inline">\(2^n-D\)</span></td>
+<td><span class="math inline">\(D\)</span></td>
+<td><span class="math inline">\(D\)</span></td>
+<td><span class="math inline">\(2^n-D\)</span></td>
+<td>低位补0</td>
+<td>符号位后补0</td>
+<td>低位补0</td>
+<td>高位补0</td>
+</tr>
+<tr class="odd">
+<td>反码</td>
+<td><span class="math inline">\(D-(2^{n+1}-1)\)</span></td>
+<td><span class="math inline">\(D\)</span></td>
+<td><span class="math inline">\(D\)</span></td>
+<td><span class="math inline">\(D+(2^{n+1}-1)\)</span></td>
+<td>低位补1</td>
+<td>符号位后补1</td>
+<td>高位补0</td>
+<td>低位补0</td>
+</tr>
+<tr class="even">
+<td>补码</td>
+<td><span class="math inline">\(D-2^{n+1}\)</span></td>
+<td><span class="math inline">\(D\)</span></td>
+<td><span class="math inline">\(D\)</span></td>
+<td><span class="math inline">\(D+2^{n+1}\)</span></td>
+<td>低位补0</td>
+<td>符号位后补1</td>
+<td>低位补0</td>
+<td>高位补0</td>
+</tr>
+<tr class="odd">
+<td>移码</td>
+<td><span class="math inline">\(D-2^n\)</span></td>
+<td><span class="math inline">\(D-2^n\)</span></td>
+<td><span class="math inline">\(D+2^n\)</span></td>
+<td><span class="math inline">\(D+2^n\)</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\([A+B]_补=[A]_补+[B]_补\)</span> <span
+class="math inline">\([A-B]_补=[A]_补+[-B]_补\)</span></p>
+<h2 id="逻辑门运算">4. 逻辑门运算</h2>
+<table>
+<thead>
+<tr class="header">
+<th>A</th>
+<th>NOT</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td><span class="math inline">\(\overline{A}\)</span></td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>符号特征</td>
+<td>三角形小圆圈</td>
+</tr>
+</tbody>
+</table>
+<table>
+<colgroup>
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+<col style="width: 15%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>A</th>
+<th>B</th>
+<th style="text-align: center;">AND</th>
+<th style="text-align: center;">OR</th>
+<th style="text-align: center;">NAND</th>
+<th style="text-align: center;">NOR</th>
+<th style="text-align: center;">XOR</th>
+<th style="text-align: center;">XNOR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A</td>
+<td>B</td>
+<td style="text-align: center;">与</td>
+<td style="text-align: center;">或</td>
+<td style="text-align: center;">与非</td>
+<td style="text-align: center;">或非</td>
+<td style="text-align: center;">异或</td>
+<td style="text-align: center;">同或</td>
+</tr>
+<tr class="even">
+<td>A</td>
+<td>B</td>
+<td style="text-align: center;"><span class="math inline">\(A \cdot
+B\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(A +
+B\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\overline{A
+\cdot B}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\overline{A
++ B}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(A \oplus
+B\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(A \odot
+B\)</span></td>
+</tr>
+<tr class="odd">
+<td>0</td>
+<td>0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td>0</td>
+<td>1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td style="text-align: center;">输入端是直线</td>
+<td style="text-align: center;">输入端是曲线</td>
+<td style="text-align: center;">与门小圆圈</td>
+<td style="text-align: center;">或门小圆圈</td>
+<td style="text-align: center;">或门输入端多条曲线</td>
+<td style="text-align: center;">异或门小圆圈</td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(\overline{ A + B }=\overline{A} \cdot
+\overline{B}\)</span> <span class="math inline">\(\overline{A \cdot B} =
+\overline{A} +\overline{B}\)</span> ## 5. 带标志加法器</p>
+<p>向高位的进位 <span class="math inline">\(C_i=A_i \cdot B_i+(A_i
+\oplus B_i) \cdot C_{i-1}\)</span> 本位和 <span
+class="math inline">\(S_i=A_i \oplus B_i \oplus C_{i-1}\)</span>
+有符号数溢出 <span class="math inline">\(OF=C_n \oplus C_{n-1}\)</span>
+有符号数为负 <span class="math inline">\(SF=S_n\)</span> 零标志 <span
+class="math inline">\(ZF=\sum S\)</span> 无符号数溢出 <span
+class="math inline">\(CF=C_n \oplus C_0\)</span></p>
+<h2 id="pc-的组成">6. 4、PC 的组成</h2>
 <blockquote>
 <p>PC
 的主要组成部分是它的主板。它包括<code>处理器</code>、<code>协处理器</code>、<code>主存储器</code>、<code>接插件</code>以及为可选电路卡用的<code>扩展槽</code>。这些槽和接插件为下面部件提供了出入口，比如<code>只读存储器 ROM、随机存取存储器 RAM、硬盘、CD-ROM 设备、附加的主存储器、显示设备、键盘、鼠标、并行与串行设备、声音合成器以及高速缓冲存储器等</code>。处理器利用高速缓冲存储器，减少对较低速主存储器的访问。</p>
@@ -801,7 +1025,7 @@ href="">奇偶校验</a>）</li>
 <li>8088</li>
 </ul></li>
 </ol>
-<h3 id="段寄存器">段寄存器</h3>
+<h3 id="段寄存器">6.1. 段寄存器</h3>
 <table>
 <thead>
 <tr class="header">
@@ -836,7 +1060,7 @@ href="">奇偶校验</a>）</li>
 </tr>
 </tbody>
 </table>
-<h3 id="通用寄存器">通用寄存器</h3>
+<h3 id="通用寄存器">6.2. 通用寄存器</h3>
 <table>
 <thead>
 <tr class="header">
@@ -893,7 +1117,7 @@ href="">奇偶校验</a>）</li>
 </tr>
 </tbody>
 </table>
-<h3 id="标志寄存器">标志寄存器</h3>
+<h3 id="标志寄存器">6.3. 标志寄存器</h3>
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -1272,39 +1496,40 @@ GitPage 固定写法。<a href="https://github.com/new">新建仓库地址</a></
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用
 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
 <span id="more"></span>
-<h2 id="初始化博客环境">初始化博客环境</h2>
+<h2 id="初始化博客环境">1. 初始化博客环境</h2>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
-<h2 id="页面">404 页面</h2>
+<h2 id="页面">2. 页面</h2>
 <p>source 目录下新建 404.md 文件</p>
 <figure class="highlight md"><table><tr><td class="code"><pre><span class="line"><span class="language-xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span></span><br><span class="line">location.href=&quot;https://dukebode.github.io/&quot;;</span><br><span class="line"><span class="language-xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
-<h2 id="cname">CNAME</h2>
+<h2 id="cname">3. CNAME</h2>
 <p>source/CNAME</p>
-<h2 id="主题设置">主题设置</h2>
+<h2 id="主题设置">4. 主题设置</h2>
 <p>theme: duke</p>
-<h2 id="部署至-gitpage">部署至 GitPage</h2>
+<h2 id="部署至-gitpage">5. 部署至 GitPage</h2>
 <p>配置config</p>
 <figure class="highlight diff"><table><tr><td class="code"><pre><span class="line">_config.yml</span><br><span class="line"></span><br><span class="line"><span class="deletion">- type</span></span><br><span class="line"><span class="addition">+ - type: git</span></span><br><span class="line"><span class="addition">+   repo: git@github.com:DukeBode/DukeBode.github.io.git</span></span><br><span class="line"><span class="addition">+   branch: master</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 安装插件</span></span><br><span class="line">yarn add hexo-deployer-git</span><br><span class="line"><span class="comment"># 部署</span></span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<h2 id="git-备份">git 备份</h2>
+<h2 id="git-备份">6. git 备份</h2>
 <p>我们将采用 gitpage 的 backup 分支来备份</p>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># git 仓库</span></span><br><span class="line">git init</span><br><span class="line"><span class="comment"># 添加文件</span></span><br><span class="line">git add *</span><br><span class="line"><span class="comment"># 提交至版本库</span></span><br><span class="line">git commit -m <span class="string">&quot;hexo backup&quot;</span></span><br><span class="line"><span class="comment"># 添加远程仓库</span></span><br><span class="line">git remote add origin git@github.com:DukeBode/DukeBode.github.io.git</span><br><span class="line"><span class="comment"># 创建 backup 分支</span></span><br><span class="line">git branch backup</span><br><span class="line"><span class="comment"># 切换 backup 分支</span></span><br><span class="line">git checkout backup</span><br><span class="line"><span class="comment"># 删除 master 分支</span></span><br><span class="line">git branch -d master</span><br><span class="line"><span class="comment"># 推送 backup 分支</span></span><br><span class="line">git push -u origin backup</span><br></pre></td></tr></table></figure>
-<h2 id="git-恢复">git 恢复</h2>
+<h2 id="git-恢复">7. git 恢复</h2>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b backup git@github.com:DukeBode/DukeBode.github.io.git blog</span><br></pre></td></tr></table></figure>
-<h2 id="多机编写">多机编写</h2>
-<h2 id="网站地图">网站地图</h2>
+<h2 id="多机编写">8. 多机编写</h2>
+<h2 id="网站地图">9. 网站地图</h2>
 <blockquote>
 <p>为搜索引擎提供搜索依据</p>
 </blockquote>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">yarn add hexo-generator-sitemap</span><br></pre></td></tr></table></figure>
-<h2 id="rss-订阅">RSS 订阅</h2>
+<h2 id="rss-订阅">10. RSS 订阅</h2>
 <blockquote>
 <p>方便用户订阅</p>
 </blockquote>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">yarn add hexo-generator-feed</span><br></pre></td></tr></table></figure>
-<h2 id="评论">评论</h2>
+<h2 id="评论">11. 评论</h2>
 <ul>
 <li>gitalk</li>
 </ul>
+<p><a href="https://www.pengfeima.cn/posts/notes/1/"></a></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>blog</tag>
@@ -1434,6 +1659,18 @@ href="https://blog.csdn.net/lucklymm/article/details/89014085">hexo搭建个人�
         <tag>GitPage</tag>
         <tag>博客</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>vimium</title>
+    <url>/2020/01/08/chrome-vimium/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Vimium is a Chrome extension that provides keyboard-based navigation
+and control of the web in the spirit of the Vim editor.</p>
+<span id="more"></span>
+<h3 id="vimium">0.1. vimium</h3>
+<p><a href="https://github.com/philc/vimium">官网</a></p>
+<figure class="highlight plaintext"><figcaption><span>key mappings</span></figcaption><table><tr><td class="code"><pre><span class="line"># Insert your preferred key mappings here.</span><br><span class="line">map h previousTab</span><br><span class="line">map l nextTab</span><br><span class="line"></span><br><span class="line">map H scrollLeft</span><br><span class="line">map J scrollPageDown</span><br><span class="line">map K scrollPageUp</span><br><span class="line">map L scrollRight</span><br><span class="line"></span><br><span class="line">map gh goBack</span><br><span class="line">map gj scrollToBottom</span><br><span class="line">map gk scrollToTop</span><br><span class="line">map gl goForward</span><br><span class="line">map gt Vomnibar.activateTabSelection</span><br><span class="line"></span><br><span class="line">map th firstTab</span><br><span class="line">map tl lastTab</span><br><span class="line"># map tn createTab</span><br><span class="line">map tn Vomnibar.activateInNewTab</span><br><span class="line">map tb Vomnibar.activateBookmarksInNewTab</span><br><span class="line">map tr reload</span><br><span class="line">map tg Vomnibar.activateTabSelection</span><br><span class="line">unmap t</span><br><span class="line"></span><br><span class="line">unmap x</span><br><span class="line">map xx restoreTab</span><br><span class="line">map &#x27; removeTab</span><br><span class="line">map xh&#x27; closeTabsOnLeft</span><br><span class="line">map xl&#x27; closeTabsOnRight</span><br><span class="line">map xo&#x27; closeOtherTabs</span><br><span class="line"></span><br><span class="line">map u Vomnibar.activateEditUrl</span><br><span class="line"></span><br><span class="line">map c LinkHints.activateMode</span><br><span class="line"># map f LinkHints.activateModeToOpenInNewTab</span><br><span class="line">map o LinkHints.activateModeToOpenInNewTab</span><br><span class="line">map mo Vomnibar.activateBookmarksInNewTab</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># w: https://www.wikipedia.org/w/index.php?title=Special:Search&amp;search=%s Wikipedia</span><br><span class="line"></span><br><span class="line"># More examples.</span><br><span class="line">#</span><br><span class="line"># (Vimium supports search completion Wikipedia, as</span><br><span class="line"># above, and for these.)</span><br><span class="line">#</span><br><span class="line"></span><br><span class="line"># l: https://www.google.com/search?q=%s&amp;btnI I&#x27;m feeling lucky...</span><br><span class="line"># y: https://www.youtube.com/results?search_query=%s Youtube</span><br><span class="line"># gm: https://www.google.com/maps?q=%s Google maps</span><br><span class="line">bing: https://www.bing.com/search?q=%s Bing</span><br><span class="line">baidu: https://www.baidu.com/s?wd=%s Baidu</span><br><span class="line">google: https://www.google.com/search?q=%s Google</span><br><span class="line">github: https://github.com/search?q=%s GitHub</span><br><span class="line">weibo: https://s.weibo.com/weibo?q=%s 微博搜索</span><br><span class="line">cqvip: http://www.cqvip.com/main/search.aspx?k=%s 维普期刊</span><br><span class="line">pypi: https://pypi.org/search/?q=%s Python Package Index</span><br><span class="line">te: https://translate.google.cn/#view=home&amp;op=translate&amp;sl=zh-CN&amp;tl=en&amp;text= Google 中译英</span><br><span class="line">x: https://x.cnki.net/kns/brief/Default_Result.aspx?code=SCDB&amp;kw=%s China National Knowledge Infrastructure</span><br><span class="line"># d: https://duckduckgo.com/?q=%s DuckDuckGo</span><br><span class="line"># az: https://www.amazon.com/s/?field-keywords=%s Amazon</span><br><span class="line"># qw: https://www.qwant.com/?q=%s Qwant</span><br></pre></td></tr></table></figure>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>books</title>
@@ -1596,18 +1833,6 @@ INTERFACING</li>
 <li>JAVA语言程序设计</li>
 <li>深入理解计算机网络</li>
 </ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>vimium</title>
-    <url>/2020/01/08/chrome-vimium/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Vimium is a Chrome extension that provides keyboard-based navigation
-and control of the web in the spirit of the Vim editor.</p>
-<span id="more"></span>
-<h3 id="vimium">0.1. vimium</h3>
-<p><a href="https://github.com/philc/vimium">官网</a></p>
-<figure class="highlight plaintext"><figcaption><span>key mappings</span></figcaption><table><tr><td class="code"><pre><span class="line"># Insert your preferred key mappings here.</span><br><span class="line">map h previousTab</span><br><span class="line">map l nextTab</span><br><span class="line"></span><br><span class="line">map H scrollLeft</span><br><span class="line">map J scrollPageDown</span><br><span class="line">map K scrollPageUp</span><br><span class="line">map L scrollRight</span><br><span class="line"></span><br><span class="line">map gh goBack</span><br><span class="line">map gj scrollToBottom</span><br><span class="line">map gk scrollToTop</span><br><span class="line">map gl goForward</span><br><span class="line">map gt Vomnibar.activateTabSelection</span><br><span class="line"></span><br><span class="line">map th firstTab</span><br><span class="line">map tl lastTab</span><br><span class="line"># map tn createTab</span><br><span class="line">map tn Vomnibar.activateInNewTab</span><br><span class="line">map tb Vomnibar.activateBookmarksInNewTab</span><br><span class="line">map tr reload</span><br><span class="line">map tg Vomnibar.activateTabSelection</span><br><span class="line">unmap t</span><br><span class="line"></span><br><span class="line">unmap x</span><br><span class="line">map xx restoreTab</span><br><span class="line">map &#x27; removeTab</span><br><span class="line">map xh&#x27; closeTabsOnLeft</span><br><span class="line">map xl&#x27; closeTabsOnRight</span><br><span class="line">map xo&#x27; closeOtherTabs</span><br><span class="line"></span><br><span class="line">map u Vomnibar.activateEditUrl</span><br><span class="line"></span><br><span class="line">map c LinkHints.activateMode</span><br><span class="line"># map f LinkHints.activateModeToOpenInNewTab</span><br><span class="line">map o LinkHints.activateModeToOpenInNewTab</span><br><span class="line">map mo Vomnibar.activateBookmarksInNewTab</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># w: https://www.wikipedia.org/w/index.php?title=Special:Search&amp;search=%s Wikipedia</span><br><span class="line"></span><br><span class="line"># More examples.</span><br><span class="line">#</span><br><span class="line"># (Vimium supports search completion Wikipedia, as</span><br><span class="line"># above, and for these.)</span><br><span class="line">#</span><br><span class="line"></span><br><span class="line"># l: https://www.google.com/search?q=%s&amp;btnI I&#x27;m feeling lucky...</span><br><span class="line"># y: https://www.youtube.com/results?search_query=%s Youtube</span><br><span class="line"># gm: https://www.google.com/maps?q=%s Google maps</span><br><span class="line">bing: https://www.bing.com/search?q=%s Bing</span><br><span class="line">baidu: https://www.baidu.com/s?wd=%s Baidu</span><br><span class="line">google: https://www.google.com/search?q=%s Google</span><br><span class="line">github: https://github.com/search?q=%s GitHub</span><br><span class="line">weibo: https://s.weibo.com/weibo?q=%s 微博搜索</span><br><span class="line">cqvip: http://www.cqvip.com/main/search.aspx?k=%s 维普期刊</span><br><span class="line">pypi: https://pypi.org/search/?q=%s Python Package Index</span><br><span class="line">te: https://translate.google.cn/#view=home&amp;op=translate&amp;sl=zh-CN&amp;tl=en&amp;text= Google 中译英</span><br><span class="line">x: https://x.cnki.net/kns/brief/Default_Result.aspx?code=SCDB&amp;kw=%s China National Knowledge Infrastructure</span><br><span class="line"># d: https://duckduckgo.com/?q=%s DuckDuckGo</span><br><span class="line"># az: https://www.amazon.com/s/?field-keywords=%s Amazon</span><br><span class="line"># qw: https://www.qwant.com/?q=%s Qwant</span><br></pre></td></tr></table></figure>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -2007,18 +2232,6 @@ href="https://mirror.bjtu.edu.cn/">北京交通大学自由与开源软件镜像
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>OS Setting</title>
-    <url>/2019/06/07/os-setting/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="windows">windows</h2>
-<p>暴力删除废弃文件夹 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">DEL</span> /F /A /Q \\?\%<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">RD</span> /S /Q \\?\%<span class="number">1</span></span><br></pre></td></tr></table></figure> /P 删除每一个文件之前提示确认。 /F
-强制删除只读文件。 /S 从所有子目录删除指定文件。 /Q
-安静模式。删除全局通配符时，不要求确认。 /A
-根据属性选择要删除的文件。</p>
-<p>cmd /c dir：是执行完dir命令后关闭命令窗口；</p>
-<p>cmd /k dir：是执行完dir命令后不关闭命令窗口。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>System Variables Path</title>
     <url>/2020/02/19/os-path/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>The PATH variable makes it easy to run commonly used programs located
@@ -2158,6 +2371,18 @@ class="math inline">\(Env:path=&quot;./.venv/Scripts/;&quot;+\)</span>Env:path</
 </ul>
 <h3 id="图片助手imageassistant">图片助手（ImageAssistant）</h3>
 <p><a href="https://www.pullywood.com/ImageAssistant/">官网</a></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>OS Setting</title>
+    <url>/2019/06/07/os-setting/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="windows">windows</h2>
+<p>暴力删除废弃文件夹 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">DEL</span> /F /A /Q \\?\%<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">RD</span> /S /Q \\?\%<span class="number">1</span></span><br></pre></td></tr></table></figure> /P 删除每一个文件之前提示确认。 /F
+强制删除只读文件。 /S 从所有子目录删除指定文件。 /Q
+安静模式。删除全局通配符时，不要求确认。 /A
+根据属性选择要删除的文件。</p>
+<p>cmd /c dir：是执行完dir命令后关闭命令窗口；</p>
+<p>cmd /k dir：是执行完dir命令后不关闭命令窗口。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -2388,6 +2613,31 @@ Linux 7.5上安装Node.js</a></p>
       </tags>
   </entry>
   <entry>
+    <title>oracle</title>
+    <url>/2020/03/02/os-tool-oracle/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<ul>
+<li><p><a
+href="https://www.oracle.com/database/technologies/oracle-database-software-downloads.html">Database
+Software Downloads | Oracle</a></p></li>
+<li><p><a
+href="https://docs.oracle.com/en/database/oracle/oracle-database/index.html">Oracle
+Database Documentation - Oracle Database</a></p></li>
+<li><p>Oracle Enterprise Manager Database Express</p></li>
+</ul>
+<p>https://localhost:5500/em</p>
+<ul>
+<li>lsnrctl 监听服务管理</li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看运行状态</span></span><br><span class="line">lsnrctl status</span><br><span class="line"><span class="comment"># 启动监听</span></span><br><span class="line">lsnrctl start</span><br><span class="line"><span class="comment"># 关闭监听</span></span><br><span class="line">lsnrctl stop</span><br></pre></td></tr></table></figure>
+<ul>
+<li>sqlplus</li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sqlplus -H</span><br><span class="line"><span class="comment"># 不登录</span></span><br><span class="line">sqlplus /nolog</span><br><span class="line"><span class="comment"># 超级管理员</span></span><br><span class="line">conn / as sysdba <span class="comment"># 操作系统身份认证</span></span><br><span class="line">conn sys as sysdba</span><br><span class="line"><span class="comment"># 普通管理员</span></span><br><span class="line">conn system</span><br><span class="line"><span class="comment"># 普通用户(用户名无效)</span></span><br><span class="line">conn scott</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><figcaption><span>plus</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 启动实例并打开数据库</span></span><br><span class="line">startup</span><br><span class="line"><span class="comment">-- 关闭实例</span></span><br><span class="line">shutdown</span><br><span class="line"><span class="comment">-- 查看当前登录用户</span></span><br><span class="line"><span class="keyword">show</span> <span class="keyword">user</span>;</span><br><span class="line"><span class="comment">-- 查看当前登录的用户信息</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> user_users;</span><br><span class="line"><span class="comment">-- 查询用户</span></span><br><span class="line"><span class="keyword">select</span> username <span class="keyword">from</span> dba_users;</span><br><span class="line"><span class="comment">-- 执行 sql 文件，导入 scott 用户</span></span><br><span class="line"><span class="variable">@oracle_installer_path</span>\rdbms\admin\scott.sql</span><br><span class="line"><span class="comment">-- 解锁 scott 用户</span></span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">user</span> scott account unlock ; </span><br><span class="line"><span class="comment">-- 设置 scott 用户的密码为 tiger</span></span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">user</span> scott identified <span class="keyword">by</span> tiger;</span><br></pre></td></tr></table></figure>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>Python 3.x</title>
     <url>/2018/11/17/os-tool-python-env/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="python-3-安装">Python 3 安装</h2>
@@ -2422,31 +2672,6 @@ https://docs.conda.io/en/latest/miniconda.html</li>
         <tag>Django</tag>
         <tag>框架</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>oracle</title>
-    <url>/2020/03/02/os-tool-oracle/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<ul>
-<li><p><a
-href="https://www.oracle.com/database/technologies/oracle-database-software-downloads.html">Database
-Software Downloads | Oracle</a></p></li>
-<li><p><a
-href="https://docs.oracle.com/en/database/oracle/oracle-database/index.html">Oracle
-Database Documentation - Oracle Database</a></p></li>
-<li><p>Oracle Enterprise Manager Database Express</p></li>
-</ul>
-<p>https://localhost:5500/em</p>
-<ul>
-<li>lsnrctl 监听服务管理</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看运行状态</span></span><br><span class="line">lsnrctl status</span><br><span class="line"><span class="comment"># 启动监听</span></span><br><span class="line">lsnrctl start</span><br><span class="line"><span class="comment"># 关闭监听</span></span><br><span class="line">lsnrctl stop</span><br></pre></td></tr></table></figure>
-<ul>
-<li>sqlplus</li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sqlplus -H</span><br><span class="line"><span class="comment"># 不登录</span></span><br><span class="line">sqlplus /nolog</span><br><span class="line"><span class="comment"># 超级管理员</span></span><br><span class="line">conn / as sysdba <span class="comment"># 操作系统身份认证</span></span><br><span class="line">conn sys as sysdba</span><br><span class="line"><span class="comment"># 普通管理员</span></span><br><span class="line">conn system</span><br><span class="line"><span class="comment"># 普通用户(用户名无效)</span></span><br><span class="line">conn scott</span><br></pre></td></tr></table></figure>
-<figure class="highlight sql"><figcaption><span>plus</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 启动实例并打开数据库</span></span><br><span class="line">startup</span><br><span class="line"><span class="comment">-- 关闭实例</span></span><br><span class="line">shutdown</span><br><span class="line"><span class="comment">-- 查看当前登录用户</span></span><br><span class="line"><span class="keyword">show</span> <span class="keyword">user</span>;</span><br><span class="line"><span class="comment">-- 查看当前登录的用户信息</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> user_users;</span><br><span class="line"><span class="comment">-- 查询用户</span></span><br><span class="line"><span class="keyword">select</span> username <span class="keyword">from</span> dba_users;</span><br><span class="line"><span class="comment">-- 执行 sql 文件，导入 scott 用户</span></span><br><span class="line"><span class="variable">@oracle_installer_path</span>\rdbms\admin\scott.sql</span><br><span class="line"><span class="comment">-- 解锁 scott 用户</span></span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">user</span> scott account unlock ; </span><br><span class="line"><span class="comment">-- 设置 scott 用户的密码为 tiger</span></span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">user</span> scott identified <span class="keyword">by</span> tiger;</span><br></pre></td></tr></table></figure>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>Windows</title>
@@ -3065,6 +3290,55 @@ href="https://docs.sqlalchemy.org/">Docs</a></td>
       </tags>
   </entry>
   <entry>
+    <title>python wheel 打包</title>
+    <url>/2019/11/09/python-wheel/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p><a href="https://packaging.python.org/">官方教程</a> <a
+href="https://packaging.python.org/overview/">概述</a> <a
+href="https://packaging.python.org/tutorials/">教程</a> <a
+href="https://packaging.python.org/guides/">指南</a></p>
+<span id="more"></span>
+<h3 id="github-action">github action</h3>
+<ol type="1">
+<li>创建 GitHub 仓库</li>
+<li>配置 pypi token</li>
+<li>配置 action 脚本</li>
+<li>配置本地 git 环境</li>
+<li>配置 本地仓库</li>
+<li>配置打包及开发环境</li>
+</ol>
+<h3 id="最小pypi包">最小pypi包</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">.gitignore</span><br><span class="line">LICENSE</span><br><span class="line">README.md</span><br><span class="line">setup.py</span><br><span class="line">docs/</span><br><span class="line">    /README.md</span><br><span class="line">module/</span><br><span class="line">    /__init__.py <span class="comment"># python 包标志</span></span><br><span class="line">    /__main__.py</span><br></pre></td></tr></table></figure>
+<h3 id="打包环境">打包环境</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># bdist</span></span><br><span class="line"><span class="comment"># bdist_wheel</span></span><br><span class="line">pip install setuptools wheel twine</span><br><span class="line"><span class="comment"># twine upload dist/*</span></span><br></pre></td></tr></table></figure>
+<h3 id="init.py"><strong>init</strong>.py</h3>
+<blockquote>
+<p><strong>init</strong>.py 文件表明当前文件夹为 Python
+模块,模块被导入时实际为此文件，模块方式运行时先执行此文件。</p>
+</blockquote>
+<h4 id="init.py-中常配置的模块参数"><strong>init</strong>.py
+中常配置的模块参数</h4>
+<ul>
+<li><strong>all</strong> 指定 <code>form package import *</code>
+的内容</li>
+<li><strong>version</strong> 指定版本</li>
+</ul>
+<h3 id="main.py"><strong>main</strong>.py</h3>
+<blockquote>
+<p><strong>main</strong>.py
+文件表明当前文件夹可作为模块运行，可以文件夹、模块方式运行时执行此文件，相当于依赖模块的示例程序。</p>
+</blockquote>
+<h3 id="setup.py">setup.py</h3>
+<blockquote>
+<p>setup.py 文件是 setuptools
+打包的脚本文件，文件内应当写明包相关信息，以及其它的附属操作。</p>
+</blockquote>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 官方示例</span></span><br><span class="line"><span class="comment"># https://github.com/pypa/sampleproject/blob/master/setup.py</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># read the contents of README file</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;README.md&quot;</span>, <span class="string">&quot;r&quot;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> fh:</span><br><span class="line">    long_description = fh.read()</span><br><span class="line"></span><br><span class="line">setuptools.setup(</span><br><span class="line">    <span class="comment"># https://packaging.python.org/guides/distributing-packages-using-setuptools/</span></span><br><span class="line">    name=<span class="string">&quot;example-pkg-YOUR-USERNAME-HERE&quot;</span>, <span class="comment"># Replace with your own username</span></span><br><span class="line">    version=<span class="string">&quot;0.0.1&quot;</span>,</span><br><span class="line">    author=<span class="string">&quot;Example Author&quot;</span>,</span><br><span class="line">    author_email=<span class="string">&quot;author@example.com&quot;</span>,</span><br><span class="line">    description=<span class="string">&quot;A small example package&quot;</span>,</span><br><span class="line">    long_description=long_description,</span><br><span class="line">    long_description_content_type=<span class="string">&quot;text/markdown&quot;</span>,</span><br><span class="line">    url=<span class="string">&quot;https://github.com/pypa/sampleproject&quot;</span>,</span><br><span class="line">    packages=setuptools.find_packages(),</span><br><span class="line">    classifiers=[</span><br><span class="line">        <span class="comment"># https://pypi.org/classifiers/</span></span><br><span class="line">        <span class="string">&quot;Programming Language :: Python :: 3&quot;</span>,</span><br><span class="line">        <span class="string">&quot;License :: OSI Approved :: MIT License&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Operating System :: OS Independent&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    python_requires=<span class="string">&#x27;&gt;=3.6&#x27;</span>,</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python Web</title>
     <url>/2020/02/06/python-web/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Python Web Frequently Asked Questions</p>
@@ -3152,55 +3426,6 @@ id="部署测试uwsgi-中-httphttp-socketsocket-区别unix套字节">部署测�
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>FAQ</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python wheel 打包</title>
-    <url>/2019/11/09/python-wheel/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p><a href="https://packaging.python.org/">官方教程</a> <a
-href="https://packaging.python.org/overview/">概述</a> <a
-href="https://packaging.python.org/tutorials/">教程</a> <a
-href="https://packaging.python.org/guides/">指南</a></p>
-<span id="more"></span>
-<h3 id="github-action">github action</h3>
-<ol type="1">
-<li>创建 GitHub 仓库</li>
-<li>配置 pypi token</li>
-<li>配置 action 脚本</li>
-<li>配置本地 git 环境</li>
-<li>配置 本地仓库</li>
-<li>配置打包及开发环境</li>
-</ol>
-<h3 id="最小pypi包">最小pypi包</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">.gitignore</span><br><span class="line">LICENSE</span><br><span class="line">README.md</span><br><span class="line">setup.py</span><br><span class="line">docs/</span><br><span class="line">    /README.md</span><br><span class="line">module/</span><br><span class="line">    /__init__.py <span class="comment"># python 包标志</span></span><br><span class="line">    /__main__.py</span><br></pre></td></tr></table></figure>
-<h3 id="打包环境">打包环境</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># bdist</span></span><br><span class="line"><span class="comment"># bdist_wheel</span></span><br><span class="line">pip install setuptools wheel twine</span><br><span class="line"><span class="comment"># twine upload dist/*</span></span><br></pre></td></tr></table></figure>
-<h3 id="init.py"><strong>init</strong>.py</h3>
-<blockquote>
-<p><strong>init</strong>.py 文件表明当前文件夹为 Python
-模块,模块被导入时实际为此文件，模块方式运行时先执行此文件。</p>
-</blockquote>
-<h4 id="init.py-中常配置的模块参数"><strong>init</strong>.py
-中常配置的模块参数</h4>
-<ul>
-<li><strong>all</strong> 指定 <code>form package import *</code>
-的内容</li>
-<li><strong>version</strong> 指定版本</li>
-</ul>
-<h3 id="main.py"><strong>main</strong>.py</h3>
-<blockquote>
-<p><strong>main</strong>.py
-文件表明当前文件夹可作为模块运行，可以文件夹、模块方式运行时执行此文件，相当于依赖模块的示例程序。</p>
-</blockquote>
-<h3 id="setup.py">setup.py</h3>
-<blockquote>
-<p>setup.py 文件是 setuptools
-打包的脚本文件，文件内应当写明包相关信息，以及其它的附属操作。</p>
-</blockquote>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 官方示例</span></span><br><span class="line"><span class="comment"># https://github.com/pypa/sampleproject/blob/master/setup.py</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># read the contents of README file</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;README.md&quot;</span>, <span class="string">&quot;r&quot;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> fh:</span><br><span class="line">    long_description = fh.read()</span><br><span class="line"></span><br><span class="line">setuptools.setup(</span><br><span class="line">    <span class="comment"># https://packaging.python.org/guides/distributing-packages-using-setuptools/</span></span><br><span class="line">    name=<span class="string">&quot;example-pkg-YOUR-USERNAME-HERE&quot;</span>, <span class="comment"># Replace with your own username</span></span><br><span class="line">    version=<span class="string">&quot;0.0.1&quot;</span>,</span><br><span class="line">    author=<span class="string">&quot;Example Author&quot;</span>,</span><br><span class="line">    author_email=<span class="string">&quot;author@example.com&quot;</span>,</span><br><span class="line">    description=<span class="string">&quot;A small example package&quot;</span>,</span><br><span class="line">    long_description=long_description,</span><br><span class="line">    long_description_content_type=<span class="string">&quot;text/markdown&quot;</span>,</span><br><span class="line">    url=<span class="string">&quot;https://github.com/pypa/sampleproject&quot;</span>,</span><br><span class="line">    packages=setuptools.find_packages(),</span><br><span class="line">    classifiers=[</span><br><span class="line">        <span class="comment"># https://pypi.org/classifiers/</span></span><br><span class="line">        <span class="string">&quot;Programming Language :: Python :: 3&quot;</span>,</span><br><span class="line">        <span class="string">&quot;License :: OSI Approved :: MIT License&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Operating System :: OS Independent&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    python_requires=<span class="string">&#x27;&gt;=3.6&#x27;</span>,</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>python</tag>
       </tags>
   </entry>
   <entry>
