@@ -11,13 +11,13 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（�
 
 <!-- more -->
 
-## 初始化博客环境
+## 1. 初始化博客环境
 
 ```sh
 hexo init blog
 ```
 
-## 404 页面
+## 2. 页面
 
 source 目录下新建 404.md 文件
 
@@ -27,15 +27,15 @@ location.href="https://dukebode.github.io/";
 </script>
 ```
 
-## CNAME
+## 3. CNAME
 
 source/CNAME
 
-## 主题设置
+## 4. 主题设置
 
 theme: duke
 
-## 部署至 GitPage
+## 5. 部署至 GitPage
 
 配置config
 
@@ -55,7 +55,7 @@ yarn add hexo-deployer-git
 hexo d
 ```
 
-## git 备份
+## 6. git 备份
 
 我们将采用 gitpage 的 backup 分支来备份
 
@@ -78,17 +78,17 @@ git branch -d master
 git push -u origin backup
 ```
 
-## git 恢复
+## 7. git 恢复
 
 ```sh
 git clone -b backup git@github.com:DukeBode/DukeBode.github.io.git blog
 ```
 
-## 多机编写
+## 8. 多机编写
 
 
 
-## 网站地图
+## 9. 网站地图
 
 > 为搜索引擎提供搜索依据
 
@@ -96,7 +96,7 @@ git clone -b backup git@github.com:DukeBode/DukeBode.github.io.git blog
 yarn add hexo-generator-sitemap
 ```
 
-## RSS 订阅
+## 10. RSS 订阅
 
 > 方便用户订阅
 
@@ -104,6 +104,8 @@ yarn add hexo-generator-sitemap
 yarn add hexo-generator-feed
 ```
 
-## 评论
+## 11. 评论
 
 - gitalk
+
+[](https://www.pengfeima.cn/posts/notes/1/)
