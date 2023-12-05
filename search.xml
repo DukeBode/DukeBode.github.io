@@ -2232,18 +2232,6 @@ href="https://mirror.bjtu.edu.cn/">北京交通大学自由与开源软件镜像
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>OS Setting</title>
-    <url>/2019/06/07/os-setting/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="windows">windows</h2>
-<p>暴力删除废弃文件夹 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">DEL</span> /F /A /Q \\?\%<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">RD</span> /S /Q \\?\%<span class="number">1</span></span><br></pre></td></tr></table></figure> /P 删除每一个文件之前提示确认。 /F
-强制删除只读文件。 /S 从所有子目录删除指定文件。 /Q
-安静模式。删除全局通配符时，不要求确认。 /A
-根据属性选择要删除的文件。</p>
-<p>cmd /c dir：是执行完dir命令后关闭命令窗口；</p>
-<p>cmd /k dir：是执行完dir命令后不关闭命令窗口。</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>System Variables Path</title>
     <url>/2020/02/19/os-path/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>The PATH variable makes it easy to run commonly used programs located
@@ -2364,6 +2352,18 @@ PATH
 <h3 id="设置-path-1">设置 path</h3>
 <p><span
 class="math inline">\(Env:path=&quot;./.venv/Scripts/;&quot;+\)</span>Env:path</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>OS Setting</title>
+    <url>/2019/06/07/os-setting/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="windows">windows</h2>
+<p>暴力删除废弃文件夹 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">DEL</span> /F /A /Q \\?\%<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">RD</span> /S /Q \\?\%<span class="number">1</span></span><br></pre></td></tr></table></figure> /P 删除每一个文件之前提示确认。 /F
+强制删除只读文件。 /S 从所有子目录删除指定文件。 /Q
+安静模式。删除全局通配符时，不要求确认。 /A
+根据属性选择要删除的文件。</p>
+<p>cmd /c dir：是执行完dir命令后关闭命令窗口；</p>
+<p>cmd /k dir：是执行完dir命令后不关闭命令窗口。</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -3493,17 +3493,6 @@ functools.reduce(function,iterable)累function处理 sorted() reverse为ture
       </tags>
   </entry>
   <entry>
-    <title>Visual Studio Code</title>
-    <url>/2019/07/29/vscode/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Visual Studio
-Code是简化的代码编辑器，支持诸如调试，任务运行和版本控制之类的开发操作。
-<span id="more"></span></p>
-<h3 id="正则匹配">正则匹配</h3>
-<p>匹配HTML单行注释：<code>&lt;!--(.*?)--&gt;</code>
-匹配HTML多行注释：<code>&lt;!--([\s\S|\r]*?)--&gt;</code>或<code>&lt;!--([\w\W]*?)--&gt;</code></p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>shell</title>
     <url>/2018/08/22/shell/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
@@ -3648,6 +3637,17 @@ shell 显示在屏幕上。</p>
 </tr>
 </tbody>
 </table>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>Visual Studio Code</title>
+    <url>/2019/07/29/vscode/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Visual Studio
+Code是简化的代码编辑器，支持诸如调试，任务运行和版本控制之类的开发操作。
+<span id="more"></span></p>
+<h3 id="正则匹配">正则匹配</h3>
+<p>匹配HTML单行注释：<code>&lt;!--(.*?)--&gt;</code>
+匹配HTML多行注释：<code>&lt;!--([\s\S|\r]*?)--&gt;</code>或<code>&lt;!--([\w\W]*?)--&gt;</code></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -3942,15 +3942,6 @@ WordPress</a></li>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>电脑新手指南</title>
-    <url>/2018/06/07/%E7%94%B5%E8%84%91%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>0 系统的选择及安装 1 联网，请备好网线 2 浏览器的使用 3
-我的电脑，配置系统文件 4 软件安装及卸载 5 拒绝广告和病毒 6
-快捷键及shell基础 7 浅谈自学知识 8 电脑是工具，不是玩具 9
-必经之路，交流经验 * 电脑的保养及维护技巧</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>易班 APP</title>
     <url>/2018/05/26/yiban/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>基于 AppInvento 技术对兰州理工大学及易班服务的封装。</p>
@@ -3977,6 +3968,15 @@ WordPress</a></li>
 新增考试资料、天气查询、快递查询、景点门票、净网中心等功能 <img
 src="/img/yiban/180526a.png" alt="功能截图" /></p>
 <p>2018年05月05日 1. 闲的没事造了这么个玩的，还能用</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>电脑新手指南</title>
+    <url>/2018/06/07/%E7%94%B5%E8%84%91%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>0 系统的选择及安装 1 联网，请备好网线 2 浏览器的使用 3
+我的电脑，配置系统文件 4 软件安装及卸载 5 拒绝广告和病毒 6
+快捷键及shell基础 7 浅谈自学知识 8 电脑是工具，不是玩具 9
+必经之路，交流经验 * 电脑的保养及维护技巧</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
