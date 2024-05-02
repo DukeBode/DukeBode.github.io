@@ -5,6 +5,7 @@ tags:
   - Windows
   - cshape
 ---
+为指定程序注册URL Protocol,方便浏览器调用
 
 <!-- more -->
 

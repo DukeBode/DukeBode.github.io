@@ -1,8 +1,13 @@
 ---
 title: emulator
-date: 2023-07-08 20:31:47
-tags:
+date: 2024-05-02 16:37:53
+tags: 
+cover: 
+mathjax: false
 ---
+
+
+<!-- more -->
 
 qemu
 bochs
