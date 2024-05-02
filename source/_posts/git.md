@@ -124,6 +124,7 @@ git -T git@github.com
 2. git reset --soft 
 
 3. git push origin master --force
+4. git clone --depth 1
 
 ## 10. 模块
 ```sh
@@ -132,7 +133,7 @@ git submodule add url [path]
 # 添加指定分支
 git submodule add -b dev git@ip:src/name.git submodule_filename
 # 更新 submodule 为远程项目的最新版本
- update --remote
+git submodule update --remote
 git clone url.git --recurse-submodules
 ```
 
