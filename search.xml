@@ -505,10 +505,10 @@ https://image-charts.com/chart?chs=150x150&amp;cht=qr&amp;chl=Hello%20world&amp;
     <title>SSH 配置</title>
     <url>/2018/06/11/SSH/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<h2 id="口令登录">口令登录</h2>
+<h2 id="口令登录">1. 口令登录</h2>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">ssh [-p 22] [user@]host</span><br></pre></td></tr></table></figure>
 <p>说明： - 默认端口22可省略 - 用户名与本地用户名相同时可省略</p>
-<h2 id="公钥登录">公钥登录</h2>
+<h2 id="公钥登录">2. 公钥登录</h2>
 <pre><code>1. 生成公钥</code></pre>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 格式 </span></span><br><span class="line"><span class="comment"># ssh-keygen -t rsa -C &quot;通常为邮箱&quot; -f &quot;私钥文件绝对路径&quot;</span></span><br><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
 <p>说明： - 私钥口令 passphrase，若担心私钥的安全，设置一个 - 公钥
@@ -1485,6 +1485,13 @@ GitPage 固定写法。<a href="https://github.com/new">新建仓库地址</a></
       </tags>
   </entry>
   <entry>
+    <title>blog-hexo-gitpage</title>
+    <url>/2021/02/25/blog-hexo-gitpage/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<p>Creating a repository for your site</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>HEXO 进阶操作</title>
     <url>/2019/09/22/blog-hexo/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用
@@ -1529,13 +1536,6 @@ Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓
         <tag>blog</tag>
         <tag>hexo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>blog-hexo-gitpage</title>
-    <url>/2021/02/25/blog-hexo-gitpage/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<p>Creating a repository for your site</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>init</title>
@@ -1864,7 +1864,11 @@ and control of the web in the spirit of the Vim editor.</p>
     <title>emulator</title>
     <url>/2024/05/02/emulator/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<p>qemu bochs limbo ExaGear</p>
+<p>ExaGear</p>
+<p><a href="https://www.qemu.org/">qemu</a> <a
+href="https://winlator.org/">winlator</a> <a
+href="https://github.com/limboemu/limbo">limbo</a> <a
+href="https://bochs.sourceforge.io/">bochs</a></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -1875,7 +1879,7 @@ designed to handle everything from small to very large projects with
 speed and efficiency.</p>
 <span id="more"></span>
 <h2 id="常用-git-仓库">1. 常用 Git 仓库</h2>
-<p>腾讯工蜂 https://git.code.tencent.com</p>
+<p>腾讯工蜂 https://git.code.tencent.com gitcode.com</p>
 <h2 id="git">2. git</h2>
 <figure>
 <img src="/img/git/0.png" alt="git 官网" />
@@ -1948,7 +1952,12 @@ origin --all</p>
 </ol>
 <h2 id="模块">10. 模块</h2>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 添加默认分支</span></span><br><span class="line">git submodule add url [path]</span><br><span class="line"><span class="comment"># 添加指定分支</span></span><br><span class="line">git submodule add -b dev git@ip:src/name.git submodule_filename</span><br><span class="line"><span class="comment"># 更新 submodule 为远程项目的最新版本</span></span><br><span class="line">git submodule update --remote</span><br><span class="line">git <span class="built_in">clone</span> url.git --recurse-submodules</span><br></pre></td></tr></table></figure>
-<h2 id="参考文章">11. 参考文章</h2>
+<h2 id="github-访问慢">11. github 访问慢</h2>
+<p>mirrors - GitCode <a
+href="https://gitcode.com/org/mirrors">https://gitcode.com/org/mirrors</a></p>
+<p>使用 gitcode 替代 github 访问源 使用 kkgithub 替换 github
+在线访问下载</p>
+<h2 id="参考文章">12. 参考文章</h2>
 <ol type="1">
 <li><a
 href="https://www.jianshu.com/p/dbb352ea14cf">Git命令备份</a></li>
@@ -2017,13 +2026,35 @@ iPad</li>
 <li>按住顶部按钮，当 Apple 标志出现时，松开顶部按钮</li>
 </ol>
 <p>修改锁屏密码应验证账户密码 重置系统自动云备份</p>
-<h2 id="设置-通用-键盘">4. 设置-通用-键盘</h2>
+<h2 id="快捷键">4. 快捷键</h2>
+<h3 id="文稿快捷键">4.1. 文稿快捷键</h3>
+<ul>
+<li><strong>Control-A</strong>：移至行或段落的开头。</li>
+<li><strong>Control-E</strong>：移至行或段落的末尾。</li>
+<li><strong>Control-F</strong>：向前移动一个字符。</li>
+<li><strong>Control-B</strong>：向后移动一个字符。</li>
+<li><strong>Control-H</strong>：删除插入点左边的字符。也可以使用 Delete
+键。</li>
+<li><strong>Control-D</strong>：删除插入点右边的字符。也可以使用
+Fn-Delete。</li>
+<li><strong>Control-L</strong>：将光标或所选内容置于可见区域中央。</li>
+<li><strong>Control-P</strong>：上移一行。</li>
+<li><strong>Control-N</strong>：下移一行。</li>
+<li><strong>Control-O</strong>：在插入点后新插入一行。</li>
+<li><strong>Control-T</strong>：将插入点后面的字符与插入点前面的字符交换。</li>
+<li><strong>Control-K</strong>：删除插入点与行或段落末尾处之间的文本。</li>
+<li><strong>Command-左花括号 ({)</strong>：左对齐。</li>
+<li><strong>Command-右花括号 (})</strong>：右对齐。</li>
+<li><strong>Shift-Command-竖线 (|)</strong>：居中对齐。</li>
+</ul>
+<p>https://support.apple.com/zh-cn/HT201236</p>
+<h2 id="设置-通用-键盘">5. 设置-通用-键盘</h2>
 <ul>
 <li>关闭智能标点 2023-11-12</li>
 <li>关闭首字母自动大写 2023-11-12</li>
 <li>关闭句号快捷键 2023-11-12</li>
 </ul>
-<h2 id="已知问题">5. 已知问题</h2>
+<h2 id="已知问题">6. 已知问题</h2>
 <ul>
 <li>使用外接显示器时Ipad必须常亮 2023-11-12</li>
 <li>外接显示器触屏不可操作 2023-11-12</li>
@@ -2044,14 +2075,14 @@ iPad</li>
 <li>充电速度低下，虽然支持30W的充电，但送的充电头只有20W。</li>
 <li>官方服务只支持苹果设备，对非苹果设备兼容性非常差。</li>
 </ul>
-<h2 id="外接显示器">6. 外接显示器</h2>
+<h2 id="外接显示器">7. 外接显示器</h2>
 <ul>
 <li>外接显示器的触摸功能与键鼠操作存在冲突，触摸后键鼠失灵</li>
 <li>播放视频时暂停不方便，平板上也无遥控器功能</li>
 <li>视频软件兼容性差，部分全屏难</li>
 <li>发热挺严重</li>
 </ul>
-<h2 id="app">7. app</h2>
+<h2 id="app">8. app</h2>
 <ul>
 <li><a
 href="https://apps.apple.com/cn/app/a-shell/id1473805438">a-Shell</a></li>
@@ -2168,46 +2199,6 @@ Android接入示例</a></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>os-host</title>
-    <url>/2020/02/24/os-host/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>The hosts file is one of several system facilities that assists in
-addressing network nodes in a computer network. It is a common part of
-an operating system's Internet Protocol (IP) implementation, and serves
-the function of translating human-friendly hostnames into numeric
-protocol addresses, called IP addresses, that identify and locate a host
-in an IP network.</p>
-<span id="more"></span>
-<table>
-<thead>
-<tr class="header">
-<th>系统</th>
-<th>host 文件路径</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Windows</td>
-<td>C:</td>
-</tr>
-<tr class="even">
-<td>Linux/Mac</td>
-<td>/etc/hosts</td>
-</tr>
-</tbody>
-</table>
-<h2 id="功能">功能</h2>
-<ul>
-<li>加快域名解析</li>
-<li>重定向恶意域名</li>
-<li>虚拟域名</li>
-</ul>
-<p>https://github.com/googlehosts/hosts</p>
-<p>添加下面两行内容到hosts文件中</p>
-<p>151.101.72.249 github.global.ssl.fastly.net</p>
-<p>192.30.253.112 github.com</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>nginx</title>
     <url>/2018/11/08/nginx/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
@@ -2251,6 +2242,46 @@ href="https://www.cnblogs.com/yuanzai12345/p/5946743.html">Nginx设置expires设
       </tags>
   </entry>
   <entry>
+    <title>os-host</title>
+    <url>/2020/02/24/os-host/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>The hosts file is one of several system facilities that assists in
+addressing network nodes in a computer network. It is a common part of
+an operating system's Internet Protocol (IP) implementation, and serves
+the function of translating human-friendly hostnames into numeric
+protocol addresses, called IP addresses, that identify and locate a host
+in an IP network.</p>
+<span id="more"></span>
+<table>
+<thead>
+<tr class="header">
+<th>系统</th>
+<th>host 文件路径</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Windows</td>
+<td>C:</td>
+</tr>
+<tr class="even">
+<td>Linux/Mac</td>
+<td>/etc/hosts</td>
+</tr>
+</tbody>
+</table>
+<h2 id="功能">1. 功能</h2>
+<ul>
+<li>加快域名解析</li>
+<li>重定向恶意域名</li>
+<li>虚拟域名</li>
+</ul>
+<p>https://github.com/googlehosts/hosts</p>
+<p>添加下面两行内容到hosts文件中</p>
+<p>151.101.72.249 github.global.ssl.fastly.net</p>
+<p>192.30.253.112 github.com</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>开源镜像站</title>
     <url>/2019/09/01/os-mirror/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Mirror sites or mirrors are replicas of other websites or any network
@@ -2286,7 +2317,7 @@ in their own folders. If used unwisely, however, the value of the PATH
 variable can slow down the operating system by searching too many
 locations, or invalid locations.</p>
 <span id="more"></span>
-<h2 id="linux-命令">Linux 命令</h2>
+<h2 id="linux-命令">1. Linux 命令</h2>
 <ol type="1">
 <li>date 时间</li>
 <li>useradd 用户添加</li>
@@ -2299,12 +2330,12 @@ locations, or invalid locations.</p>
 <li>type -a 查看本质</li>
 </ol>
 <p>! 调用历史</p>
-<h3 id="设置-path">设置 path</h3>
+<h3 id="设置-path">1.1. 设置 path</h3>
 <p><code>.profile</code> 记录了 bash 会在哪些目录查找命令。 bash 会根据
 PATH
 变量的设置自动寻找输入的命令。如果有同名的命令，按照路径顺序找到后返回执行，不再继续寻找。有同名的指令可以输入路径运行。</p>
 <p>默认的路径： <figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">~/bin</span><br><span class="line">~/.local/bin</span><br><span class="line">/usr/local/sbin</span><br><span class="line">/usr/local/bin</span><br><span class="line">/usr/sbin</span><br><span class="line">/usr/bin</span><br><span class="line">/sbin</span><br><span class="line">/bin</span><br><span class="line">/usr/games</span><br><span class="line">/usr/local/games</span><br></pre></td></tr></table></figure></p>
-<h2 id="windows-运行常用的命令">Windows 运行常用的命令</h2>
+<h2 id="windows-运行常用的命令">2. Windows 运行常用的命令</h2>
 <table>
 <thead>
 <tr class="header">
@@ -2396,15 +2427,14 @@ PATH
 </tr>
 </tbody>
 </table>
-<h3 id="设置-path-1">设置 path</h3>
-<p><span
-class="math inline">\(Env:path=&quot;./.venv/Scripts/;&quot;+\)</span>Env:path</p>
+<h3 id="设置-path-1">2.1. 设置 path</h3>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">$Env:<span class="built_in">path</span>=&quot;./.venv/Scripts/;&quot;+$Env:<span class="built_in">path</span></span><br></pre></td></tr></table></figure>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>OS Setting</title>
     <url>/2019/06/07/os-setting/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="windows">windows</h2>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="windows">1. windows</h2>
 <p>暴力删除废弃文件夹 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">DEL</span> /F /A /Q \\?\%<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">RD</span> /S /Q \\?\%<span class="number">1</span></span><br></pre></td></tr></table></figure> /P 删除每一个文件之前提示确认。 /F
 强制删除只读文件。 /S 从所有子目录删除指定文件。 /Q
 安静模式。删除全局通配符时，不要求确认。 /A
@@ -2420,15 +2450,18 @@ class="math inline">\(Env:path=&quot;./.venv/Scripts/;&quot;+\)</span>Env:path</
 <ol type="1">
 <li>设置搜索引擎</li>
 </ol>
-<h3 id="vimium">vimium</h3>
+<p>全屏启动</p>
+<p>--kiosk http://cn.bing.com/ --kiosk-printing
+--app=http://cn.bing.com/ --start-maximized</p>
+<h3 id="vimium">0.1. vimium</h3>
 <p><a href="https://github.com/philc/vimium">官网</a></p>
-<h3 id="油猴tampermonkey">油猴（Tampermonkey）</h3>
+<h3 id="油猴tampermonkey">0.2. 油猴（Tampermonkey）</h3>
 <p><a href="http://www.tampermonkey.net/">官网</a></p>
 <ul>
 <li><p>https://greasyfork.org/</p></li>
 <li><p><a href="https://greasyfork.org/zh-CN">Greasy Fork</a></p></li>
 </ul>
-<h3 id="图片助手imageassistant">图片助手（ImageAssistant）</h3>
+<h3 id="图片助手imageassistant">0.3. 图片助手（ImageAssistant）</h3>
 <p><a href="https://www.pullywood.com/ImageAssistant/">官网</a></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
@@ -2438,17 +2471,19 @@ class="math inline">\(Env:path=&quot;./.venv/Scripts/;&quot;+\)</span>Env:path</
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>常用的软件官网</p>
 <span id="more"></span>
 <h2 id="windows-环境下常用的软件">1. Windows 环境下常用的软件</h2>
-<table>
+<table style="width:100%;">
 <colgroup>
 <col style="width: 16%" />
-<col style="width: 6%" />
-<col style="width: 76%" />
+<col style="width: 3%" />
+<col style="width: 77%" />
+<col style="width: 2%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th>软件</th>
 <th>类别</th>
 <th>官网</th>
+<th></th>
 </tr>
 </thead>
 <tbody>
@@ -2456,114 +2491,154 @@ class="math inline">\(Env:path=&quot;./.venv/Scripts/;&quot;+\)</span>Env:path</
 <td>VScode</td>
 <td>文本编辑</td>
 <td>https://code.visualstudio.com/</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>7-zip</td>
 <td>压缩</td>
 <td>https://www.7-zip.org/</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Chrome</td>
 <td>浏览器</td>
 <td>https://google.cn/chrome/</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Snipaste</td>
 <td>截图</td>
 <td>https://zh.snipaste.com/</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>AHK</td>
 <td>快捷键</td>
 <td>https://www.autohotkey.com/</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>百度网盘</td>
 <td>资源</td>
 <td>https://yun.baidu.com/</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>TIM</td>
 <td>即时通讯</td>
 <td>https://im.qq.com/</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>企业微信</td>
 <td>即时通讯</td>
 <td>https://work.weixin.qq.com/</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>微信</td>
 <td>即时通讯</td>
 <td>https://weixin.qq.com/</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Dism++</td>
 <td>清理</td>
 <td>https://www.chuyu.me</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>GifCam</td>
 <td>动图制作</td>
 <td><a
 href="http://blog.bahraniapps.com/gifcam/">http://blog.bahraniapps.com/gifcam/</a></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>GiF Resizer</td>
 <td>图片处理</td>
 <td><a
 href="http://www.ashongsoft.com/product/gif-resizer.html">http://www.ashongsoft.com/</a></td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Image Converter One</td>
 <td>图片处理</td>
 <td><a
 href="http://www.ashongsoft.com/product/image-converter-one.html">http://www.ashongsoft.com/</a></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Rufus</td>
 <td>U盘启动</td>
 <td>https://rufus.ie/zh_CN.html</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Lantern</td>
 <td>翻墙</td>
 <td>https://github.com/getlantern/</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>DiskGenius</td>
 <td>分区</td>
 <td>http://www.diskgenius.cn/</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>火绒</td>
 <td>安全</td>
 <td>https://www.huorong.cn/</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>微PE工具箱</td>
 <td>系统运维</td>
 <td>http://www.wepe.com.cn/</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>ish</td>
 <td></td>
 <td>https://apps.apple.com/cn/app/ish-shell/id1436902243</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>obsidian</td>
 <td></td>
 <td>https://apps.apple.com/cn/app/obsidian-connected-notes/id1557175442</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>spacedesk</td>
 <td></td>
 <td>https://apps.apple.com/cn/app/spacedesk-multi-monitor-app/id1069217220</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>vimlike</td>
 <td></td>
 <td>https://apps.apple.com/cn/app/vimlike/id1584519802</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>MSYS2</td>
+<td></td>
+<td>https://www.msys2.org</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>PDF_Guru</td>
+<td></td>
+<td>https://gitee.com/Kevin234/PDF-Guru</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>marp</td>
+<td>ppt</td>
+<td><a href="https://marp.app/">https://marp.app</a></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -2573,20 +2648,6 @@ href="http://www.ashongsoft.com/product/image-converter-one.html">http://www.ash
         <tag>iPadOS</tag>
         <tag>software</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>java</title>
-    <url>/2019/12/16/os-tool-java/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<p><a
-href="https://www.oracle.com/java/technologies/javase-downloads.html">Java
-SE Downloads</a> <a href="https://docs.oracle.com/en/java/">Java
-Documentation</a> <a href="https://jakarta.ee/">Jakarta® EE
-Software</a></p>
-<p>yum install java-latest-openjdk</p>
-<p>java 中文显示不正常 &gt; JAVA_TOOL_OPTIONS -Dfile.encoding=UTF-8</p>
-<p>jlink 部署</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>Eclipse</title>
@@ -2658,6 +2719,20 @@ Linux 7.5上安装Node.js</a></p>
         <tag>yarn</tag>
         <tag>npm</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>java</title>
+    <url>/2019/12/16/os-tool-java/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<p><a
+href="https://www.oracle.com/java/technologies/javase-downloads.html">Java
+SE Downloads</a> <a href="https://docs.oracle.com/en/java/">Java
+Documentation</a> <a href="https://jakarta.ee/">Jakarta® EE
+Software</a></p>
+<p>yum install java-latest-openjdk</p>
+<p>java 中文显示不正常 &gt; JAVA_TOOL_OPTIONS -Dfile.encoding=UTF-8</p>
+<p>jlink 部署</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>oracle</title>
@@ -2836,6 +2911,36 @@ href="https://www.microsoft.com/zh-cn/software-download/windows10">windows
 </ul>
 <p><a
 href="https://support.microsoft.com/zh-cn/windows/在屏幕中启用和禁用触摸屏windows-b774e29d-be94-990f-c20f-e02892e572fc">在Windows中启用和禁用触摸屏</a></p>
+<h2 id="cmd命令的重定向输出">2. cmd命令的重定向输出</h2>
+<p>命令的结果可以通过“%&gt;”的形式来定向输出，%表示文件描述符：1为标准输出stdout、2为标准错误stderr。系统默认%值是1，也就是“1&gt;”，而1&gt;可以简写为&gt;，也就是默认为&gt;。stdout的默认目标是终端，stderr的默认目标为也是终端。</p>
+<p>来自 &lt;<a
+href="https://blog.csdn.net/earbao/article/details/51790405">https://blog.csdn.net/earbao/article/details/51790405</a>&gt;</p>
+<p>1、将结果输出到result.txt</p>
+<p>net stop myservices &gt;&gt;result 2&gt;&amp;1</p>
+<p>2、隐藏程序输出结果</p>
+<p>net stop myservices &gt;nul 2&gt;nul</p>
+<p>来自 &lt;<a
+href="https://blog.csdn.net/earbao/article/details/51790405">https://blog.csdn.net/earbao/article/details/51790405</a>&gt;</p>
+<h3 id="重定向操作符-描述">2.1. 重定向操作符 描述 </h3>
+<p>&gt; 
+将命令输出写入到文件或设备（如打印机），而不是命令提示符窗口或句柄。
+&lt;  从文件而不是从键盘或句柄读入命令输入。 &gt;&gt; 
+将命令输出添加到文件末尾而不删除文件中已有的信息。
+&gt;&amp; 将一个句柄的输出写入到另一个句柄的输入中。 &lt;&amp; 
+从一个句柄读取输入并将其写入到另一个句柄输出中。 | 
+从一个命令中读取输出并将其写入另一个命令的输入中。也称作管道。</p>
+<p>来自 &lt;<a
+href="https://blog.csdn.net/earbao/article/details/51790405">https://blog.csdn.net/earbao/article/details/51790405</a>&gt;
+## 3. cmd 一行命令执行多条指令</p>
+<p>aa &amp;&amp; bb means：执行aa，成功后再执行bb <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">node a.js &amp;&amp; node b.js</span><br></pre></td></tr></table></figure>
+如果a.js运行失败则b.js不会再运行</p>
+<p>aa || bb means：先执行aa，若执行成功则不再执行bb，若失败则再执行bb
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">node a.js || node b.js</span><br></pre></td></tr></table></figure>
+如果a.js运行失败则b.js再运行，如果a.js运行成功则b.js不再运行</p>
+<p>aa &amp; bb means：先执行aa再执行bb，无论aa是否成功 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">node a.js &amp; node b.js</span><br></pre></td></tr></table></figure>
+先运行a.js运行，不管运行a.js文件是否报错，b.js接着运行</p>
+<p>来自 &lt;<a
+href="https://blog.csdn.net/yrk0556/article/details/104308866">https://blog.csdn.net/yrk0556/article/details/104308866</a>&gt;</p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>Windows</tag>
@@ -2846,14 +2951,14 @@ href="https://support.microsoft.com/zh-cn/windows/在屏幕中启用和禁用触
     <url>/2019/07/08/php-env/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>PHP Frequently Asked Questions</p>
 <span id="more"></span>
-<h2 id="环境说明">环境说明</h2>
+<h2 id="环境说明">1. 环境说明</h2>
 <ul>
 <li>CentOS 7</li>
 </ul>
-<h2 id="源码安装-libiconv">源码安装 libiconv</h2>
+<h2 id="源码安装-libiconv">2. 源码安装 libiconv</h2>
 <p><a href="http://www.gnu.org/software/libiconv/">官网</a></p>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换至程序源代码目录</span></span><br><span class="line"><span class="built_in">cd</span> /usr/src</span><br><span class="line"><span class="comment"># 下载 libiconv</span></span><br><span class="line">wget https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.16.tar.gz</span><br><span class="line"><span class="comment"># 解压</span></span><br><span class="line">tar -zxvf libiconv-1.16.tar.gz </span><br><span class="line"><span class="comment"># 配置</span></span><br><span class="line">./configure --prefix=/usr/local/libiconv</span><br><span class="line"><span class="comment"># 编译并安装</span></span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
-<h2 id="源码安装-php7">源码安装 php7</h2>
+<h2 id="源码安装-php7">3. 源码安装 php7</h2>
 <p><a href="https://www.php.net/">官网</a></p>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换至程序源代码目录</span></span><br><span class="line"><span class="built_in">cd</span> /usr/src</span><br><span class="line"><span class="comment"># 删除旧版本</span></span><br><span class="line"><span class="built_in">rm</span> -rf php-7.*</span><br><span class="line"><span class="comment"># 下载 php</span></span><br><span class="line">wget https://www.php.net/distributions/php-7.3.8.tar.gz</span><br><span class="line"><span class="comment"># 解压</span></span><br><span class="line">tar -zxvf php-7.3.8.tar.gz</span><br><span class="line"><span class="comment"># 删除压缩包</span></span><br><span class="line"><span class="built_in">rm</span> php-7.3.8.tar.gz</span><br><span class="line"><span class="comment"># 切换至 php 目录</span></span><br><span class="line"><span class="built_in">cd</span> php-7.3.8</span><br><span class="line"><span class="comment"># 配置 makefile 脚本</span></span><br><span class="line">./configure</span><br><span class="line">--prefix=/usr/local/php <span class="comment"># 程序目录</span></span><br><span class="line">--with-iconv=/usr/local/libiconv</span><br><span class="line">--enable-fpm <span class="comment"># fastcgi 方式运行</span></span><br><span class="line">--with-pdo-mysql <span class="comment"># mysql 数据库</span></span><br><span class="line">--with-curl</span><br><span class="line">--with-zlib</span><br></pre></td></tr></table></figure>
 <p>脚本配置成功</p>
@@ -2862,15 +2967,15 @@ href="https://support.microsoft.com/zh-cn/windows/在屏幕中启用和禁用触
 <figcaption aria-hidden="true">脚本配置成功界面</figcaption>
 </figure>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># make 检查，可省略</span></span><br><span class="line">make <span class="built_in">test</span></span><br><span class="line"><span class="comment"># 杀死全部 php-fpm 进程</span></span><br><span class="line">killall php-fpm</span><br><span class="line"><span class="comment"># 编译并安装</span></span><br><span class="line">make &amp;&amp; make install</span><br><span class="line"><span class="comment"># 切换 php 目录</span></span><br><span class="line"><span class="built_in">cd</span> /usr/local/php/</span><br><span class="line"><span class="comment"># 复制 php.ini 配置文件</span></span><br><span class="line"><span class="built_in">cp</span> /usr/src/php-7.3.8/php.ini-production lib/php.ini</span><br><span class="line"><span class="comment"># 复制 nginx 配置文件</span></span><br><span class="line"><span class="built_in">cp</span> etc/php-fpm.conf.default etc/php-fpm.conf</span><br><span class="line"><span class="comment"># 复制配置文件</span></span><br><span class="line"><span class="built_in">cp</span> etc/php-fpm.d/www.conf.default etc/php-fpm.d/www.conf</span><br><span class="line"><span class="comment"># 启动php-fpm</span></span><br><span class="line">./sbin/php-fpm</span><br><span class="line"><span class="comment"># 确认php-fpm成功</span></span><br><span class="line">ps aux | grep php</span><br><span class="line"><span class="comment"># 查看占用端口</span></span><br><span class="line">netstat -anpo | grep php</span><br></pre></td></tr></table></figure>
-<h3 id="phpinfo.php">phpinfo.php</h3>
+<h3 id="phpinfo.php">3.1. phpinfo.php</h3>
 <figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="title function_ invoke__">phpinfo</span>();</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="nginx.conf">nginx.conf</h4>
+<h4 id="nginx.conf">3.1.1. nginx.conf</h4>
 <figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">location</span> <span class="regexp">~ \.php$</span> &#123;</span><br><span class="line">  <span class="attribute">root</span> /www/php; <span class="comment">#指定php的根目录</span></span><br><span class="line">  <span class="attribute">fastcgi_pass</span> <span class="number">127.0.0.1:9000</span>;<span class="comment">#php-fpm的默认端口是9000</span></span><br><span class="line">  <span class="attribute">fastcgi_index</span> index.php;</span><br><span class="line">  <span class="attribute">fastcgi_param</span> SCRIPT_FILENAME <span class="variable">$document_root</span><span class="variable">$fastcgi_script_name</span>;</span><br><span class="line">  <span class="attribute">include</span> fastcgi_params;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="配置-php-模块">配置 php 模块</h2>
+<h2 id="配置-php-模块">4. 配置 php 模块</h2>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看当前已加载模块</span></span><br><span class="line">/usr/local/php/bin/php -m</span><br><span class="line"><span class="comment"># 切换至相应的模块源码目录</span></span><br><span class="line"><span class="built_in">cd</span> /usr/src/php-7.3.8/ext/curl/</span><br><span class="line"><span class="comment">#  设置软链接，防止头文件找不到的问题（类似问题同解）</span></span><br><span class="line"><span class="built_in">ln</span> -s /usr/src/php-7.3.8/ext/ ./ext</span><br><span class="line"><span class="comment"># 执行 phpize</span></span><br><span class="line">/usr/local/php/bin/phpize</span><br><span class="line"><span class="comment"># 配置</span></span><br><span class="line">./configure -with-php-config=/usr/local/php/bin/php-config</span><br><span class="line"><span class="comment"># 编译</span></span><br><span class="line">make &amp;&amp; make install</span><br><span class="line"><span class="comment"># 查看对应的 so 文件</span></span><br><span class="line"><span class="built_in">ls</span> /usr/local/php/lib/php/extensions/no-debug-non-zts-20180731/</span><br><span class="line"><span class="comment"># 编辑配置文件，可通过 phpinfo 函数查找文件位置</span></span><br><span class="line">vi /usr/local/php/lib/php.ini</span><br><span class="line"><span class="comment"># 重启 php</span></span><br><span class="line">/usr/local/php/sbin/php-fpm restart</span><br></pre></td></tr></table></figure>
 <p>编译安装可指定php.ini的路劲(多PHP版本共存的情况)
 --with-config-file-path=/usr/local/php/etc</p>
-<h2 id="配置文件">配置文件</h2>
+<h2 id="配置文件">5. 配置文件</h2>
 <table style="width:6%;">
 <colgroup>
 <col style="width: 5%" />
@@ -3614,21 +3719,10 @@ Council（联合电子器件工程委员会）的缩写，该委员会是许多�
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
-    <title>人民币转大写</title>
-    <url>/2022/03/19/rmb/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>人名币转大写</p>
-<span id="more"></span>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">decimal v = decimal.Parse(&quot;123.00&quot;);</span><br><span class="line">            var s = v.ToString(&quot;#L#E#D#C#K#E#D#C#J#E#D#C#I#E#D#C#H#E#D#C#G#E#D#C#F#E#D#C0.0B0A/&quot;);</span><br><span class="line">            var d = Regex.Replace(s, @&quot;(((?&lt;=^-)|(^[^-]))[^1-9]*((?=[1-9])|((?&lt;c&gt;0\.)[^1-9]*(?=/$))))|((?&lt;=[1-9]A)/)|((?&lt;z&gt;0)[0A-E]*((?=[1-9])|(?&lt;-z&gt;(?=[F-L\./]|$))))|((?&lt;b&gt;[F-L])(?&lt;z&gt;0)[0A-L]*(?=[1-9]|(?&lt;-z&gt;(?=[\./]|$))))&quot;, &quot;$&#123;b&#125;$&#123;z&#125;$&#123;c&#125;&quot;);</span><br><span class="line">            var r = Regex.Replace(d, &quot;.&quot;, m =&gt; &quot;正，负元整零壹贰叁肆伍陆柒捌玖拾屲亗岌岄岪峘分角拾佰仟万亿兆京垓秭穰沟涧正载极&quot;[m.Value[0] - &#x27;+&#x27;].ToString());</span><br></pre></td></tr></table></figure>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>cshape</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>shell</title>
     <url>/2018/08/22/shell/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<h2 id="重定向">重定向</h2>
+<h2 id="重定向">1. 重定向</h2>
 <p>在 shell
 中输入命令运行程序，程序的正常输出信息（标准输出）和一些出错信息（标准错误）会通过
 shell 显示在屏幕上。</p>
@@ -3682,15 +3776,15 @@ shell 显示在屏幕上。</p>
 </tr>
 </tbody>
 </table>
-<h2 id="管道">管道</h2>
+<h2 id="管道">2. 管道</h2>
 <p>shell在解释命令遇到 | 时会创建管道，并创建两个进程，把标准输入输出重
 定向到管道，前一个进程向管道写数据，后一个进程从管道读数据。</p>
 <p>查找名称含有gcc的文件并使用wc计数 sudo find / -name gcc | wc –l</p>
 <p>查找名称含有ssh的进程 ps -ef | grep ssh</p>
 <p>分页查看内容 ls –l –R /usr/share | less</p>
 <p>排序文件 ls | sort –r</p>
-<h2 id="脚本">脚本</h2>
-<h2 id="bash快捷键">bash快捷键</h2>
+<h2 id="脚本">3. 脚本</h2>
+<h2 id="bash快捷键">4. bash快捷键</h2>
 <table>
 <thead>
 <tr class="header">
@@ -3770,6 +3864,17 @@ shell 显示在屏幕上。</p>
 </tbody>
 </table>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
+    <title>人民币转大写</title>
+    <url>/2022/03/19/rmb/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>人名币转大写</p>
+<span id="more"></span>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">decimal v = decimal.Parse(&quot;123.00&quot;);</span><br><span class="line">            var s = v.ToString(&quot;#L#E#D#C#K#E#D#C#J#E#D#C#I#E#D#C#H#E#D#C#G#E#D#C#F#E#D#C0.0B0A/&quot;);</span><br><span class="line">            var d = Regex.Replace(s, @&quot;(((?&lt;=^-)|(^[^-]))[^1-9]*((?=[1-9])|((?&lt;c&gt;0\.)[^1-9]*(?=/$))))|((?&lt;=[1-9]A)/)|((?&lt;z&gt;0)[0A-E]*((?=[1-9])|(?&lt;-z&gt;(?=[F-L\./]|$))))|((?&lt;b&gt;[F-L])(?&lt;z&gt;0)[0A-L]*(?=[1-9]|(?&lt;-z&gt;(?=[\./]|$))))&quot;, &quot;$&#123;b&#125;$&#123;z&#125;$&#123;c&#125;&quot;);</span><br><span class="line">            var r = Regex.Replace(d, &quot;.&quot;, m =&gt; &quot;正，负元整零壹贰叁肆伍陆柒捌玖拾屲亗岌岄岪峘分角拾佰仟万亿兆京垓秭穰沟涧正载极&quot;[m.Value[0] - &#x27;+&#x27;].ToString());</span><br></pre></td></tr></table></figure>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>cshape</tag>
+      </tags>
   </entry>
   <entry>
     <title>Visual Studio Code</title>
@@ -4050,6 +4155,19 @@ aside页面左或右模块， footer底脚模块。</p>
       </tags>
   </entry>
   <entry>
+    <title>WINFORM判断是否处于设计模式</title>
+    <url>/2024/05/03/winform-IsDesignMode/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>WINFORM判断是否处于设计模式 <span id="more"></span></p>
+<p>在设计自定义控件时，经常需要在构造函数或者Load事件中添加初始化代码，但是这些代码在进入窗体设计也会被执行，造成了设计窗口出现异常的情况。</p>
+<p>使用下面的代码，可以让你判断出是否处于窗体设计模式，进而保证代码只会在最终用户使用时才会被执行。<br />
+  <figure class="highlight c#"><table><tr><td class="code"><pre><span class="line"><span class="keyword">using</span> System.Diagnostics;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">bool</span> <span class="title">IsDesignMode</span>()</span></span><br><span class="line">&#123;</span><br><span class="line">	<span class="built_in">bool</span> returnFlag = <span class="literal">false</span>;</span><br><span class="line">	<span class="keyword">if</span> (LicenseManager.UsageMode == LicenseUsageMode.Designtime)</span><br><span class="line">	&#123;</span><br><span class="line">		returnFlag = <span class="literal">true</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span> <span class="keyword">if</span> (Process.GetCurrentProcess().ProcessName == <span class="string">&quot;devenv&quot;</span>)</span><br><span class="line">	&#123;</span><br><span class="line">	returnFlag = <span class="literal">true</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> returnFlag;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li> 来自 &lt;<a
+href="https://blog.csdn.net/sleeper1982/article/details/40826497">https://blog.csdn.net/sleeper1982/article/details/40826497</a>&gt;</li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>windows 快捷方式</title>
     <url>/2021/08/10/windows-lnk/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>创建桌面快捷方式</p>
@@ -4061,6 +4179,18 @@ aside页面左或右模块， footer底脚模块。</p>
         <tag>Windows</tag>
         <tag>cshape</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>wordpress</title>
+    <url>/2019/08/07/wordpress/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<ul>
+<li><a
+href="https://codex.wordpress.org/zh-cn:%E5%AE%89%E8%A3%85_WordPress">官方教程-安装
+WordPress</a></li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 下载最新版 wordpress</span></span><br><span class="line">wget https://wordpress.org/latest.tar.gz</span><br><span class="line"><span class="comment"># 解压</span></span><br><span class="line">tar -zxvf latest.tar.gz</span><br></pre></td></tr></table></figure>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>易班 APP</title>
@@ -4089,18 +4219,6 @@ aside页面左或右模块， footer底脚模块。</p>
 新增考试资料、天气查询、快递查询、景点门票、净网中心等功能 <img
 src="/img/yiban/180526a.png" alt="功能截图" /></p>
 <p>2018年05月05日 1. 闲的没事造了这么个玩的，还能用</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>wordpress</title>
-    <url>/2019/08/07/wordpress/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<ul>
-<li><a
-href="https://codex.wordpress.org/zh-cn:%E5%AE%89%E8%A3%85_WordPress">官方教程-安装
-WordPress</a></li>
-</ul>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 下载最新版 wordpress</span></span><br><span class="line">wget https://wordpress.org/latest.tar.gz</span><br><span class="line"><span class="comment"># 解压</span></span><br><span class="line">tar -zxvf latest.tar.gz</span><br></pre></td></tr></table></figure>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>

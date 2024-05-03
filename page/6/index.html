@@ -153,7 +153,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">72</span>
+          <span class="site-state-item-count">73</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -213,6 +213,99 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2019/06/07/mariadb/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Duke Bode">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2019/06/07/mariadb/" class="post-title-link" itemprop="url">mariadb</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2019-06-07 14:04:29" itemprop="dateCreated datePublished" datetime="2019-06-07T14:04:29+00:00">2019-06-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan: </span>
+    
+    <a title="mariadb" href="/2019/06/07/mariadb/#SOHUCS" itemprop="discussionUrl">
+      <span id="sourceId::5efdf4490d267d50cef3824a0f199779" class="cy_cmt_count" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <span id="more"></span>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dnf install MariaDB-server MariaDB-client</span><br></pre></td></tr></table></figure>
+<h2 id="附">附：</h2>
+<p>MariaDB 下载: https://downloads.mariadb.org/mariadb/repositories/</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2019/06/07/os-setting/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -249,7 +342,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -276,7 +369,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="windows">windows</h2>
+          <h2 id="windows">1. windows</h2>
 <p>暴力删除废弃文件夹 <figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">DEL</span> /F /A /Q \\?\%<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">RD</span> /S /Q \\?\%<span class="number">1</span></span><br></pre></td></tr></table></figure> /P 删除每一个文件之前提示确认。 /F
 强制删除只读文件。 /S 从所有子目录删除指定文件。 /Q
 安静模式。删除全局通配符时，不要求确认。 /A
@@ -345,7 +438,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -453,7 +546,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -552,7 +645,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -651,7 +744,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -748,7 +841,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -845,7 +938,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -1005,7 +1098,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -1811,7 +1904,7 @@ class="math inline">\(CF=C_n \oplus C_0\)</span></p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -1869,129 +1962,6 @@ p2存储库：http://download.eclipse.org/technology/babel/update-site/R0.16.0/p
 <li><p><a
 target="_blank" rel="noopener" href="https://wiki.eclipse.org/Eclipse.ini">eclipse.ini-Eclipsepedia</a></p></li>
 </ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2018/11/08/nginx/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Duke Bode">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Duke Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Duke Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2018/11/08/nginx/" class="post-title-link" itemprop="url">nginx</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2018-11-08 16:48:45" itemprop="dateCreated datePublished" datetime="2018-11-08T16:48:45+00:00">2018-11-08</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan: </span>
-    
-    <a title="nginx" href="/2018/11/08/nginx/#SOHUCS" itemprop="discussionUrl">
-      <span id="sourceId::40856a4dac2845dec5b79f86ee84d728" class="cy_cmt_count" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <span id="more"></span>
-<p><a target="_blank" rel="noopener" href="https://www.nginx.com/">官网</a></p>
-<ul>
-<li>expires</li>
-</ul>
-<p><a
-target="_blank" rel="noopener" href="https://www.cnblogs.com/yuanzai12345/p/5946743.html">Nginx设置expires设定页面缓存时间
-不缓存或一直使用缓存</a></p>
-<h1 id="版本简介">版本简介</h1>
-<ul>
-<li>Mainline 主线开发版本，版本号为奇数</li>
-<li>Stable 当前稳定版本，版本号为偶数</li>
-<li>Legacy 历年稳定版本</li>
-</ul>
-<h2 id="源码安装">源码安装</h2>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">wget http://nginx.org/download/nginx-1.14.0.tar.gz</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">tar -zxvf nginx-1.14.0.tar.gz</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">cd</span> nginx-1.14.0</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">./configure --with-http_ssl_module --with-http_v2_module</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">make</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">Configuration summary</span><br><span class="line">  + using system PCRE library</span><br><span class="line">  + OpenSSL library is not used</span><br><span class="line">  + using system zlib library</span><br><span class="line"></span><br><span class="line">  nginx path prefix:          &quot;/usr/local/nginx&quot;</span><br><span class="line">  nginx binary file:          &quot;/usr/local/nginx/sbin/nginx&quot;</span><br><span class="line">  nginx modules path:         &quot;/usr/local/nginx/modules&quot;</span><br><span class="line">  nginx configuration prefix: &quot;/usr/local/nginx/conf&quot;</span><br><span class="line">  nginx configuration file:   &quot;/usr/local/nginx/conf/nginx.conf&quot;</span><br><span class="line">  nginx pid file:             &quot;/usr/local/nginx/logs/nginx.pid&quot;</span><br><span class="line">  nginx error log file:       &quot;/usr/local/nginx/logs/error.log&quot;</span><br><span class="line">  nginx http access log file: &quot;/usr/local/nginx/logs/access.log&quot;</span><br><span class="line">  nginx http client request body temporary files: &quot;client_body_temp&quot;</span><br><span class="line">  nginx http proxy temporary files:   &quot;proxy_temp&quot;</span><br><span class="line">  nginx http fastcgi temporary files: &quot;fastcgi_temp&quot;</span><br><span class="line">  nginx http uwsgi temporary files:   &quot;uwsgi_temp&quot;</span><br><span class="line">  nginx http scgi temporary files:    &quot;scgi_temp&quot;</span><br></pre></td></tr></table></figure>
-<h2 id="nginx-操作命令">Nginx 操作命令</h2>
-<ul>
-<li>nginx -s reload 重新加载配置文件</li>
-<li>nginx -s reopen 重新打开日志文件</li>
-<li>nginx -t 测试 nginx 配置文件是否正确</li>
-<li>nginx -t -c /path/to/nginx.conf 测试 nginx 配置文件是否正确</li>
-<li>nginx -s stop 快速停止 nginx</li>
-</ul>
-<h2 id="附">附：</h2>
-<blockquote>
-<ul>
-<li>NGINX 官网 www.nginx.org</li>
-<li>NGINX docs nginx.org/en/docs</li>
-<li>NGINX configure nginx.org/en/docs/configure.html</li>
-<li>tar 命令 man.linuxde.net/tartar</li>
-</ul>
-</blockquote>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
       
     </div>

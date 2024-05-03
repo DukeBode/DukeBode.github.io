@@ -153,7 +153,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">72</span>
+          <span class="site-state-item-count">73</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -213,6 +213,129 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2018/11/08/nginx/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Duke Bode">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2018/11/08/nginx/" class="post-title-link" itemprop="url">nginx</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2018-11-08 16:48:45" itemprop="dateCreated datePublished" datetime="2018-11-08T16:48:45+00:00">2018-11-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan: </span>
+    
+    <a title="nginx" href="/2018/11/08/nginx/#SOHUCS" itemprop="discussionUrl">
+      <span id="sourceId::40856a4dac2845dec5b79f86ee84d728" class="cy_cmt_count" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <span id="more"></span>
+<p><a target="_blank" rel="noopener" href="https://www.nginx.com/">官网</a></p>
+<ul>
+<li>expires</li>
+</ul>
+<p><a
+target="_blank" rel="noopener" href="https://www.cnblogs.com/yuanzai12345/p/5946743.html">Nginx设置expires设定页面缓存时间
+不缓存或一直使用缓存</a></p>
+<h1 id="版本简介">版本简介</h1>
+<ul>
+<li>Mainline 主线开发版本，版本号为奇数</li>
+<li>Stable 当前稳定版本，版本号为偶数</li>
+<li>Legacy 历年稳定版本</li>
+</ul>
+<h2 id="源码安装">源码安装</h2>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">wget http://nginx.org/download/nginx-1.14.0.tar.gz</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">tar -zxvf nginx-1.14.0.tar.gz</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash"><span class="built_in">cd</span> nginx-1.14.0</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">./configure --with-http_ssl_module --with-http_v2_module</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">make</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">Configuration summary</span><br><span class="line">  + using system PCRE library</span><br><span class="line">  + OpenSSL library is not used</span><br><span class="line">  + using system zlib library</span><br><span class="line"></span><br><span class="line">  nginx path prefix:          &quot;/usr/local/nginx&quot;</span><br><span class="line">  nginx binary file:          &quot;/usr/local/nginx/sbin/nginx&quot;</span><br><span class="line">  nginx modules path:         &quot;/usr/local/nginx/modules&quot;</span><br><span class="line">  nginx configuration prefix: &quot;/usr/local/nginx/conf&quot;</span><br><span class="line">  nginx configuration file:   &quot;/usr/local/nginx/conf/nginx.conf&quot;</span><br><span class="line">  nginx pid file:             &quot;/usr/local/nginx/logs/nginx.pid&quot;</span><br><span class="line">  nginx error log file:       &quot;/usr/local/nginx/logs/error.log&quot;</span><br><span class="line">  nginx http access log file: &quot;/usr/local/nginx/logs/access.log&quot;</span><br><span class="line">  nginx http client request body temporary files: &quot;client_body_temp&quot;</span><br><span class="line">  nginx http proxy temporary files:   &quot;proxy_temp&quot;</span><br><span class="line">  nginx http fastcgi temporary files: &quot;fastcgi_temp&quot;</span><br><span class="line">  nginx http uwsgi temporary files:   &quot;uwsgi_temp&quot;</span><br><span class="line">  nginx http scgi temporary files:    &quot;scgi_temp&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="nginx-操作命令">Nginx 操作命令</h2>
+<ul>
+<li>nginx -s reload 重新加载配置文件</li>
+<li>nginx -s reopen 重新打开日志文件</li>
+<li>nginx -t 测试 nginx 配置文件是否正确</li>
+<li>nginx -t -c /path/to/nginx.conf 测试 nginx 配置文件是否正确</li>
+<li>nginx -s stop 快速停止 nginx</li>
+</ul>
+<h2 id="附">附：</h2>
+<blockquote>
+<ul>
+<li>NGINX 官网 www.nginx.org</li>
+<li>NGINX docs nginx.org/en/docs</li>
+<li>NGINX configure nginx.org/en/docs/configure.html</li>
+<li>tar 命令 man.linuxde.net/tartar</li>
+</ul>
+</blockquote>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2018/11/08/json/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -249,7 +372,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -347,7 +470,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -375,7 +498,7 @@
     
     <div class="post-body" itemprop="articleBody">
           <span id="more"></span>
-<h2 id="重定向">重定向</h2>
+<h2 id="重定向">1. 重定向</h2>
 <p>在 shell
 中输入命令运行程序，程序的正常输出信息（标准输出）和一些出错信息（标准错误）会通过
 shell 显示在屏幕上。</p>
@@ -429,15 +552,15 @@ shell 显示在屏幕上。</p>
 </tr>
 </tbody>
 </table>
-<h2 id="管道">管道</h2>
+<h2 id="管道">2. 管道</h2>
 <p>shell在解释命令遇到 | 时会创建管道，并创建两个进程，把标准输入输出重
 定向到管道，前一个进程向管道写数据，后一个进程从管道读数据。</p>
 <p>查找名称含有gcc的文件并使用wc计数 sudo find / -name gcc | wc –l</p>
 <p>查找名称含有ssh的进程 ps -ef | grep ssh</p>
 <p>分页查看内容 ls –l –R /usr/share | less</p>
 <p>排序文件 ls | sort –r</p>
-<h2 id="脚本">脚本</h2>
-<h2 id="bash快捷键">bash快捷键</h2>
+<h2 id="脚本">3. 脚本</h2>
+<h2 id="bash快捷键">4. bash快捷键</h2>
 <table>
 <thead>
 <tr class="header">
@@ -578,7 +701,7 @@ shell 显示在屏幕上。</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -815,7 +938,7 @@ v3.0</a></li>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -843,10 +966,10 @@ v3.0</a></li>
     
     <div class="post-body" itemprop="articleBody">
           <span id="more"></span>
-<h2 id="口令登录">口令登录</h2>
+<h2 id="口令登录">1. 口令登录</h2>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh [-p 22] [user@]host</span><br></pre></td></tr></table></figure>
 <p>说明： - 默认端口22可省略 - 用户名与本地用户名相同时可省略</p>
-<h2 id="公钥登录">公钥登录</h2>
+<h2 id="公钥登录">2. 公钥登录</h2>
 <pre><code>1. 生成公钥</code></pre>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 格式 </span></span><br><span class="line"><span class="comment"># ssh-keygen -t rsa -C &quot;通常为邮箱&quot; -f &quot;私钥文件绝对路径&quot;</span></span><br><span class="line">ssh-keygen</span><br></pre></td></tr></table></figure>
 <p>说明： - 私钥口令 passphrase，若担心私钥的安全，设置一个 - 公钥
@@ -916,7 +1039,7 @@ id_rsa.pub，私钥 id_rsa 2. 复制公钥至主机</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -1009,7 +1132,7 @@ id_rsa.pub，私钥 id_rsa 2. 复制公钥至主机</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -1136,7 +1259,7 @@ class="math inline">\(false（真值为假）\)</span>_（当前处理的元素�
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -1233,7 +1356,7 @@ class="math inline">\(false（真值为假）\)</span>_（当前处理的元素�
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -1331,7 +1454,7 @@ Soup提供一些简单的、python式的函数用来处理导航、搜索、修�
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
+      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
     </span>
 
   
@@ -1400,103 +1523,6 @@ Soup提供一些简单的、python式的函数用来处理导航、搜索、修�
 <ul>
 <li>发送器、传送器、变送器、检测器、探头……</li>
 <li>Sensor,Transducer,Detector,Guage……</li>
-</ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2018/01/14/%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/2_%E4%BB%80%E4%B9%88%E6%98%AF%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Duke Bode">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Duke Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Duke Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2018/01/14/%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/2_%E4%BB%80%E4%B9%88%E6%98%AF%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/" class="post-title-link" itemprop="url">什么是集成传感器</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2018-01-14 16:34:30" itemprop="dateCreated datePublished" datetime="2018-01-14T16:34:30+00:00">2018-01-14</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-02 11:11:46" itemprop="dateModified" datetime="2024-05-02T11:11:46+00:00">2024-05-02</time>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan: </span>
-    
-    <a title="什么是集成传感器" href="/2018/01/14/%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/2_%E4%BB%80%E4%B9%88%E6%98%AF%E9%9B%86%E6%88%90%E4%BC%A0%E6%84%9F%E5%99%A8/#SOHUCS" itemprop="discussionUrl">
-      <span id="sourceId::c44880547105d7bc54e1d298ec4094d4" class="cy_cmt_count" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="集成传感器">集成传感器</h1>
-<blockquote>
-<p>把<code>敏感元件</code>和<code>放大电路、运算电路、补偿电路</code>等模块，集成在<code>一个芯片</code>、或<code>同一个封装</code>上的传感器成为集成传感器。</p>
-</blockquote>
-<ul>
-<li>本课程论及范围 &gt;
-利用<code>微加工</code>和<code>集成工艺</code>，把一个或多个传感器及其信号处理、补偿电路集成在同一个芯片（<code>SoC，System-on-Chip</code>）</li>
 </ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
       
