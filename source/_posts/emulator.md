@@ -9,7 +9,11 @@ mathjax: false
 
 <!-- more -->
 
-qemu
-bochs
-limbo
+
 ExaGear
+
+[qemu](https://www.qemu.org/)
+[winlator](https://winlator.org/)
+[limbo](https://github.com/limboemu/limbo)
+[bochs](https://bochs.sourceforge.io/)
+

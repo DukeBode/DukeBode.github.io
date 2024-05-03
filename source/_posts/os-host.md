@@ -14,7 +14,7 @@ The hosts file is one of several system facilities that assists in addressing ne
 Windows  | C:\Windows\System32\drivers\etc\hosts
 Linux/Mac | /etc/hosts
 
-## 功能
+## 1. 功能
 
 - 加快域名解析
 - 重定向恶意域名

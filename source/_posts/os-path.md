@@ -9,7 +9,7 @@ The PATH variable makes it easy to run commonly used programs located in their o
 
 <!-- more -->
 
-## Linux 命令
+## 1. Linux 命令
 
 1. date 时间
 1. useradd 用户添加
@@ -23,7 +23,7 @@ The PATH variable makes it easy to run commonly used programs located in their o
 
 ! 调用历史
 
-### 设置 path
+### 1.1. 设置 path
 
 `.profile` 记录了 bash 会在哪些目录查找命令。 bash 会根据 PATH 变量的设置自动寻找输入的命令。如果有同名的命令，按照路径顺序找到后返回执行，不再继续寻找。有同名的指令可以输入路径运行。
 
@@ -41,7 +41,7 @@ The PATH variable makes it easy to run commonly used programs located in their o
 /usr/local/games
 ```
 
-## Windows 运行常用的命令
+## 2. Windows 运行常用的命令
 
 命令|含义|备注
 -|-|-
@@ -62,6 +62,8 @@ taskmgr | 任务管理器
 compmgmt.msc | 计算机管理
 devmgmt.msc | 设备管理器
 
-### 设置 path
+### 2.1. 设置 path
 
+```cmd
 $Env:path="./.venv/Scripts/;"+$Env:path
+```

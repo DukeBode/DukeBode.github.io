@@ -24,13 +24,35 @@ Your next computer is not a computer.
 修改锁屏密码应验证账户密码
 重置系统自动云备份
 
-## 4. 设置-通用-键盘
+## 4. 快捷键
+
+### 4.1. 文稿快捷键
+
+- **Control-A**：移至行或段落的开头。
+- **Control-E**：移至行或段落的末尾。
+- **Control-F**：向前移动一个字符。
+- **Control-B**：向后移动一个字符。
+- **Control-H**：删除插入点左边的字符。也可以使用 Delete 键。
+- **Control-D**：删除插入点右边的字符。也可以使用 Fn-Delete。
+- **Control-L**：将光标或所选内容置于可见区域中央。
+- **Control-P**：上移一行。
+- **Control-N**：下移一行。
+- **Control-O**：在插入点后新插入一行。
+- **Control-T**：将插入点后面的字符与插入点前面的字符交换。
+- **Control-K**：删除插入点与行或段落末尾处之间的文本。
+- **Command-左花括号 ({)**：左对齐。
+- **Command-右花括号 (})**：右对齐。
+- **Shift-Command-竖线 (|)**：居中对齐。
+
+https://support.apple.com/zh-cn/HT201236
+
+## 5. 设置-通用-键盘
 
 - 关闭智能标点 2023-11-12
 - 关闭首字母自动大写 2023-11-12
 - 关闭句号快捷键 2023-11-12 
 
-## 5. 已知问题
+## 6. 已知问题
 
 -  使用外接显示器时Ipad必须常亮 2023-11-12
 - 外接显示器触屏不可操作 2023-11-12
@@ -51,14 +73,14 @@ Your next computer is not a computer.
 - 充电速度低下，虽然支持30W的充电，但送的充电头只有20W。
 - 官方服务只支持苹果设备，对非苹果设备兼容性非常差。
 
-## 6. 外接显示器
+## 7. 外接显示器
 
 - 外接显示器的触摸功能与键鼠操作存在冲突，触摸后键鼠失灵
 - 播放视频时暂停不方便，平板上也无遥控器功能
 - 视频软件兼容性差，部分全屏难
 - 发热挺严重
 
-## 7. app
+## 8. app
 - [a-Shell](https://apps.apple.com/cn/app/a-shell/id1473805438)
 - [Swift Playgrounds](https://apps.apple.com/cn/app/swift-playgrounds/id908519492)
 - [LocalSend](https://apps.apple.com/cn/app/localsend/id1661733229)

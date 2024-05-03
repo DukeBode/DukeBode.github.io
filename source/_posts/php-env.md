@@ -9,11 +9,11 @@ PHP Frequently Asked Questions
 
 <!-- more -->
 
-## 环境说明
+## 1. 环境说明
 
 - CentOS 7
 
-## 源码安装 libiconv
+## 2. 源码安装 libiconv
 
 [官网](http://www.gnu.org/software/libiconv/)
 
@@ -30,7 +30,7 @@ tar -zxvf libiconv-1.16.tar.gz
 make && make install
 ```
 
-## 源码安装 php7
+## 3. 源码安装 php7
 
 [官网](https://www.php.net/)
 
@@ -84,7 +84,7 @@ ps aux | grep php
 netstat -anpo | grep php
 ```
 
-### phpinfo.php
+### 3.1. phpinfo.php
 
 ```php
 <?php
@@ -92,7 +92,7 @@ netstat -anpo | grep php
 ?>
 ```
 
-#### nginx.conf
+#### 3.1.1. nginx.conf
 
 ```nginx
 location ~ \.php$ {
@@ -104,7 +104,7 @@ location ~ \.php$ {
 }
 ```
 
-## 配置 php 模块
+## 4. 配置 php 模块
 
 ```sh
 # 查看当前已加载模块
@@ -130,7 +130,7 @@ vi /usr/local/php/lib/php.ini
 编译安装可指定php.ini的路劲(多PHP版本共存的情况)
 --with-config-file-path=/usr/local/php/etc
 
-## 配置文件
+## 5. 配置文件
 
 
 

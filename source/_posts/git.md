@@ -14,6 +14,7 @@ Git is a free and open source distributed version control system designed to han
 ## 1. 常用 Git 仓库
 
 腾讯工蜂 https://git.code.tencent.com
+gitcode.com
 
 ## 2. git
 
@@ -137,7 +138,15 @@ git submodule update --remote
 git clone url.git --recurse-submodules
 ```
 
-## 11. 参考文章
+
+## 11. github 访问慢
+
+mirrors - GitCode [https://gitcode.com/org/mirrors](https://gitcode.com/org/mirrors)
+
+使用 gitcode 替代 github 访问源
+使用 kkgithub 替换 github 在线访问下载
+
+## 12. 参考文章
 
 1. [Git命令备份](https://www.jianshu.com/p/dbb352ea14cf)
 1. [Git配置多个SSH-Key](https://gitee.com/help/articles/4229)

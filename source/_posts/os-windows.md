@@ -98,3 +98,54 @@ netsh wlan export profile folder=D:\ key=clear
 - 软件安装包
 
 [在Windows中启用和禁用触摸屏](https://support.microsoft.com/zh-cn/windows/在屏幕中启用和禁用触摸屏windows-b774e29d-be94-990f-c20f-e02892e572fc)
+
+## 2. cmd命令的重定向输出
+
+命令的结果可以通过“%>”的形式来定向输出，%表示文件描述符：1为标准输出stdout、2为标准错误stderr。系统默认%值是1，也就是“1>”，而1>可以简写为>，也就是默认为>。stdout的默认目标是终端，stderr的默认目标为也是终端。
+
+来自 <[https://blog.csdn.net/earbao/article/details/51790405](https://blog.csdn.net/earbao/article/details/51790405)>
+
+1、将结果输出到result.txt
+
+net stop myservices >>result 2>&1
+
+2、隐藏程序输出结果
+
+net stop myservices >nul 2>nul
+
+来自 <[https://blog.csdn.net/earbao/article/details/51790405](https://blog.csdn.net/earbao/article/details/51790405)>
+
+### 2.1. 重定向操作符 描述 
+
+\>  将命令输出写入到文件或设备（如打印机），而不是命令提示符窗口或句柄。
+<  从文件而不是从键盘或句柄读入命令输入。
+\>>  将命令输出添加到文件末尾而不删除文件中已有的信息。
+\>& 将一个句柄的输出写入到另一个句柄的输入中。
+<&  从一个句柄读取输入并将其写入到另一个句柄输出中。
+|  从一个命令中读取输出并将其写入另一个命令的输入中。也称作管道。
+
+来自 <[https://blog.csdn.net/earbao/article/details/51790405](https://blog.csdn.net/earbao/article/details/51790405)>
+## 3. cmd 一行命令执行多条指令
+
+aa && bb
+means：执行aa，成功后再执行bb
+```cmd
+node a.js && node b.js
+```
+如果a.js运行失败则b.js不会再运行
+
+aa || bb
+means：先执行aa，若执行成功则不再执行bb，若失败则再执行bb
+```cmd
+node a.js || node b.js
+```
+如果a.js运行失败则b.js再运行，如果a.js运行成功则b.js不再运行
+
+aa & bb
+means：先执行aa再执行bb，无论aa是否成功
+```cmd
+node a.js & node b.js
+```
+先运行a.js运行，不管运行a.js文件是否报错，b.js接着运行
+
+来自 <[https://blog.csdn.net/yrk0556/article/details/104308866](https://blog.csdn.net/yrk0556/article/details/104308866)>
