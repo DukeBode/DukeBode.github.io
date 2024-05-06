@@ -153,12 +153,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">73</span>
+          <span class="site-state-item-count">74</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">32</span>
+        <span class="site-state-item-count">33</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -241,9 +241,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2024-05-03 18:59:39 / Modified: 12:07:54" itemprop="dateCreated datePublished" datetime="2024-05-03T18:59:39+00:00">2024-05-03</time>
+      <time title="Created: 2024-05-03 18:59:39" itemprop="dateCreated datePublished" datetime="2024-05-03T18:59:39+00:00">2024-05-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -279,6 +285,204 @@
             </div>
           <!--/noindex-->
         
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2024/05/03/msys2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Duke Bode">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2024/05/03/msys2/" class="post-title-link" itemprop="url">msys2</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-05-03 12:05:32" itemprop="dateCreated datePublished" datetime="2024-05-03T12:05:32+00:00">2024-05-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan: </span>
+    
+    <a title="msys2" href="/2024/05/03/msys2/#SOHUCS" itemprop="discussionUrl">
+      <span id="sourceId::ceb585b12d440826878667775142243a" class="cy_cmt_count" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <span id="more"></span>
+<h2 id="environments">1. Environments</h2>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 11%" />
+<col style="width: 7%" />
+<col style="width: 10%" />
+<col style="width: 7%" />
+<col style="width: 9%" />
+<col style="width: 21%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Prefix</th>
+<th>Toolchain</th>
+<th>Architecture</th>
+<th>C Library</th>
+<th>C++ Library</th>
+<th>Package prefix</th>
+<th>pacboy Package suffix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>MSYS</strong></td>
+<td><code>/usr</code></td>
+<td>gcc</td>
+<td>x86_64</td>
+<td>cygwin</td>
+<td>libstdc++</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><strong>UCRT64</strong></td>
+<td><code>/ucrt64</code></td>
+<td>gcc</td>
+<td>x86_64</td>
+<td>ucrt</td>
+<td>libstdc++</td>
+<td>mingw-w64-ucrt-x86_64-</td>
+<td>u</td>
+</tr>
+<tr class="odd">
+<td><strong>CLANG64</strong></td>
+<td><code>/clang64</code></td>
+<td>llvm</td>
+<td>x86_64</td>
+<td>ucrt</td>
+<td>libc++</td>
+<td>mingw-w64-clang-x86_64-</td>
+<td>c</td>
+</tr>
+<tr class="even">
+<td><strong>CLANGARM64</strong></td>
+<td><code>/clangarm64</code></td>
+<td>llvm</td>
+<td>aarch64</td>
+<td>ucrt</td>
+<td>libc++</td>
+<td>mingw-w64-clang-aarch64-</td>
+<td>a</td>
+</tr>
+<tr class="odd">
+<td><strong>CLANG32</strong></td>
+<td><code>/clang32</code></td>
+<td>llvm</td>
+<td>i686</td>
+<td>ucrt</td>
+<td>libc++</td>
+<td>mingw-w64-clang-i686-</td>
+<td>z</td>
+</tr>
+<tr class="even">
+<td><strong>MINGW64</strong></td>
+<td><code>/mingw64</code></td>
+<td>gcc</td>
+<td>x86_64</td>
+<td>msvcrt</td>
+<td>libstdc++</td>
+<td>mingw-w64-x86_64-</td>
+<td>x</td>
+</tr>
+<tr class="odd">
+<td><strong>MINGW32</strong></td>
+<td><code>/mingw32</code></td>
+<td>gcc</td>
+<td>i686</td>
+<td>msvcrt</td>
+<td>libstdc++</td>
+<td>mingw-w64-i686-</td>
+<td>i</td>
+</tr>
+</tbody>
+</table>
+<h2 id="updating-msys2">2. Updating MSYS2</h2>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -Suy</span><br></pre></td></tr></table></figure>
+<h2 id="finding-a-package">3. Finding a package</h2>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -Ss</span><br></pre></td></tr></table></figure>
+<h2 id="installing-a-package">4. Installing a package</h2>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># pacboy</span></span><br><span class="line">pacman -S pactoys</span><br><span class="line">pacman -S vim</span><br><span class="line"><span class="comment"># 当前环境包</span></span><br><span class="line">pacboy -S package:p</span><br><span class="line"></span><br><span class="line"><span class="comment"># 7-zip</span></span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-7zip</span><br><span class="line"><span class="comment"># gcc</span></span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-toolchain</span><br><span class="line"><span class="comment"># cmake</span></span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-cmake</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-qemu</span><br><span class="line"><span class="comment"># clang</span></span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-clang</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-clang-tools-extra</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-sqlite3</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-putty</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-ruby</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-aria2</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-dosbox</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-nodejs</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-mosquitto</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-paho.mqtt.c</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-graphviz</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-imagemagick</span><br><span class="line"><span class="comment"># qt-creator</span></span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-qt-creator</span><br><span class="line"><span class="comment"># texstudio</span></span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-texstudio</span><br><span class="line"><span class="comment"># texlive</span></span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-texlive-scheme-gust</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-opencv</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-gimp</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-krita</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-kimageformats-qt5</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-blender</span><br><span class="line"></span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-kicad</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-kicad-meta</span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-kicad-doc-zh</span><br><span class="line"><span class="comment"># https://openscad.org/documentation.html</span></span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-openscad</span><br><span class="line"><span class="comment"># https://wiki.freecad.org/Getting_started</span></span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-freecad</span><br><span class="line"></span><br><span class="line">pacman -S mingw-w64-ucrt-x86_64-kdenlive</span><br></pre></td></tr></table></figure>
+<h2 id="uninstalling-a-package">5. Uninstalling a package</h2>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -R</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://www.msys2.org/">msys2</a> <a
+target="_blank" rel="noopener" href="https://packages.msys2.org/">MSYS2 Packages</a> <a
+target="_blank" rel="noopener" href="https://wiki.archlinux.org/title/Pacman">pacman</a></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
       
     </div>
 
@@ -340,7 +544,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -435,7 +639,7 @@ target="_blank" rel="noopener" href="https://bochs.sourceforge.io/">bochs</a></p
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -534,7 +738,7 @@ IoT 开发人员实现灵活性与硬件/网络资源的平衡。</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -631,7 +835,7 @@ IoT 开发人员实现灵活性与硬件/网络资源的平衡。</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -728,7 +932,7 @@ IoT 开发人员实现灵活性与硬件/网络资源的平衡。</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -825,7 +1029,7 @@ IoT 开发人员实现灵活性与硬件/网络资源的平衡。</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -922,7 +1126,7 @@ IoT 开发人员实现灵活性与硬件/网络资源的平衡。</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -1019,7 +1223,7 @@ IoT 开发人员实现灵活性与硬件/网络资源的平衡。</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -1046,7 +1250,7 @@ IoT 开发人员实现灵活性与硬件/网络资源的平衡。</p>
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>为指定程序注册URL Protocol,方便浏览器调用</p>
+          <p>为指定程序注册URL Protocol,方便浏览器调用[^1]</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2021/08/10/URL_Protocol/#more" rel="contents">
@@ -1055,105 +1259,6 @@ IoT 开发人员实现灵活性与硬件/网络资源的平衡。</p>
             </div>
           <!--/noindex-->
         
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2021/07/26/Office-Excel/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Duke Bode">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Duke Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Duke Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/07/26/Office-Excel/" class="post-title-link" itemprop="url">Office-Excel</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-07-26 09:32:24" itemprop="dateCreated datePublished" datetime="2021-07-26T09:32:24+00:00">2021-07-26</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan: </span>
-    
-    <a title="Office-Excel" href="/2021/07/26/Office-Excel/#SOHUCS" itemprop="discussionUrl">
-      <span id="sourceId::a4ac8937b735561daf7e196b7be29430" class="cy_cmt_count" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <span id="more"></span>
-<h3 id="excel-批量添加图片">EXCEL 批量添加图片</h3>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;图片链接&quot;</span> <span class="attr">height</span>=<span class="string">&quot;42&quot;</span> <span class="attr">width</span>=<span class="string">&quot;42&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-<p>宽高可提前修改为对应值
-复制html文本，选择性粘贴”，选择Unicode文本。</p>
-<p>可用于条码的批量生成，早期有规律的网络图片爬虫。</p>
-<p>实例网址
-https://image-charts.com/chart?chs=150x150&amp;cht=qr&amp;chl=Hello%20world&amp;choe=UTF-8</p>
-<h3 id="excel-图片居中">EXCEL 图片居中</h3>
-<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Sub</span> dq()</span><br><span class="line"><span class="keyword">Dim</span> shp <span class="keyword">As</span> Shape</span><br><span class="line"><span class="keyword">For</span> <span class="keyword">Each</span> shp <span class="keyword">In</span> ActiveSheet.Shapes</span><br><span class="line">shp.Left = (shp.TopLeftCell.Width - shp.Width) / <span class="number">2</span> + shp.TopLeftCell.Left</span><br><span class="line">shp.Top = (shp.TopLeftCell.Height - shp.Height) / <span class="number">2</span> + shp.TopLeftCell.Top</span><br><span class="line"><span class="keyword">Next</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br></pre></td></tr></table></figure>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
       
     </div>
 

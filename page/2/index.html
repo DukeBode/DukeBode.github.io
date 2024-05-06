@@ -153,12 +153,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">73</span>
+          <span class="site-state-item-count">74</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">32</span>
+        <span class="site-state-item-count">33</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -213,6 +213,105 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2021/07/26/Office-Excel/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Duke Bode">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Duke Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/07/26/Office-Excel/" class="post-title-link" itemprop="url">Office-Excel</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-07-26 09:32:24" itemprop="dateCreated datePublished" datetime="2021-07-26T09:32:24+00:00">2021-07-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan: </span>
+    
+    <a title="Office-Excel" href="/2021/07/26/Office-Excel/#SOHUCS" itemprop="discussionUrl">
+      <span id="sourceId::a4ac8937b735561daf7e196b7be29430" class="cy_cmt_count" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <span id="more"></span>
+<h3 id="excel-批量添加图片">0.1. EXCEL 批量添加图片</h3>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;图片链接&quot;</span> <span class="attr">height</span>=<span class="string">&quot;42&quot;</span> <span class="attr">width</span>=<span class="string">&quot;42&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<p>宽高可提前修改为对应值
+复制html文本，选择性粘贴”，选择Unicode文本。</p>
+<p>可用于条码的批量生成，早期有规律的网络图片爬虫。</p>
+<p>实例网址
+https://image-charts.com/chart?chs=150x150&amp;cht=qr&amp;chl=Hello%20world&amp;choe=UTF-8</p>
+<h3 id="excel-图片居中">0.2. EXCEL 图片居中</h3>
+<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Sub</span> dq()</span><br><span class="line"><span class="keyword">Dim</span> shp <span class="keyword">As</span> Shape</span><br><span class="line"><span class="keyword">For</span> <span class="keyword">Each</span> shp <span class="keyword">In</span> ActiveSheet.Shapes</span><br><span class="line">shp.Left = (shp.TopLeftCell.Width - shp.Width) / <span class="number">2</span> + shp.TopLeftCell.Left</span><br><span class="line">shp.Top = (shp.TopLeftCell.Height - shp.Height) / <span class="number">2</span> + shp.TopLeftCell.Top</span><br><span class="line"><span class="keyword">Next</span></span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Sub</span></span><br></pre></td></tr></table></figure>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2021/07/26/web-Redirect/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -249,7 +348,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -341,7 +440,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -432,7 +531,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -531,7 +630,7 @@ target="_blank" rel="noopener" href="https://docs.microsoft.com/zh-cn/powershell
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -646,7 +745,7 @@ JavaScript 互操作性，通常简称为 JavaScript 互操作或 JS
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -736,7 +835,7 @@ JavaScript 互操作性，通常简称为 JavaScript 互操作或 JS
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -968,7 +1067,7 @@ target="_blank" rel="noopener" href="https://blog.csdn.net/yrk0556/article/detai
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -1077,7 +1176,7 @@ Database Documentation - Oracle Database</a></p></li>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -1179,7 +1278,7 @@ in an IP network.</p>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
+      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
     </span>
 
   
@@ -1213,103 +1312,6 @@ locations, or invalid locations.</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/02/19/os-path/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://dukebode.github.io/2020/02/06/python-web/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Duke Bode">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Duke Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Duke Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/02/06/python-web/" class="post-title-link" itemprop="url">Python Web</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2020-02-06 12:55:04" itemprop="dateCreated datePublished" datetime="2020-02-06T12:55:04+00:00">2020-02-06</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-03 12:07:54" itemprop="dateModified" datetime="2024-05-03T12:07:54+00:00">2024-05-03</time>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan: </span>
-    
-    <a title="Python Web" href="/2020/02/06/python-web/#SOHUCS" itemprop="discussionUrl">
-      <span id="sourceId::91cb4c482c238e05b01ccbe8a482ffe6" class="cy_cmt_count" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Python Web Frequently Asked Questions</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/02/06/python-web/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>
