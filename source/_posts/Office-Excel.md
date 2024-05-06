@@ -5,7 +5,7 @@ tags:
 ---
 <!-- more -->
 
-### EXCEL 批量添加图片
+### 0.1. EXCEL 批量添加图片
 
 ```html
 <table><img src="图片链接" height="42" width="42"/>
@@ -17,7 +17,7 @@ tags:
 
 实例网址 https://image-charts.com/chart?chs=150x150&cht=qr&chl=Hello%20world&choe=UTF-8
 
-### EXCEL 图片居中
+### 0.2. EXCEL 图片居中
 
 ```vb
 Sub dq()

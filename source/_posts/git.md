@@ -155,3 +155,4 @@ mirrors - GitCode [https://gitcode.com/org/mirrors](https://gitcode.com/org/mirr
 1. [Linux下安装Git](https://blog.csdn.net/sinat_29963957/article/details/81256227)
 1. [CentOS安装GIT](https://www.cnblogs.com/sahara/p/5683066.html)
 3. [Git Submodule 使用](https://zhuanlan.zhihu.com/p/374662328)
+4. [# git 本地仓库同时推送到多个远程仓库](https://fanfu.blog.csdn.net/article/details/79386169)

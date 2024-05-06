@@ -1,13 +1,19 @@
 ---
-title: URL Protocol
-date: 2021-08-10 10:07:39
 tags:
+  - excalidraw
   - Windows
   - cshape
+title: URL Protocol
+date: 2021-08-10T10:07:39.000Z
 ---
-为指定程序注册URL Protocol,方便浏览器调用
+
+
+为指定程序注册URL Protocol,方便浏览器调用[^1]
 
 <!-- more -->
+`<scheme>://<host>:<port>[<path>|<pathPrefix>|<pathPattern>|<pathAdvancedPattern>|<pathSuffix>]`
+
+## 1. Windows
 
 C#
 
@@ -50,3 +56,36 @@ C#
                 .SetValue("", $"\"{path}\" \"%1\"", Microsoft.Win32.RegistryValueKind.String);
         }
 ```
+
+## 2. Android [^2]
+
+AndroidManifest.xml
+```xml
+<activity>
+    <intent-filter>
+        <action android:name="android.intent.action.VIEW">
+        <category android:name="android.intent.category.DEFAULT">
+        <category android:name="android.intent.category.BROWSABLE" /> 
+        <!-- Accepts URIs that begin with "example://gizmos” -->  
+        <data android:scheme="example" android:host="gizmos" />
+    </intent-filter>  
+</activity>
+```
+
+Activity.kt
+```kotlin
+override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    setContentView(R.layout.main)
+    val action: String? = intent?.action
+    val data: Uri? = intent?.data  
+}
+```
+
+[^1] https://www.ietf.org/rfc/rfc2396.txt
+https://developer.android.google.cn/guide/topics/manifest/data-element?hl=zh-cn#scheme
+[^2] https://developer.android.google.cn/training/app-links/deep-linking?hl=zh-cn
+https://developer.android.google.cn/reference/java/net/URI?hl=en
+https://developer.android.google.cn/codelabs/android-app-links-introduction?hl=zh-cn#0
+https://developer.android.google.cn/training/app-links?hl=zh-cn
+https://www.python100.com/html/110711.html
