@@ -31,7 +31,7 @@
 <meta property="og:description" content="MQTT 是一种轻量级的、灵活的物联网消息交换和数据传递协议，致力于为 IoT 开发人员实现灵活性与硬件&#x2F;网络资源的平衡。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-05-02T15:12:44.000Z">
-<meta property="article:modified_time" content="2024-05-06T13:22:58.581Z">
+<meta property="article:modified_time" content="2024-05-07T11:10:28.210Z">
 <meta property="article:author" content="Duke Bode">
 <meta name="twitter:card" content="summary">
 
@@ -255,7 +255,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-06 13:22:58" itemprop="dateModified" datetime="2024-05-06T13:22:58+00:00">2024-05-06</time>
+      <time title="Modified: 2024-05-07 11:10:28" itemprop="dateModified" datetime="2024-05-07T11:10:28+00:00">2024-05-07</time>
     </span>
 
   
@@ -293,22 +293,26 @@ target="_blank" rel="noopener" href="https://mqtt.org/">MQTT</a> 是一种轻�
 IoT 开发人员实现灵活性与硬件/网络资源的平衡。</p>
 <span id="more"></span>
 <h2 id="androidkotlin">1. Android(Kotlin)</h2>
-<p>mosquito.conf <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Starting in local only mode.</span><br><span class="line"># https://mosquitto.org/blog/2020/12/version-2-0-0-released/</span><br><span class="line">listener 1883</span><br><span class="line">allow_anonymous true</span><br></pre></td></tr></table></figure></p>
+<p>/etc/mosquitto/mosquitto.conf mosquitto.conf <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Starting in local only mode.</span><br><span class="line"># https://mosquitto.org/blog/2020/12/version-2-0-0-released/</span><br><span class="line">listener 1883</span><br><span class="line">allow_anonymous true</span><br></pre></td></tr></table></figure></p>
 <p>build.gradle.kts <figure class="highlight kts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">dependencies &#123;</span><br><span class="line">implementation(<span class="string">&quot;org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5&quot;</span>)</span><br><span class="line">    <span class="comment">//implementation(&quot;org.eclipse.paho:org.eclipse.paho.android.service:1.1.1&quot;)</span></span><br><span class="line">    implementation(<span class="string">&quot;io.github.muxiaolin:org.eclipse.paho.android.service:1.1.4&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>AndroidManifest.xml <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">uses-permission</span> <span class="attr">android:name</span>=<span class="string">&quot;android.permission.INTERNET&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">uses-permission</span> <span class="attr">android:name</span>=<span class="string">&quot;android.permission.WAKE_LOCK&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">uses-permission</span> <span class="attr">android:name</span>=<span class="string">&quot;android.permission.ACCESS_NETWORK_STATE&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">application</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">service</span> <span class="attr">android:name</span>=<span class="string">&quot;org.eclipse.paho.android.service.MqttService&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">application</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p><a target="_blank" rel="noopener" href="https://mosquitto.org/">mosquitto-MQTT broker</a> <a
-target="_blank" rel="noopener" href="https://www.cnblogs.com/qumogu/p/16007609.html">mosquitto
-的安装、配置、使用教程</a> <a
-target="_blank" rel="noopener" href="https://www.cnblogs.com/simadi/p/15666493.html">Starting in local
-only mode</a> <a
-target="_blank" rel="noopener" href="https://eclipse.dev/paho/index.php?page=downloads.php">MQTT
-Client</a> <a
-target="_blank" rel="noopener" href="https://blog.csdn.net/kankanlj/article/details/128385271">高Android版本中MqttAndroidClient库无法使用问题:MqttAndroidClient未对AndroidX适配导致</a>
-<a
+<ul>
+<li><a target="_blank" rel="noopener" href="https://mosquitto.org/">mosquitto-MQTT broker</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/qumogu/p/16007609.html">mosquitto
+的安装、配置、使用教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/simadi/p/15666493.html">Starting in
+local only mode</a></li>
+<li><a target="_blank" rel="noopener" href="https://eclipse.dev/paho/index.php?page=downloads.php">MQTT
+Client</a></li>
+<li><a
+target="_blank" rel="noopener" href="https://blog.csdn.net/kankanlj/article/details/128385271">高Android版本中MqttAndroidClient库无法使用问题:MqttAndroidClient未对AndroidX适配导致</a></li>
+<li><a
 target="_blank" rel="noopener" href="https://www.emqx.com/zh/blog/android-connects-mqtt-using-kotlin">Android
-使用 Kotlin 连接 MQTT</a> <a
+使用 Kotlin 连接 MQTT</a></li>
+<li><a
 target="_blank" rel="noopener" href="https://help.aliyun.com/zh/iot/use-cases/use-the-paho-mqtt-android-client?spm=a2c4g.11186623.0.0#section-k7a-kae-iyx">Paho-MQTT
-Android接入示例</a></p>
+Android接入示例</a></li>
+</ul>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>
     </div>
 
@@ -406,7 +410,7 @@ Android接入示例</a></p>
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2024/05/02/emulator/" rel="next" title="emulator">
+                <a href="/2024/05/02/Emulator/" rel="next" title="emulator">
                   emulator <i class="fa fa-angle-right"></i>
                 </a>
             </div>
