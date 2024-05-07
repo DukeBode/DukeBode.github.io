@@ -47,6 +47,8 @@ pacman -S mingw-w64-ucrt-x86_64-qemu
 # clang
 pacman -S mingw-w64-ucrt-x86_64-clang
 pacman -S mingw-w64-ucrt-x86_64-clang-tools-extra
+pacman -S mingw-w64-ucrt-x86_64-lldb
+pacman -S mingw-w64-ucrt-x86_64-lld
 pacman -S mingw-w64-ucrt-x86_64-sqlite3
 pacman -S mingw-w64-ucrt-x86_64-putty
 pacman -S mingw-w64-ucrt-x86_64-ruby
@@ -87,6 +89,9 @@ pacman -R
 
 
 
-[msys2](https://www.msys2.org/)
-[MSYS2 Packages](https://packages.msys2.org/)
-[pacman](https://wiki.archlinux.org/title/Pacman)
+- [msys2](https://www.msys2.org/)
+- [MSYS2 Packages](https://packages.msys2.org/)
+- [pacman](https://wiki.archlinux.org/title/Pacman)
+- [将代码升级到ucrt](https://learn.microsoft.com/zh-cn/cpp/porting/upgrade-your-code-to-the-universal-crt?view=msvc-170)
+
+- [cygwin](https://cygwin.com/index.html)

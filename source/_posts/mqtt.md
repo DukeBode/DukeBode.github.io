@@ -11,7 +11,8 @@ mathjax: false
 
 ## 1. Android(Kotlin)
 
-mosquito.conf
+/etc/mosquitto/mosquitto.conf
+mosquitto.conf
 ```conf
 # Starting in local only mode.
 # https://mosquitto.org/blog/2020/12/version-2-0-0-released/
@@ -40,10 +41,10 @@ AndroidManifest.xml
 ```
 
 
-[mosquitto-MQTT broker](https://mosquitto.org/)
-[mosquitto 的安装、配置、使用教程](https://www.cnblogs.com/qumogu/p/16007609.html)
-[Starting in local only mode](https://www.cnblogs.com/simadi/p/15666493.html)
-[MQTT Client](https://eclipse.dev/paho/index.php?page=downloads.php)
-[高Android版本中MqttAndroidClient库无法使用问题:MqttAndroidClient未对AndroidX适配导致](https://blog.csdn.net/kankanlj/article/details/128385271)
-[Android 使用 Kotlin 连接 MQTT](https://www.emqx.com/zh/blog/android-connects-mqtt-using-kotlin)
-[Paho-MQTT Android接入示例](https://help.aliyun.com/zh/iot/use-cases/use-the-paho-mqtt-android-client?spm=a2c4g.11186623.0.0#section-k7a-kae-iyx)
+- [mosquitto-MQTT broker](https://mosquitto.org/)
+- [mosquitto 的安装、配置、使用教程](https://www.cnblogs.com/qumogu/p/16007609.html)
+- [Starting in local only mode](https://www.cnblogs.com/simadi/p/15666493.html)
+- [MQTT Client](https://eclipse.dev/paho/index.php?page=downloads.php)
+- [高Android版本中MqttAndroidClient库无法使用问题:MqttAndroidClient未对AndroidX适配导致](https://blog.csdn.net/kankanlj/article/details/128385271)
+- [Android 使用 Kotlin 连接 MQTT](https://www.emqx.com/zh/blog/android-connects-mqtt-using-kotlin)
+- [Paho-MQTT Android接入示例](https://help.aliyun.com/zh/iot/use-cases/use-the-paho-mqtt-android-client?spm=a2c4g.11186623.0.0#section-k7a-kae-iyx)
