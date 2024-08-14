@@ -18,10 +18,10 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" integrity="sha256-wiz7ZSCn/btzhjKDQBms9Hx4sSeUYsDrTLg7roPstac=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"dukebode.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.19.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":false,"nav":null,"activeClass":"changyan"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dukebode.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":false,"nav":null,"activeClass":"changyan"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="Beautiful Soup提供一些简单的、python式的函数用来处理导航、搜索、修改分析树等功能。它是一个工具箱，通过解析文档为用户提供需要抓取的数据，因为简单，所以不需要多少代码就可以写出一个完整的应用程序">
 <meta property="og:type" content="article">
@@ -31,7 +31,7 @@
 <meta property="og:description" content="Beautiful Soup提供一些简单的、python式的函数用来处理导航、搜索、修改分析树等功能。它是一个工具箱，通过解析文档为用户提供需要抓取的数据，因为简单，所以不需要多少代码就可以写出一个完整的应用程序">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2018-01-23T16:26:48.000Z">
-<meta property="article:modified_time" content="2024-05-07T11:10:28.210Z">
+<meta property="article:modified_time" content="2024-08-14T02:39:08.675Z">
 <meta property="article:author" content="Duke Bode">
 <meta property="article:tag" content="python">
 <meta property="article:tag" content="爬虫">
@@ -160,12 +160,12 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">74</span>
+          <span class="site-state-item-count">57</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">33</span>
+        <span class="site-state-item-count">32</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -257,7 +257,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-05-07 11:10:28" itemprop="dateModified" datetime="2024-05-07T11:10:28+00:00">2024-05-07</time>
+      <time title="Modified: 2024-08-14 02:39:08" itemprop="dateModified" datetime="2024-08-14T02:39:08+00:00">2024-08-14</time>
     </span>
 
   
@@ -328,7 +328,7 @@ Python 会使用 Python默认的解析器，lxml
 <col style="width: 28%" />
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>解析器</th>
 <th>使用方法</th>
 <th>优势</th>
@@ -336,26 +336,26 @@ Python 会使用 Python默认的解析器，lxml
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Python标准库</td>
 <td>BeautifulSoup(markup, “html.parser”)</td>
 <td>Python的内置标准库、执行速度适中、文档容错能力强</td>
 <td>Python 2.7.3 or 3.2.2)前 的版本中文档容错能力差</td>
 </tr>
-<tr class="even">
+<tr>
 <td>lxml HTML 解析器</td>
 <td>BeautifulSoup(markup, “lxml”)</td>
 <td>速度快、文档容错能力强</td>
 <td>需要安装C语言库</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>lxml XML 解析器</td>
 <td>BeautifulSoup(markup, [“lxml”, “xml”])BeautifulSoup(markup,
 “xml”)</td>
 <td>速度快、唯一支持XML的解析器</td>
 <td>需要安装C语言库</td>
 </tr>
-<tr class="even">
+<tr>
 <td>html5lib</td>
 <td>BeautifulSoup(markup, “html5lib”)</td>
 <td>最好的容错性、以浏览器的方式解析文档、生成HTML5格式的文档</td>
@@ -726,7 +726,7 @@ soup.select()，返回类型是 list</p>
 
   
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.1/dist/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
 <script src="/js/third-party/search/local-search.js"></script>
