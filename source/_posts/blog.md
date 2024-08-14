@@ -31,19 +31,6 @@ Hexo 不是博客而是快速、简洁且高效的博客框架，适合任何有
 
 访问 GitHub 官网 建立自己的 GitHub 帐号：[注册地址](https://github.com/join)
 
-![Github 注册界面](/img/blog/1.png)
-
-请将自己在图中标记的项目中所填写的内容记录下，以便后期的操作。
-
-建议用户名①尽量使用全英文字母，避免不必要的麻烦
-
-举个例子，我的为：
-
-- ① DukeBode
-- ② Duke123@aliyun.com
-
-剩余的`红色标记`请自行记录，此处仅记录重要信息
-
 ### 0.4. 创建 GitPage 仓库
 
 登录 GitHub,在相关位置输入上文记录的内容。[登录地址](https://github.com/login)
@@ -61,41 +48,13 @@ Hexo 不是博客而是快速、简洁且高效的博客框架，适合任何有
 
 不是`中国地区`的` Windows 系统`用户请自行阅读官网文档安装，切记配置 path 环境。 [git 官方下载地址](https://git-scm.com/downloads)
 
-![Git 下载界面](/img/blog/4.png)
-
-```shell
-git config --global user.name "①"
-
-git config --global user.email ②
-
-ssh-keygen -t rsa -C "②"
-```
-
 ### 0.6. 配置 Nodejs 环境
 
 [NodeJS 官网]()
 
-### 0.7. 安装 Hexo-cli
-
-```shell
-npm install hexo-cli -g
-```
-
-### 0.8. 搭建博客环境
-
-```sh
-hexo init blog
-# 
-cd blog
-# 
-npm install
-# 
-hexo server
-```
-
 git clone -b <指定分支名> <远程仓库地址>
 
-### 0.9. 编写博客
+### 0.7. 编写博客
 
 ```bat
 set PATH=%PATH%;

@@ -18,8 +18,6 @@ gitcode.com
 
 ## 2. git
 
-![git 官网](/img/git/0.png)
-
 [官网](https://git-scm.com/) | [中国下载](https://github.com/waylau/git-for-win)
 
 ## 3. 安装 git
@@ -59,7 +57,7 @@ git version
 # 设置 git 全局用户名
 git config --global user.name "DukeBode"
 # 设置 git 全局邮箱
-git config --global user.email Duke123@aliyun.com
+git config --global user.email 29868250+DukeBode@users.noreply.github.com
 # 设置 git 对比工具
 git config --global diff.tool vimdiff
 git config --global difftool.prompt false
@@ -82,10 +80,10 @@ git push -u origin --all
 ```sh
 # 格式 
 # ssh-keygen -t rsa -C "通常为邮箱" -f "私钥文件绝对路径"
-ssh-keygen -t ed25519 -C "giee.com" -f "~\.ssh\gitee"
-ssh-keygen -t ed25519 -C "github.com" -f "~\.ssh\github"
-ssh-keygen -t ed25519 -C "gitlab.com" -f "~\.ssh\gitlab"
-ssh-keygen -t ed25519 -C "gitcode.com" -f "~\.ssh\gitcode"
+ssh-keygen -t ed25519 -C "giee.com" -f "~/.ssh/gitee"
+ssh-keygen -t ed25519 -C "github.com" -f "~/.ssh/github"
+ssh-keygen -t ed25519 -C "gitlab.com" -f "~/.ssh/gitlab"
+ssh-keygen -t ed25519 -C "gitcode.com" -f "~/.ssh/gitcode"
 ```
 
 ### 8.2. 配置 ssh config 文件
@@ -111,8 +109,9 @@ Host github.com
     PreferredAuthentications publickey
     IdentityFile ~\.ssh\github
 ```
+
 ```sh
-git -T git@github.com
+ssh -T git@github.com
 ```
 
 ## 9. git 撤销已经push的提交
@@ -136,6 +135,28 @@ git submodule add -b dev git@ip:src/name.git submodule_filename
 # 更新 submodule 为远程项目的最新版本
 git submodule update --remote
 git clone url.git --recurse-submodules
+```
+
+```sh
+README.md
+LICENSE.txt
+CTTATION.cff
+.gitignore
+CODE_OF_CONDUCT.md
+# 参与者指南
+CONTRIBUTING.md
+GOVERNACE.md
+# 安全政策
+.github/SECURITY.md
+.github/SUPPORT.md
+.github/ISSUE_TEMPLATE/
+
+.github/FUNDING.yml
+# 代码所有者
+.github/CODEOWNERS
+# workflows
+.github/workflows/
+
 ```
 
 

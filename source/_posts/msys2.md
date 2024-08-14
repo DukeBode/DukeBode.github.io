@@ -49,16 +49,20 @@ pacman -S mingw-w64-ucrt-x86_64-clang
 pacman -S mingw-w64-ucrt-x86_64-clang-tools-extra
 pacman -S mingw-w64-ucrt-x86_64-lldb
 pacman -S mingw-w64-ucrt-x86_64-lld
+pacman -S mingw-w64-ucrt-x86_64-python-conan
 pacman -S mingw-w64-ucrt-x86_64-sqlite3
 pacman -S mingw-w64-ucrt-x86_64-putty
 pacman -S mingw-w64-ucrt-x86_64-ruby
 pacman -S mingw-w64-ucrt-x86_64-aria2
 pacman -S mingw-w64-ucrt-x86_64-dosbox
+pacman -S mingw-w64-ucrt-x86_64-yasm
+pacman -S mingw-w64-ucrt-x86_64-nasm
 pacman -S mingw-w64-ucrt-x86_64-nodejs
 pacman -S mingw-w64-ucrt-x86_64-mosquitto
 pacman -S mingw-w64-ucrt-x86_64-paho.mqtt.c
 pacman -S mingw-w64-ucrt-x86_64-graphviz
 pacman -S mingw-w64-ucrt-x86_64-imagemagick
+pacman -S mingw-w64-ucrt-x86_64-nsis
 # qt-creator
 pacman -S mingw-w64-ucrt-x86_64-qt-creator
 # texstudio
@@ -80,6 +84,11 @@ pacman -S mingw-w64-ucrt-x86_64-openscad
 pacman -S mingw-w64-ucrt-x86_64-freecad
 
 pacman -S mingw-w64-ucrt-x86_64-kdenlive
+pacman -S mingw-w64-ucrt-x86_64-hugo
+pacman -S mingw-w64-ucrt-x86_64-go
+pacman -S mingw-w64-ucrt-x86_64-rust
+pacman -S mingw-w64-ucrt-x86_64-perl
+pacman -S mingw-w64-ucrt-x86_64-lua
 ```
 
 ## 5. Uninstalling a package

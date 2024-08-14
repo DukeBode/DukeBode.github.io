@@ -247,7 +247,7 @@ option属性
 
 网页结构一般都包含文档声明DOCTYPE，并且在head中的meta应该包含编码格式、关键字、网页描述信息。
 
-### 网页结构
+### 0.1. 网页结构
 
 ```html
 <!DOCTYPE html>
@@ -274,7 +274,7 @@ article用于可重新覆盖的新闻类内容块，section模块化，
 aside页面左或右模块，
 footer底脚模块。
 
-## 常用布局元素
+## 1. 常用布局元素
 
 
 div：流布局使用；
@@ -293,7 +293,7 @@ JD首页的meta声明包含：
 < meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑">
 ```
 
-## 文字类元素
+## 2. 文字类元素
 
 （1）加粗元素：strong、b。例如：
 
@@ -310,7 +310,7 @@ JD首页的meta声明包含：
 < p>The name < i>Shay< /i> means a gift.< /p>
 ```
 
-## 自关闭元素
+## 3. 自关闭元素
 
 ```html
 < br>
@@ -325,7 +325,7 @@ JD首页的meta声明包含：
 < wbr>
 ```
 
-## 页面内跳转
+## 4. 页面内跳转
 
 如果需要跳转到页面指定的位置，可在该位置设置元素的id属性，然后为链接添加href="#id"。例如：
 
@@ -336,3 +336,50 @@ JD首页的meta声明包含：
 ...
 < /body >
 ```
+
+## 5. meta
+
+The HTML `<meta>` element represents metadata that cannot be represented by other HTML meta-related elements, like `<base>`, `<link>`, `<script>`, `<style>` or `<title>`.
+
+viewport 
+
+使用元视口代码控制浏览器视口的宽度和缩放比例。
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+- 添加 width=device-width 以便与屏幕宽度（以设备无关像素为单位）进行匹配。
+- 添加 initial-scale=1 以便将 CSS 像素与设备无关像素的比例设为 1:1。
+- 确保在不停用用户缩放功能的情况下，您的网页也可以访问。
+
+除了设置 initial-scale 外，您还可以在视口上设置以下属性：
+
+- minimum-scale
+- maximum-scale
+- user-scalable
+
+但是，设置后，这些属性可以停用用户缩放视口的功能，可能会造成网页访问方面的问题。
+
+## 6. redirect
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 避免缓存 -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Document</title>
+    <script>
+        location.href="http://www.baidu.com";
+        location.replace("http://www.baidu.com")
+    </script>
+</head>
+<body>
+</body>
+</html>
+```
+
+Ctrl + F5 强制刷新  

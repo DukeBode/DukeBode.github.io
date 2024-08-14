@@ -7,12 +7,12 @@ tags:
 - 框架
 ---
 
-## Python 3 安装
+## 1. Python 3 安装
 
 
 <!-- more -->
 
-### 源码安装（推荐）
+### 1.1. 源码安装（推荐）
 
 ```sh
 # 下载安装包
@@ -31,7 +31,7 @@ ln -s /usr/local/Python/bin/python3.7 /usr/bin/python3
 ln -s /usr/local/Python/bin/pip /usr/bin/pip3
 ```
 
-### CentOS 软件包方式安装
+### 1.2. CentOS 软件包方式安装
 
 ```sh
 # 安装 python3

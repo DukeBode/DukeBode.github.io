@@ -11,41 +11,68 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（�
 
 <!-- more -->
 
+```sh
+# 检查程序版本，确认所需程序存在。
+node -v; 
+git version; 
+npm -v; 
+npx -v
+# 创建并切换到工作目录
+mkdir blog
+cd blog
+```
 ## 1. 初始化博客环境
 
 ```sh
-hexo init blog
+npx hexo init
+```
+## 2. 博客名称
+
+`_config.yml`
+```diff
+-title: Hexo
++title: Duke Blog
 ```
 
-## 2. 页面
+## 3. 博客网址
 
-source 目录下新建 404.md 文件
+`_config.yml`
+```diff
+-url: http://example.com
++url: https://DukeBode.github.io
+```
+## 4. 页面
 
+`source/404.md`
 ```md
-<script>
-location.href="https://dukebode.github.io/";
-</script>
+---
+permalink: /404.html
+---
+
+[返回首页](/)
 ```
 
-## 3. CNAME
+## 5. CNAME
 
-source/CNAME
+`source/CNAME`
 
-## 4. 主题设置
+
+## 6. 主题设置
 
 theme: duke
 
-## 5. 部署至 GitPage
+## 7. 部署至 GitPage
+
 
 配置config
 
 ```diff
 _config.yml
 
-- type
-+ - type: git
-+   repo: git@github.com:DukeBode/DukeBode.github.io.git
-+   branch: master
+-  type
++  type: git
++  repo: git@github.com:DukeBode/DukeBode.github.io.git
++  branch: master
 ```
 
 ```sh
@@ -55,7 +82,7 @@ yarn add hexo-deployer-git
 hexo d
 ```
 
-## 6. git 备份
+## 8. git 备份
 
 我们将采用 gitpage 的 backup 分支来备份
 
@@ -78,17 +105,17 @@ git branch -d master
 git push -u origin backup
 ```
 
-## 7. git 恢复
+## 9. git 恢复
 
 ```sh
 git clone -b backup git@github.com:DukeBode/DukeBode.github.io.git blog
 ```
 
-## 8. 多机编写
+## 10. 多机编写
 
 
 
-## 9. 网站地图
+## 11. 网站地图
 
 > 为搜索引擎提供搜索依据
 
@@ -96,7 +123,7 @@ git clone -b backup git@github.com:DukeBode/DukeBode.github.io.git blog
 yarn add hexo-generator-sitemap
 ```
 
-## 10. RSS 订阅
+## 12. RSS 订阅
 
 > 方便用户订阅
 
@@ -104,7 +131,7 @@ yarn add hexo-generator-sitemap
 yarn add hexo-generator-feed
 ```
 
-## 11. 评论
+## 13. 评论
 
 - gitalk
 

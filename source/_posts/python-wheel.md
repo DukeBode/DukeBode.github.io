@@ -13,7 +13,7 @@ tags:
 
 <!-- more -->
 
-### github action
+### 0.1. github action
 
 1. 创建 GitHub 仓库
 1. 配置 pypi token
@@ -22,7 +22,7 @@ tags:
 1. 配置 本地仓库
 1. 配置打包及开发环境
 
-### 最小pypi包
+### 0.2. 最小pypi包
 
 ```sh
 .gitignore
@@ -36,7 +36,7 @@ module/
     /__main__.py
 ```
 
-### 打包环境
+### 0.3. 打包环境
 
 ```sh
 # bdist
@@ -45,20 +45,20 @@ pip install setuptools wheel twine
 # twine upload dist/*
 ```
 
-### __init__.py
+### 0.4. __init__.py
 
 > __init__.py 文件表明当前文件夹为 Python 模块,模块被导入时实际为此文件，模块方式运行时先执行此文件。
 
-#### __init__.py 中常配置的模块参数
+#### 0.4.1. __init__.py 中常配置的模块参数
 
 - __all__ 指定 `form package import *` 的内容
 - __version__ 指定版本
 
-### __main__.py
+### 0.5. __main__.py
 
 > __main__.py 文件表明当前文件夹可作为模块运行，可以文件夹、模块方式运行时执行此文件，相当于依赖模块的示例程序。
 
-### setup.py
+### 0.6. setup.py
 
 > setup.py 文件是 setuptools 打包的脚本文件，文件内应当写明包相关信息，以及其它的附属操作。
 

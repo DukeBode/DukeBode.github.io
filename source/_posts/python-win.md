@@ -8,13 +8,13 @@ tags:
 
 <!-- more -->
 
-### Window 下 Python 多版本问题
+### 0.1. Window 下 Python 多版本问题
 
 - python 2 使用 python
 - python 3 使用 py
 - python x.y 使用 py -x.y
 
-### 项目虚拟运行环境
+### 0.2. 项目虚拟运行环境
 
 ```sh
 # 指定 python 版本 x.y 创建虚拟环境
@@ -27,7 +27,7 @@ python -m pip install --upgrade pip
 deactivate
 ```
 
-### 搭建本地 pypi 服务器
+### 0.3. 搭建本地 pypi 服务器
 
 [pypi-server](https://pypi.org/project/pypiserver/)
 
@@ -49,14 +49,14 @@ pip config set global.index-url http://localhost:8080/simple
 ```
 
 
-## python 内存
+## 1. python 内存
 
-### 变量 id() 相等，即 a is b
+### 1.1. 变量 id() 相等，即 a is b
 
 - 整数范围在[-5,256]的变量，即小整数
 - 没有空格等特殊字符的字符串，应用 账号
 
-### gc（garbage collection）垃圾回收机制
+### 1.2. gc（garbage collection）垃圾回收机制
 
 - 引用计数机制 
     sys.getrefcount(obj) 获取引用计数
@@ -75,7 +75,7 @@ gc.collect() 手动调用
 - 隔代回收机制
     相互引用。。。
 
-### 内置属性
+### 1.3. 内置属性
 
 __dict__ 类属性 由类属性构成的字典
 __doc__ 类文档
@@ -84,7 +84,7 @@ __module__ 类所在模块
 __bases__  类的父类构成元素，由所有父类组成的元组
 __getattribute__ 属性拦截器
 
-### 内建函数
+### 1.4. 内建函数
 
 range(start=0,end,step=1)
 map(function,iterable)迭代器处理可迭代对象

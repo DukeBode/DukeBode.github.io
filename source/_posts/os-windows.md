@@ -149,3 +149,133 @@ node a.js & node b.js
 先运行a.js运行，不管运行a.js文件是否报错，b.js接着运行
 
 来自 <[https://blog.csdn.net/yrk0556/article/details/104308866](https://blog.csdn.net/yrk0556/article/details/104308866)>
+
+## 4. Windows 环境下常用的软件
+
+| 软件                  | 类别   | 官网                                                                                       |
+| ------------------- | ---- | ---------------------------------------------------------------------------------------- |
+| VScode              | 文本编辑 | https://code.visualstudio.com/                                                           |
+| 7-zip               | 压缩   | https://www.7-zip.org/                                                                   |
+| Chrome              | 浏览器  | https://google.cn/chrome/                                                                |
+| Snipaste            | 截图   | https://zh.snipaste.com/                                                                 |
+| AHK                 | 快捷键  | https://www.autohotkey.com/                                                              |
+| 百度网盘                | 资源   | https://yun.baidu.com/                                                                   |
+| TIM                 | 即时通讯 | https://im.qq.com/                                                                       |
+| 企业微信                | 即时通讯 | https://work.weixin.qq.com/                                                              |
+| 微信                  | 即时通讯 | https://weixin.qq.com/                                                                   |
+| Dism++              | 清理   | https://www.chuyu.me                                                                     |
+| GifCam              | 动图制作 | [http://blog.bahraniapps.com/gifcam/](http://blog.bahraniapps.com/gifcam/)               |
+| GiF Resizer         | 图片处理 | [http://www.ashongsoft.com/](http://www.ashongsoft.com/product/gif-resizer.html)         |
+| Image Converter One | 图片处理 | [http://www.ashongsoft.com/](http://www.ashongsoft.com/product/image-converter-one.html) |
+| Rufus               | U盘启动 | https://rufus.ie/zh_CN.html                                                              |
+| Lantern             | 翻墙   | https://github.com/getlantern/                                                           |
+| DiskGenius          | 分区   | http://www.diskgenius.cn/                                                                |
+| 火绒                  | 安全   | https://www.huorong.cn/                                                                  |
+| 微PE工具箱              | 系统运维 | http://www.wepe.com.cn/                                                                  |
+| obsidian            |      |                                                                                          |
+| MSYS2               |      | https://www.msys2.org                                                                    |
+| PDF_Guru            |      | https://gitee.com/Kevin234/PDF-Guru                                                      |
+| marp                | ppt  | [https://marp.app](https://marp.app/)                                                    |
+| WProxy              |      | http://www.wfiltericf.com/WProxy.htm                                                     |
+| sourcetree          |      | [https://www.sourcetreeapp.com](https://www.sourcetreeapp.com/)                          |
+|                     |      |                                                                                          |
+
+## 5. Windows 运行常用的命令
+
+命令|含义|备注
+-|-|-
+appwiz.cpl | 程序和功能 | 常用于卸载软件
+logoff | 注销 | 注销计算机
+shutdown | 60秒倒计时关机命令|
+cmd | cmd | 命令提示符
+calc | 计算器 |
+cleanmgr | 磁盘清理 |
+msconfig | 系统配置实用程序
+osk | 屏幕键盘
+psr | 步骤记录器|
+snippingtool | 截图工具 | 已被截图和草图取代
+winver | 关于"Windows" | 查看 Windows 版本
+explorer | 资源管理器
+regedit | 注册表编辑器
+taskmgr | 任务管理器
+compmgmt.msc | 计算机管理
+devmgmt.msc | 设备管理器
+## 6. 双拼输入
+
+```
+```
+
+## 7. host
+
+The hosts file is one of several system facilities that assists in addressing network nodes in a computer network. It is a common part of an operating system's Internet Protocol (IP) implementation, and serves the function of translating human-friendly hostnames into numeric protocol addresses, called IP addresses, that identify and locate a host in an IP network.
+
+| 系统        | host 文件路径                             |
+| --------- | ------------------------------------- |
+| Windows   | C:\Windows\System32\drivers\etc\hosts |
+| Linux/Mac | /etc/hosts                            |
+
+### 7.1. 功能
+
+- 加快域名解析
+- 重定向恶意域名
+- 虚拟域名
+
+https://github.com/googlehosts/hosts
+
+
+添加下面两行内容到hosts文件中
+
+151.101.72.249 github.global.ssl.fastly.net
+
+192.30.253.112 github.com
+
+## 8. 文件校验
+
+```
+E:\>certutil -hashfile hero.png md5
+MD5 哈希(文件 hero.png):
+fefd01c9db6e3e83b978eff1b7a67c02
+CertUtil: -hashfile 命令成功完成。
+ 
+E:\>certutil -hashfile hero.png SHA1
+SHA1 哈希(文件 hero.png):
+f1e929db9cef34a8786ee4b6246fb739566c799d
+CertUtil: -hashfile 命令成功完成。
+ 
+E:\>certutil -hashfile hero.png SHA256
+SHA256 哈希(文件 hero.png):
+5b654b2297f17d9106388db31c1190240cfb359144925e892468b40d692c780f
+CertUtil: -hashfile 命令成功完成。
+```
+
+## 9. 暴力删除废弃文件夹
+```cmd
+DEL /F /A /Q \\?\%1
+
+RD /S /Q \\?\%1
+```
+/P 删除每一个文件之前提示确认。
+/F 强制删除只读文件。
+/S 从所有子目录删除指定文件。
+/Q 安静模式。删除全局通配符时，不要求确认。
+/A 根据属性选择要删除的文件。
+
+cmd /c dir：是执行完dir命令后关闭命令窗口；
+
+cmd /k dir：是执行完dir命令后不关闭命令窗口。
+
+## 10. DOSBOX 配置
+```conf
+# 挂载程序目录
+mount c D:\Programs_Add\ASM
+# 挂载工作目录
+mount d E:\DukeLab\ASM
+# 将程序加入 path 环境
+set path=%path%;c:\;
+# 切换到工作目录
+d:
+# 清屏
+cls
+```
+
+- [DOSBOX 官网](https://www.dosbox.com/)

@@ -86,8 +86,8 @@ dnf -y install zlib zlib-devel openssl openssl-devel pcre pcre-devel
 ```
 
 ## 文件校验
-linux
 
+```
 md5sum hero.png 
 fefd01c9db6e3e83b978eff1b7a67c02  hero.png
  
@@ -96,23 +96,33 @@ f1e929db9cef34a8786ee4b6246fb739566c799d  hero.png
  
 sha256sum hero.png 
 5b654b2297f17d9106388db31c1190240cfb359144925e892468b40d692c780f  hero.png
- 
+```
 
-windows
+## 
 
-E:\>certutil -hashfile hero.png md5
-MD5 哈希(文件 hero.png):
-fefd01c9db6e3e83b978eff1b7a67c02
-CertUtil: -hashfile 命令成功完成。
- 
+/usr/src
 
-E:\>certutil -hashfile hero.png SHA1
-SHA1 哈希(文件 hero.png):
-f1e929db9cef34a8786ee4b6246fb739566c799d
-CertUtil: -hashfile 命令成功完成。
- 
+<!-- more -->
 
-E:\>certutil -hashfile hero.png SHA256
-SHA256 哈希(文件 hero.png):
-5b654b2297f17d9106388db31c1190240cfb359144925e892468b40d692c780f
-CertUtil: -hashfile 命令成功完成。
+- php [download](https://www.php.net/downloads)
+
+```sh
+# php
+wget https://www.php.net/distributions/php-7.4.2.tar.gz
+```
+
+- mariadb [page](https://downloads.mariadb.org/mariadb/repositories/)
+
+dnf update
+
+http://nginx.org/en/download.html
+
+<!-- 备份 -->
+repo
+
+## MariaDB
+```shell
+dnf install MariaDB-server MariaDB-client
+```
+
+MariaDB 下载: https://downloads.mariadb.org/mariadb/repositories/

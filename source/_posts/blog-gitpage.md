@@ -18,23 +18,7 @@ tags:
 
 登录 GitHub,在相关位置输入上文记录的内容。[登录地址](https://github.com/login)
 
-![GitHub 登录界面](/img/blog/2.png)
-
 如图所示，新建仓库，输入相关信息。仓库名（用户名.github.io）为 GitPage 固定写法。[新建仓库地址](https://github.com/new)
-
-![仓库创建界面](/img/gitpage/2.png)
-
-### 1.2. 配置config
-
-```diff
-# _config.yml
-- type
-+ - type: git
-+   repo: git@github.com:DukeBode/DukeBode.github.io.git
-+   branch: master
-```
-
-![config配置](/img/gitpage/4.png)
 
 git
 - install

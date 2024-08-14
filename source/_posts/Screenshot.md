@@ -8,12 +8,12 @@ tags: 新手技能
 
 <!-- more -->
 
-### Windows 截图 —— 截图其实不需要装软件
+### 0.1. Windows 截图 —— 截图其实不需要装软件
 - PrintScreen （全屏截图）
 - Win + Shift + s （Windows 新版截图）
 如果没有，需要更新系统啦
 
-### Snipaste —— Window 平台最好的截图
+### 0.2. Snipaste —— Window 平台最好的截图
 [Snipaste 官网]("https://www.snipaste.com/")
 - F1 
 有时候会被个别软件的F1帮助占用
@@ -26,12 +26,12 @@ tags: 新手技能
 1. 点 PrintScreen 键，开始截图
 1. 点 F1 键，照常查看帮助
 
-### Chrome —— 相当不稳定
+### 0.3. Chrome —— 相当不稳定
 - 操作步骤
 1. 打开开发者工具（F12），或者在页面任何地方点击鼠标右键，在弹出菜单中选择“检查（Inspect）”选项。
 1. 使用快捷键`Ctrl/Command + Shift + P`打开命令行（command palette）。
 1. 键入“Screenshot”
 1. 根据字面含义，选择Capture为首的截图操作，其中`Capture full size screenshot`意思是截取整个网页。
 
-### QQ/TIM 截图 —— 上个世纪的截图软件
+### 0.4. QQ/TIM 截图 —— 上个世纪的截图软件
 - Ctrl + Alt + A

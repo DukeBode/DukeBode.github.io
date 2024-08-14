@@ -8,16 +8,16 @@ tags:
 
 <!-- more -->
 
-## Eclipse 下载
+## 1. Eclipse 下载
 - [Eclipse Packages](http://www.eclipse.org/downloads/packages/)
 - [Eclipse /安装-Eclipsepedia](https://wiki.eclipse.org/Eclipse/Installation#Install_a_JVM)
 
-## JAVA SE 下载（Eclipse 4.7 之后 jdk 版本最低为 1.8）
+## 2. JAVA SE 下载（Eclipse 4.7 之后 jdk 版本最低为 1.8）
 - [Java SE - Downloads | Oracle Technology Network | Oracle](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 - [OpenJDK](http://openjdk.java.net/)
 - [龙芯OpenJDK](http://www.loongnix.org/index.php/Java)
 
-## Eclipse 安装语言包
+## 3. Eclipse 安装语言包
 - [Babel Archived downloads](https://archive.eclipse.org/technology/babel/)
 使用“”>Help“Install New Software...”打开安装向导
 添加Babel p2存储库：http://download.eclipse.org/technology/babel/update-site/R0.16.0/photon/

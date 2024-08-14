@@ -15,14 +15,14 @@ pip install jupyterlab
 
 ```
 
-## 参考文档
+## 1. 参考文档
 1. [Installing the Jupyter Software](https://jupyter.org/install)
 1. [Jupyter kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
 
 
-## 配置内核
+## 2. 配置内核
 
-## 设置默认起始目录
+## 3. 设置默认起始目录
 
 1. 使用 shell 打开配置文件
 

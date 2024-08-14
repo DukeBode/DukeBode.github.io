@@ -20,7 +20,7 @@ tags:
 - Stable   当前稳定版本，版本号为偶数
 - Legacy   历年稳定版本
 
-## 源码安装
+## 1. 源码安装
 
 ```shell
 # wget http://nginx.org/download/nginx-1.14.0.tar.gz
@@ -50,14 +50,14 @@ Configuration summary
   nginx http uwsgi temporary files:   "uwsgi_temp"
   nginx http scgi temporary files:    "scgi_temp"
   ```
-## Nginx 操作命令
+## 2. Nginx 操作命令
 - nginx -s reload 重新加载配置文件
 - nginx -s reopen 重新打开日志文件
 - nginx -t        测试 nginx 配置文件是否正确
 - nginx -t -c /path/to/nginx.conf 测试 nginx 配置文件是否正确
 - nginx -s stop 快速停止 nginx
 
-## 附：
+## 3. 附：
 >- NGINX 官网      www.nginx.org
 >- NGINX docs      nginx.org/en/docs
 >- NGINX configure nginx.org/en/docs/configure.html

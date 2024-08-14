@@ -44,7 +44,6 @@ yarn global add docusaurus-init
 1. git pull
 
 
-
 [hexo 官网](https://hexo.io/)
 
 ## 1. 软件/插件
@@ -56,8 +55,6 @@ yarn global add docusaurus-init
 
 - 依次到相应官网下载相应软件并自行安装
 - 插件安装时需要打开 VScode
-- shell 执行 
-`npm install hexo-cli -g` 命令安装  hexo-cli
 
 ## 2. 记事本
 首行 .LOG
