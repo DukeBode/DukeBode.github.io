@@ -19,8 +19,71 @@ pip install jupyterlab
 1. [Installing the Jupyter Software](https://jupyter.org/install)
 1. [Jupyter kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)
 
+https://github.com/conda-forge/miniforge
 
-## 2. 配置内核
+## 2. kernel
+
+### 2.1. IJulia
+
+```julia
+add IJulia
+using IJulia
+notebook()
+```
+
+https://github.com/JuliaLang/IJulia.jl
+
+### 2.2. C
+
+```sh
+pip install jupyter-cpp-kernel
+```
+
+https://github.com/shiroinekotfs/jupyter-cpp-kernel
+
+### 2.3. IR
+```R
+install.packages('IRkernel')
+IRkernel::installspec(user = FALSE)
+jupyter labextension install @techrah/text-shortcuts
+```
+
+### 2.4. dot-kernel
+
+```sh
+pip install dot_kernel
+install-dot-kernel
+```
+
+https://github.com/laixintao/jupyter-dot-kernel
+
+### 2.5. octave
+
+```sh
+pip install octave-kernel
+```
+
+https://github.com/calysto/octave_kernel
+
+### 2.6. kotlin-jupyter
+
+```sh
+pip install kotlin-jupyter-kernel
+```
+
+https://github.com/Kotlin/kotlin-
+
+### 2.7. java
+
+```sh
+java -jar ganymede-2.1.2.20230910.jar -i
+```
+
+https://github.com/allen-ball/ganymede
+
+### 2.8. other
+
+https://github.com/jupyter/jupyter/wiki/Jupyter-kernels
 
 ## 3. 设置默认起始目录
 

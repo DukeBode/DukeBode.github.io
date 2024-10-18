@@ -9,11 +9,6 @@ Linux Frequently Asked Questions
 
 <!-- more -->
 
-# yum
-
-查看yum源Java包
-yum list *java*
-
 ## Linux 基础
 
 [文件目录](#文件目录)
@@ -84,6 +79,13 @@ dnf -y install bzip2-devel sqlite-devel readline-devel libffi-devel systemtap-sd
 # openssl 实现 SSL 功能
 dnf -y install zlib zlib-devel openssl openssl-devel pcre pcre-devel
 ```
+
+### yum
+
+查看yum源Java包
+yum list *java*
+
+### apt
 
 ## 文件校验
 

@@ -9,10 +9,10 @@ tags:
 
 <!-- more -->
 
-## 阅读基础
+## 1. 阅读基础
 - [Python3 安装](Python3.md)
 
-## 配置虚拟环境
+## 2. 配置虚拟环境
 
 > 表中命令从上往下执行即可，部分需要先切换目录，下同。本文为学习笔记，仅供参照，详细流程请阅读参考文章和官方文档。
 
@@ -27,7 +27,7 @@ tags:
 |-|生成环境包 | `pip freeze > requirements.txt`|
 |-|退出环境 | `deactivate`|
 
-## Django 项目开发
+## 3. Django 项目开发
  
 ||操作|命令|备注
 -|--|--|--
@@ -39,14 +39,14 @@ tags:
 -|同步静态文件|`python manage.py collectstatic` | 部署使用
 -|启动开发服务器|`python manage.py runserver` | 开发、测试使用
 
-## 配置 setting`.`py
+## 4. 配置 setting`.`py
 
     - LANGUAGE_CODE = 'zh-Hans'
     - TIME_ZONE = 'Asia/Shanghai'（视情况配置）
     - ALLOWED_HOSTS = ['公网ip',域名']（部署前配置）
     - DEBUG = False（NGINX 后配置）
 
-## 部署准备
+## 5. 部署准备
 
     - 删除 migrations 下数字开头的所有 python 文件
     - uwsgi.ini
@@ -62,13 +62,13 @@ tags:
     vacuum = true
     ```
 
-## 部署测试
+## 6. 部署测试
 
     - 开发服务器测试 `python36 manage.py runserver 172.18.173.33:80`
     - uwsgi 部署测试 `uwsgi uwsgi.ini`
     - Gunicorn 部署测试 `gunicorn -b 172.18.173.33:80 web.wsgi`
 
-## 配置 nginx
+## 7. 配置 nginx
 
 ```
 # 安装 uwsgi
@@ -82,7 +82,7 @@ yum install nginx
 nginx -t
 
 
-## 参考文章 
+## 8. 参考文章 
 
 - [Django+Ubuntu WEB部署（超详细版）](https://www.jianshu.com/p/e13417a8bb7f)
 - [跨过Nginx上基于uWSGI部署Django项目的坑](https://www.cnblogs.com/qingspace/p/6838747.html)

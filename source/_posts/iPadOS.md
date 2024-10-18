@@ -54,21 +54,23 @@ https://support.apple.com/zh-cn/HT201236
 - [LocalSend](https://apps.apple.com/cn/app/localsend/id1661733229)
 - [vimlike](https://apps.apple.com/cn/app/vimlike/id1584519802)
 - [spacedesk](https://apps.apple.com/cn/app/spacedesk-multi-monitor-app/id1069217220)
-- [obsidian](https://apps.apple.com/cn/app/obsidian-connected-notes/id1557175442)
-- 
-### 3.1. [KeKa - 压缩文件管理器](https://apps.apple.com/cn/app/keka-%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/id6443677513)
+### 3.1. [obsidian](https://apps.apple.com/cn/app/obsidian-connected-notes/id1557175442)
 
-### 3.2. [ish](https://apps.apple.com/cn/app/ish-shell/id1436902243)
-#### 3.2.1. Alpline Linux
+https://github.com/gslnzfq/obsidian-proxy-server
 
-#### 3.2.2. 查看版本
+### 3.2. [KeKa - 压缩文件管理器](https://apps.apple.com/cn/app/keka-%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/id6443677513)
+
+### 3.3. [ish](https://apps.apple.com/cn/app/ish-shell/id1436902243)
+#### 3.3.1. Alpline Linux
+
+#### 3.3.2. 查看版本
 
 ```sh
 cat /etc/os-release
 cat /etc/alpine-release
 ```
 
-#### 3.2.3. 配置源
+#### 3.3.3. 配置源
 ```sh
 sed -i 's#http://apk.ish.app/v3.19-2024-08-01#https://mirrors.tuna.tsinghua.edu.cn/alpine/v3.19#g' /etc/apk/repositories
 # 
@@ -83,9 +85,9 @@ apk add crago
 apk add python3 python-pip
 apk add gcompat
 ```
-#### 3.2.4. git 配置
+#### 3.3.4. git 配置
 
-##### 3.2.4.1. config 文件配置
+##### 3.3.4.1. config 文件配置
 
 ```config
 # github
@@ -113,15 +115,18 @@ ssh-keygen -t ed25519 -C "gitcode.com" -f "~/.ssh/gitcode"
 ssh -T git@github.com
 ```
 
-##### 3.2.4.2. 中文字符路径问题
+##### 3.3.4.2. 中文字符路径问题
 
 ```sh
+# 将 Git 处理路径名中的不可打印字符的方式进行设置
 git config --global core.quotepath false 
+# 设置 Git 日志输出的编码格式为 UTF-8
 git config --global i18n.logOutputEncoding utf-8 
+# 将提交信息的编码设置为 UTF-8
 git config --global i18n.commitEncoding utf-8
 ```
 
-#### 3.2.5. 异常处理
+#### 3.3.5. 异常处理
 
 fatal error: stdio.h: No such file or directory
 ```sh
@@ -133,7 +138,7 @@ clang: error: unable to execute command: Executable "ld" doesn't exist!
 apk add binutils
 ```
 
-#### 3.2.6. 挂载
+#### 3.3.6. 挂载目录
 
 ```sh
 mkdir -p ~/obsidian

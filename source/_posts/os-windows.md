@@ -178,7 +178,35 @@ node a.js & node b.js
 | marp                | ppt  | [https://marp.app](https://marp.app/)                                                    |
 | WProxy              |      | http://www.wfiltericf.com/WProxy.htm                                                     |
 | sourcetree          |      | [https://www.sourcetreeapp.com](https://www.sourcetreeapp.com/)                          |
-|                     |      |                                                                                          |
+| Keyviz              |      | https://mularahul.github.io/keyviz/                                                      |
+
+### 4.1. winget
+
+#### 4.1.1. 配置源
+
+替换 USTC 镜像：
+```sh
+winget source remove winget
+winget source add winget https://mirrors.ustc.edu.cn/winget-source
+```
+
+重置为官方地址：
+```
+winget source reset winget
+```
+
+#### 4.1.2. 安装
+
+```
+winget install -i --id Microsoft.WindowsTerminal --source 
+```
+
+#### 4.1.3. 更新
+
+```
+winget upgrade -i -all
+```
+
 
 ## 5. Windows 运行常用的命令
 
@@ -202,7 +230,19 @@ compmgmt.msc | 计算机管理
 devmgmt.msc | 设备管理器
 ## 6. 双拼输入
 
-```
+```reg
+Windows Registry Editor Version 5.00
+[HKEY_CURRENT_USER\Software\Microsoft\InputMethod\Settings\CHS]
+"EnableExtraDomainType"=dword:00000001
+"LangBarForceOn"=dword:00000000
+"HaPLastDownloadTime"=hex(b):4d,01,fc,5b,00,00,00,00
+"EmoticonTriggerCount"=dword:00000005
+"SmartFuzzyPairTriggerCount"="0000001000"
+"EnableDoublePinyin"=dword:00000001
+"DoublePinyinScheme"=dword:0000000a
+"UserDefinedDoublePinyinScheme0"="flypy*2*^*iuvdjhcwfg^xmlnpbksqszxkrltvyovt"
+"OutputCharset"=dword:00000000
+"UseEnglishPunctuationsInChineseInputMode"=dword:00000001
 ```
 
 ## 7. host
