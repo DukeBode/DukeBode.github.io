@@ -18,10 +18,10 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"dukebode.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":false,"nav":null,"activeClass":"changyan"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dukebode.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":false,"nav":null,"activeClass":"changyan"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="基于 AppInvento 技术对兰州理工大学及易班服务的封装。">
 <meta property="og:type" content="article">
@@ -31,7 +31,7 @@
 <meta property="og:description" content="基于 AppInvento 技术对兰州理工大学及易班服务的封装。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2018-05-26T13:58:04.000Z">
-<meta property="article:modified_time" content="2024-08-14T02:39:08.679Z">
+<meta property="article:modified_time" content="2024-10-18T14:46:12.826Z">
 <meta property="article:author" content="Duke Bode">
 <meta name="twitter:card" content="summary">
 
@@ -105,25 +105,25 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup"><div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80"
-           placeholder="Searching..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close" role="button">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div class="search-result-container no-result">
-  <div class="search-result-icon">
-    <i class="fa fa-spinner fa-pulse fa-5x"></i>
-  </div>
-</div>
-
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -145,7 +145,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">软件简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%80%E6%96%B0%E7%89%88%E5%B7%B2%E7%9F%A5%E9%97%AE%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">最新版已知问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97"><span class="nav-number">3.</span> <span class="nav-text">更新日志</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">1. 软件简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%80%E6%96%B0%E7%89%88%E5%B7%B2%E7%9F%A5%E9%97%AE%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">2. 最新版已知问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97"><span class="nav-number">3.</span> <span class="nav-text">3. 更新日志</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -255,7 +255,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-08-14 02:39:08" itemprop="dateModified" datetime="2024-08-14T02:39:08+00:00">2024-08-14</time>
+      <time title="Modified: 2024-10-18 14:46:12" itemprop="dateModified" datetime="2024-10-18T14:46:12+00:00">2024-10-18</time>
     </span>
 
   
@@ -293,7 +293,7 @@
 <blockquote>
 <p>为避免腾讯等安全软件误报，强烈建议大家先使用浏览器打开此页</p>
 </blockquote>
-<h2 id="软件简介">软件简介</h2>
+<h2 id="软件简介">1. 软件简介</h2>
 <ul>
 <li>兰理工专用版易班，裁掉了部分原有功能</li>
 <li>集成易班、微信、QQ、支付宝等优秀功能，方便大家的使用</li>
@@ -301,12 +301,12 @@
 <li>软件本身无毒，如有误报请默认允许（如果怕不合适，装上后再扫下病毒）</li>
 <li>业余研究产物，仅作研究，不深入开发</li>
 </ul>
-<h2 id="最新版已知问题">最新版已知问题</h2>
+<h2 id="最新版已知问题">2. 最新版已知问题</h2>
 <ul>
 <li>精品课程无法播放</li>
 <li>暂不支持分享</li>
 </ul>
-<h2 id="更新日志">更新日志</h2>
+<h2 id="更新日志">3. 更新日志</h2>
 <p>2018年05月26日 <a href="/lab/LUT_yiban/LUT_yiban180526.apk">下载</a>
 1. 取消原有的“我的订阅”功能 1. 加入新增的易班熊 1.
 新增考试资料、天气查询、快递查询、景点门票、净网中心等功能 <img
@@ -487,7 +487,7 @@ src="/img/yiban/180526a.png" alt="功能截图" /></p>
 
   
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.1/dist/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
 <script src="/js/third-party/search/local-search.js"></script>

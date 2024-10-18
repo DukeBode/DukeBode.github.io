@@ -363,8 +363,6 @@ href="https://learn.microsoft.com/zh-cn/windows/wsl/install">wsl</a></p></li>
     <url>/2019/07/29/Linux/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>Linux Frequently Asked Questions</p>
 <span id="more"></span>
-<h1 id="yum">yum</h1>
-<p>查看yum源Java包 yum list <em>java</em></p>
 <h2 id="linux-基础">Linux 基础</h2>
 <p><a href="#文件目录">文件目录</a></p>
 <h2 id="使用nohup-和-让命令后台执行">使用nohup 和 &amp;
@@ -508,6 +506,9 @@ nohup实现后台运行程序及查看（nohup与&amp;）</a></li>
 <h3 id="dnf">DNF</h3>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># /etc/yum.repos.d/dnf.repo</span></span><br><span class="line">wget https://mirrors.aliyun.com/centos/7.5.1804/extras/x86_64/Packages/centos-release-yum4-1-2.el7.centos.noarch.rpm</span><br><span class="line">yum install centos-release-yum4-1-2.el7.centos.noarch.rpm</span><br><span class="line"></span><br><span class="line"><span class="comment"># install DNF</span></span><br><span class="line">yum install dnf</span><br><span class="line">dnf upgrade</span><br></pre></td></tr></table></figure>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">dnf -y groupinstall <span class="string">&quot;Development Tools&quot;</span></span><br><span class="line">dnf -y install bzip2-devel sqlite-devel readline-devel libffi-devel systemtap-sdt-devel openssl-static  lzma tk-devel xz-devel  ncurses-devel gdbm-devel  gcc</span><br><span class="line"><span class="comment"># zlib 实现 gzip 压缩解压缩功能</span></span><br><span class="line"><span class="comment"># pcre 实现配置文件里的正则表达式解析功能</span></span><br><span class="line"><span class="comment"># openssl 实现 SSL 功能</span></span><br><span class="line">dnf -y install zlib zlib-devel openssl openssl-devel pcre pcre-devel</span><br></pre></td></tr></table></figure>
+<h3 id="yum">yum</h3>
+<p>查看yum源Java包 yum list <em>java</em></p>
+<h3 id="apt">apt</h3>
 <h2 id="文件校验">文件校验</h2>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">md5sum hero.png </span><br><span class="line">fefd01c9db6e3e83b978eff1b7a67c02  hero.png</span><br><span class="line"> </span><br><span class="line">sha1sum hero.png </span><br><span class="line">f1e929db9cef34a8786ee4b6246fb739566c799d  hero.png</span><br><span class="line"> </span><br><span class="line">sha256sum hero.png </span><br><span class="line">5b654b2297f17d9106388db31c1190240cfb359144925e892468b40d692c780f  hero.png</span><br></pre></td></tr></table></figure>
 <h2 id="section"></h2>
@@ -632,6 +633,85 @@ https://www.python100.com/html/110711.html</p>
         <tag>excalidraw</tag>
         <tag>Windows</tag>
         <tag>cshape</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>汇编语言</title>
+    <url>/2018/11/10/asm-code/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<h2 id="程序注释">1. 程序注释</h2>
+<ul>
+<li>“;”开头，右边为注释内容</li>
+</ul>
+<h2 id="保留字">2. 保留字</h2>
+<ul>
+<li>指令</li>
+<li>伪操作</li>
+<li>操作符</li>
+<li>预定义符号</li>
+</ul>
+<h1 id="符号指令系统">符号指令系统</h1>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ADC</td>
+<td>带进位加法(and with carry)</td>
+</tr>
+<tr>
+<td>ADD</td>
+<td>二进制数加法(add)</td>
+</tr>
+<tr>
+<td>DEC</td>
+<td>减一(decrease 1)</td>
+</tr>
+<tr>
+<td>DIV</td>
+<td>无符号数除法(divide)</td>
+</tr>
+<tr>
+<td>IDIV</td>
+<td>带符号数整数除法(integer divide)</td>
+</tr>
+<tr>
+<td>IMUL</td>
+<td>带符号数整数乘法(integer multiplication)</td>
+</tr>
+<tr>
+<td>INC</td>
+<td>加一(increase 1)</td>
+</tr>
+<tr>
+<td>MUL</td>
+<td>无符号数乘法(multiplication)</td>
+</tr>
+<tr>
+<td>NEG</td>
+<td>求补(negative)</td>
+</tr>
+<tr>
+<td>SBB</td>
+<td>带借位减法(substract with borrow)</td>
+</tr>
+<tr>
+<td>SUB</td>
+<td>二进制减法(substact)</td>
+</tr>
+<tr>
+<td>XADD</td>
+<td>交换并相加</td>
+</tr>
+</tbody>
+</table>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>Assembly</tag>
       </tags>
   </entry>
   <entry>
@@ -1360,85 +1440,6 @@ class="math inline">\(CF=C_n \oplus C_0\)</span></p>
       </tags>
   </entry>
   <entry>
-    <title>汇编语言</title>
-    <url>/2018/11/10/asm-code/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<h2 id="程序注释">1. 程序注释</h2>
-<ul>
-<li>“;”开头，右边为注释内容</li>
-</ul>
-<h2 id="保留字">2. 保留字</h2>
-<ul>
-<li>指令</li>
-<li>伪操作</li>
-<li>操作符</li>
-<li>预定义符号</li>
-</ul>
-<h1 id="符号指令系统">符号指令系统</h1>
-<table>
-<thead>
-<tr>
-<th>指令</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ADC</td>
-<td>带进位加法(and with carry)</td>
-</tr>
-<tr>
-<td>ADD</td>
-<td>二进制数加法(add)</td>
-</tr>
-<tr>
-<td>DEC</td>
-<td>减一(decrease 1)</td>
-</tr>
-<tr>
-<td>DIV</td>
-<td>无符号数除法(divide)</td>
-</tr>
-<tr>
-<td>IDIV</td>
-<td>带符号数整数除法(integer divide)</td>
-</tr>
-<tr>
-<td>IMUL</td>
-<td>带符号数整数乘法(integer multiplication)</td>
-</tr>
-<tr>
-<td>INC</td>
-<td>加一(increase 1)</td>
-</tr>
-<tr>
-<td>MUL</td>
-<td>无符号数乘法(multiplication)</td>
-</tr>
-<tr>
-<td>NEG</td>
-<td>求补(negative)</td>
-</tr>
-<tr>
-<td>SBB</td>
-<td>带借位减法(substract with borrow)</td>
-</tr>
-<tr>
-<td>SUB</td>
-<td>二进制减法(substact)</td>
-</tr>
-<tr>
-<td>XADD</td>
-<td>交换并相加</td>
-</tr>
-</tbody>
-</table>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>Assembly</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>博客环境，让我们专注写笔记</title>
     <url>/2019/09/08/blog-env/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><div class="line-block"><a href="https://nodejs.org">NodeJS
@@ -1565,21 +1566,6 @@ Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓
       </tags>
   </entry>
   <entry>
-    <title>init</title>
-    <url>/2021/02/19/blog-init/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<h1 id="about_execution_policies">about_execution_policies</h1>
-<figure class="highlight ps1"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Get-ExecutionPolicy</span></span><br><span class="line"><span class="built_in">Set-ExecutionPolicy</span> <span class="literal">-ExecutionPolicy</span> RemoteSigned <span class="literal">-Scope</span> CurrentUser</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># rss,sitemap</span><br><span class="line">npm install hexo-generator-feed hexo-generator-sitemap hexo-deployer-git</span><br><span class="line">cd ../</span><br><span class="line"># 创建项目简介</span><br><span class="line">&quot;&quot;&gt; README.md</span><br><span class="line"># 为项目建立捐助方式</span><br><span class="line">mkdir .github;cd .github;&quot;custom: [&#x27;https://DukeBode.github.io/sponsor&#x27;]&quot; &gt; FUNDING.yml;cd ../</span><br><span class="line"># 安装 hexo-theme-next 主题</span><br><span class="line">npm install hexo-theme-next; </span><br><span class="line">cp node_modules/hexo-theme-next/_config.yml _config.next.yml</span><br><span class="line">npm uninstall hexo-theme-landscape</span><br><span class="line"># 别名 hexo</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="faq">1. FAQ</h2>
-<ul>
-<li><a
-href="https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_execution_policies#change-the-execution-policy">Set-ExecutionPolicy</a></li>
-<li></li>
-</ul>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
     <title>用 Markdown 做笔记</title>
     <url>/2019/05/31/blog-markdown/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>对于一个电脑新手来讲，与其说 Markdown
@@ -1599,6 +1585,21 @@ href="https://mermaid.js.org/syntax/flowchart.html">Flowcharts</a></p>
         <tag>blog</tag>
         <tag>markdown</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>init</title>
+    <url>/2021/02/19/blog-init/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<h1 id="about_execution_policies">about_execution_policies</h1>
+<figure class="highlight ps1"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Get-ExecutionPolicy</span></span><br><span class="line"><span class="built_in">Set-ExecutionPolicy</span> <span class="literal">-ExecutionPolicy</span> RemoteSigned <span class="literal">-Scope</span> CurrentUser</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># rss,sitemap</span><br><span class="line">npm install hexo-generator-feed hexo-generator-sitemap hexo-deployer-git</span><br><span class="line">cd ../</span><br><span class="line"># 创建项目简介</span><br><span class="line">&quot;&quot;&gt; README.md</span><br><span class="line"># 为项目建立捐助方式</span><br><span class="line">mkdir .github;cd .github;&quot;custom: [&#x27;https://DukeBode.github.io/sponsor&#x27;]&quot; &gt; FUNDING.yml;cd ../</span><br><span class="line"># 安装 hexo-theme-next 主题</span><br><span class="line">npm install hexo-theme-next; </span><br><span class="line">cp node_modules/hexo-theme-next/_config.yml _config.next.yml</span><br><span class="line">npm uninstall hexo-theme-landscape</span><br><span class="line"># 别名 hexo</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="faq">1. FAQ</h2>
+<ul>
+<li><a
+href="https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_execution_policies#change-the-execution-policy">Set-ExecutionPolicy</a></li>
+<li></li>
+</ul>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
     <title>零基础建博客</title>
@@ -2063,31 +2064,32 @@ href="https://apps.apple.com/cn/app/localsend/id1661733229">LocalSend</a></li>
 <li><a
 href="https://apps.apple.com/cn/app/vimlike/id1584519802">vimlike</a></li>
 <li><a
-href="https://apps.apple.com/cn/app/spacedesk-multi-monitor-app/id1069217220">spacedesk</a></li>
-<li><a
+href="https://apps.apple.com/cn/app/spacedesk-multi-monitor-app/id1069217220">spacedesk</a>
+### 3.1. <a
 href="https://apps.apple.com/cn/app/obsidian-connected-notes/id1557175442">obsidian</a></li>
-<li><h3 id="keka---压缩文件管理器">3.1. <a
-href="https://apps.apple.com/cn/app/keka-%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/id6443677513">KeKa
-- 压缩文件管理器</a></h3></li>
 </ul>
-<h3 id="ish">3.2. <a
+<p>https://github.com/gslnzfq/obsidian-proxy-server</p>
+<h3 id="keka---压缩文件管理器">3.2. <a
+href="https://apps.apple.com/cn/app/keka-%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/id6443677513">KeKa
+- 压缩文件管理器</a></h3>
+<h3 id="ish">3.3. <a
 href="https://apps.apple.com/cn/app/ish-shell/id1436902243">ish</a></h3>
-<h4 id="alpline-linux">3.2.1. Alpline Linux</h4>
-<h4 id="查看版本">3.2.2. 查看版本</h4>
+<h4 id="alpline-linux">3.3.1. Alpline Linux</h4>
+<h4 id="查看版本">3.3.2. 查看版本</h4>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cat</span> /etc/os-release</span><br><span class="line"><span class="built_in">cat</span> /etc/alpine-release</span><br></pre></td></tr></table></figure>
-<h4 id="配置源">3.2.3. 配置源</h4>
+<h4 id="配置源">3.3.3. 配置源</h4>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sed -i <span class="string">&#x27;s#http://apk.ish.app/v3.19-2024-08-01#https://mirrors.tuna.tsinghua.edu.cn/alpine/v3.19#g&#x27;</span> /etc/apk/repositories</span><br><span class="line"><span class="comment"># </span></span><br><span class="line"><span class="built_in">cat</span> /etc/apk/repositories</span><br><span class="line"><span class="comment"># 更新包列表</span></span><br><span class="line">apk update</span><br><span class="line"><span class="comment"># </span></span><br><span class="line">apk upgrade</span><br><span class="line"><span class="comment"># </span></span><br><span class="line">apk add git openssh cmake vimdiff</span><br><span class="line">apk add crago</span><br><span class="line">apk add python3 python-pip</span><br><span class="line">apk add gcompat</span><br></pre></td></tr></table></figure>
-<h4 id="git-配置">3.2.4. git 配置</h4>
-<h5 id="config-文件配置">3.2.4.1. config 文件配置</h5>
+<h4 id="git-配置">3.3.4. git 配置</h4>
+<h5 id="config-文件配置">3.3.4.1. config 文件配置</h5>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># github</span><br><span class="line"># https://github.com/</span><br><span class="line">Host github.com</span><br><span class="line">    HostName github.com</span><br><span class="line">    PreferredAuthentications publickey</span><br><span class="line">    IdentityFile ~\.ssh\github</span><br></pre></td></tr></table></figure>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">apk add git openssh</span><br><span class="line"><span class="comment"># 查看 git 版本</span></span><br><span class="line">git version</span><br><span class="line"><span class="comment"># 设置 git 全局用户名</span></span><br><span class="line">git config --global user.name <span class="string">&quot;DukeBode&quot;</span></span><br><span class="line"><span class="comment"># 设置 git 全局邮箱</span></span><br><span class="line">git config --global user.email 29868250+DukeBode@users.noreply.github.com</span><br><span class="line"><span class="comment"># 格式 </span></span><br><span class="line"><span class="comment"># ssh-keygen -t rsa -C &quot;通常为邮箱&quot; -f &quot;私钥文件绝对路径&quot;</span></span><br><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;giee.com&quot;</span> -f <span class="string">&quot;~/.ssh/gitee&quot;</span></span><br><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;github.com&quot;</span> -f <span class="string">&quot;~/.ssh/github&quot;</span></span><br><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;gitlab.com&quot;</span> -f <span class="string">&quot;~/.ssh/gitlab&quot;</span></span><br><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;gitcode.com&quot;</span> -f <span class="string">&quot;~/.ssh/gitcode&quot;</span></span><br><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
-<h5 id="中文字符路径问题">3.2.4.2. 中文字符路径问题</h5>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git config --global core.quotepath <span class="literal">false</span> </span><br><span class="line">git config --global i18n.logOutputEncoding utf-8 </span><br><span class="line">git config --global i18n.commitEncoding utf-8</span><br></pre></td></tr></table></figure>
-<h4 id="异常处理">3.2.5. 异常处理</h4>
+<h5 id="中文字符路径问题">3.3.4.2. 中文字符路径问题</h5>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 将 Git 处理路径名中的不可打印字符的方式进行设置</span></span><br><span class="line">git config --global core.quotepath <span class="literal">false</span> </span><br><span class="line"><span class="comment"># 设置 Git 日志输出的编码格式为 UTF-8</span></span><br><span class="line">git config --global i18n.logOutputEncoding utf-8 </span><br><span class="line"><span class="comment"># 将提交信息的编码设置为 UTF-8</span></span><br><span class="line">git config --global i18n.commitEncoding utf-8</span><br></pre></td></tr></table></figure>
+<h4 id="异常处理">3.3.5. 异常处理</h4>
 <p>fatal error: stdio.h: No such file or directory <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">apk add musl-dev</span><br></pre></td></tr></table></figure></p>
 <p>clang: error: unable to execute command: Executable "ld" doesn't
 exist! <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">apk add binutils</span><br></pre></td></tr></table></figure></p>
-<h4 id="挂载">3.2.6. 挂载</h4>
+<h4 id="挂载目录">3.3.6. 挂载目录</h4>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p ~/obsidian</span><br><span class="line"><span class="comment"># 在弹出的文件夹中选择你要挂载的目录</span></span><br><span class="line">mount -t ios . obsidian</span><br></pre></td></tr></table></figure>
 <p>https://wiki.alpinelinux.org/wiki/Running_glibc_programs
 https://github.com/sgerrand/alpine-pkg-glibc</p>
@@ -2356,6 +2358,32 @@ href="https://www.cnblogs.com/yuanzai12345/p/5946743.html">Nginx设置expires设
       </tags>
   </entry>
   <entry>
+    <title>Chrome的使用</title>
+    <url>/2019/06/11/os-software-chrome/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
+<ol type="1">
+<li>设置搜索引擎</li>
+</ol>
+<p>全屏启动</p>
+<p>--kiosk http://cn.bing.com/ --kiosk-printing
+--app=http://cn.bing.com/ --start-maximized</p>
+<h3 id="vimium">0.1. vimium</h3>
+<p>Vimium is a Chrome extension that provides keyboard-based navigation
+and control of the web in the spirit of the Vim editor.</p>
+<p><a href="https://github.com/philc/vimium">官网</a></p>
+<figure class="highlight plaintext"><figcaption><span>key mappings</span></figcaption><table><tr><td class="code"><pre><span class="line"># Insert your preferred key mappings here.</span><br><span class="line">map h previousTab</span><br><span class="line">map l nextTab</span><br><span class="line"></span><br><span class="line">map H scrollLeft</span><br><span class="line">map J scrollPageDown</span><br><span class="line">map K scrollPageUp</span><br><span class="line">map L scrollRight</span><br><span class="line"></span><br><span class="line">map gh goBack</span><br><span class="line">map gj scrollToBottom</span><br><span class="line">map gk scrollToTop</span><br><span class="line">map gl goForward</span><br><span class="line">map gt Vomnibar.activateTabSelection</span><br><span class="line"></span><br><span class="line">map th firstTab</span><br><span class="line">map tl lastTab</span><br><span class="line"># map tn createTab</span><br><span class="line">map tn Vomnibar.activateInNewTab</span><br><span class="line">map tb Vomnibar.activateBookmarksInNewTab</span><br><span class="line">map tr reload</span><br><span class="line">map tg Vomnibar.activateTabSelection</span><br><span class="line">unmap t</span><br><span class="line"></span><br><span class="line">unmap x</span><br><span class="line">map xx restoreTab</span><br><span class="line">map &#x27; removeTab</span><br><span class="line">map xh&#x27; closeTabsOnLeft</span><br><span class="line">map xl&#x27; closeTabsOnRight</span><br><span class="line">map xo&#x27; closeOtherTabs</span><br><span class="line"></span><br><span class="line">map u Vomnibar.activateEditUrl</span><br><span class="line"></span><br><span class="line">map c LinkHints.activateMode</span><br><span class="line"># map f LinkHints.activateModeToOpenInNewTab</span><br><span class="line">map o LinkHints.activateModeToOpenInNewTab</span><br><span class="line">map mo Vomnibar.activateBookmarksInNewTab</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># w: https://www.wikipedia.org/w/index.php?title=Special:Search&amp;search=%s Wikipedia</span><br><span class="line"></span><br><span class="line"># More examples.</span><br><span class="line">#</span><br><span class="line"># (Vimium supports search completion Wikipedia, as</span><br><span class="line"># above, and for these.)</span><br><span class="line">#</span><br><span class="line"></span><br><span class="line"># l: https://www.google.com/search?q=%s&amp;btnI I&#x27;m feeling lucky...</span><br><span class="line"># y: https://www.youtube.com/results?search_query=%s Youtube</span><br><span class="line"># gm: https://www.google.com/maps?q=%s Google maps</span><br><span class="line">bing: https://www.bing.com/search?q=%s Bing</span><br><span class="line">baidu: https://www.baidu.com/s?wd=%s Baidu</span><br><span class="line">google: https://www.google.com/search?q=%s Google</span><br><span class="line">github: https://github.com/search?q=%s GitHub</span><br><span class="line">weibo: https://s.weibo.com/weibo?q=%s 微博搜索</span><br><span class="line">cqvip: http://www.cqvip.com/main/search.aspx?k=%s 维普期刊</span><br><span class="line">pypi: https://pypi.org/search/?q=%s Python Package Index</span><br><span class="line">te: https://translate.google.cn/#view=home&amp;op=translate&amp;sl=zh-CN&amp;tl=en&amp;text= Google 中译英</span><br><span class="line">x: https://x.cnki.net/kns/brief/Default_Result.aspx?code=SCDB&amp;kw=%s China National Knowledge Infrastructure</span><br><span class="line"># d: https://duckduckgo.com/?q=%s DuckDuckGo</span><br><span class="line"># az: https://www.amazon.com/s/?field-keywords=%s Amazon</span><br><span class="line"># qw: https://www.qwant.com/?q=%s Qwant</span><br></pre></td></tr></table></figure>
+<h3 id="油猴tampermonkey">0.2. 油猴（Tampermonkey）</h3>
+<p><a href="http://www.tampermonkey.net/">官网</a></p>
+<ul>
+<li><p>https://greasyfork.org/</p></li>
+<li><p><a href="https://greasyfork.org/zh-CN">Greasy Fork</a></p></li>
+</ul>
+<h3 id="图片助手imageassistant">0.3. 图片助手（ImageAssistant）</h3>
+<p><a href="https://www.pullywood.com/ImageAssistant/">官网</a></p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+  </entry>
+  <entry>
     <title>System Variables Path</title>
     <url>/2020/02/19/os-path/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>The PATH variable makes it easy to run commonly used programs located
@@ -2383,32 +2411,6 @@ PATH
 <p>默认的路径： <figure class="highlight txt"><table><tr><td class="code"><pre><span class="line">~/bin</span><br><span class="line">~/.local/bin</span><br><span class="line">/usr/local/sbin</span><br><span class="line">/usr/local/bin</span><br><span class="line">/usr/sbin</span><br><span class="line">/usr/bin</span><br><span class="line">/sbin</span><br><span class="line">/bin</span><br><span class="line">/usr/games</span><br><span class="line">/usr/local/games</span><br></pre></td></tr></table></figure></p>
 <h3 id="设置-path-1">1.2. 设置 path</h3>
 <figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line">$Env:<span class="built_in">path</span>=&quot;./.venv/Scripts/;&quot;+$Env:<span class="built_in">path</span></span><br></pre></td></tr></table></figure>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>Chrome的使用</title>
-    <url>/2019/06/11/os-software-chrome/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<ol type="1">
-<li>设置搜索引擎</li>
-</ol>
-<p>全屏启动</p>
-<p>--kiosk http://cn.bing.com/ --kiosk-printing
---app=http://cn.bing.com/ --start-maximized</p>
-<h3 id="vimium">0.1. vimium</h3>
-<p>Vimium is a Chrome extension that provides keyboard-based navigation
-and control of the web in the spirit of the Vim editor.</p>
-<p><a href="https://github.com/philc/vimium">官网</a></p>
-<figure class="highlight plaintext"><figcaption><span>key mappings</span></figcaption><table><tr><td class="code"><pre><span class="line"># Insert your preferred key mappings here.</span><br><span class="line">map h previousTab</span><br><span class="line">map l nextTab</span><br><span class="line"></span><br><span class="line">map H scrollLeft</span><br><span class="line">map J scrollPageDown</span><br><span class="line">map K scrollPageUp</span><br><span class="line">map L scrollRight</span><br><span class="line"></span><br><span class="line">map gh goBack</span><br><span class="line">map gj scrollToBottom</span><br><span class="line">map gk scrollToTop</span><br><span class="line">map gl goForward</span><br><span class="line">map gt Vomnibar.activateTabSelection</span><br><span class="line"></span><br><span class="line">map th firstTab</span><br><span class="line">map tl lastTab</span><br><span class="line"># map tn createTab</span><br><span class="line">map tn Vomnibar.activateInNewTab</span><br><span class="line">map tb Vomnibar.activateBookmarksInNewTab</span><br><span class="line">map tr reload</span><br><span class="line">map tg Vomnibar.activateTabSelection</span><br><span class="line">unmap t</span><br><span class="line"></span><br><span class="line">unmap x</span><br><span class="line">map xx restoreTab</span><br><span class="line">map &#x27; removeTab</span><br><span class="line">map xh&#x27; closeTabsOnLeft</span><br><span class="line">map xl&#x27; closeTabsOnRight</span><br><span class="line">map xo&#x27; closeOtherTabs</span><br><span class="line"></span><br><span class="line">map u Vomnibar.activateEditUrl</span><br><span class="line"></span><br><span class="line">map c LinkHints.activateMode</span><br><span class="line"># map f LinkHints.activateModeToOpenInNewTab</span><br><span class="line">map o LinkHints.activateModeToOpenInNewTab</span><br><span class="line">map mo Vomnibar.activateBookmarksInNewTab</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># w: https://www.wikipedia.org/w/index.php?title=Special:Search&amp;search=%s Wikipedia</span><br><span class="line"></span><br><span class="line"># More examples.</span><br><span class="line">#</span><br><span class="line"># (Vimium supports search completion Wikipedia, as</span><br><span class="line"># above, and for these.)</span><br><span class="line">#</span><br><span class="line"></span><br><span class="line"># l: https://www.google.com/search?q=%s&amp;btnI I&#x27;m feeling lucky...</span><br><span class="line"># y: https://www.youtube.com/results?search_query=%s Youtube</span><br><span class="line"># gm: https://www.google.com/maps?q=%s Google maps</span><br><span class="line">bing: https://www.bing.com/search?q=%s Bing</span><br><span class="line">baidu: https://www.baidu.com/s?wd=%s Baidu</span><br><span class="line">google: https://www.google.com/search?q=%s Google</span><br><span class="line">github: https://github.com/search?q=%s GitHub</span><br><span class="line">weibo: https://s.weibo.com/weibo?q=%s 微博搜索</span><br><span class="line">cqvip: http://www.cqvip.com/main/search.aspx?k=%s 维普期刊</span><br><span class="line">pypi: https://pypi.org/search/?q=%s Python Package Index</span><br><span class="line">te: https://translate.google.cn/#view=home&amp;op=translate&amp;sl=zh-CN&amp;tl=en&amp;text= Google 中译英</span><br><span class="line">x: https://x.cnki.net/kns/brief/Default_Result.aspx?code=SCDB&amp;kw=%s China National Knowledge Infrastructure</span><br><span class="line"># d: https://duckduckgo.com/?q=%s DuckDuckGo</span><br><span class="line"># az: https://www.amazon.com/s/?field-keywords=%s Amazon</span><br><span class="line"># qw: https://www.qwant.com/?q=%s Qwant</span><br></pre></td></tr></table></figure>
-<h3 id="油猴tampermonkey">0.2. 油猴（Tampermonkey）</h3>
-<p><a href="http://www.tampermonkey.net/">官网</a></p>
-<ul>
-<li><p>https://greasyfork.org/</p></li>
-<li><p><a href="https://greasyfork.org/zh-CN">Greasy Fork</a></p></li>
-</ul>
-<h3 id="图片助手imageassistant">0.3. 图片助手（ImageAssistant）</h3>
-<p><a href="https://www.pullywood.com/ImageAssistant/">官网</a></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
   </entry>
   <entry>
@@ -2554,53 +2556,6 @@ Database Documentation - Oracle Database</a></p></li>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">sqlplus -H</span><br><span class="line"><span class="comment"># 不登录</span></span><br><span class="line">sqlplus /nolog</span><br><span class="line"><span class="comment"># 超级管理员</span></span><br><span class="line">conn / as sysdba <span class="comment"># 操作系统身份认证</span></span><br><span class="line">conn sys as sysdba</span><br><span class="line"><span class="comment"># 普通管理员</span></span><br><span class="line">conn system</span><br><span class="line"><span class="comment"># 普通用户(用户名无效)</span></span><br><span class="line">conn scott</span><br></pre></td></tr></table></figure>
 <figure class="highlight sql"><figcaption><span>plus</span></figcaption><table><tr><td class="code"><pre><span class="line"><span class="comment">-- 启动实例并打开数据库</span></span><br><span class="line">startup</span><br><span class="line"><span class="comment">-- 关闭实例</span></span><br><span class="line">shutdown</span><br><span class="line"><span class="comment">-- 查看当前登录用户</span></span><br><span class="line"><span class="keyword">show</span> <span class="keyword">user</span>;</span><br><span class="line"><span class="comment">-- 查看当前登录的用户信息</span></span><br><span class="line"><span class="keyword">select</span> <span class="operator">*</span> <span class="keyword">from</span> user_users;</span><br><span class="line"><span class="comment">-- 查询用户</span></span><br><span class="line"><span class="keyword">select</span> username <span class="keyword">from</span> dba_users;</span><br><span class="line"><span class="comment">-- 执行 sql 文件，导入 scott 用户</span></span><br><span class="line"><span class="variable">@oracle_installer_path</span>\rdbms\admin\scott.sql</span><br><span class="line"><span class="comment">-- 解锁 scott 用户</span></span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">user</span> scott account unlock ; </span><br><span class="line"><span class="comment">-- 设置 scott 用户的密码为 tiger</span></span><br><span class="line"><span class="keyword">alter</span> <span class="keyword">user</span> scott identified <span class="keyword">by</span> tiger;</span><br></pre></td></tr></table></figure>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-  </entry>
-  <entry>
-    <title>CentOS 下安装 PHP7</title>
-    <url>/2019/07/08/php-env/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>PHP Frequently Asked Questions</p>
-<span id="more"></span>
-<h2 id="环境说明">1. 环境说明</h2>
-<ul>
-<li>CentOS 7</li>
-</ul>
-<h2 id="源码安装-libiconv">2. 源码安装 libiconv</h2>
-<p><a href="http://www.gnu.org/software/libiconv/">官网</a></p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换至程序源代码目录</span></span><br><span class="line"><span class="built_in">cd</span> /usr/src</span><br><span class="line"><span class="comment"># 下载 libiconv</span></span><br><span class="line">wget https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.16.tar.gz</span><br><span class="line"><span class="comment"># 解压</span></span><br><span class="line">tar -zxvf libiconv-1.16.tar.gz </span><br><span class="line"><span class="comment"># 配置</span></span><br><span class="line">./configure --prefix=/usr/local/libiconv</span><br><span class="line"><span class="comment"># 编译并安装</span></span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
-<h2 id="源码安装-php7">3. 源码安装 php7</h2>
-<p><a href="https://www.php.net/">官网</a></p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换至程序源代码目录</span></span><br><span class="line"><span class="built_in">cd</span> /usr/src</span><br><span class="line"><span class="comment"># 删除旧版本</span></span><br><span class="line"><span class="built_in">rm</span> -rf php-7.*</span><br><span class="line"><span class="comment"># 下载 php</span></span><br><span class="line">wget https://www.php.net/distributions/php-7.3.8.tar.gz</span><br><span class="line"><span class="comment"># 解压</span></span><br><span class="line">tar -zxvf php-7.3.8.tar.gz</span><br><span class="line"><span class="comment"># 删除压缩包</span></span><br><span class="line"><span class="built_in">rm</span> php-7.3.8.tar.gz</span><br><span class="line"><span class="comment"># 切换至 php 目录</span></span><br><span class="line"><span class="built_in">cd</span> php-7.3.8</span><br><span class="line"><span class="comment"># 配置 makefile 脚本</span></span><br><span class="line">./configure</span><br><span class="line">--prefix=/usr/local/php <span class="comment"># 程序目录</span></span><br><span class="line">--with-iconv=/usr/local/libiconv</span><br><span class="line">--enable-fpm <span class="comment"># fastcgi 方式运行</span></span><br><span class="line">--with-pdo-mysql <span class="comment"># mysql 数据库</span></span><br><span class="line">--with-curl</span><br><span class="line">--with-zlib</span><br></pre></td></tr></table></figure>
-<p>脚本配置成功</p>
-<figure>
-<img src="/img/php/1.png" alt="脚本配置成功界面" />
-<figcaption aria-hidden="true">脚本配置成功界面</figcaption>
-</figure>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># make 检查，可省略</span></span><br><span class="line">make <span class="built_in">test</span></span><br><span class="line"><span class="comment"># 杀死全部 php-fpm 进程</span></span><br><span class="line">killall php-fpm</span><br><span class="line"><span class="comment"># 编译并安装</span></span><br><span class="line">make &amp;&amp; make install</span><br><span class="line"><span class="comment"># 切换 php 目录</span></span><br><span class="line"><span class="built_in">cd</span> /usr/local/php/</span><br><span class="line"><span class="comment"># 复制 php.ini 配置文件</span></span><br><span class="line"><span class="built_in">cp</span> /usr/src/php-7.3.8/php.ini-production lib/php.ini</span><br><span class="line"><span class="comment"># 复制 nginx 配置文件</span></span><br><span class="line"><span class="built_in">cp</span> etc/php-fpm.conf.default etc/php-fpm.conf</span><br><span class="line"><span class="comment"># 复制配置文件</span></span><br><span class="line"><span class="built_in">cp</span> etc/php-fpm.d/www.conf.default etc/php-fpm.d/www.conf</span><br><span class="line"><span class="comment"># 启动php-fpm</span></span><br><span class="line">./sbin/php-fpm</span><br><span class="line"><span class="comment"># 确认php-fpm成功</span></span><br><span class="line">ps aux | grep php</span><br><span class="line"><span class="comment"># 查看占用端口</span></span><br><span class="line">netstat -anpo | grep php</span><br></pre></td></tr></table></figure>
-<h3 id="phpinfo.php">3.1. phpinfo.php</h3>
-<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="title function_ invoke__">phpinfo</span>();</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="nginx.conf">3.1.1. nginx.conf</h4>
-<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">location</span> <span class="regexp">~ \.php$</span> &#123;</span><br><span class="line">  <span class="attribute">root</span> /www/php; <span class="comment">#指定php的根目录</span></span><br><span class="line">  <span class="attribute">fastcgi_pass</span> <span class="number">127.0.0.1:9000</span>;<span class="comment">#php-fpm的默认端口是9000</span></span><br><span class="line">  <span class="attribute">fastcgi_index</span> index.php;</span><br><span class="line">  <span class="attribute">fastcgi_param</span> SCRIPT_FILENAME <span class="variable">$document_root</span><span class="variable">$fastcgi_script_name</span>;</span><br><span class="line">  <span class="attribute">include</span> fastcgi_params;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="配置-php-模块">4. 配置 php 模块</h2>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看当前已加载模块</span></span><br><span class="line">/usr/local/php/bin/php -m</span><br><span class="line"><span class="comment"># 切换至相应的模块源码目录</span></span><br><span class="line"><span class="built_in">cd</span> /usr/src/php-7.3.8/ext/curl/</span><br><span class="line"><span class="comment">#  设置软链接，防止头文件找不到的问题（类似问题同解）</span></span><br><span class="line"><span class="built_in">ln</span> -s /usr/src/php-7.3.8/ext/ ./ext</span><br><span class="line"><span class="comment"># 执行 phpize</span></span><br><span class="line">/usr/local/php/bin/phpize</span><br><span class="line"><span class="comment"># 配置</span></span><br><span class="line">./configure -with-php-config=/usr/local/php/bin/php-config</span><br><span class="line"><span class="comment"># 编译</span></span><br><span class="line">make &amp;&amp; make install</span><br><span class="line"><span class="comment"># 查看对应的 so 文件</span></span><br><span class="line"><span class="built_in">ls</span> /usr/local/php/lib/php/extensions/no-debug-non-zts-20180731/</span><br><span class="line"><span class="comment"># 编辑配置文件，可通过 phpinfo 函数查找文件位置</span></span><br><span class="line">vi /usr/local/php/lib/php.ini</span><br><span class="line"><span class="comment"># 重启 php</span></span><br><span class="line">/usr/local/php/sbin/php-fpm restart</span><br></pre></td></tr></table></figure>
-<p>编译安装可指定php.ini的路劲(多PHP版本共存的情况)
---with-config-file-path=/usr/local/php/etc</p>
-<h2 id="配置文件">5. 配置文件</h2>
-<table style="width:6%;">
-<colgroup>
-<col style="width: 5%" />
-</colgroup>
-<tbody>
-<tr>
-<td>- wget 的使用 - tar 的使用 - configure 的使用 - make 的使用</td>
-</tr>
-</tbody>
-</table>
-<p>./configure --prefix=/usr/local/php --with-iconv=/usr/local/libiconv
---enable-fpm --with-pdo-mysql</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>php</tag>
-      </tags>
   </entry>
   <entry>
     <title>Windows</title>
@@ -2888,12 +2843,20 @@ href="http://www.ashongsoft.com/product/image-converter-one.html">http://www.ash
 href="https://www.sourcetreeapp.com/">https://www.sourcetreeapp.com</a></td>
 </tr>
 <tr>
+<td>Keyviz</td>
 <td></td>
-<td></td>
-<td></td>
+<td>https://mularahul.github.io/keyviz/</td>
 </tr>
 </tbody>
 </table>
+<h3 id="winget">4.1. winget</h3>
+<h4 id="配置源">4.1.1. 配置源</h4>
+<p>替换 USTC 镜像： <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">winget <span class="built_in">source</span> remove winget</span><br><span class="line">winget <span class="built_in">source</span> add winget https://mirrors.ustc.edu.cn/winget-source</span><br></pre></td></tr></table></figure></p>
+<p>重置为官方地址： <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">winget source reset winget</span><br></pre></td></tr></table></figure></p>
+<h4 id="安装">4.1.2. 安装</h4>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">winget install -i --id Microsoft.WindowsTerminal --source </span><br></pre></td></tr></table></figure>
+<h4 id="更新">4.1.3. 更新</h4>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">winget upgrade -i -all</span><br></pre></td></tr></table></figure>
 <h2 id="windows-运行常用的命令">5. Windows 运行常用的命令</h2>
 <table>
 <thead>
@@ -2987,16 +2950,47 @@ href="https://www.sourcetreeapp.com/">https://www.sourcetreeapp.com</a></td>
 </tbody>
 </table>
 <h2 id="双拼输入">6. 双拼输入</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line">## 7. host</span><br><span class="line"></span><br><span class="line">The hosts file is one of several system facilities that assists in addressing network nodes in a computer network. It is a common part of an operating system&#x27;s Internet Protocol (IP) implementation, and serves the function of translating human-friendly hostnames into numeric protocol addresses, called IP addresses, that identify and locate a host in an IP network.</span><br><span class="line"></span><br><span class="line">| 系统        | host 文件路径                             |</span><br><span class="line">| --------- | ------------------------------------- |</span><br><span class="line">| Windows   | C:\Windows\System32\drivers\etc\hosts |</span><br><span class="line">| Linux/Mac | /etc/hosts                            |</span><br><span class="line"></span><br><span class="line">### 7.1. 功能</span><br><span class="line"></span><br><span class="line">- 加快域名解析</span><br><span class="line">- 重定向恶意域名</span><br><span class="line">- 虚拟域名</span><br><span class="line"></span><br><span class="line">https://github.com/googlehosts/hosts</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">添加下面两行内容到hosts文件中</span><br><span class="line"></span><br><span class="line">151.101.72.249 github.global.ssl.fastly.net</span><br><span class="line"></span><br><span class="line">192.30.253.112 github.com</span><br><span class="line"></span><br><span class="line">## 8. 文件校验</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>E:&gt;certutil -hashfile hero.png md5 MD5 哈希(文件 hero.png):
-fefd01c9db6e3e83b978eff1b7a67c02 CertUtil: -hashfile 命令成功完成。</p>
-<p>E:&gt;certutil -hashfile hero.png SHA1 SHA1 哈希(文件 hero.png):
-f1e929db9cef34a8786ee4b6246fb739566c799d CertUtil: -hashfile
-命令成功完成。</p>
-<p>E:&gt;certutil -hashfile hero.png SHA256 SHA256 哈希(文件 hero.png):
-5b654b2297f17d9106388db31c1190240cfb359144925e892468b40d692c780f
-CertUtil: -hashfile 命令成功完成。 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">## 9. 暴力删除废弃文件夹</span><br><span class="line">```cmd</span><br><span class="line">DEL /F /A /Q \\?\%1</span><br><span class="line"></span><br><span class="line">RD /S /Q \\?\%1</span><br></pre></td></tr></table></figure> /P
-删除每一个文件之前提示确认。 /F 强制删除只读文件。 /S
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Windows Registry Editor Version 5.00</span><br><span class="line">[HKEY_CURRENT_USER\Software\Microsoft\InputMethod\Settings\CHS]</span><br><span class="line">&quot;EnableExtraDomainType&quot;=dword:00000001</span><br><span class="line">&quot;LangBarForceOn&quot;=dword:00000000</span><br><span class="line">&quot;HaPLastDownloadTime&quot;=hex(b):4d,01,fc,5b,00,00,00,00</span><br><span class="line">&quot;EmoticonTriggerCount&quot;=dword:00000005</span><br><span class="line">&quot;SmartFuzzyPairTriggerCount&quot;=&quot;0000001000&quot;</span><br><span class="line">&quot;EnableDoublePinyin&quot;=dword:00000001</span><br><span class="line">&quot;DoublePinyinScheme&quot;=dword:0000000a</span><br><span class="line">&quot;UserDefinedDoublePinyinScheme0&quot;=&quot;flypy*2*^*iuvdjhcwfg^xmlnpbksqszxkrltvyovt&quot;</span><br><span class="line">&quot;OutputCharset&quot;=dword:00000000</span><br><span class="line">&quot;UseEnglishPunctuationsInChineseInputMode&quot;=dword:00000001</span><br></pre></td></tr></table></figure>
+<h2 id="host">7. host</h2>
+<p>The hosts file is one of several system facilities that assists in
+addressing network nodes in a computer network. It is a common part of
+an operating system's Internet Protocol (IP) implementation, and serves
+the function of translating human-friendly hostnames into numeric
+protocol addresses, called IP addresses, that identify and locate a host
+in an IP network.</p>
+<table>
+<thead>
+<tr>
+<th>系统</th>
+<th>host 文件路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows</td>
+<td>C:</td>
+</tr>
+<tr>
+<td>Linux/Mac</td>
+<td>/etc/hosts</td>
+</tr>
+</tbody>
+</table>
+<h3 id="功能">7.1. 功能</h3>
+<ul>
+<li>加快域名解析</li>
+<li>重定向恶意域名</li>
+<li>虚拟域名</li>
+</ul>
+<p>https://github.com/googlehosts/hosts</p>
+<p>添加下面两行内容到hosts文件中</p>
+<p>151.101.72.249 github.global.ssl.fastly.net</p>
+<p>192.30.253.112 github.com</p>
+<h2 id="文件校验">8. 文件校验</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">E:\&gt;certutil -hashfile hero.png md5</span><br><span class="line">MD5 哈希(文件 hero.png):</span><br><span class="line">fefd01c9db6e3e83b978eff1b7a67c02</span><br><span class="line">CertUtil: -hashfile 命令成功完成。</span><br><span class="line"> </span><br><span class="line">E:\&gt;certutil -hashfile hero.png SHA1</span><br><span class="line">SHA1 哈希(文件 hero.png):</span><br><span class="line">f1e929db9cef34a8786ee4b6246fb739566c799d</span><br><span class="line">CertUtil: -hashfile 命令成功完成。</span><br><span class="line"> </span><br><span class="line">E:\&gt;certutil -hashfile hero.png SHA256</span><br><span class="line">SHA256 哈希(文件 hero.png):</span><br><span class="line">5b654b2297f17d9106388db31c1190240cfb359144925e892468b40d692c780f</span><br><span class="line">CertUtil: -hashfile 命令成功完成。</span><br></pre></td></tr></table></figure>
+<h2 id="暴力删除废弃文件夹">9. 暴力删除废弃文件夹</h2>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">DEL</span> /F /A /Q \\?\%<span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">RD</span> /S /Q \\?\%<span class="number">1</span></span><br></pre></td></tr></table></figure>
+<p>/P 删除每一个文件之前提示确认。 /F 强制删除只读文件。 /S
 从所有子目录删除指定文件。 /Q 安静模式。删除全局通配符时，不要求确认。
 /A 根据属性选择要删除的文件。</p>
 <p>cmd /c dir：是执行完dir命令后关闭命令窗口；</p>
@@ -3009,6 +3003,53 @@ CertUtil: -hashfile 命令成功完成。 <figure class="highlight plaintext"><t
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>Windows</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CentOS 下安装 PHP7</title>
+    <url>/2019/07/08/php-env/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p>PHP Frequently Asked Questions</p>
+<span id="more"></span>
+<h2 id="环境说明">1. 环境说明</h2>
+<ul>
+<li>CentOS 7</li>
+</ul>
+<h2 id="源码安装-libiconv">2. 源码安装 libiconv</h2>
+<p><a href="http://www.gnu.org/software/libiconv/">官网</a></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换至程序源代码目录</span></span><br><span class="line"><span class="built_in">cd</span> /usr/src</span><br><span class="line"><span class="comment"># 下载 libiconv</span></span><br><span class="line">wget https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.16.tar.gz</span><br><span class="line"><span class="comment"># 解压</span></span><br><span class="line">tar -zxvf libiconv-1.16.tar.gz </span><br><span class="line"><span class="comment"># 配置</span></span><br><span class="line">./configure --prefix=/usr/local/libiconv</span><br><span class="line"><span class="comment"># 编译并安装</span></span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
+<h2 id="源码安装-php7">3. 源码安装 php7</h2>
+<p><a href="https://www.php.net/">官网</a></p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 切换至程序源代码目录</span></span><br><span class="line"><span class="built_in">cd</span> /usr/src</span><br><span class="line"><span class="comment"># 删除旧版本</span></span><br><span class="line"><span class="built_in">rm</span> -rf php-7.*</span><br><span class="line"><span class="comment"># 下载 php</span></span><br><span class="line">wget https://www.php.net/distributions/php-7.3.8.tar.gz</span><br><span class="line"><span class="comment"># 解压</span></span><br><span class="line">tar -zxvf php-7.3.8.tar.gz</span><br><span class="line"><span class="comment"># 删除压缩包</span></span><br><span class="line"><span class="built_in">rm</span> php-7.3.8.tar.gz</span><br><span class="line"><span class="comment"># 切换至 php 目录</span></span><br><span class="line"><span class="built_in">cd</span> php-7.3.8</span><br><span class="line"><span class="comment"># 配置 makefile 脚本</span></span><br><span class="line">./configure</span><br><span class="line">--prefix=/usr/local/php <span class="comment"># 程序目录</span></span><br><span class="line">--with-iconv=/usr/local/libiconv</span><br><span class="line">--enable-fpm <span class="comment"># fastcgi 方式运行</span></span><br><span class="line">--with-pdo-mysql <span class="comment"># mysql 数据库</span></span><br><span class="line">--with-curl</span><br><span class="line">--with-zlib</span><br></pre></td></tr></table></figure>
+<p>脚本配置成功</p>
+<figure>
+<img src="/img/php/1.png" alt="脚本配置成功界面" />
+<figcaption aria-hidden="true">脚本配置成功界面</figcaption>
+</figure>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># make 检查，可省略</span></span><br><span class="line">make <span class="built_in">test</span></span><br><span class="line"><span class="comment"># 杀死全部 php-fpm 进程</span></span><br><span class="line">killall php-fpm</span><br><span class="line"><span class="comment"># 编译并安装</span></span><br><span class="line">make &amp;&amp; make install</span><br><span class="line"><span class="comment"># 切换 php 目录</span></span><br><span class="line"><span class="built_in">cd</span> /usr/local/php/</span><br><span class="line"><span class="comment"># 复制 php.ini 配置文件</span></span><br><span class="line"><span class="built_in">cp</span> /usr/src/php-7.3.8/php.ini-production lib/php.ini</span><br><span class="line"><span class="comment"># 复制 nginx 配置文件</span></span><br><span class="line"><span class="built_in">cp</span> etc/php-fpm.conf.default etc/php-fpm.conf</span><br><span class="line"><span class="comment"># 复制配置文件</span></span><br><span class="line"><span class="built_in">cp</span> etc/php-fpm.d/www.conf.default etc/php-fpm.d/www.conf</span><br><span class="line"><span class="comment"># 启动php-fpm</span></span><br><span class="line">./sbin/php-fpm</span><br><span class="line"><span class="comment"># 确认php-fpm成功</span></span><br><span class="line">ps aux | grep php</span><br><span class="line"><span class="comment"># 查看占用端口</span></span><br><span class="line">netstat -anpo | grep php</span><br></pre></td></tr></table></figure>
+<h3 id="phpinfo.php">3.1. phpinfo.php</h3>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="title function_ invoke__">phpinfo</span>();</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="nginx.conf">3.1.1. nginx.conf</h4>
+<figure class="highlight nginx"><table><tr><td class="code"><pre><span class="line"><span class="section">location</span> <span class="regexp">~ \.php$</span> &#123;</span><br><span class="line">  <span class="attribute">root</span> /www/php; <span class="comment">#指定php的根目录</span></span><br><span class="line">  <span class="attribute">fastcgi_pass</span> <span class="number">127.0.0.1:9000</span>;<span class="comment">#php-fpm的默认端口是9000</span></span><br><span class="line">  <span class="attribute">fastcgi_index</span> index.php;</span><br><span class="line">  <span class="attribute">fastcgi_param</span> SCRIPT_FILENAME <span class="variable">$document_root</span><span class="variable">$fastcgi_script_name</span>;</span><br><span class="line">  <span class="attribute">include</span> fastcgi_params;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="配置-php-模块">4. 配置 php 模块</h2>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看当前已加载模块</span></span><br><span class="line">/usr/local/php/bin/php -m</span><br><span class="line"><span class="comment"># 切换至相应的模块源码目录</span></span><br><span class="line"><span class="built_in">cd</span> /usr/src/php-7.3.8/ext/curl/</span><br><span class="line"><span class="comment">#  设置软链接，防止头文件找不到的问题（类似问题同解）</span></span><br><span class="line"><span class="built_in">ln</span> -s /usr/src/php-7.3.8/ext/ ./ext</span><br><span class="line"><span class="comment"># 执行 phpize</span></span><br><span class="line">/usr/local/php/bin/phpize</span><br><span class="line"><span class="comment"># 配置</span></span><br><span class="line">./configure -with-php-config=/usr/local/php/bin/php-config</span><br><span class="line"><span class="comment"># 编译</span></span><br><span class="line">make &amp;&amp; make install</span><br><span class="line"><span class="comment"># 查看对应的 so 文件</span></span><br><span class="line"><span class="built_in">ls</span> /usr/local/php/lib/php/extensions/no-debug-non-zts-20180731/</span><br><span class="line"><span class="comment"># 编辑配置文件，可通过 phpinfo 函数查找文件位置</span></span><br><span class="line">vi /usr/local/php/lib/php.ini</span><br><span class="line"><span class="comment"># 重启 php</span></span><br><span class="line">/usr/local/php/sbin/php-fpm restart</span><br></pre></td></tr></table></figure>
+<p>编译安装可指定php.ini的路劲(多PHP版本共存的情况)
+--with-config-file-path=/usr/local/php/etc</p>
+<h2 id="配置文件">5. 配置文件</h2>
+<table style="width:6%;">
+<colgroup>
+<col style="width: 5%" />
+</colgroup>
+<tbody>
+<tr>
+<td>- wget 的使用 - tar 的使用 - configure 的使用 - make 的使用</td>
+</tr>
+</tbody>
+</table>
+<p>./configure --prefix=/usr/local/php --with-iconv=/usr/local/libiconv
+--enable-fpm --with-pdo-mysql</p>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>php</tag>
       </tags>
   </entry>
   <entry>
@@ -3044,7 +3085,7 @@ Server</a></p>
   <entry>
     <title>PowerShell笔记</title>
     <url>/2018/06/03/powershell/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="shell-语法">shell 语法</h2>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><h2 id="shell-语法">1. shell 语法</h2>
 <ul>
 <li>变量声明以“$”开头后跟变量名</li>
 <li>变量名不区分大小写，可包含数字、字母和下划线</li>
@@ -3067,8 +3108,8 @@ class="math inline">\(false（真值为假）\)</span>_（当前处理的元素�
 </tr>
 </tbody>
 </table>
-<h2 id="脚本运行">脚本运行</h2>
-<h3 id="运行权限">运行权限</h3>
+<h2 id="脚本运行">2. 脚本运行</h2>
+<h3 id="运行权限">2.1. 运行权限</h3>
 <p>Windows 默认不允许任何脚本运行，可以使用"Set-ExecutionPolicy" cmdlet
 来改变的你PowerShell环境。例如，你可以使用如下命令让PowerShell运行在无限制的环境之下：</p>
 <figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 查看当前脚本运行权限</span></span><br><span class="line">ExecutionPolicy</span><br><span class="line"><span class="comment"># 设置脚本运行权限，允许任何脚本运行</span></span><br><span class="line"><span class="built_in">Set-ExecutionPolicy</span> Unrestricted;</span><br></pre></td></tr></table></figure>
@@ -3080,7 +3121,7 @@ class="math inline">\(false（真值为假）\)</span>_（当前处理的元素�
 <li>Unrestricted——允许所有的script运行</li>
 </ul>
 <p>如果报错，使用管理员的权限启动命令命令行重试。</p>
-<h3 id="java-调用脚本">java 调用脚本</h3>
+<h3 id="java-调用脚本">2.2. java 调用脚本</h3>
 <p>使用 java 调用 powershell 脚本，可以使用以下命令： <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="type">String</span> <span class="variable">cmd</span> <span class="operator">=</span> <span class="string">&quot;cmd /c powershell </span></span><br><span class="line"><span class="string">-ExecutionPolicy RemoteSigned -noprofile </span></span><br><span class="line"><span class="string">-noninteractive -file \&quot;&quot;</span>+ scriptFilename + <span class="string">&quot;\&quot;&quot;</span>;</span><br></pre></td></tr></table></figure></p>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
@@ -3091,11 +3132,11 @@ class="math inline">\(false（真值为假）\)</span>_（当前处理的元素�
     <title>Django 部署</title>
     <url>/2018/07/18/python-Django/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
-<h2 id="阅读基础">阅读基础</h2>
+<h2 id="阅读基础">1. 阅读基础</h2>
 <ul>
 <li><a href="Python3.md">Python3 安装</a></li>
 </ul>
-<h2 id="配置虚拟环境">配置虚拟环境</h2>
+<h2 id="配置虚拟环境">2. 配置虚拟环境</h2>
 <blockquote>
 <p>表中命令从上往下执行即可，部分需要先切换目录，下同。本文为学习笔记，仅供参照，详细流程请阅读参考文章和官方文档。</p>
 </blockquote>
@@ -3150,7 +3191,7 @@ class="math inline">\(false（真值为假）\)</span>_（当前处理的元素�
 </tr>
 </tbody>
 </table>
-<h2 id="django-项目开发">Django 项目开发</h2>
+<h2 id="django-项目开发">3. Django 项目开发</h2>
 <table style="width:100%;">
 <colgroup>
 <col style="width: 14%" />
@@ -3211,24 +3252,24 @@ class="math inline">\(false（真值为假）\)</span>_（当前处理的元素�
 </tr>
 </tbody>
 </table>
-<h2 id="配置-setting.py">配置 setting<code>.</code>py</h2>
+<h2 id="配置-setting.py">4. 配置 setting<code>.</code>py</h2>
 <pre><code>- LANGUAGE_CODE = &#39;zh-Hans&#39;
 - TIME_ZONE = &#39;Asia/Shanghai&#39;（视情况配置）
 - ALLOWED_HOSTS = [&#39;公网ip&#39;,域名&#39;]（部署前配置）
 - DEBUG = False（NGINX 后配置）</code></pre>
-<h2 id="部署准备">部署准备</h2>
+<h2 id="部署准备">5. 部署准备</h2>
 <pre><code>- 删除 migrations 下数字开头的所有 python 文件
 - uwsgi.ini
 <figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="section">[uwsgi]</span></span><br><span class="line"><span class="attr">chdir</span> = /www/web</span><br><span class="line"><span class="attr">module</span> = web.wsgi:applocation</span><br><span class="line"><span class="attr">home</span> = /www/venv</span><br><span class="line"><span class="attr">socket</span> = <span class="number">172.18</span>.<span class="number">173.33</span>:<span class="number">8099</span></span><br><span class="line"><span class="attr">stats</span> = <span class="number">172.18</span>.<span class="number">173.33</span>:<span class="number">9191</span></span><br><span class="line"><span class="attr">master</span> = <span class="literal">true</span></span><br><span class="line"><span class="attr">processes</span> = <span class="number">5</span></span><br><span class="line"><span class="attr">vacuum</span> = <span class="literal">true</span></span><br></pre></td></tr></table></figure></code></pre>
-<h2 id="部署测试">部署测试</h2>
+<h2 id="部署测试">6. 部署测试</h2>
 <pre><code>- 开发服务器测试 `python36 manage.py runserver 172.18.173.33:80`
 - uwsgi 部署测试 `uwsgi uwsgi.ini`
 - Gunicorn 部署测试 `gunicorn -b 172.18.173.33:80 web.wsgi`</code></pre>
-<h2 id="配置-nginx">配置 nginx</h2>
+<h2 id="配置-nginx">7. 配置 nginx</h2>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 安装 uwsgi</span><br><span class="line">pip3 install uwsgi</span><br><span class="line"># 安装 nginx</span><br><span class="line">yum install nginx</span><br></pre></td></tr></table></figure>
 <p>测试</p>
 <p>nginx -t</p>
-<h2 id="参考文章">参考文章</h2>
+<h2 id="参考文章">8. 参考文章</h2>
 <ul>
 <li><a href="https://www.jianshu.com/p/e13417a8bb7f">Django+Ubuntu
 WEB部署（超详细版）</a></li>
@@ -3258,7 +3299,30 @@ Software</a></li>
 href="https://github.com/jupyter/jupyter/wiki/Jupyter-kernels">Jupyter
 kernels</a></li>
 </ol>
-<h2 id="配置内核">2. 配置内核</h2>
+<p>https://github.com/conda-forge/miniforge</p>
+<h2 id="kernel">2. kernel</h2>
+<h3 id="ijulia">2.1. IJulia</h3>
+<figure class="highlight julia"><table><tr><td class="code"><pre><span class="line">add IJulia</span><br><span class="line"><span class="keyword">using</span> IJulia</span><br><span class="line">notebook()</span><br></pre></td></tr></table></figure>
+<p>https://github.com/JuliaLang/IJulia.jl</p>
+<h3 id="c">2.2. C</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">pip install jupyter-cpp-kernel</span><br></pre></td></tr></table></figure>
+<p>https://github.com/shiroinekotfs/jupyter-cpp-kernel</p>
+<h3 id="ir">2.3. IR</h3>
+<figure class="highlight r"><table><tr><td class="code"><pre><span class="line">install.packages<span class="punctuation">(</span><span class="string">&#x27;IRkernel&#x27;</span><span class="punctuation">)</span></span><br><span class="line">IRkernel<span class="operator">::</span>installspec<span class="punctuation">(</span>user <span class="operator">=</span> <span class="literal">FALSE</span><span class="punctuation">)</span></span><br><span class="line">jupyter labextension install <span class="operator">@</span>techrah<span class="operator">/</span>text<span class="operator">-</span>shortcuts</span><br></pre></td></tr></table></figure>
+<h3 id="dot-kernel">2.4. dot-kernel</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">pip install dot_kernel</span><br><span class="line">install-dot-kernel</span><br></pre></td></tr></table></figure>
+<p>https://github.com/laixintao/jupyter-dot-kernel</p>
+<h3 id="octave">2.5. octave</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">pip install octave-kernel</span><br></pre></td></tr></table></figure>
+<p>https://github.com/calysto/octave_kernel</p>
+<h3 id="kotlin-jupyter">2.6. kotlin-jupyter</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">pip install kotlin-jupyter-kernel</span><br></pre></td></tr></table></figure>
+<p>https://github.com/Kotlin/kotlin-</p>
+<h3 id="java">2.7. java</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">java -jar ganymede-2.1.2.20230910.jar -i</span><br></pre></td></tr></table></figure>
+<p>https://github.com/allen-ball/ganymede</p>
+<h3 id="other">2.8. other</h3>
+<p>https://github.com/jupyter/jupyter/wiki/Jupyter-kernels</p>
 <h2 id="设置默认起始目录">3. 设置默认起始目录</h2>
 <ol type="1">
 <li>使用 shell 打开配置文件</li>
@@ -3550,6 +3614,55 @@ id="部署测试uwsgi-中-httphttp-socketsocket-区别unix套字节">部署测�
       </tags>
   </entry>
   <entry>
+    <title>python wheel 打包</title>
+    <url>/2019/11/09/python-wheel/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p><a href="https://packaging.python.org/">官方教程</a> <a
+href="https://packaging.python.org/overview/">概述</a> <a
+href="https://packaging.python.org/tutorials/">教程</a> <a
+href="https://packaging.python.org/guides/">指南</a></p>
+<span id="more"></span>
+<h3 id="github-action">0.1. github action</h3>
+<ol type="1">
+<li>创建 GitHub 仓库</li>
+<li>配置 pypi token</li>
+<li>配置 action 脚本</li>
+<li>配置本地 git 环境</li>
+<li>配置 本地仓库</li>
+<li>配置打包及开发环境</li>
+</ol>
+<h3 id="最小pypi包">0.2. 最小pypi包</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">.gitignore</span><br><span class="line">LICENSE</span><br><span class="line">README.md</span><br><span class="line">setup.py</span><br><span class="line">docs/</span><br><span class="line">    /README.md</span><br><span class="line">module/</span><br><span class="line">    /__init__.py <span class="comment"># python 包标志</span></span><br><span class="line">    /__main__.py</span><br></pre></td></tr></table></figure>
+<h3 id="打包环境">0.3. 打包环境</h3>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># bdist</span></span><br><span class="line"><span class="comment"># bdist_wheel</span></span><br><span class="line">pip install setuptools wheel twine</span><br><span class="line"><span class="comment"># twine upload dist/*</span></span><br></pre></td></tr></table></figure>
+<h3 id="init.py">0.4. <strong>init</strong>.py</h3>
+<blockquote>
+<p><strong>init</strong>.py 文件表明当前文件夹为 Python
+模块,模块被导入时实际为此文件，模块方式运行时先执行此文件。</p>
+</blockquote>
+<h4 id="init.py-中常配置的模块参数">0.4.1. <strong>init</strong>.py
+中常配置的模块参数</h4>
+<ul>
+<li><strong>all</strong> 指定 <code>form package import *</code>
+的内容</li>
+<li><strong>version</strong> 指定版本</li>
+</ul>
+<h3 id="main.py">0.5. <strong>main</strong>.py</h3>
+<blockquote>
+<p><strong>main</strong>.py
+文件表明当前文件夹可作为模块运行，可以文件夹、模块方式运行时执行此文件，相当于依赖模块的示例程序。</p>
+</blockquote>
+<h3 id="setup.py">0.6. setup.py</h3>
+<blockquote>
+<p>setup.py 文件是 setuptools
+打包的脚本文件，文件内应当写明包相关信息，以及其它的附属操作。</p>
+</blockquote>
+<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 官方示例</span></span><br><span class="line"><span class="comment"># https://github.com/pypa/sampleproject/blob/master/setup.py</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># read the contents of README file</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;README.md&quot;</span>, <span class="string">&quot;r&quot;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> fh:</span><br><span class="line">    long_description = fh.read()</span><br><span class="line"></span><br><span class="line">setuptools.setup(</span><br><span class="line">    <span class="comment"># https://packaging.python.org/guides/distributing-packages-using-setuptools/</span></span><br><span class="line">    name=<span class="string">&quot;example-pkg-YOUR-USERNAME-HERE&quot;</span>, <span class="comment"># Replace with your own username</span></span><br><span class="line">    version=<span class="string">&quot;0.0.1&quot;</span>,</span><br><span class="line">    author=<span class="string">&quot;Example Author&quot;</span>,</span><br><span class="line">    author_email=<span class="string">&quot;author@example.com&quot;</span>,</span><br><span class="line">    description=<span class="string">&quot;A small example package&quot;</span>,</span><br><span class="line">    long_description=long_description,</span><br><span class="line">    long_description_content_type=<span class="string">&quot;text/markdown&quot;</span>,</span><br><span class="line">    url=<span class="string">&quot;https://github.com/pypa/sampleproject&quot;</span>,</span><br><span class="line">    packages=setuptools.find_packages(),</span><br><span class="line">    classifiers=[</span><br><span class="line">        <span class="comment"># https://pypi.org/classifiers/</span></span><br><span class="line">        <span class="string">&quot;Programming Language :: Python :: 3&quot;</span>,</span><br><span class="line">        <span class="string">&quot;License :: OSI Approved :: MIT License&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Operating System :: OS Independent&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    python_requires=<span class="string">&#x27;&gt;=3.6&#x27;</span>,</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Python Windows</title>
     <url>/2019/10/21/python-win/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><span id="more"></span>
@@ -3599,55 +3712,6 @@ gc.get_threshold() 获取gc模块中自动执行垃圾回收的频率 gc.get_cou
 filter(function,iterable) function 返回true保留
 functools.reduce(function,iterable)累function处理 sorted() reverse为ture
 则从大到小，自定义对象需要指定key=lambda obj:obj.属性 lambda x:x*2</p>
-<link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
-      <tags>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>python wheel 打包</title>
-    <url>/2019/11/09/python-wheel/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="https://cdn.jsdelivr.net/npm/meting/dist/Meting.min.js"></script><p><a href="https://packaging.python.org/">官方教程</a> <a
-href="https://packaging.python.org/overview/">概述</a> <a
-href="https://packaging.python.org/tutorials/">教程</a> <a
-href="https://packaging.python.org/guides/">指南</a></p>
-<span id="more"></span>
-<h3 id="github-action">0.1. github action</h3>
-<ol type="1">
-<li>创建 GitHub 仓库</li>
-<li>配置 pypi token</li>
-<li>配置 action 脚本</li>
-<li>配置本地 git 环境</li>
-<li>配置 本地仓库</li>
-<li>配置打包及开发环境</li>
-</ol>
-<h3 id="最小pypi包">0.2. 最小pypi包</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">.gitignore</span><br><span class="line">LICENSE</span><br><span class="line">README.md</span><br><span class="line">setup.py</span><br><span class="line">docs/</span><br><span class="line">    /README.md</span><br><span class="line">module/</span><br><span class="line">    /__init__.py <span class="comment"># python 包标志</span></span><br><span class="line">    /__main__.py</span><br></pre></td></tr></table></figure>
-<h3 id="打包环境">0.3. 打包环境</h3>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line"><span class="comment"># bdist</span></span><br><span class="line"><span class="comment"># bdist_wheel</span></span><br><span class="line">pip install setuptools wheel twine</span><br><span class="line"><span class="comment"># twine upload dist/*</span></span><br></pre></td></tr></table></figure>
-<h3 id="init.py">0.4. <strong>init</strong>.py</h3>
-<blockquote>
-<p><strong>init</strong>.py 文件表明当前文件夹为 Python
-模块,模块被导入时实际为此文件，模块方式运行时先执行此文件。</p>
-</blockquote>
-<h4 id="init.py-中常配置的模块参数">0.4.1. <strong>init</strong>.py
-中常配置的模块参数</h4>
-<ul>
-<li><strong>all</strong> 指定 <code>form package import *</code>
-的内容</li>
-<li><strong>version</strong> 指定版本</li>
-</ul>
-<h3 id="main.py">0.5. <strong>main</strong>.py</h3>
-<blockquote>
-<p><strong>main</strong>.py
-文件表明当前文件夹可作为模块运行，可以文件夹、模块方式运行时执行此文件，相当于依赖模块的示例程序。</p>
-</blockquote>
-<h3 id="setup.py">0.6. setup.py</h3>
-<blockquote>
-<p>setup.py 文件是 setuptools
-打包的脚本文件，文件内应当写明包相关信息，以及其它的附属操作。</p>
-</blockquote>
-<figure class="highlight py"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 官方示例</span></span><br><span class="line"><span class="comment"># https://github.com/pypa/sampleproject/blob/master/setup.py</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># read the contents of README file</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;README.md&quot;</span>, <span class="string">&quot;r&quot;</span>, encoding=<span class="string">&#x27;utf-8&#x27;</span>) <span class="keyword">as</span> fh:</span><br><span class="line">    long_description = fh.read()</span><br><span class="line"></span><br><span class="line">setuptools.setup(</span><br><span class="line">    <span class="comment"># https://packaging.python.org/guides/distributing-packages-using-setuptools/</span></span><br><span class="line">    name=<span class="string">&quot;example-pkg-YOUR-USERNAME-HERE&quot;</span>, <span class="comment"># Replace with your own username</span></span><br><span class="line">    version=<span class="string">&quot;0.0.1&quot;</span>,</span><br><span class="line">    author=<span class="string">&quot;Example Author&quot;</span>,</span><br><span class="line">    author_email=<span class="string">&quot;author@example.com&quot;</span>,</span><br><span class="line">    description=<span class="string">&quot;A small example package&quot;</span>,</span><br><span class="line">    long_description=long_description,</span><br><span class="line">    long_description_content_type=<span class="string">&quot;text/markdown&quot;</span>,</span><br><span class="line">    url=<span class="string">&quot;https://github.com/pypa/sampleproject&quot;</span>,</span><br><span class="line">    packages=setuptools.find_packages(),</span><br><span class="line">    classifiers=[</span><br><span class="line">        <span class="comment"># https://pypi.org/classifiers/</span></span><br><span class="line">        <span class="string">&quot;Programming Language :: Python :: 3&quot;</span>,</span><br><span class="line">        <span class="string">&quot;License :: OSI Approved :: MIT License&quot;</span>,</span><br><span class="line">        <span class="string">&quot;Operating System :: OS Independent&quot;</span>,</span><br><span class="line">    ],</span><br><span class="line">    python_requires=<span class="string">&#x27;&gt;=3.6&#x27;</span>,</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
 <link rel="stylesheet" href="/css/spoiler.css" type="text/css"><script src="/js/spoiler.js" type="text/javascript" async></script>]]></content>
       <tags>
         <tag>python</tag>
@@ -4172,7 +4236,7 @@ WordPress</a></li>
 <blockquote>
 <p>为避免腾讯等安全软件误报，强烈建议大家先使用浏览器打开此页</p>
 </blockquote>
-<h2 id="软件简介">软件简介</h2>
+<h2 id="软件简介">1. 软件简介</h2>
 <ul>
 <li>兰理工专用版易班，裁掉了部分原有功能</li>
 <li>集成易班、微信、QQ、支付宝等优秀功能，方便大家的使用</li>
@@ -4180,12 +4244,12 @@ WordPress</a></li>
 <li>软件本身无毒，如有误报请默认允许（如果怕不合适，装上后再扫下病毒）</li>
 <li>业余研究产物，仅作研究，不深入开发</li>
 </ul>
-<h2 id="最新版已知问题">最新版已知问题</h2>
+<h2 id="最新版已知问题">2. 最新版已知问题</h2>
 <ul>
 <li>精品课程无法播放</li>
 <li>暂不支持分享</li>
 </ul>
-<h2 id="更新日志">更新日志</h2>
+<h2 id="更新日志">3. 更新日志</h2>
 <p>2018年05月26日 <a href="/lab/LUT_yiban/LUT_yiban180526.apk">下载</a>
 1. 取消原有的“我的订阅”功能 1. 加入新增的易班熊 1.
 新增考试资料、天气查询、快递查询、景点门票、净网中心等功能 <img

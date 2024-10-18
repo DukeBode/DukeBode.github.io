@@ -18,20 +18,20 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"dukebode.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":false,"nav":null,"activeClass":"changyan"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dukebode.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":false,"nav":null,"activeClass":"changyan"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="阅读基础  Python3 安装  配置虚拟环境  表中命令从上往下执行即可，部分需要先切换目录，下同。本文为学习笔记，仅供参照，详细流程请阅读参考文章和官方文档。      操作 命令     - 创建虚拟环境 python3 -m venv &#x2F;www&#x2F;venv   - 激活虚拟环境 source &#x2F;www&#x2F;venv&#x2F;bin&#x2F;activate   - Windows下激活 .\venv\Scr">
+    <meta name="description" content="1. 阅读基础  Python3 安装  2. 配置虚拟环境  表中命令从上往下执行即可，部分需要先切换目录，下同。本文为学习笔记，仅供参照，详细流程请阅读参考文章和官方文档。      操作 命令     - 创建虚拟环境 python3 -m venv &#x2F;www&#x2F;venv   - 激活虚拟环境 source &#x2F;www&#x2F;venv&#x2F;bin&#x2F;activate   - Windows下激活 .\ve">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Django 部署">
 <meta property="og:url" content="https://dukebode.github.io/2018/07/18/python-Django/">
 <meta property="og:site_name" content="Duke Blog">
-<meta property="og:description" content="阅读基础  Python3 安装  配置虚拟环境  表中命令从上往下执行即可，部分需要先切换目录，下同。本文为学习笔记，仅供参照，详细流程请阅读参考文章和官方文档。      操作 命令     - 创建虚拟环境 python3 -m venv &#x2F;www&#x2F;venv   - 激活虚拟环境 source &#x2F;www&#x2F;venv&#x2F;bin&#x2F;activate   - Windows下激活 .\venv\Scr">
+<meta property="og:description" content="1. 阅读基础  Python3 安装  2. 配置虚拟环境  表中命令从上往下执行即可，部分需要先切换目录，下同。本文为学习笔记，仅供参照，详细流程请阅读参考文章和官方文档。      操作 命令     - 创建虚拟环境 python3 -m venv &#x2F;www&#x2F;venv   - 激活虚拟环境 source &#x2F;www&#x2F;venv&#x2F;bin&#x2F;activate   - Windows下激活 .\ve">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2018-07-18T16:34:30.000Z">
-<meta property="article:modified_time" content="2024-08-14T02:39:08.675Z">
+<meta property="article:modified_time" content="2024-10-18T14:46:12.826Z">
 <meta property="article:author" content="Duke Bode">
 <meta property="article:tag" content="python">
 <meta property="article:tag" content="Django">
@@ -108,25 +108,25 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup"><div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80"
-           placeholder="Searching..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close" role="button">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div class="search-result-container no-result">
-  <div class="search-result-icon">
-    <i class="fa fa-spinner fa-pulse fa-5x"></i>
-  </div>
-</div>
-
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -148,7 +148,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%98%85%E8%AF%BB%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">阅读基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83"><span class="nav-number">2.</span> <span class="nav-text">配置虚拟环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#django-%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91"><span class="nav-number">3.</span> <span class="nav-text">Django 项目开发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-setting.py"><span class="nav-number">4.</span> <span class="nav-text">配置 setting.py</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%87%86%E5%A4%87"><span class="nav-number">5.</span> <span class="nav-text">部署准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E6%B5%8B%E8%AF%95"><span class="nav-number">6.</span> <span class="nav-text">部署测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-nginx"><span class="nav-number">7.</span> <span class="nav-text">配置 nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-number">8.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%98%85%E8%AF%BB%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">1. 阅读基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83"><span class="nav-number">2.</span> <span class="nav-text">2. 配置虚拟环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#django-%E9%A1%B9%E7%9B%AE%E5%BC%80%E5%8F%91"><span class="nav-number">3.</span> <span class="nav-text">3. Django 项目开发</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-setting.py"><span class="nav-number">4.</span> <span class="nav-text">4. 配置 setting.py</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%87%86%E5%A4%87"><span class="nav-number">5.</span> <span class="nav-text">5. 部署准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E6%B5%8B%E8%AF%95"><span class="nav-number">6.</span> <span class="nav-text">6. 部署测试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE-nginx"><span class="nav-number">7.</span> <span class="nav-text">7. 配置 nginx</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%AB%A0"><span class="nav-number">8.</span> <span class="nav-text">8. 参考文章</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -258,7 +258,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-08-14 02:39:08" itemprop="dateModified" datetime="2024-08-14T02:39:08+00:00">2024-08-14</time>
+      <time title="Modified: 2024-10-18 14:46:12" itemprop="dateModified" datetime="2024-10-18T14:46:12+00:00">2024-10-18</time>
     </span>
 
   
@@ -292,11 +292,11 @@
     
     
     <div class="post-body" itemprop="articleBody"><span id="more"></span>
-<h2 id="阅读基础">阅读基础</h2>
+<h2 id="阅读基础">1. 阅读基础</h2>
 <ul>
 <li><a href="Python3.md">Python3 安装</a></li>
 </ul>
-<h2 id="配置虚拟环境">配置虚拟环境</h2>
+<h2 id="配置虚拟环境">2. 配置虚拟环境</h2>
 <blockquote>
 <p>表中命令从上往下执行即可，部分需要先切换目录，下同。本文为学习笔记，仅供参照，详细流程请阅读参考文章和官方文档。</p>
 </blockquote>
@@ -351,7 +351,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="django-项目开发">Django 项目开发</h2>
+<h2 id="django-项目开发">3. Django 项目开发</h2>
 <table style="width:100%;">
 <colgroup>
 <col style="width: 14%" />
@@ -412,24 +412,24 @@
 </tr>
 </tbody>
 </table>
-<h2 id="配置-setting.py">配置 setting<code>.</code>py</h2>
+<h2 id="配置-setting.py">4. 配置 setting<code>.</code>py</h2>
 <pre><code>- LANGUAGE_CODE = &#39;zh-Hans&#39;
 - TIME_ZONE = &#39;Asia/Shanghai&#39;（视情况配置）
 - ALLOWED_HOSTS = [&#39;公网ip&#39;,域名&#39;]（部署前配置）
 - DEBUG = False（NGINX 后配置）</code></pre>
-<h2 id="部署准备">部署准备</h2>
+<h2 id="部署准备">5. 部署准备</h2>
 <pre><code>- 删除 migrations 下数字开头的所有 python 文件
 - uwsgi.ini
 <figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">[uwsgi]</span></span><br><span class="line"><span class="attr">chdir</span> = /www/web</span><br><span class="line"><span class="attr">module</span> = web.wsgi:applocation</span><br><span class="line"><span class="attr">home</span> = /www/venv</span><br><span class="line"><span class="attr">socket</span> = <span class="number">172.18</span>.<span class="number">173.33</span>:<span class="number">8099</span></span><br><span class="line"><span class="attr">stats</span> = <span class="number">172.18</span>.<span class="number">173.33</span>:<span class="number">9191</span></span><br><span class="line"><span class="attr">master</span> = <span class="literal">true</span></span><br><span class="line"><span class="attr">processes</span> = <span class="number">5</span></span><br><span class="line"><span class="attr">vacuum</span> = <span class="literal">true</span></span><br></pre></td></tr></table></figure></code></pre>
-<h2 id="部署测试">部署测试</h2>
+<h2 id="部署测试">6. 部署测试</h2>
 <pre><code>- 开发服务器测试 `python36 manage.py runserver 172.18.173.33:80`
 - uwsgi 部署测试 `uwsgi uwsgi.ini`
 - Gunicorn 部署测试 `gunicorn -b 172.18.173.33:80 web.wsgi`</code></pre>
-<h2 id="配置-nginx">配置 nginx</h2>
+<h2 id="配置-nginx">7. 配置 nginx</h2>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 安装 uwsgi</span><br><span class="line">pip3 install uwsgi</span><br><span class="line"># 安装 nginx</span><br><span class="line">yum install nginx</span><br></pre></td></tr></table></figure>
 <p>测试</p>
 <p>nginx -t</p>
-<h2 id="参考文章">参考文章</h2>
+<h2 id="参考文章">8. 参考文章</h2>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e13417a8bb7f">Django+Ubuntu
 WEB部署（超详细版）</a></li>
@@ -619,7 +619,7 @@ v3.0</a></li>
 
   
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.1/dist/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
 <script src="/js/third-party/search/local-search.js"></script>

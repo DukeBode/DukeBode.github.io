@@ -18,10 +18,10 @@
 
 
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"dukebode.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":false,"nav":null,"activeClass":"changyan"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dukebode.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.21.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":false,"nav":null,"activeClass":"changyan"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="Linux Frequently Asked Questions">
 <meta property="og:type" content="article">
@@ -32,7 +32,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://dukebode.github.io/img/linux/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84.png">
 <meta property="article:published_time" content="2019-07-29T15:13:22.000Z">
-<meta property="article:modified_time" content="2024-08-14T02:39:08.675Z">
+<meta property="article:modified_time" content="2024-10-18T14:46:12.826Z">
 <meta property="article:author" content="Duke Bode">
 <meta property="article:tag" content="FAQ">
 <meta name="twitter:card" content="summary">
@@ -108,25 +108,25 @@
 
 
   <div class="search-pop-overlay">
-    <div class="popup search-popup"><div class="search-header">
-  <span class="search-icon">
-    <i class="fa fa-search"></i>
-  </span>
-  <div class="search-input-container">
-    <input autocomplete="off" autocapitalize="off" maxlength="80"
-           placeholder="Searching..." spellcheck="false"
-           type="search" class="search-input">
-  </div>
-  <span class="popup-btn-close" role="button">
-    <i class="fa fa-times-circle"></i>
-  </span>
-</div>
-<div class="search-result-container no-result">
-  <div class="search-result-icon">
-    <i class="fa fa-spinner fa-pulse fa-5x"></i>
-  </div>
-</div>
-
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="Searching..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -148,8 +148,8 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#yum"><span class="nav-number">1.</span> <span class="nav-text">yum</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#linux-%E5%9F%BA%E7%A1%80"><span class="nav-number">1.1.</span> <span class="nav-text">Linux 基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8nohup-%E5%92%8C-%E8%AE%A9%E5%91%BD%E4%BB%A4%E5%90%8E%E5%8F%B0%E6%89%A7%E8%A1%8C"><span class="nav-number">1.2.</span> <span class="nav-text">使用nohup 和 &amp;
-让命令后台执行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95"><span class="nav-number">1.3.</span> <span class="nav-text">文件目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linux-setting"><span class="nav-number">1.4.</span> <span class="nav-text">Linux Setting</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#dnf"><span class="nav-number">1.4.1.</span> <span class="nav-text">DNF</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E6%A0%A1%E9%AA%8C"><span class="nav-number">1.5.</span> <span class="nav-text">文件校验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#section"><span class="nav-number">1.6.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mariadb"><span class="nav-number">1.7.</span> <span class="nav-text">MariaDB</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#linux-%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">Linux 基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8nohup-%E5%92%8C-%E8%AE%A9%E5%91%BD%E4%BB%A4%E5%90%8E%E5%8F%B0%E6%89%A7%E8%A1%8C"><span class="nav-number">2.</span> <span class="nav-text">使用nohup 和 &amp;
+让命令后台执行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95"><span class="nav-number">3.</span> <span class="nav-text">文件目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#linux-setting"><span class="nav-number">4.</span> <span class="nav-text">Linux Setting</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#dnf"><span class="nav-number">4.1.</span> <span class="nav-text">DNF</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#yum"><span class="nav-number">4.2.</span> <span class="nav-text">yum</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#apt"><span class="nav-number">4.3.</span> <span class="nav-text">apt</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E6%A0%A1%E9%AA%8C"><span class="nav-number">5.</span> <span class="nav-text">文件校验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#section"><span class="nav-number">6.</span> <span class="nav-text"></span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#mariadb"><span class="nav-number">7.</span> <span class="nav-text">MariaDB</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -259,7 +259,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-08-14 02:39:08" itemprop="dateModified" datetime="2024-08-14T02:39:08+00:00">2024-08-14</time>
+      <time title="Modified: 2024-10-18 14:46:12" itemprop="dateModified" datetime="2024-10-18T14:46:12+00:00">2024-10-18</time>
     </span>
 
   
@@ -294,8 +294,6 @@
     
     <div class="post-body" itemprop="articleBody"><p>Linux Frequently Asked Questions</p>
 <span id="more"></span>
-<h1 id="yum">yum</h1>
-<p>查看yum源Java包 yum list <em>java</em></p>
 <h2 id="linux-基础">Linux 基础</h2>
 <p><a href="#文件目录">文件目录</a></p>
 <h2 id="使用nohup-和-让命令后台执行">使用nohup 和 &amp;
@@ -439,6 +437,9 @@ nohup实现后台运行程序及查看（nohup与&amp;）</a></li>
 <h3 id="dnf">DNF</h3>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># /etc/yum.repos.d/dnf.repo</span></span><br><span class="line">wget https://mirrors.aliyun.com/centos/7.5.1804/extras/x86_64/Packages/centos-release-yum4-1-2.el7.centos.noarch.rpm</span><br><span class="line">yum install centos-release-yum4-1-2.el7.centos.noarch.rpm</span><br><span class="line"></span><br><span class="line"><span class="comment"># install DNF</span></span><br><span class="line">yum install dnf</span><br><span class="line">dnf upgrade</span><br></pre></td></tr></table></figure>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">dnf -y groupinstall <span class="string">&quot;Development Tools&quot;</span></span><br><span class="line">dnf -y install bzip2-devel sqlite-devel readline-devel libffi-devel systemtap-sdt-devel openssl-static  lzma tk-devel xz-devel  ncurses-devel gdbm-devel  gcc</span><br><span class="line"><span class="comment"># zlib 实现 gzip 压缩解压缩功能</span></span><br><span class="line"><span class="comment"># pcre 实现配置文件里的正则表达式解析功能</span></span><br><span class="line"><span class="comment"># openssl 实现 SSL 功能</span></span><br><span class="line">dnf -y install zlib zlib-devel openssl openssl-devel pcre pcre-devel</span><br></pre></td></tr></table></figure>
+<h3 id="yum">yum</h3>
+<p>查看yum源Java包 yum list <em>java</em></p>
+<h3 id="apt">apt</h3>
 <h2 id="文件校验">文件校验</h2>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">md5sum hero.png </span><br><span class="line">fefd01c9db6e3e83b978eff1b7a67c02  hero.png</span><br><span class="line"> </span><br><span class="line">sha1sum hero.png </span><br><span class="line">f1e929db9cef34a8786ee4b6246fb739566c799d  hero.png</span><br><span class="line"> </span><br><span class="line">sha256sum hero.png </span><br><span class="line">5b654b2297f17d9106388db31c1190240cfb359144925e892468b40d692c780f  hero.png</span><br></pre></td></tr></table></figure>
 <h2 id="section"></h2>
@@ -637,7 +638,7 @@ target="_blank" rel="noopener" href="https://downloads.mariadb.org/mariadb/repos
 
   
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.1/dist/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
 <script src="/js/third-party/search/local-search.js"></script>
